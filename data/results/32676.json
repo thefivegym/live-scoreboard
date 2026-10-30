@@ -1,0 +1,1180 @@
+{
+ "generated_at": "2026-10-30T15:39:05.393Z",
+ "source": "https://www.roadtonationals.com/api/women/meetresults/32676",
+ "meet_id": 32676,
+ "live": false,
+ "host": "",
+ "teams": [
+  {
+   "name": "UCLA",
+   "tid": 66,
+   "home": false,
+   "final_score": 198.1,
+   "events": [
+    {
+     "event": "vault",
+     "score": 49.45,
+     "gymnasts": [
+      {
+       "name": "Jordan Chiles",
+       "score": 9.925
+      },
+      {
+       "name": "Riley Jenkins",
+       "score": 9.95
+      },
+      {
+       "name": "Katelyn Rosen",
+       "score": 9.825
+      },
+      {
+       "name": "Ashlee Sullivan",
+       "score": 9.85
+      },
+      {
+       "name": "Tiana Sumanasekera",
+       "score": 9.85
+      },
+      {
+       "name": "Mika Webster-Longin",
+       "score": 9.875
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.55,
+     "gymnasts": [
+      {
+       "name": "Sydney Barros",
+       "score": 9.95
+      },
+      {
+       "name": "Jordan Chiles",
+       "score": 9.95
+      },
+      {
+       "name": "Nola Matthews",
+       "score": 9.875
+      },
+      {
+       "name": "Ashlee Sullivan",
+       "score": 9.85
+      },
+      {
+       "name": "Tiana Sumanasekera",
+       "score": 9.875
+      },
+      {
+       "name": "Mika Webster-Longin",
+       "score": 9.9
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 49.425,
+     "gymnasts": [
+      {
+       "name": "Ciena Alipio",
+       "score": 9.05
+      },
+      {
+       "name": "Sydney Barros",
+       "score": 9.85
+      },
+      {
+       "name": "Jordan Chiles",
+       "score": 9.95
+      },
+      {
+       "name": "Katelyn Rosen",
+       "score": 9.85
+      },
+      {
+       "name": "Tiana Sumanasekera",
+       "score": 9.925
+      },
+      {
+       "name": "Mika Webster-Longin",
+       "score": 9.85
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.675,
+     "gymnasts": [
+      {
+       "name": "Ciena Alipio",
+       "score": 9.725
+      },
+      {
+       "name": "Sydney Barros",
+       "score": 9.875
+      },
+      {
+       "name": "Jordan Chiles",
+       "score": 10
+      },
+      {
+       "name": "Ashlee Sullivan",
+       "score": 9.95
+      },
+      {
+       "name": "Tiana Sumanasekera",
+       "score": 9.925
+      },
+      {
+       "name": "Mika Webster-Longin",
+       "score": 9.925
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Jordan Chiles",
+     "score": 39.825
+    },
+    {
+     "name": "Tiana Sumanasekera",
+     "score": 39.575
+    },
+    {
+     "name": "Mika Webster-Longin",
+     "score": 39.55
+    }
+   ],
+   "place": 1
+  },
+  {
+   "name": "Michigan State",
+   "tid": 38,
+   "home": false,
+   "final_score": 197.475,
+   "events": [
+    {
+     "event": "vault",
+     "score": 49.25,
+     "gymnasts": [
+      {
+       "name": "Cady Duplissis",
+       "score": 9.775
+      },
+      {
+       "name": "Sage Kellerman",
+       "score": 9.925
+      },
+      {
+       "name": "Korynne Marquart",
+       "score": 9.8
+      },
+      {
+       "name": "Nikki Smith",
+       "score": 9.85
+      },
+      {
+       "name": "Isabella Trostel",
+       "score": 9.8
+      },
+      {
+       "name": "MaKayla Tucker",
+       "score": 9.875
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.4,
+     "gymnasts": [
+      {
+       "name": "Kendall Abney",
+       "score": 9.9
+      },
+      {
+       "name": "Lilia Cosman",
+       "score": 9.825
+      },
+      {
+       "name": "Naya Howard",
+       "score": 9.775
+      },
+      {
+       "name": "Sage Kellerman",
+       "score": 9.95
+      },
+      {
+       "name": "Nikki Smith",
+       "score": 9.875
+      },
+      {
+       "name": "MaKayla Tucker",
+       "score": 9.85
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 49.375,
+     "gymnasts": [
+      {
+       "name": "Kendall Abney",
+       "score": 9.85
+      },
+      {
+       "name": "Lilia Cosman",
+       "score": 9.9
+      },
+      {
+       "name": "Cady Duplissis",
+       "score": 9.9
+      },
+      {
+       "name": "Nikki Smith",
+       "score": 9.9
+      },
+      {
+       "name": "Isabella Trostel",
+       "score": 9.825
+      },
+      {
+       "name": "MaKayla Tucker",
+       "score": 9.825
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.45,
+     "gymnasts": [
+      {
+       "name": "Cady Duplissis",
+       "score": 9.9
+      },
+      {
+       "name": "Stephanie Lebster",
+       "score": 9.85
+      },
+      {
+       "name": "Korynne Marquart",
+       "score": 9.85
+      },
+      {
+       "name": "Gabi Ortiz",
+       "score": 9.75
+      },
+      {
+       "name": "Nikki Smith",
+       "score": 9.95
+      },
+      {
+       "name": "MaKayla Tucker",
+       "score": 9.9
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Nikki Smith",
+     "score": 39.575
+    },
+    {
+     "name": "MaKayla Tucker",
+     "score": 39.45
+    }
+   ],
+   "place": 2
+  },
+  {
+   "name": "Minnesota",
+   "tid": 39,
+   "home": false,
+   "final_score": 196.9,
+   "events": [
+    {
+     "event": "vault",
+     "score": 49.3,
+     "gymnasts": [
+      {
+       "name": "Teryn Crump",
+       "score": 9.85
+      },
+      {
+       "name": "Gianna Gerdes",
+       "score": 9.9
+      },
+      {
+       "name": "Sarah Moraw",
+       "score": 9.8
+      },
+      {
+       "name": "Arianna Ostrum",
+       "score": 9.95
+      },
+      {
+       "name": "Emma Slevin",
+       "score": 9.8
+      },
+      {
+       "name": "Ava Stewart",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.375,
+     "gymnasts": [
+      {
+       "name": "Teryn Crump",
+       "score": 9.725
+      },
+      {
+       "name": "Gianna Gerdes",
+       "score": 9.85
+      },
+      {
+       "name": "Jordyn Lyden",
+       "score": 9.95
+      },
+      {
+       "name": "Arianna Ostrum",
+       "score": 9.8
+      },
+      {
+       "name": "Lacie Saltzmann",
+       "score": 9.825
+      },
+      {
+       "name": "Emma Slevin",
+       "score": 9.95
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.575,
+     "gymnasts": [
+      {
+       "name": "Jordyn Lyden",
+       "score": 9.3
+      },
+      {
+       "name": "Sarah Moraw",
+       "score": 9.725
+      },
+      {
+       "name": "Arianna Ostrum",
+       "score": 9.875
+      },
+      {
+       "name": "Lauren Pearl",
+       "score": 9.325
+      },
+      {
+       "name": "Brooklyn Rowray",
+       "score": 9.75
+      },
+      {
+       "name": "Ava Stewart",
+       "score": 9.9
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.65,
+     "gymnasts": [
+      {
+       "name": "Gianna Gerdes",
+       "score": 9.675
+      },
+      {
+       "name": "Leah Gonsiorowski",
+       "score": 9.925
+      },
+      {
+       "name": "Jordyn Lyden",
+       "score": 9.95
+      },
+      {
+       "name": "Arianna Ostrum",
+       "score": 9.95
+      },
+      {
+       "name": "Lacie Saltzmann",
+       "score": 9.875
+      },
+      {
+       "name": "Sophie Swartzmiller",
+       "score": 9.95
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Arianna Ostrum",
+     "score": 39.575
+    }
+   ],
+   "place": 3
+  },
+  {
+   "name": "Michigan",
+   "tid": 37,
+   "home": false,
+   "final_score": 196.8,
+   "events": [
+    {
+     "event": "vault",
+     "score": 49.1,
+     "gymnasts": [
+      {
+       "name": "Peyton Davis",
+       "score": 9.8
+      },
+      {
+       "name": "Sophia Diaz",
+       "score": 9.575
+      },
+      {
+       "name": "Reyna Guggino",
+       "score": 9.775
+      },
+      {
+       "name": "Ava Jordan",
+       "score": 9.825
+      },
+      {
+       "name": "Jahzara Ranger",
+       "score": 9.9
+      },
+      {
+       "name": "Audrey Sanger",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.125,
+     "gymnasts": [
+      {
+       "name": "Carly Bauman",
+       "score": 9.925
+      },
+      {
+       "name": "Lily Clapper",
+       "score": 9.8
+      },
+      {
+       "name": "Sophia Diaz",
+       "score": 9.9
+      },
+      {
+       "name": "Ava Jordan",
+       "score": 9.65
+      },
+      {
+       "name": "Myli Lew",
+       "score": 9.75
+      },
+      {
+       "name": "Audrey Sanger",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 49.125,
+     "gymnasts": [
+      {
+       "name": "Carly Bauman",
+       "score": 9.8
+      },
+      {
+       "name": "Kayli Boozer",
+       "score": 9.775
+      },
+      {
+       "name": "Peyton Davis",
+       "score": 9.85
+      },
+      {
+       "name": "Sophie Parenti",
+       "score": 9.85
+      },
+      {
+       "name": "Jahzara Ranger",
+       "score": 9.825
+      },
+      {
+       "name": "Quincy Walters",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.55,
+     "gymnasts": [
+      {
+       "name": "Carly Bauman",
+       "score": 9.95
+      },
+      {
+       "name": "Peyton Davis",
+       "score": 9.9
+      },
+      {
+       "name": "Sophia Diaz",
+       "score": 9.9
+      },
+      {
+       "name": "Sophie Parenti",
+       "score": 9.8
+      },
+      {
+       "name": "Jahzara Ranger",
+       "score": 9.875
+      },
+      {
+       "name": "Quincy Walters",
+       "score": 9.925
+      }
+     ]
+    }
+   ],
+   "all_around": [],
+   "place": 4
+  }
+ ],
+ "leaderboards": {
+  "vault": [
+   {
+    "name": "Arianna Ostrum",
+    "team": "Minnesota",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Riley Jenkins",
+    "team": "UCLA",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Sage Kellerman",
+    "team": "Michigan State",
+    "score": 9.925,
+    "place": 3
+   },
+   {
+    "name": "Jordan Chiles",
+    "team": "UCLA",
+    "score": 9.925,
+    "place": 3
+   },
+   {
+    "name": "Jahzara Ranger",
+    "team": "Michigan",
+    "score": 9.9,
+    "place": 5
+   },
+   {
+    "name": "Gianna Gerdes",
+    "team": "Minnesota",
+    "score": 9.9,
+    "place": 5
+   },
+   {
+    "name": "MaKayla Tucker",
+    "team": "Michigan State",
+    "score": 9.875,
+    "place": 7
+   },
+   {
+    "name": "Mika Webster-Longin",
+    "team": "UCLA",
+    "score": 9.875,
+    "place": 7
+   },
+   {
+    "name": "Nikki Smith",
+    "team": "Michigan State",
+    "score": 9.85,
+    "place": 9
+   },
+   {
+    "name": "Teryn Crump",
+    "team": "Minnesota",
+    "score": 9.85,
+    "place": 9
+   },
+   {
+    "name": "Ashlee Sullivan",
+    "team": "UCLA",
+    "score": 9.85,
+    "place": 9
+   },
+   {
+    "name": "Tiana Sumanasekera",
+    "team": "UCLA",
+    "score": 9.85,
+    "place": 9
+   },
+   {
+    "name": "Ava Jordan",
+    "team": "Michigan",
+    "score": 9.825,
+    "place": 13
+   },
+   {
+    "name": "Katelyn Rosen",
+    "team": "UCLA",
+    "score": 9.825,
+    "place": 13
+   },
+   {
+    "name": "Audrey Sanger",
+    "team": "Michigan",
+    "score": 9.8,
+    "place": 15
+   },
+   {
+    "name": "Peyton Davis",
+    "team": "Michigan",
+    "score": 9.8,
+    "place": 15
+   },
+   {
+    "name": "Isabella Trostel",
+    "team": "Michigan State",
+    "score": 9.8,
+    "place": 15
+   },
+   {
+    "name": "Korynne Marquart",
+    "team": "Michigan State",
+    "score": 9.8,
+    "place": 15
+   },
+   {
+    "name": "Emma Slevin",
+    "team": "Minnesota",
+    "score": 9.8,
+    "place": 15
+   },
+   {
+    "name": "Sarah Moraw",
+    "team": "Minnesota",
+    "score": 9.8,
+    "place": 15
+   },
+   {
+    "name": "Reyna Guggino",
+    "team": "Michigan",
+    "score": 9.775,
+    "place": 21
+   },
+   {
+    "name": "Cady Duplissis",
+    "team": "Michigan State",
+    "score": 9.775,
+    "place": 21
+   },
+   {
+    "name": "Ava Stewart",
+    "team": "Minnesota",
+    "score": 9.75,
+    "place": 23
+   },
+   {
+    "name": "Sophia Diaz",
+    "team": "Michigan",
+    "score": 9.575,
+    "place": 24
+   }
+  ],
+  "bars": [
+   {
+    "name": "Sage Kellerman",
+    "team": "Michigan State",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Emma Slevin",
+    "team": "Minnesota",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Jordyn Lyden",
+    "team": "Minnesota",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Jordan Chiles",
+    "team": "UCLA",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Sydney Barros",
+    "team": "UCLA",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Carly Bauman",
+    "team": "Michigan",
+    "score": 9.925,
+    "place": 6
+   },
+   {
+    "name": "Sophia Diaz",
+    "team": "Michigan",
+    "score": 9.9,
+    "place": 7
+   },
+   {
+    "name": "Kendall Abney",
+    "team": "Michigan State",
+    "score": 9.9,
+    "place": 7
+   },
+   {
+    "name": "Mika Webster-Longin",
+    "team": "UCLA",
+    "score": 9.9,
+    "place": 7
+   },
+   {
+    "name": "Nikki Smith",
+    "team": "Michigan State",
+    "score": 9.875,
+    "place": 10
+   },
+   {
+    "name": "Nola Matthews",
+    "team": "UCLA",
+    "score": 9.875,
+    "place": 10
+   },
+   {
+    "name": "Tiana Sumanasekera",
+    "team": "UCLA",
+    "score": 9.875,
+    "place": 10
+   },
+   {
+    "name": "MaKayla Tucker",
+    "team": "Michigan State",
+    "score": 9.85,
+    "place": 13
+   },
+   {
+    "name": "Gianna Gerdes",
+    "team": "Minnesota",
+    "score": 9.85,
+    "place": 13
+   },
+   {
+    "name": "Ashlee Sullivan",
+    "team": "UCLA",
+    "score": 9.85,
+    "place": 13
+   },
+   {
+    "name": "Lilia Cosman",
+    "team": "Michigan State",
+    "score": 9.825,
+    "place": 16
+   },
+   {
+    "name": "Lacie Saltzmann",
+    "team": "Minnesota",
+    "score": 9.825,
+    "place": 16
+   },
+   {
+    "name": "Lily Clapper",
+    "team": "Michigan",
+    "score": 9.8,
+    "place": 18
+   },
+   {
+    "name": "Arianna Ostrum",
+    "team": "Minnesota",
+    "score": 9.8,
+    "place": 18
+   },
+   {
+    "name": "Naya Howard",
+    "team": "Michigan State",
+    "score": 9.775,
+    "place": 20
+   },
+   {
+    "name": "Audrey Sanger",
+    "team": "Michigan",
+    "score": 9.75,
+    "place": 21
+   },
+   {
+    "name": "Myli Lew",
+    "team": "Michigan",
+    "score": 9.75,
+    "place": 21
+   },
+   {
+    "name": "Teryn Crump",
+    "team": "Minnesota",
+    "score": 9.725,
+    "place": 23
+   },
+   {
+    "name": "Ava Jordan",
+    "team": "Michigan",
+    "score": 9.65,
+    "place": 24
+   }
+  ],
+  "beam": [
+   {
+    "name": "Jordan Chiles",
+    "team": "UCLA",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Tiana Sumanasekera",
+    "team": "UCLA",
+    "score": 9.925,
+    "place": 2
+   },
+   {
+    "name": "Cady Duplissis",
+    "team": "Michigan State",
+    "score": 9.9,
+    "place": 3
+   },
+   {
+    "name": "Lilia Cosman",
+    "team": "Michigan State",
+    "score": 9.9,
+    "place": 3
+   },
+   {
+    "name": "Nikki Smith",
+    "team": "Michigan State",
+    "score": 9.9,
+    "place": 3
+   },
+   {
+    "name": "Ava Stewart",
+    "team": "Minnesota",
+    "score": 9.9,
+    "place": 3
+   },
+   {
+    "name": "Arianna Ostrum",
+    "team": "Minnesota",
+    "score": 9.875,
+    "place": 7
+   },
+   {
+    "name": "Peyton Davis",
+    "team": "Michigan",
+    "score": 9.85,
+    "place": 8
+   },
+   {
+    "name": "Sophie Parenti",
+    "team": "Michigan",
+    "score": 9.85,
+    "place": 8
+   },
+   {
+    "name": "Kendall Abney",
+    "team": "Michigan State",
+    "score": 9.85,
+    "place": 8
+   },
+   {
+    "name": "Katelyn Rosen",
+    "team": "UCLA",
+    "score": 9.85,
+    "place": 8
+   },
+   {
+    "name": "Mika Webster-Longin",
+    "team": "UCLA",
+    "score": 9.85,
+    "place": 8
+   },
+   {
+    "name": "Sydney Barros",
+    "team": "UCLA",
+    "score": 9.85,
+    "place": 8
+   },
+   {
+    "name": "Jahzara Ranger",
+    "team": "Michigan",
+    "score": 9.825,
+    "place": 14
+   },
+   {
+    "name": "Isabella Trostel",
+    "team": "Michigan State",
+    "score": 9.825,
+    "place": 14
+   },
+   {
+    "name": "MaKayla Tucker",
+    "team": "Michigan State",
+    "score": 9.825,
+    "place": 14
+   },
+   {
+    "name": "Carly Bauman",
+    "team": "Michigan",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Quincy Walters",
+    "team": "Michigan",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Kayli Boozer",
+    "team": "Michigan",
+    "score": 9.775,
+    "place": 19
+   },
+   {
+    "name": "Brooklyn Rowray",
+    "team": "Minnesota",
+    "score": 9.75,
+    "place": 20
+   },
+   {
+    "name": "Sarah Moraw",
+    "team": "Minnesota",
+    "score": 9.725,
+    "place": 21
+   },
+   {
+    "name": "Lauren Pearl",
+    "team": "Minnesota",
+    "score": 9.325,
+    "place": 22
+   },
+   {
+    "name": "Jordyn Lyden",
+    "team": "Minnesota",
+    "score": 9.3,
+    "place": 23
+   },
+   {
+    "name": "Ciena Alipio",
+    "team": "UCLA",
+    "score": 9.05,
+    "place": 24
+   }
+  ],
+  "floor": [
+   {
+    "name": "Jordan Chiles",
+    "team": "UCLA",
+    "score": 10,
+    "place": 1
+   },
+   {
+    "name": "Carly Bauman",
+    "team": "Michigan",
+    "score": 9.95,
+    "place": 2
+   },
+   {
+    "name": "Nikki Smith",
+    "team": "Michigan State",
+    "score": 9.95,
+    "place": 2
+   },
+   {
+    "name": "Arianna Ostrum",
+    "team": "Minnesota",
+    "score": 9.95,
+    "place": 2
+   },
+   {
+    "name": "Jordyn Lyden",
+    "team": "Minnesota",
+    "score": 9.95,
+    "place": 2
+   },
+   {
+    "name": "Sophie Swartzmiller",
+    "team": "Minnesota",
+    "score": 9.95,
+    "place": 2
+   },
+   {
+    "name": "Ashlee Sullivan",
+    "team": "UCLA",
+    "score": 9.95,
+    "place": 2
+   },
+   {
+    "name": "Quincy Walters",
+    "team": "Michigan",
+    "score": 9.925,
+    "place": 8
+   },
+   {
+    "name": "Leah Gonsiorowski",
+    "team": "Minnesota",
+    "score": 9.925,
+    "place": 8
+   },
+   {
+    "name": "Mika Webster-Longin",
+    "team": "UCLA",
+    "score": 9.925,
+    "place": 8
+   },
+   {
+    "name": "Tiana Sumanasekera",
+    "team": "UCLA",
+    "score": 9.925,
+    "place": 8
+   },
+   {
+    "name": "Peyton Davis",
+    "team": "Michigan",
+    "score": 9.9,
+    "place": 12
+   },
+   {
+    "name": "Sophia Diaz",
+    "team": "Michigan",
+    "score": 9.9,
+    "place": 12
+   },
+   {
+    "name": "Cady Duplissis",
+    "team": "Michigan State",
+    "score": 9.9,
+    "place": 12
+   },
+   {
+    "name": "MaKayla Tucker",
+    "team": "Michigan State",
+    "score": 9.9,
+    "place": 12
+   },
+   {
+    "name": "Jahzara Ranger",
+    "team": "Michigan",
+    "score": 9.875,
+    "place": 16
+   },
+   {
+    "name": "Lacie Saltzmann",
+    "team": "Minnesota",
+    "score": 9.875,
+    "place": 16
+   },
+   {
+    "name": "Sydney Barros",
+    "team": "UCLA",
+    "score": 9.875,
+    "place": 16
+   },
+   {
+    "name": "Korynne Marquart",
+    "team": "Michigan State",
+    "score": 9.85,
+    "place": 19
+   },
+   {
+    "name": "Stephanie Lebster",
+    "team": "Michigan State",
+    "score": 9.85,
+    "place": 19
+   },
+   {
+    "name": "Sophie Parenti",
+    "team": "Michigan",
+    "score": 9.8,
+    "place": 21
+   },
+   {
+    "name": "Gabi Ortiz",
+    "team": "Michigan State",
+    "score": 9.75,
+    "place": 22
+   },
+   {
+    "name": "Ciena Alipio",
+    "team": "UCLA",
+    "score": 9.725,
+    "place": 23
+   },
+   {
+    "name": "Gianna Gerdes",
+    "team": "Minnesota",
+    "score": 9.675,
+    "place": 24
+   }
+  ],
+  "aa": [
+   {
+    "name": "Jordan Chiles",
+    "team": "UCLA",
+    "score": 39.825,
+    "place": 1
+   },
+   {
+    "name": "Nikki Smith",
+    "team": "Michigan State",
+    "score": 39.575,
+    "place": 2
+   },
+   {
+    "name": "Arianna Ostrum",
+    "team": "Minnesota",
+    "score": 39.575,
+    "place": 2
+   },
+   {
+    "name": "Tiana Sumanasekera",
+    "team": "UCLA",
+    "score": 39.575,
+    "place": 2
+   },
+   {
+    "name": "Mika Webster-Longin",
+    "team": "UCLA",
+    "score": 39.55,
+    "place": 5
+   },
+   {
+    "name": "MaKayla Tucker",
+    "team": "Michigan State",
+    "score": 39.45,
+    "place": 6
+   }
+  ]
+ }
+}

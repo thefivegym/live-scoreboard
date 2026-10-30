@@ -1,0 +1,318 @@
+{
+ "generated_at": "2026-10-30T15:37:04.739Z",
+ "season": 2026,
+ "week": 12,
+ "source": "https://www.roadtonationals.com/api/women/results/2026/12/0/5 (Road to Nationals national team rankings, rows with div = \"Div I\")",
+ "teams": [
+  {
+   "tid": 1,
+   "name": "Air Force",
+   "conference": "MW"
+  },
+  {
+   "tid": 2,
+   "name": "Alabama",
+   "conference": "SEC"
+  },
+  {
+   "tid": 3,
+   "name": "Alaska",
+   "conference": "MPSF"
+  },
+  {
+   "tid": 4,
+   "name": "Arizona",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 5,
+   "name": "Arizona State",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 6,
+   "name": "Arkansas",
+   "conference": "SEC"
+  },
+  {
+   "tid": 7,
+   "name": "Auburn",
+   "conference": "SEC"
+  },
+  {
+   "tid": 9,
+   "name": "Ball State",
+   "conference": "MAC"
+  },
+  {
+   "tid": 10,
+   "name": "Boise State",
+   "conference": "MW"
+  },
+  {
+   "tid": 11,
+   "name": "Bowling Green",
+   "conference": "MAC"
+  },
+  {
+   "tid": 14,
+   "name": "Brown",
+   "conference": "GEC"
+  },
+  {
+   "tid": 8,
+   "name": "BYU",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 15,
+   "name": "California",
+   "conference": "ACC"
+  },
+  {
+   "tid": 17,
+   "name": "Central Michigan",
+   "conference": "MAC"
+  },
+  {
+   "tid": 163,
+   "name": "Clemson",
+   "conference": "ACC"
+  },
+  {
+   "tid": 18,
+   "name": "Cornell",
+   "conference": "GEC"
+  },
+  {
+   "tid": 20,
+   "name": "Denver",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 21,
+   "name": "Eastern Michigan",
+   "conference": "MAC"
+  },
+  {
+   "tid": 22,
+   "name": "Florida",
+   "conference": "SEC"
+  },
+  {
+   "tid": 23,
+   "name": "George Washington",
+   "conference": "EAGL"
+  },
+  {
+   "tid": 24,
+   "name": "Georgia",
+   "conference": "SEC"
+  },
+  {
+   "tid": 28,
+   "name": "Illinois",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 27,
+   "name": "Illinois State",
+   "conference": "MIC"
+  },
+  {
+   "tid": 29,
+   "name": "Iowa",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 30,
+   "name": "Iowa State",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 32,
+   "name": "Kent State",
+   "conference": "MAC"
+  },
+  {
+   "tid": 33,
+   "name": "Kentucky",
+   "conference": "SEC"
+  },
+  {
+   "tid": 128,
+   "name": "LIU",
+   "conference": "EAGL"
+  },
+  {
+   "tid": 34,
+   "name": "LSU",
+   "conference": "SEC"
+  },
+  {
+   "tid": 36,
+   "name": "Maryland",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 37,
+   "name": "Michigan",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 38,
+   "name": "Michigan State",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 39,
+   "name": "Minnesota",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 40,
+   "name": "Missouri",
+   "conference": "SEC"
+  },
+  {
+   "tid": 41,
+   "name": "Nebraska",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 42,
+   "name": "New Hampshire",
+   "conference": "EAGL"
+  },
+  {
+   "tid": 43,
+   "name": "North Carolina",
+   "conference": "ACC"
+  },
+  {
+   "tid": 44,
+   "name": "North Carolina State",
+   "conference": "ACC"
+  },
+  {
+   "tid": 45,
+   "name": "Northern Illinois",
+   "conference": "MAC"
+  },
+  {
+   "tid": 46,
+   "name": "Ohio State",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 47,
+   "name": "Oklahoma",
+   "conference": "SEC"
+  },
+  {
+   "tid": 48,
+   "name": "Oregon State",
+   "conference": "PAC-12"
+  },
+  {
+   "tid": 49,
+   "name": "Penn State",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 50,
+   "name": "Pennsylvania",
+   "conference": "GEC"
+  },
+  {
+   "tid": 51,
+   "name": "Pittsburgh",
+   "conference": "ACC"
+  },
+  {
+   "tid": 53,
+   "name": "Rutgers",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 54,
+   "name": "S.E. Missouri",
+   "conference": "MIC"
+  },
+  {
+   "tid": 55,
+   "name": "Sacramento State",
+   "conference": "MPSF"
+  },
+  {
+   "tid": 56,
+   "name": "San Jose State",
+   "conference": "MW"
+  },
+  {
+   "tid": 59,
+   "name": "Southern Utah",
+   "conference": "MPSF"
+  },
+  {
+   "tid": 61,
+   "name": "Stanford",
+   "conference": "ACC"
+  },
+  {
+   "tid": 62,
+   "name": "Temple",
+   "conference": "EAGL"
+  },
+  {
+   "tid": 64,
+   "name": "Towson",
+   "conference": "EAGL"
+  },
+  {
+   "tid": 65,
+   "name": "UC Davis",
+   "conference": "MPSF"
+  },
+  {
+   "tid": 66,
+   "name": "UCLA",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 69,
+   "name": "Utah",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 70,
+   "name": "Utah State",
+   "conference": "MW"
+  },
+  {
+   "tid": 71,
+   "name": "Washington",
+   "conference": "Big Ten"
+  },
+  {
+   "tid": 73,
+   "name": "West Virginia",
+   "conference": "Big 12"
+  },
+  {
+   "tid": 74,
+   "name": "Western Michigan",
+   "conference": "MAC"
+  },
+  {
+   "tid": 75,
+   "name": "William & Mary",
+   "conference": "GEC"
+  },
+  {
+   "tid": 82,
+   "name": "Yale",
+   "conference": "GEC"
+  }
+ ]
+}

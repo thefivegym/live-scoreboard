@@ -1,0 +1,7910 @@
+{
+ "generated_at": "2026-10-30T15:37:34.974Z",
+ "season": 2026,
+ "source": "https://www.roadtonationals.com/api/women/schedule/2026/1",
+ "meets": [
+  {
+   "id": 31517,
+   "date": "2026-01-02",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-03T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Iowa",
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Iowa",
+    "Minnesota"
+   ],
+   "virtius": "yLmIWwKtU0",
+   "stats_link": "https://scores.virti.us/?s=yLmIWwKtU0",
+   "video_link": "https://www.espn.com/watch/player/_/id/0678390b-0daa-462b-9235-e5dc849434f9",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31517"
+  },
+  {
+   "id": 31525,
+   "date": "2026-01-03",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-03T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "California",
+    "Oregon State",
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Washington",
+    "California",
+    "Oregon State",
+    "UCLA"
+   ],
+   "virtius": "57h4x8lXRL",
+   "stats_link": "https://scores.virti.us/?s=57h4x8lXRL",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/ucla-cal-oregon-state-at-washington/2054690",
+   "video_desc": "B1G+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31525"
+  },
+  {
+   "id": 31527,
+   "date": "2026-01-04",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-04T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.statbroadcast.com/events/statbroadcast.php?t=1&gid=wmu",
+   "video_link": "https://www.youtube.com/wmuathletics",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31527"
+  },
+  {
+   "id": 31532,
+   "date": "2026-01-04",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-04T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Brockport",
+    "Temple"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Temple"
+   ],
+   "virtius": "Kjw73C9cAD",
+   "stats_link": "https://scores.virti.us/?s=Kjw73C9cAD",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31532"
+  },
+  {
+   "id": 31534,
+   "date": "2026-01-04",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-04T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "Towson"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Towson"
+   ],
+   "virtius": "X_9t41xaLU",
+   "stats_link": "https://virti.us/session?s=X_9t41xaLU",
+   "video_link": "https://www.espn.com/watch/player/_/id/16a65046-bd5e-45ae-9bdb-270150815a75",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31534"
+  },
+  {
+   "id": 31529,
+   "date": "2026-01-04",
+   "time_et": "15:00:00",
+   "start_utc": "2026-01-04T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Iowa State"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Iowa State"
+   ],
+   "virtius": "CsDcitZCLO",
+   "stats_link": "https://scores.virti.us/?s=CsDcitZCLO",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31529"
+  },
+  {
+   "id": 31540,
+   "date": "2026-01-09",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-09T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "West Chester"
+   ],
+   "d1_teams": [
+    "Towson"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=627755",
+   "video_link": "https://youtube.com/live/hVC1Ja-TaPc?feature=share",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31540"
+  },
+  {
+   "id": 31557,
+   "date": "2026-01-09",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-10T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "North Carolina",
+    "Temple",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Florida",
+    "North Carolina",
+    "Temple",
+    "West Virginia"
+   ],
+   "virtius": "AdVHymVhHj",
+   "stats_link": "https://scores.virti.us/?s=AdVHymVhHj",
+   "video_link": "https://www.espn.com/watch/player/_/id/20c1b066-4670-4b2c-9cd0-9f1544e74d38",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31557"
+  },
+  {
+   "id": 31561,
+   "date": "2026-01-09",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-10T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "George Washington",
+    "LIU",
+    "New Hampshire"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "George Washington",
+    "LIU",
+    "New Hampshire"
+   ],
+   "virtius": "jo2ZGxdHEo",
+   "stats_link": "https://virti.us/session?s=jo2ZGxdHEo",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/terrapin-quad/2054732",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31561"
+  },
+  {
+   "id": 31563,
+   "date": "2026-01-09",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-10T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Alabama"
+   ],
+   "virtius": "1UnQKbk4jn",
+   "stats_link": "https://scores.virti.us/?s=1UnQKbk4jn",
+   "video_link": "https://www.espn.com/watch/player/_/id/d229c92e-c8c3-499f-8f95-b9ea6558bd5a",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31563"
+  },
+  {
+   "id": 31545,
+   "date": "2026-01-09",
+   "time_et": "19:30:00",
+   "start_utc": "2026-01-10T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Central Michigan",
+    "Fisk"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "Central Michigan"
+   ],
+   "virtius": "cCPJlSiip_",
+   "stats_link": "https://scores.virti.us/?s=cCPJlSiip_",
+   "video_link": "https://www.espn.com/watch/player/_/id/89dbd4e6-fe4f-4c01-b5a1-8f2acbb4e47a",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31545"
+  },
+  {
+   "id": 31538,
+   "date": "2026-01-09",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-10T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Washington"
+   ],
+   "virtius": "1SWwKkFfqn",
+   "stats_link": "https://scores.virti.us/?s=1SWwKkFfqn",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31538"
+  },
+  {
+   "id": 31551,
+   "date": "2026-01-09",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-10T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": "https://auburntige.rs/010926GymStats",
+   "video_link": "https://auburntige.rs/010926GymTV",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31551"
+  },
+  {
+   "id": 31547,
+   "date": "2026-01-09",
+   "time_et": "20:30:00",
+   "start_utc": "2026-01-10T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Boise State"
+   ],
+   "virtius": "ljLa_PXwHJ",
+   "stats_link": "https://scores.virti.us/?s=ljLa_PXwHJ",
+   "video_link": "https://www.overnght.com/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31547"
+  },
+  {
+   "id": 31549,
+   "date": "2026-01-09",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-10T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "Winona State"
+   ],
+   "d1_teams": [
+    "Air Force"
+   ],
+   "virtius": "nDdVLgeCoT",
+   "stats_link": "https://scores.virti.us/?s=nDdVLgeCoT",
+   "video_link": "https://themw.com/watch/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31549"
+  },
+  {
+   "id": 31553,
+   "date": "2026-01-09",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-10T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Oregon State"
+   ],
+   "virtius": "s-zulYvxIo",
+   "stats_link": "https://scores.virti.us/?s=s-zulYvxIo",
+   "video_link": "https://www.espn.com/watch/player/_/id/3d169107-cccf-47fb-a7b2-d0f4ce253a8f?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31553"
+  },
+  {
+   "id": 31573,
+   "date": "2026-01-10",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-10T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Missouri",
+    "UW-La Crosse",
+    "UW-Stout"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Missouri"
+   ],
+   "virtius": "p8KO-dZvmC",
+   "stats_link": "https://scores.virti.us/?s=p8KO-dZvmC",
+   "video_link": "https://www.bigtenplus.com/en-int/page/home",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31573"
+  },
+  {
+   "id": 31581,
+   "date": "2026-01-10",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-10T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Georgia"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=626104",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/georgia-at-ohio-state/2054756",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31581"
+  },
+  {
+   "id": 32607,
+   "date": "2026-01-10",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-10T21:00:00.000Z",
+   "desc": "Sprouts Farmers Market Collegiate Quad",
+   "home": [],
+   "away": [
+    "LSU",
+    "Oklahoma",
+    "UCLA",
+    "Utah"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Oklahoma",
+    "UCLA",
+    "Utah"
+   ],
+   "virtius": "9WRjkzZznl",
+   "stats_link": "https://scores.virti.us/?s=9WRjkzZznl",
+   "video_link": "https://www.espn.com/watch/player/_/id/31cddb55-5be3-48bb-b4c1-bfb0e5203873",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32607"
+  },
+  {
+   "id": 31577,
+   "date": "2026-01-10",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-10T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Illinois",
+    "Illinois State",
+    "Iowa State"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Illinois",
+    "Illinois State",
+    "Iowa State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/index.html?id=627451",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/illinois-illinois-state-iowa-state-at-iowa/2054759",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31577"
+  },
+  {
+   "id": 31579,
+   "date": "2026-01-10",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-10T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Arkansas"
+   ],
+   "virtius": "v6tVe991Ne",
+   "stats_link": "https://virti.us/session?s=v6tVe991Ne",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/arkansas-at-minnesota/2054763",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31579"
+  },
+  {
+   "id": 31585,
+   "date": "2026-01-10",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-11T01:00:00.000Z",
+   "desc": "Sprouts Farmers Market Collegiate Quad",
+   "home": [],
+   "away": [
+    "California",
+    "Kentucky",
+    "Michigan",
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "California",
+    "Kentucky",
+    "Michigan",
+    "Michigan State"
+   ],
+   "virtius": "XVk5MDQ1Kk",
+   "stats_link": "https://virti.us/session?s=XVk5MDQ1Kk",
+   "video_link": "https://www.espn.com/watch/player/_/id/2564e732-bc38-47fd-8203-6e375ebe1049",
+   "video_desc": "ESPN2",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31585"
+  },
+  {
+   "id": 31588,
+   "date": "2026-01-11",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-11T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Rutgers",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Rutgers",
+    "Western Michigan"
+   ],
+   "virtius": "0hP9J2yfFV",
+   "stats_link": "https://scores.virti.us/?s=0hP9J2yfFV",
+   "video_link": "https://www.espn.com/watch/player/_/id/862eb9c4-0afc-4670-9095-baa06fce27ee",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31588"
+  },
+  {
+   "id": 31591,
+   "date": "2026-01-11",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-11T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Cornell"
+   ],
+   "away": [
+    "Bridgeport",
+    "Pennsylvania"
+   ],
+   "d1_teams": [
+    "Cornell",
+    "Pennsylvania"
+   ],
+   "virtius": "Pu24zUq8VZ",
+   "stats_link": "https://scores.virti.us/?s=Pu24zUq8VZ",
+   "video_link": "https://www.espn.com/watch/player/_/id/7b002ede-4d65-4504-b1c1-41f8d87b33cb",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31591"
+  },
+  {
+   "id": 31593,
+   "date": "2026-01-11",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-11T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "Northern Illinois"
+   ],
+   "virtius": "rx23A0UWi3",
+   "stats_link": "https://scores.virti.us/?s=rx23A0UWi3",
+   "video_link": "https://boxcast.tv/view/kent-state-gymnastics-vs-northern-illinois-wod1dxnnj0u0zjop2hqr",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31593"
+  },
+  {
+   "id": 31600,
+   "date": "2026-01-11",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-11T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Eastern Michigan"
+   ],
+   "virtius": "jFNzPhrWp1",
+   "stats_link": "https://scores.virti.us/?s=jFNzPhrWp1",
+   "video_link": "https://youtube.com/live/ZduRB2_kaAM?feature=share",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31600"
+  },
+  {
+   "id": 31604,
+   "date": "2026-01-11",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-11T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Brown"
+   ],
+   "away": [
+    "Rhode Island College",
+    "Southern Conn.",
+    "Springfield College"
+   ],
+   "d1_teams": [
+    "Brown"
+   ],
+   "virtius": "xJb_VEoFHQ",
+   "stats_link": "https://scores.virti.us/?s=xJb_VEoFHQ",
+   "video_link": "https://www.espn.com/watch/player/_/id/4d9def85-c39e-4fe3-a71a-be4aa348528d?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31604"
+  },
+  {
+   "id": 31608,
+   "date": "2026-01-11",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-11T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Yale"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Yale"
+   ],
+   "virtius": "z8DSIiqhk-",
+   "stats_link": "https://scores.virti.us/?s=z8DSIiqhk-",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/army-and-yale-at-penn-state/2054775",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31608"
+  },
+  {
+   "id": 31612,
+   "date": "2026-01-11",
+   "time_et": "15:00:00",
+   "start_utc": "2026-01-11T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Pittsburgh"
+   ],
+   "virtius": "QbIOH2dXst",
+   "stats_link": "https://scores.virti.us/?s=QbIOH2dXst",
+   "video_link": "https://flosports.link/466YtkB",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31612"
+  },
+  {
+   "id": 31598,
+   "date": "2026-01-11",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-11T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "San Jose State",
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "San Jose State",
+    "UC Davis"
+   ],
+   "virtius": "TQsCxDPuKE",
+   "stats_link": "https://scores.virti.us/?s=TQsCxDPuKE",
+   "video_link": "https://www.espn.com/watch/player/_/id/29ab16c3-d77b-4d82-84d8-b4eb8c38f9c3",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31598"
+  },
+  {
+   "id": 31606,
+   "date": "2026-01-11",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-11T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Stanford"
+   ],
+   "virtius": "tuj7tgbFwx",
+   "stats_link": "https://scores.virti.us/?s=tuj7tgbFwx",
+   "video_link": "https://www.midcosportsplus.com/details/LIVE_PROGRAM/item/6386524443112/stanford-vs-denver",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31606"
+  },
+  {
+   "id": 31610,
+   "date": "2026-01-11",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-11T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "Alaska"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=6869_1767740304674",
+   "video_link": "https://www.overnght.com/player/d4476d68-c202-4e2c-8b9e-8b49e4a666e4",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31610"
+  },
+  {
+   "id": 31622,
+   "date": "2026-01-12",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-13T02:00:00.000Z",
+   "desc": "Best of Utah",
+   "home": [],
+   "away": [
+    "BYU",
+    "Southern Utah",
+    "Utah",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Southern Utah",
+    "Utah",
+    "Utah State"
+   ],
+   "virtius": "C1XuuEGIIF",
+   "stats_link": "https://virti.us/session?s=C1XuuEGIIF",
+   "video_link": "https://www.espn.com/watch/player/_/id/32463d10-af9a-4ea2-ac59-88183a2e70d4",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31622"
+  },
+  {
+   "id": 31633,
+   "date": "2026-01-16",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-17T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Alabama"
+   ],
+   "virtius": "BfO-LkCWGw",
+   "stats_link": "https://virti.us/session?s=BfO-LkCWGw",
+   "video_link": "https://www.espn.com/watch/player/_/id/c21272d1-78e9-46fa-9605-0d0e4546be44",
+   "video_desc": "ESPN2",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31633"
+  },
+  {
+   "id": 31635,
+   "date": "2026-01-16",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-17T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "LSU"
+   ],
+   "virtius": "XPdBl6na3C",
+   "stats_link": "https://virti.us/session?s=XPdBl6na3C",
+   "video_link": "https://www.espn.com/watch/player/_/id/09118f45-a978-4624-9135-b42cdde7a709",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31635"
+  },
+  {
+   "id": 31639,
+   "date": "2026-01-16",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-17T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Arizona State"
+   ],
+   "virtius": "BnlbPhlqly",
+   "stats_link": "https://virti.us/session?s=BnlbPhlqly",
+   "video_link": "https://www.espn.com/watch/player/_/id/22a34e66-ce77-46ca-91cd-26dfb815b228",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31639"
+  },
+  {
+   "id": 31637,
+   "date": "2026-01-16",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-17T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=642757",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/penn-state-at-illinois/2054807",
+   "video_desc": "BIG+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31637"
+  },
+  {
+   "id": 31644,
+   "date": "2026-01-16",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-17T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Arizona",
+    "Denver"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Denver"
+   ],
+   "virtius": "Uz18zwzKAu",
+   "stats_link": "https://virti.us/session?s=Uz18zwzKAu",
+   "video_link": "https://flosports.link/466YtkB",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31644"
+  },
+  {
+   "id": 31649,
+   "date": "2026-01-16",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-17T01:00:00.000Z",
+   "desc": "Windy City",
+   "home": [],
+   "away": [
+    "Centenary College",
+    "Fisk",
+    "Illinois State",
+    "S.E. Missouri",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31649"
+  },
+  {
+   "id": 32608,
+   "date": "2026-01-16",
+   "time_et": "20:45:00",
+   "start_utc": "2026-01-17T01:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Oklahoma"
+   ],
+   "virtius": "Z_n4ZCP9Py",
+   "stats_link": "https://virti.us/session?s=Z_n4ZCP9Py",
+   "video_link": "https://www.espn.com/watch/player/_/id/5e094c24-a0c6-47fc-b024-359a087659af",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32608"
+  },
+  {
+   "id": 31631,
+   "date": "2026-01-16",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-17T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Boise State"
+   ],
+   "virtius": "xCn4y8_yF5",
+   "stats_link": "https://virti.us/session?s=xCn4y8_yF5",
+   "video_link": "https://www.espn.com/watch/player/_/id/7fafdcec-a937-470e-80da-032f3fd4ee22?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31631"
+  },
+  {
+   "id": 31641,
+   "date": "2026-01-16",
+   "time_et": "22:00:00",
+   "start_utc": "2026-01-17T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Sacramento State"
+   ],
+   "virtius": "RRQ1hl52va",
+   "stats_link": "https://virti.us/session?s=RRQ1hl52va",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31641"
+  },
+  {
+   "id": 31653,
+   "date": "2026-01-17",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-17T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=642850",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31653"
+  },
+  {
+   "id": 31674,
+   "date": "2026-01-17",
+   "time_et": "15:00:00",
+   "start_utc": "2026-01-17T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "Temple",
+    "LIU"
+   ],
+   "virtius": "QdLvm4xXZC",
+   "stats_link": "https://virti.us/session?s=QdLvm4xXZC",
+   "video_link": "https://www.espn.com/watch/player/_/id/8f01af8a-8500-4996-8bed-ce47f26ae982",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31674"
+  },
+  {
+   "id": 31664,
+   "date": "2026-01-17",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-17T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Brockport",
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Northern Illinois"
+   ],
+   "virtius": "sgE3665OGb",
+   "stats_link": "https://virti.us/session?s=sgE3665OGb",
+   "video_link": "https://www.espn.com/watch/player/_/id/c0c1e079-47d6-43f3-85cc-afdf17076ae9?om-navmethod=espn:globalsearch:results",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31664"
+  },
+  {
+   "id": 31670,
+   "date": "2026-01-17",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-17T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "Clemson"
+   ],
+   "virtius": "lJgguzvWFL",
+   "stats_link": "https://virti.us/session?s=lJgguzvWFL",
+   "video_link": "https://www.espn.com/watch/player/_/id/c7cfdb17-08ed-46b0-9ca7-3f7f45f37a13",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31670"
+  },
+  {
+   "id": 31672,
+   "date": "2026-01-17",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-17T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Ohio State"
+   ],
+   "virtius": "PqN7VI3cO2",
+   "stats_link": "https://virti.us/session?s=PqN7VI3cO2",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/ohio-state-at-rutgers/2054830",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31672"
+  },
+  {
+   "id": 31666,
+   "date": "2026-01-17",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-17T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Michigan State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/index.html?id=627461",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/michigan-state-at-iowa/2054831",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31666"
+  },
+  {
+   "id": 31668,
+   "date": "2026-01-17",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-17T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Michigan"
+   ],
+   "virtius": "S1WhKhcrIK",
+   "stats_link": "https://virti.us/session?s=S1WhKhcrIK",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/michigan-at-minnesota/2054837",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31668"
+  },
+  {
+   "id": 31661,
+   "date": "2026-01-17",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-17T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Nebraska"
+   ],
+   "virtius": "p4OyNaVP3X",
+   "stats_link": "https://virti.us/session?s=p4OyNaVP3X",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/nebraska-at-ucla/2054842",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31661"
+  },
+  {
+   "id": 31676,
+   "date": "2026-01-17",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-18T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Washington"
+   ],
+   "virtius": "3EIc9F_0Qt",
+   "stats_link": "https://virti.us/session?s=3EIc9F_0Qt",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/washington-at-maryland/2054848",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31676"
+  },
+  {
+   "id": 31678,
+   "date": "2026-01-18",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-18T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Bowling Green"
+   ],
+   "virtius": "ezmvitnAO-",
+   "stats_link": "https://virti.us/session?s=ezmvitnAO-",
+   "video_link": "https://www.espn.com/watch/player/_/id/84247594-40fd-4f02-aac3-2f00838b9ba7",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31678"
+  },
+  {
+   "id": 31682,
+   "date": "2026-01-18",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-18T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington"
+   ],
+   "away": [
+    "Cornell",
+    "Pennsylvania",
+    "West Chester"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "Cornell",
+    "Pennsylvania"
+   ],
+   "virtius": "q5nv2TSvMg",
+   "stats_link": "https://virti.us/session?s=q5nv2TSvMg",
+   "video_link": "https://www.espn.com/watch/player/_/id/b6803e7d-9a64-4f98-9362-7467c5167da4?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31682"
+  },
+  {
+   "id": 31687,
+   "date": "2026-01-18",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-18T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Fisk",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "West Virginia"
+   ],
+   "virtius": "EHciV5q2lV",
+   "stats_link": "https://virti.us/session?s=EHciV5q2lV",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31687"
+  },
+  {
+   "id": 31689,
+   "date": "2026-01-18",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-18T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Yale"
+   ],
+   "away": [
+    "Brown"
+   ],
+   "d1_teams": [
+    "Yale",
+    "Brown"
+   ],
+   "virtius": "movv9e95zQ",
+   "stats_link": "https://virti.us/session?s=movv9e95zQ",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31689"
+  },
+  {
+   "id": 31691,
+   "date": "2026-01-18",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-18T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Western Michigan"
+   ],
+   "virtius": "znQnrta6LJ",
+   "stats_link": "https://virti.us/session?s=znQnrta6LJ",
+   "video_link": "https://www.espn.com/watch/player/_/id/f668f529-8038-42d8-aeaf-06868f41e65f?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31691"
+  },
+  {
+   "id": 31697,
+   "date": "2026-01-18",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-18T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Air Force",
+    "Bridgeport",
+    "Iowa State"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "Air Force",
+    "Iowa State"
+   ],
+   "virtius": "C3uv3h30_5",
+   "stats_link": "https://virti.us/session?s=C3uv3h30_5",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31697"
+  },
+  {
+   "id": 31693,
+   "date": "2026-01-18",
+   "time_et": "15:00:00",
+   "start_utc": "2026-01-18T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "Centenary College"
+   ],
+   "d1_teams": [
+    "Illinois State"
+   ],
+   "virtius": "gxdXjVMD3w",
+   "stats_link": "https://virti.us/session?s=gxdXjVMD3w",
+   "video_link": "https://gocentenary.com/links/1spzb4",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31693"
+  },
+  {
+   "id": 31701,
+   "date": "2026-01-18",
+   "time_et": "15:45:00",
+   "start_utc": "2026-01-18T20:45:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "Stanford"
+   ],
+   "virtius": "Gh9PAmwdZ4",
+   "stats_link": "https://virti.us/session?s=Gh9PAmwdZ4",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31701"
+  },
+  {
+   "id": 31703,
+   "date": "2026-01-18",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-18T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "California"
+   ],
+   "virtius": "cjb8NV57va",
+   "stats_link": "https://virti.us/session?s=cjb8NV57va",
+   "video_link": "https://www.espn.com/watch/player/_/id/2ae0e5bb-c347-46f2-83a7-b18c9626aa7a",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31703"
+  },
+  {
+   "id": 31699,
+   "date": "2026-01-18",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-18T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "San Jose State"
+   ],
+   "virtius": "qodSexWFZH",
+   "stats_link": "https://virti.us/session?s=qodSexWFZH",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31699"
+  },
+  {
+   "id": 31705,
+   "date": "2026-01-18",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-18T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Auburn"
+   ],
+   "virtius": "3bgpsILyO1",
+   "stats_link": "https://virti.us/session?s=3bgpsILyO1",
+   "video_link": "https://www.espn.com/watch/player/_/id/a8dae24d-01c6-42e2-a877-8d9ee61fdeb0",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31705"
+  },
+  {
+   "id": 31744,
+   "date": "2026-01-23",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-23T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "S.E. Missouri"
+   ],
+   "virtius": "KGfuOo4YTu",
+   "stats_link": "https://virti.us/session?s=KGfuOo4YTu",
+   "video_link": "https://www.espn.com/watch/player/_/id/d1a64f99-e767-4203-b6a6-dc4dce3282d1",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31744"
+  },
+  {
+   "id": 32609,
+   "date": "2026-01-23",
+   "time_et": "15:45:00",
+   "start_utc": "2026-01-23T20:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Georgia"
+   ],
+   "virtius": "7qxSZapd--",
+   "stats_link": "https://virti.us/session?s=7qxSZapd--",
+   "video_link": "https://www.espn.com/watch/player/_/id/a32f620c-d931-4f59-920c-d804132295fa",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32609"
+  },
+  {
+   "id": 31715,
+   "date": "2026-01-23",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-23T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "George Washington",
+    "Pennsylvania",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Temple",
+    "George Washington",
+    "Pennsylvania"
+   ],
+   "virtius": "Vlx4JpcKXy",
+   "stats_link": "https://virti.us/session?s=Vlx4JpcKXy",
+   "video_link": "https://www.espn.com/watch/player/_/id/f6e20e6e-48c1-44aa-91ae-3b4634f3f9b7?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31715"
+  },
+  {
+   "id": 31733,
+   "date": "2026-01-23",
+   "time_et": "18:45:00",
+   "start_utc": "2026-01-23T23:45:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "Pittsburgh"
+   ],
+   "virtius": "FOVYZjX16j",
+   "stats_link": "https://virti.us/session?s=FOVYZjX16j",
+   "video_link": "https://www.espn.com/watch/player/_/id/ae529359-ad45-40a5-ae41-0a8d2da6bd38",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31733"
+  },
+  {
+   "id": 31721,
+   "date": "2026-01-23",
+   "time_et": "19:30:00",
+   "start_utc": "2026-01-24T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Missouri"
+   ],
+   "virtius": "hWlTqsQWPZ",
+   "stats_link": "https://scores.virti.us/?s=hWlTqsQWPZ",
+   "video_link": "https://www.espn.com/watch/player/_/id/dda09005-c932-4ebf-b82e-61c4759621b1",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31721"
+  },
+  {
+   "id": 31725,
+   "date": "2026-01-23",
+   "time_et": "19:30:00",
+   "start_utc": "2026-01-24T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Kentucky"
+   ],
+   "virtius": "v70RnqTKph",
+   "stats_link": "https://virti.us/session?s=v70RnqTKph",
+   "video_link": "https://www.espn.com/watch/player/_/id/44f3df8d-a883-418e-a18c-d9f52664167d",
+   "video_desc": "ESPN2",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31725"
+  },
+  {
+   "id": 31709,
+   "date": "2026-01-23",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-24T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Towson"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Towson"
+   ],
+   "virtius": "gHJjxIybgG",
+   "stats_link": "https://scores.virti.us/?s=gHJjxIybgG",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31709"
+  },
+  {
+   "id": 31742,
+   "date": "2026-01-23",
+   "time_et": "20:00:00",
+   "start_utc": "2026-01-24T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Florida"
+   ],
+   "virtius": "2xQJ5DbATf",
+   "stats_link": "https://virti.us/session?s=2xQJ5DbATf",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31742"
+  },
+  {
+   "id": 31731,
+   "date": "2026-01-23",
+   "time_et": "20:30:00",
+   "start_utc": "2026-01-24T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=642851&vislive=sjsu",
+   "video_link": "https://themw.com/news/2026/01/02/san-jose-state-at-utah-state-23/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31731"
+  },
+  {
+   "id": 31740,
+   "date": "2026-01-23",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-24T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "BYU"
+   ],
+   "virtius": "PIAv4WdUrN",
+   "stats_link": "https://virti.us/session?s=PIAv4WdUrN",
+   "video_link": "https://www.espn.com/watch/player/_/id/c010f83b-ff11-44c1-9915-518c6115c95c",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31740"
+  },
+  {
+   "id": 32606,
+   "date": "2026-01-23",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-24T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "Boise State",
+    "Eastern Michigan",
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Boise State",
+    "Eastern Michigan",
+    "Kent State"
+   ],
+   "virtius": "oIGnf3aWYd",
+   "stats_link": "https://virti.us/session?s=oIGnf3aWYd",
+   "video_link": "https://themw.com/news/2026/01/02/eastern-michigan-boise-state-kent-state-at-air-force/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32606"
+  },
+  {
+   "id": 31729,
+   "date": "2026-01-23",
+   "time_et": "21:30:00",
+   "start_utc": "2026-01-24T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "UC Davis",
+    "UW-Whitewater",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "UC Davis",
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=6918_1769103021784",
+   "video_link": "https://www.overnght.com/player/f03bd853-1f74-4ce2-a434-5f3ea44f4b57",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31729"
+  },
+  {
+   "id": 32603,
+   "date": "2026-01-23",
+   "time_et": "21:30:00",
+   "start_utc": "2026-01-24T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Rutgers"
+   ],
+   "virtius": "1t-Tp7y7H1",
+   "stats_link": "https://virti.us/session?s=1t-Tp7y7H1",
+   "video_link": "http://admin.bigten.org/",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32603"
+  },
+  {
+   "id": 31738,
+   "date": "2026-01-23",
+   "time_et": "23:00:00",
+   "start_utc": "2026-01-24T04:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=6922_1769214181269",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31738"
+  },
+  {
+   "id": 32638,
+   "date": "2026-01-24",
+   "time_et": "12:30:00",
+   "start_utc": "2026-01-24T17:30:00.000Z",
+   "desc": "",
+   "home": [
+    "West Chester"
+   ],
+   "away": [
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "William & Mary"
+   ],
+   "virtius": "d8b1GECr3c",
+   "stats_link": "https://scores.virti.us/?s=d8b1GECr3c",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32638"
+  },
+  {
+   "id": 31780,
+   "date": "2026-01-24",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-24T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Maryland"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Maryland"
+   ],
+   "virtius": "K0LSEFxP9F",
+   "stats_link": "https://virti.us/session?s=K0LSEFxP9F",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/maryland-at-penn-state/2054935",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31780"
+  },
+  {
+   "id": 31789,
+   "date": "2026-01-24",
+   "time_et": "14:00:00",
+   "start_utc": "2026-01-24T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Illinois"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Illinois"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=626105",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": "FOX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31789"
+  },
+  {
+   "id": 31746,
+   "date": "2026-01-24",
+   "time_et": "15:00:00",
+   "start_utc": "2026-01-24T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "Ball State"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "Ball State"
+   ],
+   "virtius": "TvtIxfvGzz",
+   "stats_link": "https://virti.us/session?s=TvtIxfvGzz",
+   "video_link": "https://www.espn.com/watch/player/_/id/1e1ec6a0-1252-4e7c-995e-37ae30f09a32",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31746"
+  },
+  {
+   "id": 31750,
+   "date": "2026-01-24",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-24T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Minnesota"
+   ],
+   "virtius": "mWUmnwdPpz",
+   "stats_link": "https://virti.us/session?s=mWUmnwdPpz",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": "Big",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31750"
+  },
+  {
+   "id": 31756,
+   "date": "2026-01-24",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-24T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Iowa"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Iowa"
+   ],
+   "virtius": "zoUUOwf54j",
+   "stats_link": "https://virti.us/session?s=zoUUOwf54j",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/iowa-at-michigan/2054912",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31756"
+  },
+  {
+   "id": 31764,
+   "date": "2026-01-24",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-24T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Denver"
+   ],
+   "virtius": "_62BQZiChE",
+   "stats_link": "https://virti.us/session?s=_62BQZiChE",
+   "video_link": "https://www.espn.com/watch/player/_/id/f502ec06-e4a0-4144-bbd9-97be9ebaad4f",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31764"
+  },
+  {
+   "id": 31760,
+   "date": "2026-01-24",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-24T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bridgeport"
+   ],
+   "away": [
+    "Brown",
+    "LIU",
+    "Springfield College"
+   ],
+   "d1_teams": [
+    "Brown",
+    "LIU"
+   ],
+   "virtius": "0kp_rjcy0W",
+   "stats_link": "https://virti.us/session?s=0kp_rjcy0W",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31760"
+  },
+  {
+   "id": 31762,
+   "date": "2026-01-24",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-24T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Illinois State"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Illinois State"
+   ],
+   "virtius": "s0vLaGw5e3",
+   "stats_link": "https://virti.us/session?s=s0vLaGw5e3",
+   "video_link": "https://www.espn.com/watch/player/_/id/7260aebf-ecd5-4a3c-8b3a-17f577ce4081?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31762"
+  },
+  {
+   "id": 31754,
+   "date": "2026-01-24",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-25T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "California",
+    "North Carolina State"
+   ],
+   "virtius": "p4AUFPAq9w",
+   "stats_link": "https://virti.us/session?s=p4AUFPAq9w",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31754"
+  },
+  {
+   "id": 31772,
+   "date": "2026-01-25",
+   "time_et": "13:00:00",
+   "start_utc": "2026-01-25T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "UCLA"
+   ],
+   "virtius": "y_wp7CWqKE",
+   "stats_link": "https://virti.us/session?s=y_wp7CWqKE",
+   "video_link": "https://www.foxsports.com/live",
+   "video_desc": "FOX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31772"
+  },
+  {
+   "id": 31774,
+   "date": "2026-01-25",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-25T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Utah State"
+   ],
+   "virtius": "AlHNJ9aEOB",
+   "stats_link": "https://virti.us/session?s=AlHNJ9aEOB",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31774"
+  },
+  {
+   "id": 31782,
+   "date": "2026-01-25",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-25T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "Clemson"
+   ],
+   "virtius": "EpOqKhlHNb",
+   "stats_link": "https://virti.us/session?s=EpOqKhlHNb",
+   "video_link": "https://www.espn.com/watch/player/_/id/2d1dd916-033a-41bd-a60d-570a975afb8e",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31782"
+  },
+  {
+   "id": 31787,
+   "date": "2026-01-25",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-25T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa State"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "Iowa State",
+    "Utah"
+   ],
+   "virtius": "aQpOB41ThF",
+   "stats_link": "https://virti.us/session?s=aQpOB41ThF",
+   "video_link": "https://www.espn.com/watch/player/_/id/17670eda-1d1a-402a-a33b-91f4fddaacd8",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31787"
+  },
+  {
+   "id": 31778,
+   "date": "2026-01-25",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-25T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": "https://goseawolves.com/gymstats",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31778"
+  },
+  {
+   "id": 31776,
+   "date": "2026-01-27",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-27T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Yale"
+   ],
+   "away": [
+    "New Hampshire"
+   ],
+   "d1_teams": [
+    "Yale",
+    "New Hampshire"
+   ],
+   "virtius": "qfY-3z4JlQ",
+   "stats_link": "https://virti.us/session?s=qfY-3z4JlQ",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31776"
+  },
+  {
+   "id": 32653,
+   "date": "2026-01-27",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-27T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Cornell"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Cornell",
+    "Bowling Green"
+   ],
+   "virtius": "qmPRCyXVno",
+   "stats_link": "https://scores.virti.us/?s=qmPRCyXVno",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32653"
+  },
+  {
+   "id": 31791,
+   "date": "2026-01-29",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-29T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Eastern Michigan"
+   ],
+   "virtius": "TmEJFvtrrj",
+   "stats_link": "https://virti.us/session?s=TmEJFvtrrj",
+   "video_link": "https://www.espn.com/watch/player/_/id/d60a41e4-0942-4d27-908a-70632612a97c?om-navmethod=espn:globalsearch:results",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31791"
+  },
+  {
+   "id": 31805,
+   "date": "2026-01-30",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-31T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Arkansas"
+   ],
+   "virtius": "aKSPfgg0NK",
+   "stats_link": "https://virti.us/session?s=aKSPfgg0NK",
+   "video_link": "https://www.espn.com/watch/player/_/id/f46a93db-c2d7-4931-87da-e806980ab249",
+   "video_desc": "ESPN2",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31805"
+  },
+  {
+   "id": 31809,
+   "date": "2026-01-30",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-31T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Central Michigan",
+    "Fisk",
+    "Temple"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Central Michigan",
+    "Temple"
+   ],
+   "virtius": "L_aMxS0wGe",
+   "stats_link": "https://virti.us/session?s=L_aMxS0wGe",
+   "video_link": "https://www.espn.com/watch/player/_/id/e6ea5040-5804-4454-bf5f-7ecd98c055d2",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31809"
+  },
+  {
+   "id": 31824,
+   "date": "2026-01-30",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-31T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "North Carolina"
+   ],
+   "virtius": "5VNRLbX-bg",
+   "stats_link": "https://virti.us/session?s=5VNRLbX-bg",
+   "video_link": "https://www.espn.com/watch/player/_/id/d8c4aefb-a659-4165-a8d9-8a682c73923e",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31824"
+  },
+  {
+   "id": 32610,
+   "date": "2026-01-30",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-31T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Oklahoma"
+   ],
+   "virtius": "rIKiGhEwTu",
+   "stats_link": "https://virti.us/session?s=rIKiGhEwTu",
+   "video_link": "https://www.espn.com/watch/player/_/id/e391f67e-541d-468d-8107-6b0784296f81",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32610"
+  },
+  {
+   "id": 32654,
+   "date": "2026-01-30",
+   "time_et": "19:00:00",
+   "start_utc": "2026-01-31T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Cornell",
+    "Kent State",
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Cornell",
+    "Kent State",
+    "Pittsburgh"
+   ],
+   "virtius": "kfULK-83rl",
+   "stats_link": "https://virti.us/session?s=kfULK-83rl",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32654"
+  },
+  {
+   "id": 31795,
+   "date": "2026-01-30",
+   "time_et": "19:30:00",
+   "start_utc": "2026-01-31T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Oregon State"
+   ],
+   "virtius": "zIQ5fk6ubH",
+   "stats_link": "https://virti.us/session?s=zIQ5fk6ubH",
+   "video_link": "https://www.espn.com/watch/player/_/id/4e5c728d-c944-40a7-b096-d1978a1c4356",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31795"
+  },
+  {
+   "id": 31797,
+   "date": "2026-01-30",
+   "time_et": "19:45:00",
+   "start_utc": "2026-01-31T00:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "LSU"
+   ],
+   "virtius": "5j0yATMveQ",
+   "stats_link": "https://virti.us/session?s=5j0yATMveQ",
+   "video_link": "https://virti.us/session?s=5j0yATMveQ",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31797"
+  },
+  {
+   "id": 31799,
+   "date": "2026-01-30",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-31T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Arizona"
+   ],
+   "virtius": "Xfe98lb-_J",
+   "stats_link": "https://virti.us/session?s=Xfe98lb-_J",
+   "video_link": "https://www.espn.com/watch/player/_/id/51686483-a048-4119-b02b-f6d07effe9cd?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31799"
+  },
+  {
+   "id": 31803,
+   "date": "2026-01-30",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-31T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Air Force",
+    "Sacramento State",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Air Force",
+    "Sacramento State",
+    "Utah State"
+   ],
+   "virtius": "8ywbYTYyrj",
+   "stats_link": "https://virti.us/session?s=8ywbYTYyrj",
+   "video_link": "https://themw.com/news/2026/01/02/utah-state-air-force-sacramento-state-at-boise-state/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31803"
+  },
+  {
+   "id": 31819,
+   "date": "2026-01-30",
+   "time_et": "21:00:00",
+   "start_utc": "2026-01-31T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Arizona State"
+   ],
+   "virtius": "Yn3xXqRx_D",
+   "stats_link": "https://virti.us/session?s=Yn3xXqRx_D",
+   "video_link": "https://www.espn.com/watch/catalog/6a062a95-0063-3abe-aa09-6a0b6866339f/ncaa-women-s-gymnastics#bucketId=29779&sourceCollection=Browse_By_League",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31819"
+  },
+  {
+   "id": 31813,
+   "date": "2026-01-30",
+   "time_et": "22:00:00",
+   "start_utc": "2026-01-31T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "California"
+   ],
+   "virtius": "mAaey25UeT",
+   "stats_link": "https://virti.us/session?s=mAaey25UeT",
+   "video_link": "https://www.espn.com/watch/player/_/id/74e5a3e4-09b5-4f27-86cb-acb2eabb8597",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31813"
+  },
+  {
+   "id": 31815,
+   "date": "2026-01-30",
+   "time_et": "22:00:00",
+   "start_utc": "2026-01-31T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "UC Davis"
+   ],
+   "virtius": "q7MSddb4G8",
+   "stats_link": "https://virti.us/session?s=q7MSddb4G8",
+   "video_link": "https://www.overnght.com/player/924a533d-8c29-4877-8d5f-97c766779fbc",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31815"
+  },
+  {
+   "id": 31817,
+   "date": "2026-01-30",
+   "time_et": "22:00:00",
+   "start_utc": "2026-01-31T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Washington"
+   ],
+   "virtius": "xJWEgtJCQ7",
+   "stats_link": "https://virti.us/session?s=xJWEgtJCQ7",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/washington-at-ucla/2054986",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31817"
+  },
+  {
+   "id": 31828,
+   "date": "2026-01-31",
+   "time_et": "16:00:00",
+   "start_utc": "2026-01-31T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Ohio State"
+   ],
+   "virtius": "Oc9YG41SQX",
+   "stats_link": "https://virti.us/session?s=Oc9YG41SQX",
+   "video_link": "https://www.bigtenplus.com/en-int/page/home",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31828"
+  },
+  {
+   "id": 31830,
+   "date": "2026-01-31",
+   "time_et": "17:00:00",
+   "start_utc": "2026-01-31T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Iowa"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Iowa"
+   ],
+   "virtius": "WUjGeC1SXo",
+   "stats_link": "https://virti.us/session?s=WUjGeC1SXo",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/iowa-at-minnesota/2055017",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31830"
+  },
+  {
+   "id": 31834,
+   "date": "2026-01-31",
+   "time_et": "18:00:00",
+   "start_utc": "2026-01-31T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "George Washington"
+   ],
+   "d1_teams": [
+    "LIU",
+    "George Washington"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.meetscoresonline.com/R35933",
+   "video_link": "http://necfrontrow.com/game/14414",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31834"
+  },
+  {
+   "id": 31839,
+   "date": "2026-02-01",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-01T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Towson",
+    "Yale"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "Towson",
+    "Yale"
+   ],
+   "virtius": "VJf7p783bF",
+   "stats_link": "https://scores.virti.us/?s=VJf7p783bF",
+   "video_link": "https://americaeast.com/watch/default.aspx?Live=17717&path=new_hampshire",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31839"
+  },
+  {
+   "id": 31851,
+   "date": "2026-02-01",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-01T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Bowling Green",
+    "Greenville",
+    "UW-Eau Claire"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Bowling Green"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.statbroadcast.com/events/statbroadcast.php?t=1&gid=wmu",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31851"
+  },
+  {
+   "id": 31841,
+   "date": "2026-02-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "UW-La Crosse"
+   ],
+   "d1_teams": [
+    "Northern Illinois"
+   ],
+   "virtius": "w1wF5oYHzz",
+   "stats_link": "https://virti.us/session?s=w1wF5oYHzz",
+   "video_link": "https://www.espn.com/watch/player/_/id/fb61a53a-1401-4dbc-b72e-08b6d4a1b5bd",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31841"
+  },
+  {
+   "id": 31845,
+   "date": "2026-02-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Ball State",
+    "Illinois State",
+    "UW-Oshkosh"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "Ball State",
+    "Illinois State"
+   ],
+   "virtius": "hoQR6v3IUn",
+   "stats_link": "https://virti.us/session?s=hoQR6v3IUn",
+   "video_link": "https://www.espn.com/watch/player/_/id/5af758c0-14ec-403e-9c25-e3d95b1f1afe",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31845"
+  },
+  {
+   "id": 31853,
+   "date": "2026-02-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Brown"
+   ],
+   "away": [
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Brown"
+   ],
+   "virtius": "DCjuaudarq",
+   "stats_link": "https://virti.us/session?s=DCjuaudarq",
+   "video_link": "https://www.espn.com/search/_/q/brown/o/watch/appearance",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31853"
+  },
+  {
+   "id": 31857,
+   "date": "2026-02-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pennsylvania"
+   ],
+   "away": [
+    "Bridgeport"
+   ],
+   "d1_teams": [
+    "Pennsylvania"
+   ],
+   "virtius": "ZE_gji7SNE",
+   "stats_link": "https://virti.us/session?s=ZE_gji7SNE",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31857"
+  },
+  {
+   "id": 31859,
+   "date": "2026-02-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Penn State"
+   ],
+   "virtius": "HhTaiFRe_P",
+   "stats_link": "https://virti.us/session?s=HhTaiFRe_P",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/penn-state-at-rutgers/2055004",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31859"
+  },
+  {
+   "id": 31855,
+   "date": "2026-02-01",
+   "time_et": "15:00:00",
+   "start_utc": "2026-02-01T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Maryland"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Maryland"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/maryland-at-illinois/2055030",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31855"
+  },
+  {
+   "id": 31869,
+   "date": "2026-02-01",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-01T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Michigan State"
+   ],
+   "virtius": "tApoJPWyqp",
+   "stats_link": "https://virti.us/session?s=tApoJPWyqp",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": "Big",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31869"
+  },
+  {
+   "id": 31871,
+   "date": "2026-02-01",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-01T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "North Carolina State"
+   ],
+   "virtius": "BGiGn13X_P",
+   "stats_link": "https://virti.us/session?s=BGiGn13X_P",
+   "video_link": "https://www.espn.com/watch/player/_/id/996952ec-5318-476a-b36e-6d25fb8dbe83",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31871"
+  },
+  {
+   "id": 31865,
+   "date": "2026-02-01",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-01T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Iowa State"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Iowa State"
+   ],
+   "virtius": "vThfP6onaM",
+   "stats_link": "https://virti.us/session?s=vThfP6onaM",
+   "video_link": "https://www.espn.com/watch/player/_/id/7daee20b-a1d7-4767-9c67-2777b63ba39b",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31865"
+  },
+  {
+   "id": 32629,
+   "date": "2026-02-01",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-01T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Southern Utah",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Southern Utah"
+   ],
+   "virtius": "a3gct1veWh",
+   "stats_link": "https://scores.virti.us/?s=a3gct1veWh",
+   "video_link": "https://sjsuspartans.com/watch",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32629"
+  },
+  {
+   "id": 31873,
+   "date": "2026-02-01",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-01T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Auburn"
+   ],
+   "virtius": "0FuvyN3zLm",
+   "stats_link": "https://virti.us/session?s=0FuvyN3zLm",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31873"
+  },
+  {
+   "id": 31879,
+   "date": "2026-02-06",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-07T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Georgia"
+   ],
+   "virtius": "gNCA823eMJ",
+   "stats_link": "https://scores.virti.us/?s=gNCA823eMJ",
+   "video_link": "https://www.espn.com/watch/player/_/id/c9785d68-9a58-4a75-a2a3-8f2e03df235a",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31879"
+  },
+  {
+   "id": 31904,
+   "date": "2026-02-06",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-07T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pennsylvania"
+   ],
+   "away": [
+    "Cornell",
+    "George Washington",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "Cornell",
+    "George Washington",
+    "William & Mary"
+   ],
+   "virtius": "d62-t9HLM3",
+   "stats_link": "https://scores.virti.us/?s=d62-t9HLM3",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31904"
+  },
+  {
+   "id": 32656,
+   "date": "2026-02-06",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-07T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "West Virginia",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "West Virginia",
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.statbroadcast.com/events/statbroadcast.php?t=1&gid=wmu",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32656"
+  },
+  {
+   "id": 32655,
+   "date": "2026-02-06",
+   "time_et": "19:30:00",
+   "start_utc": "2026-02-07T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Bowling Green",
+    "Fisk",
+    "Simpson"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "Bowling Green"
+   ],
+   "virtius": "4f7AzkXPh-",
+   "stats_link": "https://scores.virti.us/?s=4f7AzkXPh-",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32655"
+  },
+  {
+   "id": 31896,
+   "date": "2026-02-06",
+   "time_et": "20:00:00",
+   "start_utc": "2026-02-07T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Kentucky"
+   ],
+   "virtius": "NdjYLdC_XZ",
+   "stats_link": "https://scores.virti.us/?s=NdjYLdC_XZ",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31896"
+  },
+  {
+   "id": 31894,
+   "date": "2026-02-06",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-07T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "BYU"
+   ],
+   "virtius": "OYELbVnNUw",
+   "stats_link": "https://scores.virti.us/?s=OYELbVnNUw",
+   "video_link": "https://www.overnght.com/player/c01e7c27-944d-416b-b2ec-7c79e4c6d501",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31894"
+  },
+  {
+   "id": 31908,
+   "date": "2026-02-06",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-07T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Penn State"
+   ],
+   "virtius": "JSvdEUjQq7",
+   "stats_link": "https://scores.virti.us/?s=JSvdEUjQq7",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31908"
+  },
+  {
+   "id": 32611,
+   "date": "2026-02-06",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-07T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Alabama"
+   ],
+   "virtius": "md84HmnPMK",
+   "stats_link": "https://scores.virti.us/?s=md84HmnPMK",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32611"
+  },
+  {
+   "id": 31877,
+   "date": "2026-02-06",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-07T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Utah"
+   ],
+   "virtius": "k5uUooufZn",
+   "stats_link": "https://scores.virti.us/?s=k5uUooufZn",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31877"
+  },
+  {
+   "id": 31900,
+   "date": "2026-02-06",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-07T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Oregon State",
+    "San Jose State",
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Oregon State",
+    "San Jose State",
+    "UC Davis"
+   ],
+   "virtius": "EyBpS2WSAi",
+   "stats_link": "https://scores.virti.us/?s=EyBpS2WSAi",
+   "video_link": "https://themw.com/news/2026/01/28/san-jose-state-oregon-state-uc-davis-at-boise-state/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31900"
+  },
+  {
+   "id": 31912,
+   "date": "2026-02-06",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-07T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Florida"
+   ],
+   "virtius": "9KIhuVEgbI",
+   "stats_link": "https://scores.virti.us/?s=9KIhuVEgbI",
+   "video_link": "https://www.espn.com/watch/player/_/id/98917fd7-4f05-4ab3-b133-2bfe4c3d2589",
+   "video_desc": "ESPN2",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31912"
+  },
+  {
+   "id": 31925,
+   "date": "2026-02-06",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-07T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "Alaska",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Alaska",
+    "Utah State"
+   ],
+   "virtius": "78FDHQKJ8B",
+   "stats_link": "https://scores.virti.us/?s=78FDHQKJ8B",
+   "video_link": "https://themw.com/watch/?sport=100&school=56",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31925"
+  },
+  {
+   "id": 31906,
+   "date": "2026-02-06",
+   "time_et": "22:00:00",
+   "start_utc": "2026-02-07T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "Pittsburgh"
+   ],
+   "virtius": "hJS0s5bH62",
+   "stats_link": "https://scores.virti.us/?s=hJS0s5bH62",
+   "video_link": "https://www.espn.com/watch/player/_/id/ccef37e6-e47c-43cb-8191-e15edfba3fe5",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31906"
+  },
+  {
+   "id": 31914,
+   "date": "2026-02-07",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-07T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Yale"
+   ],
+   "away": [
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Yale"
+   ],
+   "virtius": "HJ9-Fy2pTZ",
+   "stats_link": "https://scores.virti.us/?s=HJ9-Fy2pTZ",
+   "video_link": "https://www.espn.com/watch/player/_/id/a11484ef-bd9e-4e9f-9f1e-9e37e53b2e26?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31914"
+  },
+  {
+   "id": 31918,
+   "date": "2026-02-07",
+   "time_et": "15:00:00",
+   "start_utc": "2026-02-07T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "Towson",
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=627756",
+   "video_link": "https://www.youtube.com/@TheTowsonTigers",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31918"
+  },
+  {
+   "id": 31916,
+   "date": "2026-02-07",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-07T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Denver"
+   ],
+   "virtius": "4ecBVJea9t",
+   "stats_link": "https://scores.virti.us/?s=4ecBVJea9t",
+   "video_link": "https://www.espn.com/watch/player/_/id/5819a626-df81-41d6-b324-0dd9dc77d30d",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31916"
+  },
+  {
+   "id": 31929,
+   "date": "2026-02-07",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-07T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Michigan"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=626106",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/michigan-at-ohio-state/2080467",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31929"
+  },
+  {
+   "id": 31922,
+   "date": "2026-02-07",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-07T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/index.html?id=627462",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/nebraska-at-iowa/2080470",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31922"
+  },
+  {
+   "id": 31927,
+   "date": "2026-02-07",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-07T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "UCLA"
+   ],
+   "virtius": "UK43F2OoT_",
+   "stats_link": "https://scores.virti.us/?s=UK43F2OoT_",
+   "video_link": "https://www.bigtenplus.com/en-int/schedule?date=2026-02-07",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31927"
+  },
+  {
+   "id": 31920,
+   "date": "2026-02-07",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-07T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "Illinois"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Illinois"
+   ],
+   "virtius": "tYkvNiEnpf",
+   "stats_link": "https://scores.virti.us/?s=tYkvNiEnpf",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31920"
+  },
+  {
+   "id": 31933,
+   "date": "2026-02-07",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-07T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Rutgers"
+   ],
+   "virtius": "BixSVDdxAJ",
+   "stats_link": "https://scores.virti.us/?s=BixSVDdxAJ",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/rutgers-at-maryland/2080478",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31933"
+  },
+  {
+   "id": 31935,
+   "date": "2026-02-07",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-07T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "California"
+   ],
+   "virtius": "Pw3hhPDw8B",
+   "stats_link": "https://scores.virti.us/?s=Pw3hhPDw8B",
+   "video_link": "https://www.espn.com/watch/player/_/id/815a1326-a11f-40b6-bf53-54e7c223c0bd",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31935"
+  },
+  {
+   "id": 31938,
+   "date": "2026-02-08",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-08T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Illinois State",
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Illinois State",
+    "Kent State"
+   ],
+   "virtius": "pdDgQYzwKp",
+   "stats_link": "https://scores.virti.us/?s=pdDgQYzwKp",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31938"
+  },
+  {
+   "id": 31940,
+   "date": "2026-02-08",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-08T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Central Michigan"
+   ],
+   "virtius": "Y57w-ypYT9",
+   "stats_link": "https://scores.virti.us/?s=Y57w-ypYT9",
+   "video_link": "https://www.espn.com/watch/player/_/id/ff4a5eef-0b19-48da-80be-8c0ed43c3451?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31940"
+  },
+  {
+   "id": 31943,
+   "date": "2026-02-08",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-08T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Springfield College"
+   ],
+   "away": [
+    "Brown",
+    "Rhode Island College"
+   ],
+   "d1_teams": [
+    "Brown"
+   ],
+   "virtius": "MS4le1VZ5I",
+   "stats_link": "https://scores.virti.us/?s=MS4le1VZ5I",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31943"
+  },
+  {
+   "id": 31948,
+   "date": "2026-02-08",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-08T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Fisk",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Bowling Green"
+   ],
+   "virtius": "MEIVM4lZPT",
+   "stats_link": "https://scores.virti.us/?s=MEIVM4lZPT",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31948"
+  },
+  {
+   "id": 31953,
+   "date": "2026-02-08",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-08T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Temple"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "Temple"
+   ],
+   "virtius": "A3r-YlelnP",
+   "stats_link": "https://scores.virti.us/?s=A3r-YlelnP",
+   "video_link": "https://americaeast.com/watch/default.aspx?Live=17713&path=new_hampshire",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31953"
+  },
+  {
+   "id": 31955,
+   "date": "2026-02-08",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-08T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Michigan State"
+   ],
+   "virtius": "sLrDaLzAks",
+   "stats_link": "https://scores.virti.us/?s=sLrDaLzAks",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/michigan-state-at-penn-state/2080498",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31955"
+  },
+  {
+   "id": 32612,
+   "date": "2026-02-08",
+   "time_et": "15:15:00",
+   "start_utc": "2026-02-08T20:15:00.000Z",
+   "desc": "Metroplex Challenge",
+   "home": [],
+   "away": [
+    "Arizona",
+    "Arkansas",
+    "Oklahoma",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Arkansas",
+    "Oklahoma"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32612"
+  },
+  {
+   "id": 31961,
+   "date": "2026-02-08",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-08T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "North Carolina"
+   ],
+   "virtius": "m7Xxpp0zAs",
+   "stats_link": "https://scores.virti.us/?s=m7Xxpp0zAs",
+   "video_link": "https://www.espn.com/watch/player/_/id/1278eca2-4e96-42f6-ad41-20814d6fcce2",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31961"
+  },
+  {
+   "id": 31965,
+   "date": "2026-02-09",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-10T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Alaska",
+    "Sacramento State",
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Alaska",
+    "Sacramento State",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=649937",
+   "video_link": "https://themw.com/watch/?sport=100&school=66",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31965"
+  },
+  {
+   "id": 31969,
+   "date": "2026-02-13",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Kent State"
+   ],
+   "virtius": "deuf-IZHTL",
+   "stats_link": "https://scores.virti.us/?s=deuf-IZHTL",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31969"
+  },
+  {
+   "id": 31975,
+   "date": "2026-02-13",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "Brown",
+    "William & Mary",
+    "Yale"
+   ],
+   "d1_teams": [
+    "Temple",
+    "Brown",
+    "William & Mary",
+    "Yale"
+   ],
+   "virtius": "sc3Va7d42-",
+   "stats_link": "https://scores.virti.us/?s=sc3Va7d42-",
+   "video_link": "https://www.espn.com/watch/player/_/id/d93fe8fc-ad08-42fe-9f80-d030eddf45fd",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31975"
+  },
+  {
+   "id": 31981,
+   "date": "2026-02-13",
+   "time_et": "18:45:00",
+   "start_utc": "2026-02-13T23:45:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "North Carolina State"
+   ],
+   "virtius": "flencA2-tY",
+   "stats_link": "https://scores.virti.us/?s=flencA2-tY",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31981"
+  },
+  {
+   "id": 31983,
+   "date": "2026-02-13",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-14T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Oklahoma"
+   ],
+   "virtius": "gLf7AdegRW",
+   "stats_link": "https://scores.virti.us/?s=gLf7AdegRW",
+   "video_link": "https://www.espn.com/watch/player/_/id/7a7ee378-c500-4e6e-b100-dc2c2e7457ae",
+   "video_desc": "ESPN2",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31983"
+  },
+  {
+   "id": 31987,
+   "date": "2026-02-13",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-14T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Missouri"
+   ],
+   "virtius": "_JObE39D3P",
+   "stats_link": "https://scores.virti.us/?s=_JObE39D3P",
+   "video_link": "https://www.espn.com/watch/player/_/id/8ade9afe-b37d-4a16-9578-b7250599dec9",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31987"
+  },
+  {
+   "id": 31992,
+   "date": "2026-02-13",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-14T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Chester"
+   ],
+   "away": [
+    "Towson",
+    "Ursinus College"
+   ],
+   "d1_teams": [
+    "Towson"
+   ],
+   "virtius": "8JmESPyZkx",
+   "stats_link": "https://scores.virti.us/?s=8JmESPyZkx",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31992"
+  },
+  {
+   "id": 31979,
+   "date": "2026-02-13",
+   "time_et": "19:30:00",
+   "start_utc": "2026-02-14T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Arkansas"
+   ],
+   "virtius": "haxR1eyXOS",
+   "stats_link": "https://scores.virti.us/?s=haxR1eyXOS",
+   "video_link": "https://www.espn.com/watch/player/_/id/f4ed7a5d-9ee4-457e-bc39-8c92cf715867",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31979"
+  },
+  {
+   "id": 31994,
+   "date": "2026-02-13",
+   "time_et": "20:45:00",
+   "start_utc": "2026-02-14T01:45:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Auburn"
+   ],
+   "virtius": "J7gHSsh5x-",
+   "stats_link": "https://scores.virti.us/?s=J7gHSsh5x-",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31994"
+  },
+  {
+   "id": 31989,
+   "date": "2026-02-13",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-14T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Utah",
+    "BYU"
+   ],
+   "virtius": "ih5XFSatoU",
+   "stats_link": "https://scores.virti.us/?s=ih5XFSatoU",
+   "video_link": "https://www.espn.com/watch/player/_/id/cad78d4e-6df5-4046-9770-ca93f3e248b2",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/31989"
+  },
+  {
+   "id": 32002,
+   "date": "2026-02-14",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-14T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Cortland State"
+   ],
+   "away": [
+    "Brockport",
+    "Cornell",
+    "Ithaca College",
+    "LIU",
+    "Utica"
+   ],
+   "d1_teams": [
+    "Cornell",
+    "LIU"
+   ],
+   "virtius": "ECfuS40Qj9",
+   "stats_link": "https://scores.virti.us/?s=ECfuS40Qj9",
+   "video_link": "https://www.cortlandreddragons.com/sports/2019/8/15/BlueFramePage.aspx",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32002"
+  },
+  {
+   "id": 32006,
+   "date": "2026-02-14",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-14T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Minnesota"
+   ],
+   "virtius": "01P3byhc6h",
+   "stats_link": "https://scores.virti.us/?s=01P3byhc6h",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/minnesota-at-penn-state/2080547",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32006"
+  },
+  {
+   "id": 32008,
+   "date": "2026-02-14",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-14T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Iowa"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Iowa"
+   ],
+   "virtius": "yx5JaF6pRu",
+   "stats_link": "https://scores.virti.us/?s=yx5JaF6pRu",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/iowa-at-rutgers/2080543",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32008"
+  },
+  {
+   "id": 32010,
+   "date": "2026-02-14",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-14T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Washington"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=626107",
+   "video_link": "https://www.bigtenplus.com/en-int/schedule?date=2026-02-14",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32010"
+  },
+  {
+   "id": 32004,
+   "date": "2026-02-14",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-14T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Southern Utah"
+   ],
+   "virtius": "LIfEhpf1v9",
+   "stats_link": "https://scores.virti.us/?s=LIfEhpf1v9",
+   "video_link": "https://www.youtube.com/pac12",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32004"
+  },
+  {
+   "id": 32018,
+   "date": "2026-02-14",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-14T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Arizona State"
+   ],
+   "virtius": "JAMXqyuVNF",
+   "stats_link": "https://scores.virti.us/?s=JAMXqyuVNF",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32018"
+  },
+  {
+   "id": 32012,
+   "date": "2026-02-14",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-15T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Michigan"
+   ],
+   "virtius": "sRODbpKVC0",
+   "stats_link": "https://scores.virti.us/?s=sRODbpKVC0",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32012"
+  },
+  {
+   "id": 32016,
+   "date": "2026-02-14",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-15T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "S.E. Missouri"
+   ],
+   "virtius": "p_RObghAwV",
+   "stats_link": "https://virti.us/session?s=p_RObghAwV",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32016"
+  },
+  {
+   "id": 32024,
+   "date": "2026-02-14",
+   "time_et": "20:15:00",
+   "start_utc": "2026-02-15T01:15:00.000Z",
+   "desc": "Metroplex Challenge",
+   "home": [],
+   "away": [
+    "Air Force",
+    "California",
+    "Georgia",
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "California",
+    "Georgia",
+    "Stanford"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.meetscoresonline.com/2026-TX-Metroplex-Challenge-Weekend-2",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32024"
+  },
+  {
+   "id": 32020,
+   "date": "2026-02-14",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-15T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Arizona"
+   ],
+   "virtius": "9mVFGPnmFw",
+   "stats_link": "https://scores.virti.us/?s=9mVFGPnmFw",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32020"
+  },
+  {
+   "id": 32026,
+   "date": "2026-02-15",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-15T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Eastern Michigan"
+   ],
+   "virtius": "VFjzN4-sDA",
+   "stats_link": "https://scores.virti.us/?s=VFjzN4-sDA",
+   "video_link": "https://www.espn.com/watch/player/_/id/758b6d50-166e-40c7-8bd8-b7d3b1bd24ac",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32026"
+  },
+  {
+   "id": 32031,
+   "date": "2026-02-15",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-15T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington"
+   ],
+   "away": [
+    "New Hampshire",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "New Hampshire",
+    "William & Mary"
+   ],
+   "virtius": "eHpwdybVUI",
+   "stats_link": "https://scores.virti.us/?s=eHpwdybVUI",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32031"
+  },
+  {
+   "id": 32040,
+   "date": "2026-02-15",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-15T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Northern Illinois"
+   ],
+   "virtius": "b-agB5veZQ",
+   "stats_link": "https://scores.virti.us/?s=b-agB5veZQ",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32040"
+  },
+  {
+   "id": 32047,
+   "date": "2026-02-15",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-15T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pennsylvania"
+   ],
+   "away": [
+    "Towson",
+    "West Chester"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "Towson"
+   ],
+   "virtius": "L_NC9NyZH9",
+   "stats_link": "https://scores.virti.us/?s=L_NC9NyZH9",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32047"
+  },
+  {
+   "id": 32657,
+   "date": "2026-02-15",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-15T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Maryland",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Maryland",
+    "Western Michigan"
+   ],
+   "virtius": "FJgu6Y-fvj",
+   "stats_link": "https://scores.virti.us/?s=FJgu6Y-fvj",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/maryland-at-michigan-state/2080571",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32657"
+  },
+  {
+   "id": 32044,
+   "date": "2026-02-15",
+   "time_et": "15:00:00",
+   "start_utc": "2026-02-15T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Illinois"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Illinois"
+   ],
+   "virtius": "I0tkVta-U8",
+   "stats_link": "https://scores.virti.us/?s=I0tkVta-U8",
+   "video_link": "https://www.bigtenplus.com/en-int/page/home",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32044"
+  },
+  {
+   "id": 32053,
+   "date": "2026-02-15",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-15T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "Clemson"
+   ],
+   "virtius": "c-5n0HYsuI",
+   "stats_link": "https://scores.virti.us/?s=c-5n0HYsuI",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32053"
+  },
+  {
+   "id": 32049,
+   "date": "2026-02-15",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-15T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32049"
+  },
+  {
+   "id": 32051,
+   "date": "2026-02-15",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-15T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Utah State"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Utah State"
+   ],
+   "virtius": "SqU2ZQMQpV",
+   "stats_link": "https://scores.virti.us/?s=SqU2ZQMQpV",
+   "video_link": "https://sjsuspartans.com/watch",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32051"
+  },
+  {
+   "id": 32057,
+   "date": "2026-02-15",
+   "time_et": "20:15:00",
+   "start_utc": "2026-02-16T01:15:00.000Z",
+   "desc": "Metroplex Challenge",
+   "home": [],
+   "away": [
+    "Auburn",
+    "Boise State",
+    "North Carolina",
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Boise State",
+    "North Carolina",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32057"
+  },
+  {
+   "id": 32065,
+   "date": "2026-02-20",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-20T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Temple",
+    "Eastern Michigan"
+   ],
+   "virtius": "oxnmPUWmbJ",
+   "stats_link": "https://scores.virti.us/?s=oxnmPUWmbJ",
+   "video_link": "https://www.espn.com/watch/player/_/id/cd972b4a-318d-473b-af4c-dc71f29e7c02?om-navmethod=espn:globalsearch:results",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32065"
+  },
+  {
+   "id": 32072,
+   "date": "2026-02-20",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-20T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "Bridgeport",
+    "New Hampshire",
+    "Rhode Island College"
+   ],
+   "d1_teams": [
+    "LIU",
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": "https://ubknights.com/links/usa0bl",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32072"
+  },
+  {
+   "id": 32063,
+   "date": "2026-02-20",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-21T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Air Force",
+    "Ball State",
+    "Illinois"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Air Force",
+    "Ball State",
+    "Illinois"
+   ],
+   "virtius": "bzV6T1KGXo",
+   "stats_link": "https://scores.virti.us/?s=bzV6T1KGXo",
+   "video_link": "https://www.espn.com/watch/player/_/id/39db08e9-2cb1-4c4c-9e3d-998a5e8a0271",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32063"
+  },
+  {
+   "id": 32086,
+   "date": "2026-02-20",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-21T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Florida"
+   ],
+   "virtius": "OpBSXtdEKu",
+   "stats_link": "https://scores.virti.us/?s=OpBSXtdEKu",
+   "video_link": "https://www.espn.com/watch/player/_/id/c8520c63-cf87-428c-9ad4-0dace1f4abca",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32086"
+  },
+  {
+   "id": 32088,
+   "date": "2026-02-20",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-21T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Nebraska"
+   ],
+   "virtius": "KobWYz9FSj",
+   "stats_link": "https://scores.virti.us/?s=KobWYz9FSj",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/nebraska-at-maryland/2080615",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32088"
+  },
+  {
+   "id": 32097,
+   "date": "2026-02-20",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-21T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Pittsburgh"
+   ],
+   "virtius": "NxvQtdFPfX",
+   "stats_link": "https://scores.virti.us/?s=NxvQtdFPfX",
+   "video_link": "https://www.espn.com/watch/player/_/id/60dc2798-34fb-4d91-b477-00319aab4d0a",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32097"
+  },
+  {
+   "id": 32091,
+   "date": "2026-02-20",
+   "time_et": "20:00:00",
+   "start_utc": "2026-02-21T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "S.E. Missouri",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "S.E. Missouri"
+   ],
+   "virtius": "4NO-KJs_U4",
+   "stats_link": "https://scores.virti.us/?s=4NO-KJs_U4",
+   "video_link": "https://niuhuskies.com/showcase?Live=6409",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32091"
+  },
+  {
+   "id": 32078,
+   "date": "2026-02-20",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-21T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Boise State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=651919",
+   "video_link": "https://themw.com/watch/?sport=100",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32078"
+  },
+  {
+   "id": 32099,
+   "date": "2026-02-20",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-21T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Kentucky"
+   ],
+   "virtius": "ei1d-Sqdki",
+   "stats_link": "https://scores.virti.us/?s=ei1d-Sqdki",
+   "video_link": "https://www.espn.com/watch/player/_/id/7c174844-9a68-4dc1-a0ba-535e00620700",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32099"
+  },
+  {
+   "id": 32082,
+   "date": "2026-02-20",
+   "time_et": "20:45:00",
+   "start_utc": "2026-02-21T01:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Alabama"
+   ],
+   "virtius": "Uq0-Su50HQ",
+   "stats_link": "https://scores.virti.us/?s=Uq0-Su50HQ",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32082"
+  },
+  {
+   "id": 32103,
+   "date": "2026-02-20",
+   "time_et": "20:45:00",
+   "start_utc": "2026-02-21T01:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "LSU"
+   ],
+   "virtius": "wgRDf2c3-1",
+   "stats_link": "https://scores.virti.us/?s=wgRDf2c3-1",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32103"
+  },
+  {
+   "id": 32084,
+   "date": "2026-02-20",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-21T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Denver"
+   ],
+   "virtius": "LT-t1hW71-",
+   "stats_link": "https://scores.virti.us/?s=LT-t1hW71-",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32084"
+  },
+  {
+   "id": 32095,
+   "date": "2026-02-20",
+   "time_et": "21:00:00",
+   "start_utc": "2026-02-21T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Southern Utah"
+   ],
+   "virtius": "ndi_E3zXZf",
+   "stats_link": "https://scores.virti.us/?s=ndi_E3zXZf",
+   "video_link": "https://www.espn.com/watch/player/_/id/f0737fb9-07e3-4900-9dff-2fc721201e6c",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32095"
+  },
+  {
+   "id": 32605,
+   "date": "2026-02-20",
+   "time_et": "21:30:00",
+   "start_utc": "2026-02-21T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Minnesota"
+   ],
+   "virtius": "lPKr-NSRXt",
+   "stats_link": "https://scores.virti.us/?s=lPKr-NSRXt",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/minnesota-at-washington/2109909",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32605"
+  },
+  {
+   "id": 32093,
+   "date": "2026-02-20",
+   "time_et": "22:00:00",
+   "start_utc": "2026-02-21T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "William & Mary"
+   ],
+   "virtius": "6Z_LRb0sXv",
+   "stats_link": "https://scores.virti.us/?s=6Z_LRb0sXv",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32093"
+  },
+  {
+   "id": 32101,
+   "date": "2026-02-20",
+   "time_et": "22:30:00",
+   "start_utc": "2026-02-21T03:30:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "California",
+    "North Carolina"
+   ],
+   "virtius": "Gy1UoEUV_S",
+   "stats_link": "https://scores.virti.us/?s=Gy1UoEUV_S",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32101"
+  },
+  {
+   "id": 32080,
+   "date": "2026-02-20",
+   "time_et": "23:00:00",
+   "start_utc": "2026-02-21T04:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Centenary College"
+   ],
+   "d1_teams": [
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=7068_1771543871846",
+   "video_link": "https://www.overnght.com/search",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32080"
+  },
+  {
+   "id": 32109,
+   "date": "2026-02-21",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-21T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "West Virginia"
+   ],
+   "virtius": "Vcw8VriAW1",
+   "stats_link": "https://scores.virti.us/?s=Vcw8VriAW1",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32109"
+  },
+  {
+   "id": 32113,
+   "date": "2026-02-21",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-21T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Rutgers"
+   ],
+   "virtius": "MzpQK4MOR-",
+   "stats_link": "https://scores.virti.us/?s=MzpQK4MOR-",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/rutgers-at-michigan/2080637",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32113"
+  },
+  {
+   "id": 32115,
+   "date": "2026-02-21",
+   "time_et": "16:00:00",
+   "start_utc": "2026-02-21T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "Stanford"
+   ],
+   "virtius": "-6n24N7GB9",
+   "stats_link": "https://scores.virti.us/?s=-6n24N7GB9",
+   "video_link": "https://www.espn.com/watch/player/_/id/cdc0176d-47b4-4488-ba1f-4c7e2d32b6ab",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32115"
+  },
+  {
+   "id": 32117,
+   "date": "2026-02-21",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-21T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/index.html?id=627463",
+   "video_link": "https://www.foxsports.com/live",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32117"
+  },
+  {
+   "id": 32119,
+   "date": "2026-02-21",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-21T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Ohio State"
+   ],
+   "virtius": "WztAzd5uB8",
+   "stats_link": "https://scores.virti.us/?s=WztAzd5uB8",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/ohio-state-at-michigan-state/2080644",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32119"
+  },
+  {
+   "id": 32131,
+   "date": "2026-02-22",
+   "time_et": "12:00:00",
+   "start_utc": "2026-02-22T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Yale"
+   ],
+   "away": [
+    "Brown",
+    "Cornell",
+    "Pennsylvania"
+   ],
+   "d1_teams": [
+    "Yale",
+    "Brown",
+    "Cornell",
+    "Pennsylvania"
+   ],
+   "virtius": "lbjE9xJVDc",
+   "stats_link": "https://virti.us/session?s=lbjE9xJVDc",
+   "video_link": "https://www.espn.com/watch/player/_/id/e623ab54-03e4-42ae-bb02-b7a6b61df87b",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32131"
+  },
+  {
+   "id": 32123,
+   "date": "2026-02-22",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-22T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington"
+   ],
+   "away": [
+    "Eastern Michigan",
+    "Fisk",
+    "Towson"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "Eastern Michigan",
+    "Towson"
+   ],
+   "virtius": "rZ5k_ecJZU",
+   "stats_link": "https://scores.virti.us/?s=rZ5k_ecJZU",
+   "video_link": "https://www.espn.com/watch/player/_/id/578d1dbf-9ec0-41c7-a454-22dd6e8fe5e0?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32123"
+  },
+  {
+   "id": 32127,
+   "date": "2026-02-22",
+   "time_et": "13:00:00",
+   "start_utc": "2026-02-22T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Ball State"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Ball State"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.statbroadcast.com/events/statbroadcast.php?t=1&gid=wmu",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32127"
+  },
+  {
+   "id": 32137,
+   "date": "2026-02-22",
+   "time_et": "14:00:00",
+   "start_utc": "2026-02-22T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Central Michigan"
+   ],
+   "virtius": "YXu4e8AISF",
+   "stats_link": "https://scores.virti.us/?s=YXu4e8AISF",
+   "video_link": "https://www.espn.com/watch/player/_/id/4c3699fa-36e9-4961-9859-962d5334c454?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32137"
+  },
+  {
+   "id": 32662,
+   "date": "2026-02-22",
+   "time_et": "15:00:00",
+   "start_utc": "2026-02-22T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Arizona State",
+    "Kent State",
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Kent State",
+    "Oregon State"
+   ],
+   "virtius": "kh4N3TlFPm",
+   "stats_link": "https://scores.virti.us/?s=kh4N3TlFPm",
+   "video_link": "https://flosports.link/466YtkB",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32662"
+  },
+  {
+   "id": 32143,
+   "date": "2026-02-22",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-22T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "William & Mary"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=7096_1771789666178",
+   "video_link": "https://www.overnght.com/player/f87d87b5-091f-4f99-a38d-ac9643f2c2f7",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32143"
+  },
+  {
+   "id": 32146,
+   "date": "2026-02-22",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-22T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Air Force",
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Air Force",
+    "UC Davis"
+   ],
+   "virtius": "ff5uNNRP_U",
+   "stats_link": "https://scores.virti.us/?s=ff5uNNRP_U",
+   "video_link": "https://sjsuspartans.com/watch",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32146"
+  },
+  {
+   "id": 32151,
+   "date": "2026-02-22",
+   "time_et": "17:00:00",
+   "start_utc": "2026-02-22T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "UCLA"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/statmonitr/?id=642771",
+   "video_link": "https://www.overnght.com/player/f87d87b5-091f-4f99-a38d-ac9643f2c2f7",
+   "video_desc": "BTN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32151"
+  },
+  {
+   "id": 32133,
+   "date": "2026-02-22",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-22T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Centenary College"
+   ],
+   "d1_teams": [
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=7091_1771797264886",
+   "video_link": "https://www.overnght.com/search",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32133"
+  },
+  {
+   "id": 32153,
+   "date": "2026-02-23",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-24T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "Northern Illinois"
+   ],
+   "virtius": "FnZlXexPyk",
+   "stats_link": "https://scores.virti.us/?s=FnZlXexPyk",
+   "video_link": "https://www.espn.com/watch/player/_/id/47abdb04-47f7-4caa-8f5f-a678c8d586c7?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32153"
+  },
+  {
+   "id": 32156,
+   "date": "2026-02-27",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-27T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Illinois State",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Illinois State",
+    "Western Michigan"
+   ],
+   "virtius": "mxpqfxAHZm",
+   "stats_link": "https://scores.virti.us/?s=mxpqfxAHZm",
+   "video_link": "https://www.espn.com/watch/player/_/id/cf5f9a33-0a4c-4174-a39c-0eabf84dfd96?om-navmethod=espn:globalsearch:results",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32156"
+  },
+  {
+   "id": 32160,
+   "date": "2026-02-27",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-28T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "Central Michigan"
+   ],
+   "virtius": "1D102SPhCb",
+   "stats_link": "https://scores.virti.us/?s=1D102SPhCb",
+   "video_link": "https://www.espn.com/watch/player/_/id/84626c1c-28f3-4402-b3fd-a890e2a6de2d?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32160"
+  },
+  {
+   "id": 32181,
+   "date": "2026-02-27",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-28T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Georgia"
+   ],
+   "virtius": "gULq4geJ6h",
+   "stats_link": "https://scores.virti.us/?s=gULq4geJ6h",
+   "video_link": "https://www.espn.com/watch/player/_/id/fb259b3f-515e-491e-b72d-4a66c008fcbc",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32181"
+  },
+  {
+   "id": 32185,
+   "date": "2026-02-27",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-28T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "George Washington",
+    "New Hampshire",
+    "Yale"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "George Washington",
+    "New Hampshire",
+    "Yale"
+   ],
+   "virtius": "8PxdqdjcEc",
+   "stats_link": "https://scores.virti.us/?s=8PxdqdjcEc",
+   "video_link": "https://www.espn.com/watch/player/_/id/a54515d2-6a68-4459-80ac-e9aa23d002be?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32185"
+  },
+  {
+   "id": 32191,
+   "date": "2026-02-27",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-28T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "Ball State",
+    "Temple",
+    "Towson"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "Ball State",
+    "Temple",
+    "Towson"
+   ],
+   "virtius": "sIzyb-QWSL",
+   "stats_link": "https://scores.virti.us/?s=sIzyb-QWSL",
+   "video_link": "https://www.espn.com/watch/player/_/id/413447e9-b9ff-4cb0-bccb-f4a8254440cb",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32191"
+  },
+  {
+   "id": 32201,
+   "date": "2026-02-27",
+   "time_et": "19:00:00",
+   "start_utc": "2026-02-28T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "BYU"
+   ],
+   "virtius": "2hlulKJXIl",
+   "stats_link": "https://scores.virti.us/?s=2hlulKJXIl",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32201"
+  },
+  {
+   "id": 32170,
+   "date": "2026-02-27",
+   "time_et": "19:30:00",
+   "start_utc": "2026-02-28T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Auburn"
+   ],
+   "virtius": "5g6bBeMjBv",
+   "stats_link": "https://scores.virti.us/?s=5g6bBeMjBv",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32170"
+  },
+  {
+   "id": 32172,
+   "date": "2026-02-27",
+   "time_et": "19:30:00",
+   "start_utc": "2026-02-28T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=647568",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32172"
+  },
+  {
+   "id": 32195,
+   "date": "2026-02-27",
+   "time_et": "20:00:00",
+   "start_utc": "2026-02-28T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Arizona State",
+    "Fisk",
+    "Florida"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Florida"
+   ],
+   "virtius": "81i9ZkWi9w",
+   "stats_link": "https://scores.virti.us/?s=81i9ZkWi9w",
+   "video_link": "https://www.flocollege.com/live/226155",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32195"
+  },
+  {
+   "id": 32177,
+   "date": "2026-02-27",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-28T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "UC Davis"
+   ],
+   "virtius": "t1cMABfyvA",
+   "stats_link": "https://scores.virti.us/?s=t1cMABfyvA",
+   "video_link": "https://www.overnght.com/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32177"
+  },
+  {
+   "id": 32179,
+   "date": "2026-02-27",
+   "time_et": "20:30:00",
+   "start_utc": "2026-02-28T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Air Force"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Air Force"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=651930",
+   "video_link": "https://themw.com/watch/?sport=100&school=66",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32179"
+  },
+  {
+   "id": 32175,
+   "date": "2026-02-27",
+   "time_et": "21:30:00",
+   "start_utc": "2026-02-28T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "California",
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "California",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": "https://rtn-scoring.web.app/?id=7109_1771955300889",
+   "video_link": "https://www.overnght.com/player/fc9dbef1-6894-47a4-956e-e670d6374697",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32175"
+  },
+  {
+   "id": 32203,
+   "date": "2026-02-27",
+   "time_et": "21:30:00",
+   "start_utc": "2026-02-28T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Alabama"
+   ],
+   "virtius": "AVnfA4eZ9s",
+   "stats_link": "https://scores.virti.us/?s=AVnfA4eZ9s",
+   "video_link": "https://www.espn.com/watch/player/_/id/d08b45d2-1c1e-41fb-acac-8512dbb5be10",
+   "video_desc": "SEC",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32203"
+  },
+  {
+   "id": 32187,
+   "date": "2026-02-27",
+   "time_et": "22:00:00",
+   "start_utc": "2026-02-28T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Stanford"
+   ],
+   "virtius": "jfCXCKej2P",
+   "stats_link": "https://scores.virti.us/?s=jfCXCKej2P",
+   "video_link": "https://www.youtube.com/pac12",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32187"
+  },
+  {
+   "id": 32199,
+   "date": "2026-02-27",
+   "time_et": "22:00:00",
+   "start_utc": "2026-02-28T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Iowa",
+    "Maryland",
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Iowa",
+    "Maryland",
+    "Ohio State"
+   ],
+   "virtius": "XTmNt6nTmj",
+   "stats_link": "https://scores.virti.us/?s=XTmNt6nTmj",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32199"
+  },
+  {
+   "id": 32215,
+   "date": "2026-02-28",
+   "time_et": "18:00:00",
+   "start_utc": "2026-02-28T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Michigan",
+    "Nebraska",
+    "Washington"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Michigan",
+    "Nebraska",
+    "Washington"
+   ],
+   "virtius": "waBQt55a3S",
+   "stats_link": "https://scores.virti.us/?s=waBQt55a3S",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32215"
+  },
+  {
+   "id": 32217,
+   "date": "2026-03-01",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-01T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Cornell"
+   ],
+   "away": [
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Cornell"
+   ],
+   "virtius": "9oBHfJ3P6U",
+   "stats_link": "https://scores.virti.us/?s=9oBHfJ3P6U",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32217"
+  },
+  {
+   "id": 32219,
+   "date": "2026-03-01",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-01T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "Bowling Green"
+   ],
+   "virtius": "WyMrcXUvyo",
+   "stats_link": "https://scores.virti.us/?s=WyMrcXUvyo",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32219"
+  },
+  {
+   "id": 32224,
+   "date": "2026-03-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Brown"
+   ],
+   "away": [
+    "Cortland State"
+   ],
+   "d1_teams": [
+    "Brown"
+   ],
+   "virtius": "qSy0PUhjdU",
+   "stats_link": "https://scores.virti.us/?s=qSy0PUhjdU",
+   "video_link": "https://www.espn.com/search/_/q/brown/o/watch/appearance",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32224"
+  },
+  {
+   "id": 32228,
+   "date": "2026-03-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Arkansas"
+   ],
+   "virtius": "EWgMgesmq2",
+   "stats_link": "https://scores.virti.us/?s=EWgMgesmq2",
+   "video_link": "https://www.espn.com/watch/player/_/id/c6ee26fc-f3ed-4c76-bc06-a0e02fc7820c",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32228"
+  },
+  {
+   "id": 32236,
+   "date": "2026-03-01",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-01T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "North Carolina State",
+    "Ursinus College",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Towson",
+    "North Carolina State",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=627757",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32236"
+  },
+  {
+   "id": 32226,
+   "date": "2026-03-01",
+   "time_et": "16:00:00",
+   "start_utc": "2026-03-01T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Utah"
+   ],
+   "virtius": "A3-0L0BRC6",
+   "stats_link": "https://scores.virti.us/?s=A3-0L0BRC6",
+   "video_link": "https://www.midcosportsplus.com/page/01H57TR0BWZFVJNDSXJJGFBB87",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32226"
+  },
+  {
+   "id": 32240,
+   "date": "2026-03-01",
+   "time_et": "16:00:00",
+   "start_utc": "2026-03-01T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Illinois",
+    "Michigan State",
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Illinois",
+    "Michigan State",
+    "Rutgers"
+   ],
+   "virtius": "UgaSXGCcMl",
+   "stats_link": "https://scores.virti.us/?s=UgaSXGCcMl",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": "Big",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32240"
+  },
+  {
+   "id": 32661,
+   "date": "2026-03-01",
+   "time_et": "16:00:00",
+   "start_utc": "2026-03-01T21:00:00.000Z",
+   "desc": "Purple & Gold",
+   "home": [],
+   "away": [
+    "Alabama",
+    "Arizona",
+    "LSU",
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Arizona",
+    "LSU",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32661"
+  },
+  {
+   "id": 32232,
+   "date": "2026-03-01",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-01T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Arizona State",
+    "Boise State",
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Arizona State",
+    "Boise State",
+    "Sacramento State"
+   ],
+   "virtius": "2gmfmzzXnD",
+   "stats_link": "https://scores.virti.us/?s=2gmfmzzXnD",
+   "video_link": "https://sjsuspartans.com/watch",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32232"
+  },
+  {
+   "id": 32245,
+   "date": "2026-03-02",
+   "time_et": "20:30:00",
+   "start_utc": "2026-03-03T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Utah State"
+   ],
+   "virtius": "6lAejgUK1O",
+   "stats_link": "https://scores.virti.us/?s=6lAejgUK1O",
+   "video_link": "https://www.overnght.com/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32245"
+  },
+  {
+   "id": 32665,
+   "date": "2026-03-04",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-05T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "New Hampshire"
+   ],
+   "virtius": "1Hwvf4RcmD",
+   "stats_link": "https://scores.virti.us/?s=1Hwvf4RcmD",
+   "video_link": "https://americaeast.com/watch/default.aspx?path=new_hampshire",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32665"
+  },
+  {
+   "id": 32249,
+   "date": "2026-03-05",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-05T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "Maryland",
+    "Pennsylvania",
+    "Towson"
+   ],
+   "d1_teams": [
+    "Temple",
+    "Maryland",
+    "Pennsylvania",
+    "Towson"
+   ],
+   "virtius": "1IwBE6EQT7",
+   "stats_link": "https://scores.virti.us/?s=1IwBE6EQT7",
+   "video_link": "https://www.espn.com/watch/player/_/id/f27a843b-025c-48e3-8b3e-93e87cc1b312",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32249"
+  },
+  {
+   "id": 32283,
+   "date": "2026-03-06",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-06T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Illinois State"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Illinois State"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.statbroadcast.com/events/statbroadcast.php?t=1&gid=wmu",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32283"
+  },
+  {
+   "id": 32260,
+   "date": "2026-03-06",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-06T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": "http://necfrontrow.com/game/14646",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32260"
+  },
+  {
+   "id": 32268,
+   "date": "2026-03-06",
+   "time_et": "18:45:00",
+   "start_utc": "2026-03-06T23:45:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "Minnesota"
+   ],
+   "virtius": "a3qMFqrJXc",
+   "stats_link": "https://scores.virti.us/?s=a3qMFqrJXc",
+   "video_link": "https://www.espn.com/watch/player/_/id/62c069ca-b19f-47de-b3b0-69eee1f2b76f",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32268"
+  },
+  {
+   "id": 32258,
+   "date": "2026-03-06",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-07T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Central Michigan",
+    "Northern Illinois",
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Central Michigan",
+    "Northern Illinois",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/index.html?id=627464",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/central-michigan-northern-illinois-semo-at-iowa/2080838",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32258"
+  },
+  {
+   "id": 32277,
+   "date": "2026-03-06",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-07T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Missouri"
+   ],
+   "virtius": "kqfoXXSKUB",
+   "stats_link": "https://scores.virti.us/?s=kqfoXXSKUB",
+   "video_link": "https://www.espn.com/watch/player/_/id/18a30071-b0f2-434a-899b-c96c66d89ab1#bucketId=2",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32277"
+  },
+  {
+   "id": 32279,
+   "date": "2026-03-06",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-07T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Clemson"
+   ],
+   "virtius": "v3-h7s_0V6",
+   "stats_link": "https://scores.virti.us/?s=v3-h7s_0V6",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32279"
+  },
+  {
+   "id": 32262,
+   "date": "2026-03-06",
+   "time_et": "19:30:00",
+   "start_utc": "2026-03-07T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Kentucky"
+   ],
+   "virtius": "jyCHbLEwbI",
+   "stats_link": "https://scores.virti.us/?s=jyCHbLEwbI",
+   "video_link": "https://www.espn.com/watch/player/_/id/62afee77-bc5e-4ee9-8537-1bbda5d73d33",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32262"
+  },
+  {
+   "id": 32251,
+   "date": "2026-03-06",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-07T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Arizona State"
+   ],
+   "virtius": "N2eouBg96T",
+   "stats_link": "https://scores.virti.us/?s=N2eouBg96T",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32251"
+  },
+  {
+   "id": 32273,
+   "date": "2026-03-06",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-07T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Michigan State"
+   ],
+   "virtius": "OrGxmQQAz7",
+   "stats_link": "https://scores.virti.us/?s=OrGxmQQAz7",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32273"
+  },
+  {
+   "id": 32281,
+   "date": "2026-03-06",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-07T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Nebraska"
+   ],
+   "virtius": "MFfJjYpRdT",
+   "stats_link": "https://scores.virti.us/?s=MFfJjYpRdT",
+   "video_link": "https://www.flocollege.com/live/226153",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32281"
+  },
+  {
+   "id": 32264,
+   "date": "2026-03-06",
+   "time_et": "20:30:00",
+   "start_utc": "2026-03-07T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Washington"
+   ],
+   "virtius": "mcT0dptxdx",
+   "stats_link": "https://scores.virti.us/?s=mcT0dptxdx",
+   "video_link": "https://www.overnght.com/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32264"
+  },
+  {
+   "id": 32266,
+   "date": "2026-03-06",
+   "time_et": "20:30:00",
+   "start_utc": "2026-03-07T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Oregon State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=653185",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32266"
+  },
+  {
+   "id": 32285,
+   "date": "2026-03-06",
+   "time_et": "20:30:00",
+   "start_utc": "2026-03-07T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Oklahoma"
+   ],
+   "virtius": "Ebwpf5zOez",
+   "stats_link": "https://scores.virti.us/?s=Ebwpf5zOez",
+   "video_link": "https://www.espn.com/watch/player/_/id/c3798202-7a7a-4c9a-b926-519b022d418c",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32285"
+  },
+  {
+   "id": 32271,
+   "date": "2026-03-06",
+   "time_et": "21:00:00",
+   "start_utc": "2026-03-07T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "Denver",
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Denver",
+    "San Jose State"
+   ],
+   "virtius": "lMTBOddrop",
+   "stats_link": "https://scores.virti.us/?s=lMTBOddrop",
+   "video_link": "https://themw.com/watch/?sport=100&school=56",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32271"
+  },
+  {
+   "id": 32303,
+   "date": "2026-03-07",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-07T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "UCLA"
+   ],
+   "virtius": "N9DghGCiZu",
+   "stats_link": "https://scores.virti.us/?s=N9DghGCiZu",
+   "video_link": "https://www.espn.com/watch/player/_/id/cf6913bd-8f8f-4b9e-9883-1e503559980d",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32303"
+  },
+  {
+   "id": 32658,
+   "date": "2026-03-07",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-07T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "BYU",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Utah",
+    "BYU",
+    "West Virginia"
+   ],
+   "virtius": "witaXQooTN",
+   "stats_link": "https://scores.virti.us/?s=witaXQooTN",
+   "video_link": "https://www.espn.com/watch/player/_/id/2951d601-6cda-4aaf-82d2-c7855b2a1c14?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32658"
+  },
+  {
+   "id": 32311,
+   "date": "2026-03-07",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-07T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Ball State",
+    "Cornell",
+    "Temple"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Ball State",
+    "Cornell",
+    "Temple"
+   ],
+   "virtius": "PaLR8-h_6w",
+   "stats_link": "https://scores.virti.us/?s=PaLR8-h_6w",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32311"
+  },
+  {
+   "id": 32315,
+   "date": "2026-03-07",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-07T23:00:00.000Z",
+   "desc": "Unite for Her Pink Meet",
+   "home": [],
+   "away": [
+    "Pennsylvania",
+    "Rutgers",
+    "West Chester",
+    "Yale"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "Rutgers",
+    "Yale"
+   ],
+   "virtius": "11M-Sufasy",
+   "stats_link": "https://scores.virti.us/?s=11M-Sufasy",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32315"
+  },
+  {
+   "id": 32307,
+   "date": "2026-03-07",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-08T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "California",
+    "Boise State"
+   ],
+   "virtius": "u-hE9z3HCD",
+   "stats_link": "https://scores.virti.us/?s=u-hE9z3HCD",
+   "video_link": "https://www.espn.com/watch/player/_/id/e7cd11cb-e6c6-48f1-b270-c8369a3bba8d",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32307"
+  },
+  {
+   "id": 32317,
+   "date": "2026-03-08",
+   "time_et": "12:00:00",
+   "start_utc": "2026-03-08T16:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Kent State"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.statbroadcast.com/events/statbroadcast.php?t=1&gid=wmu",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32317"
+  },
+  {
+   "id": 32320,
+   "date": "2026-03-08",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-08T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Bowling Green",
+    "George Washington"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "Bowling Green",
+    "George Washington"
+   ],
+   "virtius": "16Rc-7yEMe",
+   "stats_link": "https://scores.virti.us/?s=16Rc-7yEMe",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32320"
+  },
+  {
+   "id": 32331,
+   "date": "2026-03-08",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-08T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Eastern Michigan",
+    "North Carolina State",
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Eastern Michigan",
+    "North Carolina State",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=626108",
+   "video_link": "https://www.bigtenplus.com/en-int/schedule?date=2026-03-08",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32331"
+  },
+  {
+   "id": 32666,
+   "date": "2026-03-08",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-08T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Brown"
+   ],
+   "away": [
+    "Bridgeport",
+    "LIU",
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Brown",
+    "LIU"
+   ],
+   "virtius": "G8OxcKk92U",
+   "stats_link": "https://scores.virti.us/?s=G8OxcKk92U",
+   "video_link": "https://www.espn.com/search/_/q/brown/o/watch/appearance",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32666"
+  },
+  {
+   "id": 32322,
+   "date": "2026-03-08",
+   "time_et": "14:45:00",
+   "start_utc": "2026-03-08T18:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Oklahoma"
+   ],
+   "virtius": "YjNMXsjWT7",
+   "stats_link": "https://scores.virti.us/?s=YjNMXsjWT7",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32322"
+  },
+  {
+   "id": 32327,
+   "date": "2026-03-08",
+   "time_et": "15:00:00",
+   "start_utc": "2026-03-08T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Alabama"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/statmonitr/?id=642772",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32327"
+  },
+  {
+   "id": 32340,
+   "date": "2026-03-08",
+   "time_et": "15:00:00",
+   "start_utc": "2026-03-08T19:00:00.000Z",
+   "desc": "HBCU Classic",
+   "home": [],
+   "away": [
+    "Fisk",
+    "Wilberforce",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "William & Mary"
+   ],
+   "virtius": "IAfP_V-PJY",
+   "stats_link": "https://scores.virti.us/?s=IAfP_V-PJY",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32340"
+  },
+  {
+   "id": 32337,
+   "date": "2026-03-08",
+   "time_et": "16:00:00",
+   "start_utc": "2026-03-08T20:00:00.000Z",
+   "desc": "Elevate the Stage",
+   "home": [],
+   "away": [
+    "Auburn",
+    "Clemson",
+    "Georgia",
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Clemson",
+    "Georgia",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=654249",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32337"
+  },
+  {
+   "id": 32333,
+   "date": "2026-03-08",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-08T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "Sacramento State"
+   ],
+   "virtius": "BUIo3lqLMV",
+   "stats_link": "https://scores.virti.us/?s=BUIo3lqLMV",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32333"
+  },
+  {
+   "id": 32342,
+   "date": "2026-03-08",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-08T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Florida",
+    "LSU"
+   ],
+   "virtius": "uk1Y2G_Tkw",
+   "stats_link": "https://scores.virti.us/?s=uk1Y2G_Tkw",
+   "video_link": "https://www.espn.com/watch/player/_/id/54b99b8b-a31e-4845-98fe-4b3cc6c0cde5",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32342"
+  },
+  {
+   "id": 32344,
+   "date": "2026-03-09",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-10T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Air Force"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Air Force"
+   ],
+   "virtius": "4f57LlizDy",
+   "stats_link": "https://scores.virti.us/?s=4f57LlizDy",
+   "video_link": "https://www.midcosportsplus.com/details/LIVE_PROGRAM/item/6388986234112/air-force-vs-denver",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32344"
+  },
+  {
+   "id": 32346,
+   "date": "2026-03-12",
+   "time_et": "18:30:00",
+   "start_utc": "2026-03-12T22:30:00.000Z",
+   "desc": "",
+   "home": [
+    "William & Mary"
+   ],
+   "away": [
+    "Alaska"
+   ],
+   "d1_teams": [
+    "William & Mary",
+    "Alaska"
+   ],
+   "virtius": "W4mEcGUbqn",
+   "stats_link": "https://scores.virti.us/?s=W4mEcGUbqn",
+   "video_link": "https://scores.virti.us/?s=W4mEcGUbqn",
+   "video_desc": "Virt.us",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32346"
+  },
+  {
+   "id": 32352,
+   "date": "2026-03-13",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-13T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Ball State"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Ball State"
+   ],
+   "virtius": "QY4e1Z2xyW",
+   "stats_link": "https://scores.virti.us/?s=QY4e1Z2xyW",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32352"
+  },
+  {
+   "id": 32354,
+   "date": "2026-03-13",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-13T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "West Virginia"
+   ],
+   "virtius": "eqlxEmoKCZ",
+   "stats_link": "https://scores.virti.us/?s=eqlxEmoKCZ",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32354"
+  },
+  {
+   "id": 32360,
+   "date": "2026-03-13",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-13T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "BYU"
+   ],
+   "virtius": "Xh8RMWKfYU",
+   "stats_link": "https://scores.virti.us/?s=Xh8RMWKfYU",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32360"
+  },
+  {
+   "id": 32621,
+   "date": "2026-03-13",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-13T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "George Washington",
+    "Maryland",
+    "Pennsylvania"
+   ],
+   "d1_teams": [
+    "Towson",
+    "George Washington",
+    "Maryland",
+    "Pennsylvania"
+   ],
+   "virtius": "QYG4A-rPsU",
+   "stats_link": "https://scores.virti.us/?s=QYG4A-rPsU",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32621"
+  },
+  {
+   "id": 32369,
+   "date": "2026-03-13",
+   "time_et": "18:45:00",
+   "start_utc": "2026-03-13T22:45:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "Nebraska",
+    "Penn State"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "Nebraska",
+    "Penn State"
+   ],
+   "virtius": "QYG4A-rPsU",
+   "stats_link": "https://scores.virti.us/?s=QYG4A-rPsU",
+   "video_link": "https://www.espn.com/watch/player/_/id/d5450512-9c33-48d1-8794-e8b9bb5eb7e6",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32369"
+  },
+  {
+   "id": 32375,
+   "date": "2026-03-13",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Florida"
+   ],
+   "virtius": "lAKDlXEzgu",
+   "stats_link": "https://scores.virti.us/?s=lAKDlXEzgu",
+   "video_link": "https://www.espn.com/watch/player/_/id/f652ff5c-c5d4-4a15-8b56-c3595b52d835",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32375"
+  },
+  {
+   "id": 32377,
+   "date": "2026-03-13",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Oklahoma"
+   ],
+   "virtius": "TD07p3iTBt",
+   "stats_link": "https://scores.virti.us/?s=TD07p3iTBt",
+   "video_link": "https://www.bigtenplus.com/en-int/schedule?date=2026-03-13",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32377"
+  },
+  {
+   "id": 32381,
+   "date": "2026-03-13",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "LIU",
+    "New Hampshire",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "LIU",
+    "New Hampshire",
+    "Western Michigan"
+   ],
+   "virtius": "D8CHeQ9UMr",
+   "stats_link": "https://scores.virti.us/?s=D8CHeQ9UMr",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32381"
+  },
+  {
+   "id": 32362,
+   "date": "2026-03-13",
+   "time_et": "19:30:00",
+   "start_utc": "2026-03-13T23:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Georgia"
+   ],
+   "virtius": "IUUm0fIyfS",
+   "stats_link": "https://scores.virti.us/?s=IUUm0fIyfS",
+   "video_link": "https://www.espn.com/watch/player/_/id/329b2793-a1c4-46e4-ada5-acebd039b733",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32362"
+  },
+  {
+   "id": 32371,
+   "date": "2026-03-13",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-14T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Missouri"
+   ],
+   "virtius": "aNICtKEKgL",
+   "stats_link": "https://scores.virti.us/?s=aNICtKEKgL",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32371"
+  },
+  {
+   "id": 32373,
+   "date": "2026-03-13",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-14T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Southern Utah"
+   ],
+   "virtius": "pT8SEdIE1t",
+   "stats_link": "https://scores.virti.us/?s=pT8SEdIE1t",
+   "video_link": "https://themw.com/news/2026/03/03/southern-utah-at-boise-state-7/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32373"
+  },
+  {
+   "id": 32386,
+   "date": "2026-03-13",
+   "time_et": "20:30:00",
+   "start_utc": "2026-03-14T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Arkansas"
+   ],
+   "virtius": "tUaf8gfgTb",
+   "stats_link": "https://scores.virti.us/?s=tUaf8gfgTb",
+   "video_link": "https://www.espn.com/watch/player/_/id/1b600260-459f-4a2f-b9e9-373171ae73a7",
+   "video_desc": "SECN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32386"
+  },
+  {
+   "id": 32350,
+   "date": "2026-03-13",
+   "time_et": "21:00:00",
+   "start_utc": "2026-03-14T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Ohio State",
+    "S.E. Missouri",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Ohio State",
+    "S.E. Missouri"
+   ],
+   "virtius": "H6LCC9pDsG",
+   "stats_link": "https://scores.virti.us/?s=H6LCC9pDsG",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32350"
+  },
+  {
+   "id": 32366,
+   "date": "2026-03-13",
+   "time_et": "21:30:00",
+   "start_utc": "2026-03-14T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Sacramento State"
+   ],
+   "virtius": "Xx5K7vTA79",
+   "stats_link": "https://scores.virti.us/?s=Xx5K7vTA79",
+   "video_link": "https://www.bigtenplus.com/en-int/video/video/2080987",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32366"
+  },
+  {
+   "id": 32384,
+   "date": "2026-03-13",
+   "time_et": "22:30:00",
+   "start_utc": "2026-03-14T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "San Jose State",
+    "Stanford"
+   ],
+   "d1_teams": [
+    "California",
+    "San Jose State",
+    "Stanford"
+   ],
+   "virtius": "b3rm9Pem6F",
+   "stats_link": "https://scores.virti.us/?s=b3rm9Pem6F",
+   "video_link": "https://www.espn.com/watch/schedule/_/type/upcoming/channel/9f538e0b-a896-3325-a417-79034e03a248/startDate/20260313",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32384"
+  },
+  {
+   "id": 32388,
+   "date": "2026-03-14",
+   "time_et": "11:00:00",
+   "start_utc": "2026-03-14T15:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Chester"
+   ],
+   "away": [
+    "Cornell"
+   ],
+   "d1_teams": [
+    "Cornell"
+   ],
+   "virtius": "RaF9vQELpW",
+   "stats_link": "https://scores.virti.us/?s=RaF9vQELpW",
+   "video_link": "https://virti.us/session?s=RaF9vQELpW",
+   "video_desc": "Virt.us",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32388"
+  },
+  {
+   "id": 32392,
+   "date": "2026-03-14",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-14T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "William & Mary"
+   ],
+   "away": [
+    "Alaska"
+   ],
+   "d1_teams": [
+    "William & Mary",
+    "Alaska"
+   ],
+   "virtius": "lxsR81DoG5",
+   "stats_link": "https://scores.virti.us/?s=lxsR81DoG5",
+   "video_link": "https://scores.virti.us/?s=W4mEcGUbqn",
+   "video_desc": "Virt.us",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32392"
+  },
+  {
+   "id": 32390,
+   "date": "2026-03-14",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-14T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Denver"
+   ],
+   "virtius": "Mqp-0OOoOq",
+   "stats_link": "https://scores.virti.us/?s=Mqp-0OOoOq",
+   "video_link": "https://www.youtube.com/watch?v=cyuaFrXA-Hg",
+   "video_desc": "YouTube",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32390"
+  },
+  {
+   "id": 32394,
+   "date": "2026-03-14",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-15T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "Fisk"
+   ],
+   "d1_teams": [
+    "Air Force"
+   ],
+   "virtius": "k8DU4lJgqf",
+   "stats_link": "https://scores.virti.us/?s=k8DU4lJgqf",
+   "video_link": "https://themw.com/watch/?sport=100&school=56",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32394"
+  },
+  {
+   "id": 32396,
+   "date": "2026-03-14",
+   "time_et": "22:30:00",
+   "start_utc": "2026-03-15T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Utah"
+   ],
+   "virtius": "RrkpEFzuvQ",
+   "stats_link": "https://scores.virti.us/?s=RrkpEFzuvQ",
+   "video_link": "https://www.fox.com/live",
+   "video_desc": "BTN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32396"
+  },
+  {
+   "id": 32400,
+   "date": "2026-03-15",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-15T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington"
+   ],
+   "away": [
+    "Maryland",
+    "Temple",
+    "Towson"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "Maryland",
+    "Temple",
+    "Towson"
+   ],
+   "virtius": "L1IE_b--x3",
+   "stats_link": "https://scores.virti.us/?s=L1IE_b--x3",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32400"
+  },
+  {
+   "id": 32402,
+   "date": "2026-03-15",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-15T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "Eastern Michigan"
+   ],
+   "virtius": "YvPI_0Oysg",
+   "stats_link": "https://scores.virti.us/?s=YvPI_0Oysg",
+   "video_link": "https://www.espn.com/watch/player/_/id/ed74bec3-fa9b-4ad7-a4b6-e509f4193203?om-navmethod=espn:globalsearch:results",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32402"
+  },
+  {
+   "id": 32404,
+   "date": "2026-03-15",
+   "time_et": "13:30:00",
+   "start_utc": "2026-03-15T17:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Centenary College"
+   ],
+   "d1_teams": [
+    "Bowling Green"
+   ],
+   "virtius": "mNKvR6JW7Q",
+   "stats_link": "https://scores.virti.us/?s=mNKvR6JW7Q",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32404"
+  },
+  {
+   "id": 32410,
+   "date": "2026-03-15",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-15T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bridgeport"
+   ],
+   "away": [
+    "Southern Conn.",
+    "Yale"
+   ],
+   "d1_teams": [
+    "Yale"
+   ],
+   "virtius": "qs7UHFKiJa",
+   "stats_link": "https://scores.virti.us/?s=qs7UHFKiJa",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32410"
+  },
+  {
+   "id": 32416,
+   "date": "2026-03-15",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-15T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Brown"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Brown"
+   ],
+   "virtius": "Fju_qn_8ov",
+   "stats_link": "https://scores.virti.us/?s=Fju_qn_8ov",
+   "video_link": "https://www.bigtenplus.com/en-int/livestream/brown-at-michigan-state/2081023",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32416"
+  },
+  {
+   "id": 32624,
+   "date": "2026-03-15",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-15T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "Illinois State",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "Illinois State",
+    "West Virginia"
+   ],
+   "virtius": "URR-86EdLZ",
+   "stats_link": "https://scores.virti.us/?s=URR-86EdLZ",
+   "video_link": "https://www.espn.com/watch/",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32624"
+  },
+  {
+   "id": 32663,
+   "date": "2026-03-15",
+   "time_et": "15:00:00",
+   "start_utc": "2026-03-15T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Illinois",
+    "Iowa",
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Illinois",
+    "Iowa",
+    "Northern Illinois"
+   ],
+   "virtius": "ooimYI6H54",
+   "stats_link": "https://scores.virti.us/?s=ooimYI6H54",
+   "video_link": "https://www.bigtenplus.com/en-int/schedule?date=2026-03-15&cat3=21375&metadata_schools=138565",
+   "video_desc": "Big+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32663"
+  },
+  {
+   "id": 32407,
+   "date": "2026-03-15",
+   "time_et": "16:00:00",
+   "start_utc": "2026-03-15T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "S.E. Missouri",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "S.E. Missouri",
+    "Utah State"
+   ],
+   "virtius": "qaIu9ZOkAZ",
+   "stats_link": "https://scores.virti.us/?s=qaIu9ZOkAZ",
+   "video_link": "https://www.espn.com/watch/player/_/id/427c6c82-bfae-4ca6-9e8a-0eecc8bbf1e8",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32407"
+  },
+  {
+   "id": 32414,
+   "date": "2026-03-15",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-15T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "Pennsylvania",
+    "UC Davis",
+    "Washington"
+   ],
+   "d1_teams": [
+    "California",
+    "Pennsylvania",
+    "UC Davis",
+    "Washington"
+   ],
+   "virtius": "Pw0KO5RecM",
+   "stats_link": "https://scores.virti.us/?s=Pw0KO5RecM",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32414"
+  },
+  {
+   "id": 32425,
+   "date": "2026-03-15",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-15T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "Boise State"
+   ],
+   "virtius": "x1e_Alp7AQ",
+   "stats_link": "https://scores.virti.us/?s=x1e_Alp7AQ",
+   "video_link": "https://www.espn.com/watch/schedule/_/type/upcoming/channel/9f538e0b-a896-3325-a417-79034e03a248/startDate/20260315",
+   "video_desc": "ACCNX",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32425"
+  },
+  {
+   "id": 32458,
+   "date": "2026-03-20",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-20T23:00:00.000Z",
+   "desc": "MIC Conference",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "Centenary College",
+    "S.E. Missouri",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "S.E. Missouri"
+   ],
+   "virtius": "bkWSTM_o1r",
+   "stats_link": "https://scores.virti.us/?s=bkWSTM_o1r",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32458"
+  },
+  {
+   "id": 32672,
+   "date": "2026-03-20",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-20T23:00:00.000Z",
+   "desc": "Big Ten Conference",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Nebraska",
+    "Rutgers",
+    "Washington"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Nebraska",
+    "Rutgers",
+    "Washington"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=655724",
+   "video_link": null,
+   "video_desc": "BTN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32672"
+  },
+  {
+   "id": 32684,
+   "date": "2026-03-21",
+   "time_et": "12:00:00",
+   "start_utc": "2026-03-21T16:00:00.000Z",
+   "desc": "GEC Conference",
+   "home": [],
+   "away": [
+    "Bridgeport",
+    "Southern Conn.",
+    "West Chester",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "William & Mary"
+   ],
+   "virtius": "oejfZzEIJx",
+   "stats_link": "https://scores.virti.us/?s=oejfZzEIJx",
+   "video_link": "https://ubknights.com/links/e8o85e",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32684"
+  },
+  {
+   "id": 32680,
+   "date": "2026-03-21",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-21T17:00:00.000Z",
+   "desc": "Big Ten Conference",
+   "home": [],
+   "away": [
+    "Iowa",
+    "Maryland",
+    "Ohio State",
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Maryland",
+    "Ohio State",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=655725",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32680"
+  },
+  {
+   "id": 32492,
+   "date": "2026-03-21",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-21T18:00:00.000Z",
+   "desc": "MAC Conference",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Ball State",
+    "Central Michigan",
+    "Eastern Michigan",
+    "Kent State",
+    "Northern Illinois",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Ball State",
+    "Central Michigan",
+    "Eastern Michigan",
+    "Kent State",
+    "Northern Illinois",
+    "Western Michigan"
+   ],
+   "virtius": "OJtF2Kpw94",
+   "stats_link": "https://scores.virti.us/?s=OJtF2Kpw94",
+   "video_link": "https://www.espn.com/watch/player/_/id/b4e7d79c-b65f-45c8-9aa8-bc5c66e78559",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32492"
+  },
+  {
+   "id": 32690,
+   "date": "2026-03-21",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-21T18:00:00.000Z",
+   "desc": "Big 12 Conference",
+   "home": [],
+   "away": [
+    "Arizona State",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "West Virginia"
+   ],
+   "virtius": "WL5gII4VIz",
+   "stats_link": "https://scores.virti.us/?s=WL5gII4VIz",
+   "video_link": "https://www.espn.com/watch/player/_/id/5b9a4a06-d389-412a-a94f-6c348f9060c8",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32690"
+  },
+  {
+   "id": 32697,
+   "date": "2026-03-21",
+   "time_et": "14:30:00",
+   "start_utc": "2026-03-21T18:30:00.000Z",
+   "desc": "ACC Conference",
+   "home": [],
+   "away": [
+    "North Carolina",
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "Pittsburgh"
+   ],
+   "virtius": "m44-xiwSX7",
+   "stats_link": "https://scores.virti.us/?s=m44-xiwSX7",
+   "video_link": "https://www.espn.com/watch/player/_/id/6d53969e-42d8-4ed5-9e18-10f7aa3b80df",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32697"
+  },
+  {
+   "id": 32706,
+   "date": "2026-03-21",
+   "time_et": "15:00:00",
+   "start_utc": "2026-03-21T19:00:00.000Z",
+   "desc": "SEC Conference",
+   "home": [],
+   "away": [
+    "Arkansas",
+    "Auburn",
+    "Georgia",
+    "Kentucky",
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Auburn",
+    "Georgia",
+    "Kentucky",
+    "Missouri"
+   ],
+   "virtius": "I6uRyuMJx3",
+   "stats_link": "https://scores.virti.us/?s=I6uRyuMJx3",
+   "video_link": "https://www.espn.com/watch/player/_/id/fe68f2cb-e72c-4aa7-998c-c05754dfb217",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32706"
+  },
+  {
+   "id": 32625,
+   "date": "2026-03-21",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-21T21:00:00.000Z",
+   "desc": "EAGL Conference",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "George Washington",
+    "New Hampshire",
+    "Temple",
+    "Towson"
+   ],
+   "d1_teams": [
+    "LIU",
+    "George Washington",
+    "New Hampshire",
+    "Temple",
+    "Towson"
+   ],
+   "virtius": null,
+   "stats_link": "https://www.meetscoresonline.com/Results/36556",
+   "video_link": "http://necfrontrow.com/game/14665",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32625"
+  },
+  {
+   "id": 32688,
+   "date": "2026-03-21",
+   "time_et": "17:00:00",
+   "start_utc": "2026-03-21T21:00:00.000Z",
+   "desc": "GEC Conference",
+   "home": [
+    "Cornell"
+   ],
+   "away": [
+    "Brown",
+    "Pennsylvania",
+    "Yale"
+   ],
+   "d1_teams": [
+    "Cornell",
+    "Brown",
+    "Pennsylvania",
+    "Yale"
+   ],
+   "virtius": "jxabfw60Ud",
+   "stats_link": "https://scores.virti.us/?s=jxabfw60Ud",
+   "video_link": "https://www.espn.com/watch/player/_/id/ddadbf55-b474-47d9-96c0-896bde1ca63c",
+   "video_desc": "ESPN+",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32688"
+  },
+  {
+   "id": 32676,
+   "date": "2026-03-21",
+   "time_et": "18:00:00",
+   "start_utc": "2026-03-21T22:00:00.000Z",
+   "desc": "Big Ten Conference",
+   "home": [],
+   "away": [
+    "Michigan",
+    "Michigan State",
+    "Minnesota",
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Michigan State",
+    "Minnesota",
+    "UCLA"
+   ],
+   "virtius": null,
+   "stats_link": "https://stats.statbroadcast.com/broadcast/?id=655726",
+   "video_link": "https://www.foxsports.com/live/btn",
+   "video_desc": "BTN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32676"
+  },
+  {
+   "id": 32695,
+   "date": "2026-03-21",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-21T23:00:00.000Z",
+   "desc": "Big 12 Conference",
+   "home": [],
+   "away": [
+    "Arizona",
+    "BYU",
+    "Denver",
+    "Utah"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "BYU",
+    "Denver",
+    "Utah"
+   ],
+   "virtius": "0L_12Cw45Q",
+   "stats_link": "https://scores.virti.us/?s=0L_12Cw45Q",
+   "video_link": "https://www.espn.com/watch/player/_/id/b9e2eaf9-d6d2-439a-ab77-0a6bab2f897f?om-navmethod=espn%3Aglobalsearch%3Aresults",
+   "video_desc": "ESPN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32695"
+  },
+  {
+   "id": 32701,
+   "date": "2026-03-21",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-21T23:00:00.000Z",
+   "desc": "ACC Conference",
+   "home": [],
+   "away": [
+    "California",
+    "Clemson",
+    "North Carolina State",
+    "Stanford"
+   ],
+   "d1_teams": [
+    "California",
+    "Clemson",
+    "North Carolina State",
+    "Stanford"
+   ],
+   "virtius": "BVN2I6PA8r",
+   "stats_link": "https://scores.virti.us/?s=BVN2I6PA8r",
+   "video_link": "https://www.espn.com/watch/player/_/id/4438e3c2-6dd7-44cd-ae23-a3ca7843c241#bucketId=2",
+   "video_desc": "ACCN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32701"
+  },
+  {
+   "id": 32542,
+   "date": "2026-03-21",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-22T00:00:00.000Z",
+   "desc": "MPSF Conference",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Alaska",
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Alaska",
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "virtius": "pXigqPjAcN",
+   "stats_link": "https://scores.virti.us/?s=pXigqPjAcN",
+   "video_link": "https://www.overnght.com/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32542"
+  },
+  {
+   "id": 32546,
+   "date": "2026-03-21",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-22T00:00:00.000Z",
+   "desc": "Mountain West Conference",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Air Force",
+    "San Jose State",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Air Force",
+    "San Jose State",
+    "Utah State"
+   ],
+   "virtius": "NkrJ3Mrpeq",
+   "stats_link": "https://scores.virti.us/?s=NkrJ3Mrpeq",
+   "video_link": "https://themw.com/news/2026/03/03/2026-mountain-west-gymnastics-championship/",
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32546"
+  },
+  {
+   "id": 32710,
+   "date": "2026-03-21",
+   "time_et": "20:00:00",
+   "start_utc": "2026-03-22T00:00:00.000Z",
+   "desc": "SEC Conference",
+   "home": [],
+   "away": [
+    "Alabama",
+    "Florida",
+    "LSU",
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Florida",
+    "LSU",
+    "Oklahoma"
+   ],
+   "virtius": "ehuT37YgcP",
+   "stats_link": "https://scores.virti.us/?s=ehuT37YgcP",
+   "video_link": "https://www.espn.com/watch/player/_/id/2b65861c-8035-4c48-9e69-7cb1f9c1e919",
+   "video_desc": "SECN",
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32710"
+  },
+  {
+   "id": 32581,
+   "date": "2026-03-27",
+   "time_et": "14:00:00",
+   "start_utc": "2026-03-27T18:00:00.000Z",
+   "desc": "WCGNIC Prelim #1",
+   "home": [
+    "Centenary College"
+   ],
+   "away": [
+    "Alaska",
+    "Bridgeport",
+    "Greenville",
+    "S.E. Missouri",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Alaska",
+    "S.E. Missouri"
+   ],
+   "virtius": "odc8x_O3gz",
+   "stats_link": "https://scores.virti.us/?s=odc8x_O3gz",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32581"
+  },
+  {
+   "id": 32590,
+   "date": "2026-03-28",
+   "time_et": "19:00:00",
+   "start_utc": "2026-03-28T23:00:00.000Z",
+   "desc": "WCGNIC Team Finals",
+   "home": [],
+   "away": [
+    "Bridgeport",
+    "S.E. Missouri",
+    "Texas Woman's",
+    "West Chester"
+   ],
+   "d1_teams": [
+    "S.E. Missouri"
+   ],
+   "virtius": "JUU5il2HP2",
+   "stats_link": "https://virti.us/session?s=JUU5il2HP2",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32590"
+  },
+  {
+   "id": 32601,
+   "date": "2026-03-29",
+   "time_et": "13:00:00",
+   "start_utc": "2026-03-29T17:00:00.000Z",
+   "desc": "WCGNIC Individual Event Finals",
+   "home": [
+    "Centenary College"
+   ],
+   "away": [
+    "Alaska",
+    "Bridgeport",
+    "Fisk",
+    "Greenville",
+    "S.E. Missouri",
+    "Southern Conn.",
+    "Texas Woman's",
+    "West Chester",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Alaska",
+    "S.E. Missouri"
+   ],
+   "virtius": "PRKNZshVOj",
+   "stats_link": "https://scores.virti.us/?s=PRKNZshVOj",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32601"
+  },
+  {
+   "id": 32712,
+   "date": "2026-04-01",
+   "time_et": "15:00:00",
+   "start_utc": "2026-04-01T19:00:00.000Z",
+   "desc": "Baton Rouge Regional - Round 1",
+   "home": [],
+   "away": [
+    "Air Force",
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Nebraska"
+   ],
+   "virtius": "sd_3PUC_AG",
+   "stats_link": "https://scores.virti.us/?s=sd_3PUC_AG",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32712"
+  },
+  {
+   "id": 32714,
+   "date": "2026-04-01",
+   "time_et": "17:00:00",
+   "start_utc": "2026-04-01T21:00:00.000Z",
+   "desc": "Tempe Regional - Round 1",
+   "home": [],
+   "away": [
+    "Arizona",
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Arizona State"
+   ],
+   "virtius": "bN1HhLEV2x",
+   "stats_link": "https://scores.virti.us/?s=bN1HhLEV2x",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32714"
+  },
+  {
+   "id": 32727,
+   "date": "2026-04-02",
+   "time_et": "14:00:00",
+   "start_utc": "2026-04-02T18:00:00.000Z",
+   "desc": "Lexington Regional - Round 1",
+   "home": [],
+   "away": [
+    "Central Michigan",
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Rutgers"
+   ],
+   "virtius": "rICvUUwgET",
+   "stats_link": "https://scores.virti.us/?s=rICvUUwgET",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32727"
+  },
+  {
+   "id": 32809,
+   "date": "2026-04-02",
+   "time_et": "14:00:00",
+   "start_utc": "2026-04-02T18:00:00.000Z",
+   "desc": "Baton Rouge Regional - Round 2, Session I",
+   "home": [],
+   "away": [
+    "Michigan",
+    "New Hampshire",
+    "North Carolina",
+    "Pittsburgh",
+    "Stanford",
+    "Towson",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "New Hampshire",
+    "North Carolina",
+    "Pittsburgh",
+    "Stanford",
+    "Towson",
+    "Utah State"
+   ],
+   "virtius": "nXzWc7FAB_",
+   "stats_link": "https://scores.virti.us/?s=nXzWc7FAB_",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32809"
+  },
+  {
+   "id": 32720,
+   "date": "2026-04-02",
+   "time_et": "16:00:00",
+   "start_utc": "2026-04-02T20:00:00.000Z",
+   "desc": "Tempe Regional - Round 2, Session I",
+   "home": [],
+   "away": [
+    "BYU",
+    "George Washington",
+    "Georgia",
+    "Michigan State",
+    "Pennsylvania",
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "BYU",
+    "George Washington",
+    "Georgia",
+    "Michigan State",
+    "Pennsylvania",
+    "Southern Utah"
+   ],
+   "virtius": "uRGgiTHKkw",
+   "stats_link": "https://scores.virti.us/?s=uRGgiTHKkw",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32720"
+  },
+  {
+   "id": 32729,
+   "date": "2026-04-02",
+   "time_et": "17:00:00",
+   "start_utc": "2026-04-02T21:00:00.000Z",
+   "desc": "Corvallis Regional - Round 1",
+   "home": [],
+   "away": [
+    "San Jose State",
+    "Washington"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Washington"
+   ],
+   "virtius": "q6ZQMmZ1-v",
+   "stats_link": "https://scores.virti.us/?s=q6ZQMmZ1-v",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32729"
+  },
+  {
+   "id": 32810,
+   "date": "2026-04-02",
+   "time_et": "20:00:00",
+   "start_utc": "2026-04-03T00:00:00.000Z",
+   "desc": "Tempe Regional - Round 2, Session II",
+   "home": [],
+   "away": [
+    "Air Force",
+    "Auburn",
+    "Clemson",
+    "LSU",
+    "Nebraska",
+    "West Virginia",
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Auburn",
+    "Clemson",
+    "LSU",
+    "Nebraska",
+    "West Virginia",
+    "Western Michigan"
+   ],
+   "virtius": "zb45zMSdyR",
+   "stats_link": "https://scores.virti.us/?s=zb45zMSdyR",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32810"
+  },
+  {
+   "id": 32741,
+   "date": "2026-04-02",
+   "time_et": "22:00:00",
+   "start_utc": "2026-04-03T02:00:00.000Z",
+   "desc": "Tempe Regional - Round 2, Session II",
+   "home": [],
+   "away": [
+    "Arizona",
+    "Arizona State",
+    "California",
+    "Florida",
+    "Penn State",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Arizona State",
+    "California",
+    "Florida",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32741"
+  },
+  {
+   "id": 32812,
+   "date": "2026-04-03",
+   "time_et": "13:00:00",
+   "start_utc": "2026-04-03T17:00:00.000Z",
+   "desc": "Lexington Regional - Round 2, Session I",
+   "home": [],
+   "away": [
+    "Arkansas",
+    "Ball State",
+    "Bridgeport",
+    "Brown",
+    "Kent State",
+    "Maryland",
+    "Missouri",
+    "North Carolina State",
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Ball State",
+    "Brown",
+    "Kent State",
+    "Maryland",
+    "Missouri",
+    "North Carolina State"
+   ],
+   "virtius": "-yOiSzDV0T",
+   "stats_link": "https://scores.virti.us/?s=-yOiSzDV0T",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32812"
+  },
+  {
+   "id": 32755,
+   "date": "2026-04-03",
+   "time_et": "16:00:00",
+   "start_utc": "2026-04-03T20:00:00.000Z",
+   "desc": "Corvallis Regional - Round 2, Session I",
+   "home": [],
+   "away": [
+    "Alabama",
+    "Boise State",
+    "Denver",
+    "Oregon State",
+    "Sacramento State",
+    "UC Davis",
+    "Utah"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Boise State",
+    "Denver",
+    "Oregon State",
+    "Sacramento State",
+    "UC Davis",
+    "Utah"
+   ],
+   "virtius": "BCCtPHU0sK",
+   "stats_link": "https://scores.virti.us/?s=BCCtPHU0sK",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32755"
+  },
+  {
+   "id": 32813,
+   "date": "2026-04-03",
+   "time_et": "19:00:00",
+   "start_utc": "2026-04-03T23:00:00.000Z",
+   "desc": "Lexington Regional - Round 2, Session II",
+   "home": [],
+   "away": [
+    "Central Michigan",
+    "Illinois",
+    "Kentucky",
+    "Ohio State",
+    "Oklahoma",
+    "Rutgers",
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Illinois",
+    "Kentucky",
+    "Ohio State",
+    "Oklahoma",
+    "Rutgers",
+    "S.E. Missouri"
+   ],
+   "virtius": "NeFY2MLCKQ",
+   "stats_link": "https://scores.virti.us/?s=NeFY2MLCKQ",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32813"
+  },
+  {
+   "id": 32807,
+   "date": "2026-04-03",
+   "time_et": "22:00:00",
+   "start_utc": "2026-04-04T02:00:00.000Z",
+   "desc": "Corvallis Regional - Round 2, Session II",
+   "home": [],
+   "away": [
+    "Iowa",
+    "Minnesota",
+    "San Jose State",
+    "UCLA",
+    "Washington"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Minnesota",
+    "San Jose State",
+    "UCLA",
+    "Washington"
+   ],
+   "virtius": "kAxFuxrCrO",
+   "stats_link": "https://scores.virti.us/?s=kAxFuxrCrO",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32807"
+  },
+  {
+   "id": 32784,
+   "date": "2026-04-04",
+   "time_et": "18:00:00",
+   "start_utc": "2026-04-04T22:00:00.000Z",
+   "desc": "Baton Rouge Regional - Final",
+   "home": [],
+   "away": [
+    "Clemson",
+    "LSU",
+    "Michigan",
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "LSU",
+    "Michigan",
+    "Stanford"
+   ],
+   "virtius": "LJevA_TmY6",
+   "stats_link": "https://scores.virti.us/?s=LJevA_TmY6",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32784"
+  },
+  {
+   "id": 32772,
+   "date": "2026-04-04",
+   "time_et": "20:00:00",
+   "start_utc": "2026-04-05T00:00:00.000Z",
+   "desc": "Tempe Regional - Final",
+   "home": [],
+   "away": [
+    "California",
+    "Florida",
+    "Georgia",
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "California",
+    "Florida",
+    "Georgia",
+    "Michigan State"
+   ],
+   "virtius": "Hv9bKIh1xf",
+   "stats_link": "https://scores.virti.us/?s=Hv9bKIh1xf",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32772"
+  },
+  {
+   "id": 32793,
+   "date": "2026-04-05",
+   "time_et": "17:00:00",
+   "start_utc": "2026-04-05T21:00:00.000Z",
+   "desc": "Lexington Regional - Final",
+   "home": [],
+   "away": [
+    "Arkansas",
+    "Missouri",
+    "Ohio State",
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Missouri",
+    "Ohio State",
+    "Oklahoma"
+   ],
+   "virtius": "tBd8CrXBoV",
+   "stats_link": "https://scores.virti.us/?s=tBd8CrXBoV",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32793"
+  },
+  {
+   "id": 32802,
+   "date": "2026-04-05",
+   "time_et": "20:00:00",
+   "start_utc": "2026-04-06T00:00:00.000Z",
+   "desc": "Corvallis Regional - Final",
+   "home": [],
+   "away": [
+    "Alabama",
+    "Minnesota",
+    "UCLA",
+    "Utah"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Minnesota",
+    "UCLA",
+    "Utah"
+   ],
+   "virtius": "5x98j5g2VO",
+   "stats_link": "https://scores.virti.us/?s=5x98j5g2VO",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32802"
+  },
+  {
+   "id": 32834,
+   "date": "2026-04-16",
+   "time_et": "16:30:00",
+   "start_utc": "2026-04-16T20:30:00.000Z",
+   "desc": "NCAA Championships Semifinal I",
+   "home": [],
+   "away": [
+    "Arizona",
+    "Clemson",
+    "Florida",
+    "Georgia",
+    "LSU",
+    "Michigan",
+    "Michigan State",
+    "Ohio State",
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Clemson",
+    "Florida",
+    "Georgia",
+    "LSU",
+    "Michigan",
+    "Michigan State",
+    "Ohio State",
+    "Stanford"
+   ],
+   "virtius": "wWUOt3bvBX",
+   "stats_link": "https://scores.virti.us/?s=wWUOt3bvBX",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32834"
+  },
+  {
+   "id": 32841,
+   "date": "2026-04-16",
+   "time_et": "21:00:00",
+   "start_utc": "2026-04-17T01:00:00.000Z",
+   "desc": "NCAA Championships Semifinal II",
+   "home": [],
+   "away": [
+    "Air Force",
+    "Arkansas",
+    "Denver",
+    "Iowa",
+    "Kentucky",
+    "Minnesota",
+    "Missouri",
+    "North Carolina",
+    "Oklahoma",
+    "UCLA",
+    "Utah"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Arkansas",
+    "Denver",
+    "Iowa",
+    "Kentucky",
+    "Minnesota",
+    "Missouri",
+    "North Carolina",
+    "Oklahoma",
+    "UCLA",
+    "Utah"
+   ],
+   "virtius": "DdUgp5b9ce",
+   "stats_link": "https://scores.virti.us/?s=DdUgp5b9ce",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32841"
+  },
+  {
+   "id": 32829,
+   "date": "2026-04-18",
+   "time_et": "16:00:00",
+   "start_utc": "2026-04-18T20:00:00.000Z",
+   "desc": "NCAA Championships Finals",
+   "home": [],
+   "away": [
+    "Florida",
+    "LSU",
+    "Minnesota",
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Florida",
+    "LSU",
+    "Minnesota",
+    "Oklahoma"
+   ],
+   "virtius": "MFrZ9epozB",
+   "stats_link": "https://virti.us/session?s=MFrZ9epozB",
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": "https://www.roadtonationals.com/results/schedule/women/meet/32829"
+  }
+ ]
+}

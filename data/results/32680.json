@@ -1,0 +1,1181 @@
+{
+ "generated_at": "2026-10-30T15:38:04.739Z",
+ "source": "https://www.roadtonationals.com/api/women/meetresults/32680",
+ "meet_id": 32680,
+ "live": false,
+ "host": "",
+ "teams": [
+  {
+   "name": "Iowa",
+   "tid": 29,
+   "home": false,
+   "final_score": 196.7,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.875,
+     "gymnasts": [
+      {
+       "name": "Stella DePoala",
+       "score": 9.775
+      },
+      {
+       "name": "JerQuavia Henderson",
+       "score": 9.8
+      },
+      {
+       "name": "Gianna Masella",
+       "score": 9.65
+      },
+      {
+       "name": "Sophie Schriever",
+       "score": 9.85
+      },
+      {
+       "name": "Aurelie Tran",
+       "score": 9.8
+      },
+      {
+       "name": "Sydney Turner",
+       "score": 9.175
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.225,
+     "gymnasts": [
+      {
+       "name": "Daisy Bowles",
+       "score": 9.8
+      },
+      {
+       "name": "JerQuavia Henderson",
+       "score": 9.75
+      },
+      {
+       "name": "Gianna Masella",
+       "score": 9.8
+      },
+      {
+       "name": "Sophie Schriever",
+       "score": 9.8
+      },
+      {
+       "name": "Aurelie Tran",
+       "score": 9.95
+      },
+      {
+       "name": "Sydney Turner",
+       "score": 9.875
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 49.275,
+     "gymnasts": [
+      {
+       "name": "Maggie Ball",
+       "score": 9.775
+      },
+      {
+       "name": "Marissa Rojas",
+       "score": 9.8
+      },
+      {
+       "name": "Sophie Schriever",
+       "score": 9.85
+      },
+      {
+       "name": "Aurelie Tran",
+       "score": 9.9
+      },
+      {
+       "name": "Sydney Turner",
+       "score": 9.9
+      },
+      {
+       "name": "Haley Tyson",
+       "score": 9.825
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.325,
+     "gymnasts": [
+      {
+       "name": "Stella DePoala",
+       "score": 9.9
+      },
+      {
+       "name": "JerQuavia Henderson",
+       "score": 9.875
+      },
+      {
+       "name": "Sophie Schriever",
+       "score": 9.875
+      },
+      {
+       "name": "Aurelie Tran",
+       "score": 9.875
+      },
+      {
+       "name": "Sydney Turner",
+       "score": 9.75
+      },
+      {
+       "name": "Haley Tyson",
+       "score": 9.8
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Sophie Schriever",
+     "score": 39.375
+    },
+    {
+     "name": "Aurelie Tran",
+     "score": 39.525
+    },
+    {
+     "name": "Sydney Turner",
+     "score": 38.7
+    }
+   ],
+   "place": 1
+  },
+  {
+   "name": "Ohio State",
+   "tid": 46,
+   "home": false,
+   "final_score": 196.25,
+   "events": [
+    {
+     "event": "vault",
+     "score": 49.025,
+     "gymnasts": [
+      {
+       "name": "JJ Coleman",
+       "score": 9.825
+      },
+      {
+       "name": "Kaitlyn Grimes",
+       "score": 9.725
+      },
+      {
+       "name": "Natalie Martin",
+       "score": 9.825
+      },
+      {
+       "name": "Jaylyn Pomager",
+       "score": 9.775
+      },
+      {
+       "name": "Cameron Smith",
+       "score": 9.8
+      },
+      {
+       "name": "Tory Vetter",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 48.925,
+     "gymnasts": [
+      {
+       "name": "Sadie Jane Berry",
+       "score": 9.15
+      },
+      {
+       "name": "JJ Coleman",
+       "score": 9.8
+      },
+      {
+       "name": "Ava Jackson",
+       "score": 9.75
+      },
+      {
+       "name": "Jaylyn Pomager",
+       "score": 9.8
+      },
+      {
+       "name": "Maisyn Rader",
+       "score": 9.75
+      },
+      {
+       "name": "Tory Vetter",
+       "score": 9.825
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.9,
+     "gymnasts": [
+      {
+       "name": "Rylee Guevara",
+       "score": 9.775
+      },
+      {
+       "name": "Ava Jackson",
+       "score": 9.825
+      },
+      {
+       "name": "Natalie Martin",
+       "score": 9.825
+      },
+      {
+       "name": "Courtney McCann",
+       "score": 8.95
+      },
+      {
+       "name": "Cameron Smith",
+       "score": 9.825
+      },
+      {
+       "name": "Tory Vetter",
+       "score": 9.65
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.4,
+     "gymnasts": [
+      {
+       "name": "Baylie Belman",
+       "score": 9.825
+      },
+      {
+       "name": "JJ Coleman",
+       "score": 9.95
+      },
+      {
+       "name": "Kaitlyn Grimes",
+       "score": 9.85
+      },
+      {
+       "name": "Rylee Guevara",
+       "score": 9.875
+      },
+      {
+       "name": "Cameron Smith",
+       "score": 9.75
+      },
+      {
+       "name": "Tory Vetter",
+       "score": 9.9
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Tory Vetter",
+     "score": 39.175
+    }
+   ],
+   "place": 2
+  },
+  {
+   "name": "Penn State",
+   "tid": 49,
+   "home": false,
+   "final_score": 196,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.95,
+     "gymnasts": [
+      {
+       "name": "Ava Cash",
+       "score": 9.8
+      },
+      {
+       "name": "Jessica Johanson",
+       "score": 9.775
+      },
+      {
+       "name": "Allison Kaempfer",
+       "score": 9.725
+      },
+      {
+       "name": "Dani Latronica",
+       "score": 9.75
+      },
+      {
+       "name": "Elizabeth Leary",
+       "score": 9.775
+      },
+      {
+       "name": "Ava Piedrahita",
+       "score": 9.85
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.1,
+     "gymnasts": [
+      {
+       "name": "Ava Cash",
+       "score": 9.8
+      },
+      {
+       "name": "Jessica Johanson",
+       "score": 9.75
+      },
+      {
+       "name": "Dani Latronica",
+       "score": 9.875
+      },
+      {
+       "name": "Elizabeth Leary",
+       "score": 9.875
+      },
+      {
+       "name": "Ellie Monahan",
+       "score": 9.725
+      },
+      {
+       "name": "Ava Piedrahita",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.825,
+     "gymnasts": [
+      {
+       "name": "Alyssa Kramer",
+       "score": 8.825
+      },
+      {
+       "name": "Dani Latronica",
+       "score": 9.825
+      },
+      {
+       "name": "Elizabeth Leary",
+       "score": 9.75
+      },
+      {
+       "name": "Ashley Maul",
+       "score": 9.7
+      },
+      {
+       "name": "Kalea McElligott",
+       "score": 9.8
+      },
+      {
+       "name": "Ellie Monahan",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.125,
+     "gymnasts": [
+      {
+       "name": "Jessica Johanson",
+       "score": 9.825
+      },
+      {
+       "name": "Alyssa Kramer",
+       "score": 9.8
+      },
+      {
+       "name": "Elizabeth Leary",
+       "score": 9.825
+      },
+      {
+       "name": "Kalea McElligott",
+       "score": 9.85
+      },
+      {
+       "name": "Bella Misiura",
+       "score": 9.825
+      },
+      {
+       "name": "Ellie Monahan",
+       "score": 9.8
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Elizabeth Leary",
+     "score": 39.225
+    }
+   ],
+   "place": 3
+  },
+  {
+   "name": "Maryland",
+   "tid": 36,
+   "home": false,
+   "final_score": 195.3,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.825,
+     "gymnasts": [
+      {
+       "name": "Logan Buckmon",
+       "score": 9.7
+      },
+      {
+       "name": "Rayna Engelmayer",
+       "score": 9.775
+      },
+      {
+       "name": "Josephine Kogler",
+       "score": 9.75
+      },
+      {
+       "name": "Katrina Mendez-Abolnik",
+       "score": 9.8
+      },
+      {
+       "name": "Aine Reade",
+       "score": 9.7
+      },
+      {
+       "name": "Taylor Rech",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 48.55,
+     "gymnasts": [
+      {
+       "name": "Megan Bingham",
+       "score": 9.7
+      },
+      {
+       "name": "Chelsey Dennis",
+       "score": 9.75
+      },
+      {
+       "name": "Madeline Komoroski",
+       "score": 9.525
+      },
+      {
+       "name": "Aine Reade",
+       "score": 9.625
+      },
+      {
+       "name": "Gianna Ruffing",
+       "score": 9.725
+      },
+      {
+       "name": "Sarah Saville",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.7,
+     "gymnasts": [
+      {
+       "name": "Megan Bingham",
+       "score": 9.775
+      },
+      {
+       "name": "Emily DeFrees",
+       "score": 9.7
+      },
+      {
+       "name": "Chelsey Dennis",
+       "score": 9.625
+      },
+      {
+       "name": "Rayna Engelmayer",
+       "score": 9.725
+      },
+      {
+       "name": "Madeline Komoroski",
+       "score": 9.8
+      },
+      {
+       "name": "Aine Reade",
+       "score": 9.7
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.225,
+     "gymnasts": [
+      {
+       "name": "Emily DeFrees",
+       "score": 9.8
+      },
+      {
+       "name": "Rayna Engelmayer",
+       "score": 9.8
+      },
+      {
+       "name": "Madeline Komoroski",
+       "score": 9.875
+      },
+      {
+       "name": "Katrina Mendez-Abolnik",
+       "score": 9.75
+      },
+      {
+       "name": "Aine Reade",
+       "score": 9.9
+      },
+      {
+       "name": "Taylor Rech",
+       "score": 9.85
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Aine Reade",
+     "score": 38.925
+    }
+   ],
+   "place": 4
+  }
+ ],
+ "leaderboards": {
+  "vault": [
+   {
+    "name": "Sophie Schriever",
+    "team": "Iowa",
+    "score": 9.85,
+    "place": 1
+   },
+   {
+    "name": "Ava Piedrahita",
+    "team": "Penn State",
+    "score": 9.85,
+    "place": 1
+   },
+   {
+    "name": "JJ Coleman",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 3
+   },
+   {
+    "name": "Natalie Martin",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 3
+   },
+   {
+    "name": "Aurelie Tran",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "JerQuavia Henderson",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "Katrina Mendez-Abolnik",
+    "team": "Maryland",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "Taylor Rech",
+    "team": "Maryland",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "Cameron Smith",
+    "team": "Ohio State",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "Tory Vetter",
+    "team": "Ohio State",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "Ava Cash",
+    "team": "Penn State",
+    "score": 9.8,
+    "place": 5
+   },
+   {
+    "name": "Stella DePoala",
+    "team": "Iowa",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Rayna Engelmayer",
+    "team": "Maryland",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Jaylyn Pomager",
+    "team": "Ohio State",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Elizabeth Leary",
+    "team": "Penn State",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Jessica Johanson",
+    "team": "Penn State",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Josephine Kogler",
+    "team": "Maryland",
+    "score": 9.75,
+    "place": 17
+   },
+   {
+    "name": "Dani Latronica",
+    "team": "Penn State",
+    "score": 9.75,
+    "place": 17
+   },
+   {
+    "name": "Kaitlyn Grimes",
+    "team": "Ohio State",
+    "score": 9.725,
+    "place": 19
+   },
+   {
+    "name": "Allison Kaempfer",
+    "team": "Penn State",
+    "score": 9.725,
+    "place": 19
+   },
+   {
+    "name": "Aine Reade",
+    "team": "Maryland",
+    "score": 9.7,
+    "place": 21
+   },
+   {
+    "name": "Logan Buckmon",
+    "team": "Maryland",
+    "score": 9.7,
+    "place": 21
+   },
+   {
+    "name": "Gianna Masella",
+    "team": "Iowa",
+    "score": 9.65,
+    "place": 23
+   },
+   {
+    "name": "Sydney Turner",
+    "team": "Iowa",
+    "score": 9.175,
+    "place": 24
+   }
+  ],
+  "bars": [
+   {
+    "name": "Aurelie Tran",
+    "team": "Iowa",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Sydney Turner",
+    "team": "Iowa",
+    "score": 9.875,
+    "place": 2
+   },
+   {
+    "name": "Dani Latronica",
+    "team": "Penn State",
+    "score": 9.875,
+    "place": 2
+   },
+   {
+    "name": "Elizabeth Leary",
+    "team": "Penn State",
+    "score": 9.875,
+    "place": 2
+   },
+   {
+    "name": "Tory Vetter",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 5
+   },
+   {
+    "name": "Daisy Bowles",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Gianna Masella",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Sophie Schriever",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "JJ Coleman",
+    "team": "Ohio State",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Jaylyn Pomager",
+    "team": "Ohio State",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Ava Cash",
+    "team": "Penn State",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Ava Piedrahita",
+    "team": "Penn State",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "JerQuavia Henderson",
+    "team": "Iowa",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Chelsey Dennis",
+    "team": "Maryland",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Sarah Saville",
+    "team": "Maryland",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Ava Jackson",
+    "team": "Ohio State",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Maisyn Rader",
+    "team": "Ohio State",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Jessica Johanson",
+    "team": "Penn State",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Gianna Ruffing",
+    "team": "Maryland",
+    "score": 9.725,
+    "place": 19
+   },
+   {
+    "name": "Ellie Monahan",
+    "team": "Penn State",
+    "score": 9.725,
+    "place": 19
+   },
+   {
+    "name": "Megan Bingham",
+    "team": "Maryland",
+    "score": 9.7,
+    "place": 21
+   },
+   {
+    "name": "Aine Reade",
+    "team": "Maryland",
+    "score": 9.625,
+    "place": 22
+   },
+   {
+    "name": "Madeline Komoroski",
+    "team": "Maryland",
+    "score": 9.525,
+    "place": 23
+   },
+   {
+    "name": "Sadie Jane Berry",
+    "team": "Ohio State",
+    "score": 9.15,
+    "place": 24
+   }
+  ],
+  "beam": [
+   {
+    "name": "Aurelie Tran",
+    "team": "Iowa",
+    "score": 9.9,
+    "place": 1
+   },
+   {
+    "name": "Sydney Turner",
+    "team": "Iowa",
+    "score": 9.9,
+    "place": 1
+   },
+   {
+    "name": "Sophie Schriever",
+    "team": "Iowa",
+    "score": 9.85,
+    "place": 3
+   },
+   {
+    "name": "Haley Tyson",
+    "team": "Iowa",
+    "score": 9.825,
+    "place": 4
+   },
+   {
+    "name": "Ava Jackson",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 4
+   },
+   {
+    "name": "Cameron Smith",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 4
+   },
+   {
+    "name": "Natalie Martin",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 4
+   },
+   {
+    "name": "Dani Latronica",
+    "team": "Penn State",
+    "score": 9.825,
+    "place": 4
+   },
+   {
+    "name": "Marissa Rojas",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 9
+   },
+   {
+    "name": "Madeline Komoroski",
+    "team": "Maryland",
+    "score": 9.8,
+    "place": 9
+   },
+   {
+    "name": "Kalea McElligott",
+    "team": "Penn State",
+    "score": 9.8,
+    "place": 9
+   },
+   {
+    "name": "Maggie Ball",
+    "team": "Iowa",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Megan Bingham",
+    "team": "Maryland",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Rylee Guevara",
+    "team": "Ohio State",
+    "score": 9.775,
+    "place": 12
+   },
+   {
+    "name": "Elizabeth Leary",
+    "team": "Penn State",
+    "score": 9.75,
+    "place": 15
+   },
+   {
+    "name": "Ellie Monahan",
+    "team": "Penn State",
+    "score": 9.75,
+    "place": 15
+   },
+   {
+    "name": "Rayna Engelmayer",
+    "team": "Maryland",
+    "score": 9.725,
+    "place": 17
+   },
+   {
+    "name": "Aine Reade",
+    "team": "Maryland",
+    "score": 9.7,
+    "place": 18
+   },
+   {
+    "name": "Emily DeFrees",
+    "team": "Maryland",
+    "score": 9.7,
+    "place": 18
+   },
+   {
+    "name": "Ashley Maul",
+    "team": "Penn State",
+    "score": 9.7,
+    "place": 18
+   },
+   {
+    "name": "Tory Vetter",
+    "team": "Ohio State",
+    "score": 9.65,
+    "place": 21
+   },
+   {
+    "name": "Chelsey Dennis",
+    "team": "Maryland",
+    "score": 9.625,
+    "place": 22
+   },
+   {
+    "name": "Courtney McCann",
+    "team": "Ohio State",
+    "score": 8.95,
+    "place": 23
+   },
+   {
+    "name": "Alyssa Kramer",
+    "team": "Penn State",
+    "score": 8.825,
+    "place": 24
+   }
+  ],
+  "floor": [
+   {
+    "name": "JJ Coleman",
+    "team": "Ohio State",
+    "score": 9.95,
+    "place": 1
+   },
+   {
+    "name": "Stella DePoala",
+    "team": "Iowa",
+    "score": 9.9,
+    "place": 2
+   },
+   {
+    "name": "Aine Reade",
+    "team": "Maryland",
+    "score": 9.9,
+    "place": 2
+   },
+   {
+    "name": "Tory Vetter",
+    "team": "Ohio State",
+    "score": 9.9,
+    "place": 2
+   },
+   {
+    "name": "Aurelie Tran",
+    "team": "Iowa",
+    "score": 9.875,
+    "place": 5
+   },
+   {
+    "name": "JerQuavia Henderson",
+    "team": "Iowa",
+    "score": 9.875,
+    "place": 5
+   },
+   {
+    "name": "Sophie Schriever",
+    "team": "Iowa",
+    "score": 9.875,
+    "place": 5
+   },
+   {
+    "name": "Madeline Komoroski",
+    "team": "Maryland",
+    "score": 9.875,
+    "place": 5
+   },
+   {
+    "name": "Rylee Guevara",
+    "team": "Ohio State",
+    "score": 9.875,
+    "place": 5
+   },
+   {
+    "name": "Taylor Rech",
+    "team": "Maryland",
+    "score": 9.85,
+    "place": 10
+   },
+   {
+    "name": "Kaitlyn Grimes",
+    "team": "Ohio State",
+    "score": 9.85,
+    "place": 10
+   },
+   {
+    "name": "Kalea McElligott",
+    "team": "Penn State",
+    "score": 9.85,
+    "place": 10
+   },
+   {
+    "name": "Baylie Belman",
+    "team": "Ohio State",
+    "score": 9.825,
+    "place": 13
+   },
+   {
+    "name": "Bella Misiura",
+    "team": "Penn State",
+    "score": 9.825,
+    "place": 13
+   },
+   {
+    "name": "Elizabeth Leary",
+    "team": "Penn State",
+    "score": 9.825,
+    "place": 13
+   },
+   {
+    "name": "Jessica Johanson",
+    "team": "Penn State",
+    "score": 9.825,
+    "place": 13
+   },
+   {
+    "name": "Haley Tyson",
+    "team": "Iowa",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Emily DeFrees",
+    "team": "Maryland",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Rayna Engelmayer",
+    "team": "Maryland",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Alyssa Kramer",
+    "team": "Penn State",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Ellie Monahan",
+    "team": "Penn State",
+    "score": 9.8,
+    "place": 17
+   },
+   {
+    "name": "Sydney Turner",
+    "team": "Iowa",
+    "score": 9.75,
+    "place": 22
+   },
+   {
+    "name": "Katrina Mendez-Abolnik",
+    "team": "Maryland",
+    "score": 9.75,
+    "place": 22
+   },
+   {
+    "name": "Cameron Smith",
+    "team": "Ohio State",
+    "score": 9.75,
+    "place": 22
+   }
+  ],
+  "aa": [
+   {
+    "name": "Aurelie Tran",
+    "team": "Iowa",
+    "score": 39.525,
+    "place": 1
+   },
+   {
+    "name": "Sophie Schriever",
+    "team": "Iowa",
+    "score": 39.375,
+    "place": 2
+   },
+   {
+    "name": "Elizabeth Leary",
+    "team": "Penn State",
+    "score": 39.224999999999994,
+    "place": 3
+   },
+   {
+    "name": "Tory Vetter",
+    "team": "Ohio State",
+    "score": 39.175,
+    "place": 4
+   },
+   {
+    "name": "Aine Reade",
+    "team": "Maryland",
+    "score": 38.925,
+    "place": 5
+   },
+   {
+    "name": "Sydney Turner",
+    "team": "Iowa",
+    "score": 38.7,
+    "place": 6
+   }
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Five That Score — Live D1 Scoreboard</title>
+<meta name="description" content="Live NCAA Division I women's gymnastics scores: every meet, every rotation, every athlete. By The Five That Score (@thefivethatscore).">
+<meta property="og:title" content="The Five That Score — Live D1 Scoreboard">
+<meta property="og:description" content="Live NCAA D1 women's gymnastics scores, rotation by rotation.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@thefivethatscore">
+<meta name="theme-color" content="#14112b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314112b'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23ffcf4a'%3E5%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1><span class="brand">The Five That Score</span> <span class="dash">—</span> <span class="sub">Live D1 Scoreboard</span></h1>
+    <a class="handle" href="https://x.com/thefivethatscore" target="_blank" rel="noopener">@thefivethatscore</a>
+  </div>
+</header>
+
+<nav class="datebar" aria-label="Choose date">
+  <div class="wrap">
+    <button id="prev" class="nav-btn" aria-label="Previous day">‹</button>
+    <label class="date-label">
+      <span id="date-text" class="date-text"></span>
+      <input id="date" type="date" aria-label="Pick a date">
+    </label>
+    <button id="next" class="nav-btn" aria-label="Next day">›</button>
+    <button id="today" class="today-btn">Today</button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div id="banner" class="banner" hidden></div>
+  <div id="status-line" class="status-line" aria-live="polite"></div>
+  <section id="meets" class="meets" aria-live="polite"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Live scores from <a href="https://virti.us" target="_blank" rel="noopener">Virtius</a>. Schedule and fallback results from <a href="https://www.roadtonationals.com" target="_blank" rel="noopener">Road to Nationals</a>. Times shown in Central Time.</p>
+    <p>Built by <a href="https://x.com/thefivethatscore" target="_blank" rel="noopener">The Five That Score</a> · Unofficial; always confirm with official results. · <a id="demo-link" href="?demo">Demo</a></p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

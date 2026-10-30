@@ -1,0 +1,1455 @@
+{
+ "generated_at": "2026-10-30T15:38:34.790Z",
+ "source": "https://www.roadtonationals.com/api/women/meetresults/32625",
+ "meet_id": 32625,
+ "live": false,
+ "host": "LIU",
+ "teams": [
+  {
+   "name": "Towson",
+   "tid": 64,
+   "home": false,
+   "final_score": 196.375,
+   "events": [
+    {
+     "event": "vault",
+     "score": 49,
+     "gymnasts": [
+      {
+       "name": "Polina Belanovski",
+       "score": 9.8
+      },
+      {
+       "name": "Isabella DeCroo",
+       "score": 9.8
+      },
+      {
+       "name": "Adriana Hoffman",
+       "score": 9.8
+      },
+      {
+       "name": "Jocelyn Lannon",
+       "score": 9.825
+      },
+      {
+       "name": "Isabella Minervini",
+       "score": 9.775
+      },
+      {
+       "name": "Reese Toland",
+       "score": 9.7
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.175,
+     "gymnasts": [
+      {
+       "name": "Polina Belanovski",
+       "score": 9.775
+      },
+      {
+       "name": "Hayden Gough",
+       "score": 9.8
+      },
+      {
+       "name": "Lauren Greene",
+       "score": 9.8
+      },
+      {
+       "name": "Isabella Minervini",
+       "score": 9.925
+      },
+      {
+       "name": "Brissa Portillo",
+       "score": 9.85
+      },
+      {
+       "name": "Piper Slocum",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.875,
+     "gymnasts": [
+      {
+       "name": "Polina Belanovski",
+       "score": 9.6
+      },
+      {
+       "name": "Emma Duerre",
+       "score": 8.975
+      },
+      {
+       "name": "Natalie Lindgren",
+       "score": 9.775
+      },
+      {
+       "name": "Isabella Minervini",
+       "score": 9.8
+      },
+      {
+       "name": "Brissa Portillo",
+       "score": 9.85
+      },
+      {
+       "name": "Celia Trotter",
+       "score": 9.85
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49.325,
+     "gymnasts": [
+      {
+       "name": "Polina Belanovski",
+       "score": 9.85
+      },
+      {
+       "name": "Carmella Calafati",
+       "score": 9.85
+      },
+      {
+       "name": "Isabella DeCroo",
+       "score": 9.9
+      },
+      {
+       "name": "Adriana Hoffman",
+       "score": 9.875
+      },
+      {
+       "name": "Natalie Lindgren",
+       "score": 9.85
+      },
+      {
+       "name": "Isabella Minervini",
+       "score": 9.625
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Polina Belanovski",
+     "score": 39.025
+    },
+    {
+     "name": "Isabella Minervini",
+     "score": 39.125
+    }
+   ],
+   "place": 1
+  },
+  {
+   "name": "LIU",
+   "tid": 128,
+   "home": true,
+   "final_score": 195.075,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.675,
+     "gymnasts": [
+      {
+       "name": "Brooke Burkhart",
+       "score": 9.75
+      },
+      {
+       "name": "Kaira Cartwright",
+       "score": 9.7
+      },
+      {
+       "name": "Zoe Claiborne",
+       "score": 9.65
+      },
+      {
+       "name": "Annalisa Page",
+       "score": 9.725
+      },
+      {
+       "name": "Raphaelle Perreault",
+       "score": 9.725
+      },
+      {
+       "name": "Eden Stippick",
+       "score": 9.775
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.075,
+     "gymnasts": [
+      {
+       "name": "Brisa Carraro",
+       "score": 9.85
+      },
+      {
+       "name": "Angelina Hogan",
+       "score": 9.825
+      },
+      {
+       "name": "Carly Kliewer",
+       "score": 9.8
+      },
+      {
+       "name": "Camille Lund Rasmussen",
+       "score": 9.825
+      },
+      {
+       "name": "Raphaelle Perreault",
+       "score": 9.05
+      },
+      {
+       "name": "Isabella Savino",
+       "score": 9.775
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.475,
+     "gymnasts": [
+      {
+       "name": "Kady Bills-McCoy",
+       "score": 9.7
+      },
+      {
+       "name": "Ellorie Cane",
+       "score": 9.8
+      },
+      {
+       "name": "Kaira Cartwright",
+       "score": 9.325
+      },
+      {
+       "name": "Alina Danilchenko",
+       "score": 9.725
+      },
+      {
+       "name": "Renee Figueroa",
+       "score": 9.4
+      },
+      {
+       "name": "Raphaelle Perreault",
+       "score": 9.85
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 48.85,
+     "gymnasts": [
+      {
+       "name": "Zoe Claiborne",
+       "score": 9.725
+      },
+      {
+       "name": "Alina Danilchenko",
+       "score": 9.8
+      },
+      {
+       "name": "Danyella Holmes",
+       "score": 9.675
+      },
+      {
+       "name": "Annalisa Page",
+       "score": 9.75
+      },
+      {
+       "name": "Raphaelle Perreault",
+       "score": 9.9
+      },
+      {
+       "name": "Eden Stippick",
+       "score": 9.675
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Raphaelle Perreault",
+     "score": 38.525
+    }
+   ],
+   "place": 2
+  },
+  {
+   "name": "New Hampshire",
+   "tid": 42,
+   "home": false,
+   "final_score": 194.775,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.85,
+     "gymnasts": [
+      {
+       "name": "Stacy Boss",
+       "score": 9.8
+      },
+      {
+       "name": "Mady Harvey",
+       "score": 9.65
+      },
+      {
+       "name": "Amelia Lannon",
+       "score": 9.75
+      },
+      {
+       "name": "McCall McMullen",
+       "score": 9.75
+      },
+      {
+       "name": "Serena Mullin",
+       "score": 9.75
+      },
+      {
+       "name": "Gwen Ockerbloom",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 48.8,
+     "gymnasts": [
+      {
+       "name": "Zoe Arthur",
+       "score": 8.975
+      },
+      {
+       "name": "Poulina Minaev",
+       "score": 9.6
+      },
+      {
+       "name": "Leah Moreno",
+       "score": 9.825
+      },
+      {
+       "name": "Serena Mullin",
+       "score": 9.8
+      },
+      {
+       "name": "Peyton Novinger",
+       "score": 9.7
+      },
+      {
+       "name": "Abby Scherban",
+       "score": 9.875
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.125,
+     "gymnasts": [
+      {
+       "name": "Mady Harvey",
+       "score": 9.875
+      },
+      {
+       "name": "Riley Himes",
+       "score": 9.725
+      },
+      {
+       "name": "McCall McMullen",
+       "score": 9.55
+      },
+      {
+       "name": "Poulina Minaev",
+       "score": 9.2
+      },
+      {
+       "name": "Serena Mullin",
+       "score": 9.225
+      },
+      {
+       "name": "Gwen Ockerbloom",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 49,
+     "gymnasts": [
+      {
+       "name": "Stacy Boss",
+       "score": 9.75
+      },
+      {
+       "name": "McCall McMullen",
+       "score": 9.85
+      },
+      {
+       "name": "Poulina Minaev",
+       "score": 9.825
+      },
+      {
+       "name": "Serena Mullin",
+       "score": 9.7
+      },
+      {
+       "name": "Peyton Novinger",
+       "score": 9.775
+      },
+      {
+       "name": "Gwen Ockerbloom",
+       "score": 9.8
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Serena Mullin",
+     "score": 38.475
+    }
+   ],
+   "place": 3
+  },
+  {
+   "name": "Temple",
+   "tid": 62,
+   "home": false,
+   "final_score": 194.35,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.85,
+     "gymnasts": [
+      {
+       "name": "Hailey Best",
+       "score": 9.7
+      },
+      {
+       "name": "Amelia Budd",
+       "score": 9.8
+      },
+      {
+       "name": "Jade Harden",
+       "score": 9.775
+      },
+      {
+       "name": "Kyrstin Johnson",
+       "score": 9.7
+      },
+      {
+       "name": "Nikki Rengifo",
+       "score": 9.825
+      },
+      {
+       "name": "Brooklyn Thomas",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 48.25,
+     "gymnasts": [
+      {
+       "name": "Ella Beck",
+       "score": 9.625
+      },
+      {
+       "name": "Mariella Brueck",
+       "score": 9.75
+      },
+      {
+       "name": "Reese DeHaan",
+       "score": 9.375
+      },
+      {
+       "name": "Robyn Dunne",
+       "score": 9.125
+      },
+      {
+       "name": "Ava Sutphen",
+       "score": 9.8
+      },
+      {
+       "name": "Megan White",
+       "score": 9.7
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 48.325,
+     "gymnasts": [
+      {
+       "name": "Ella Beck",
+       "score": 9.675
+      },
+      {
+       "name": "Hailey Best",
+       "score": 9.825
+      },
+      {
+       "name": "Mariella Brueck",
+       "score": 8.275
+      },
+      {
+       "name": "Robyn Dunne",
+       "score": 9.75
+      },
+      {
+       "name": "Nikki Rengifo",
+       "score": 9.575
+      },
+      {
+       "name": "Megan White",
+       "score": 9.5
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 48.925,
+     "gymnasts": [
+      {
+       "name": "Mariella Brueck",
+       "score": 9.65
+      },
+      {
+       "name": "Amelia Budd",
+       "score": 9.775
+      },
+      {
+       "name": "Robyn Dunne",
+       "score": 9.725
+      },
+      {
+       "name": "Kyrstin Johnson",
+       "score": 9.775
+      },
+      {
+       "name": "Nikki Rengifo",
+       "score": 9.825
+      },
+      {
+       "name": "Brooklyn Thomas",
+       "score": 9.825
+      }
+     ]
+    }
+   ],
+   "all_around": [],
+   "place": 4
+  },
+  {
+   "name": "George Washington",
+   "tid": 23,
+   "home": false,
+   "final_score": 194.125,
+   "events": [
+    {
+     "event": "vault",
+     "score": 48.675,
+     "gymnasts": [
+      {
+       "name": "Brooke Izzo",
+       "score": 9.675
+      },
+      {
+       "name": "Lola Montevago",
+       "score": 9.75
+      },
+      {
+       "name": "Alison Mun",
+       "score": 9.275
+      },
+      {
+       "name": "Zoe Safran",
+       "score": 9.7
+      },
+      {
+       "name": "Deana Sheremeta",
+       "score": 9.8
+      },
+      {
+       "name": "Alexia Zakaryan",
+       "score": 9.75
+      }
+     ]
+    },
+    {
+     "event": "bars",
+     "score": 49.1,
+     "gymnasts": [
+      {
+       "name": "Lola Montevago",
+       "score": 9.925
+      },
+      {
+       "name": "Maya Peters",
+       "score": 9.7
+      },
+      {
+       "name": "Zoe Safran",
+       "score": 9.8
+      },
+      {
+       "name": "Deana Sheremeta",
+       "score": 9.825
+      },
+      {
+       "name": "Sophia Tyeryar",
+       "score": 9.75
+      },
+      {
+       "name": "Alexia Zakaryan",
+       "score": 9.8
+      }
+     ]
+    },
+    {
+     "event": "beam",
+     "score": 47.425,
+     "gymnasts": [
+      {
+       "name": "Brooke Izzo",
+       "score": 8.375
+      },
+      {
+       "name": "Kylie Kazmierski",
+       "score": 9.35
+      },
+      {
+       "name": "Nancy Kiner",
+       "score": 9.625
+      },
+      {
+       "name": "Lola Montevago",
+       "score": 9.75
+      },
+      {
+       "name": "Maya Peters",
+       "score": 9
+      },
+      {
+       "name": "Deana Sheremeta",
+       "score": 9.7
+      }
+     ]
+    },
+    {
+     "event": "floor",
+     "score": 48.925,
+     "gymnasts": [
+      {
+       "name": "Kylie Kazmierski",
+       "score": 9.675
+      },
+      {
+       "name": "Lola Montevago",
+       "score": 9.8
+      },
+      {
+       "name": "Catherine O'Rourke",
+       "score": 9.025
+      },
+      {
+       "name": "Maya Peters",
+       "score": 9.825
+      },
+      {
+       "name": "Deana Sheremeta",
+       "score": 9.875
+      },
+      {
+       "name": "Aspen Tucker",
+       "score": 9.75
+      }
+     ]
+    }
+   ],
+   "all_around": [
+    {
+     "name": "Lola Montevago",
+     "score": 39.225
+    },
+    {
+     "name": "Deana Sheremeta",
+     "score": 39.2
+    }
+   ],
+   "place": 5
+  }
+ ],
+ "leaderboards": {
+  "vault": [
+   {
+    "name": "Nikki Rengifo",
+    "team": "Temple",
+    "score": 9.825,
+    "place": 1
+   },
+   {
+    "name": "Jocelyn Lannon",
+    "team": "Towson",
+    "score": 9.825,
+    "place": 1
+   },
+   {
+    "name": "Deana Sheremeta",
+    "team": "George Washington",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Gwen Ockerbloom",
+    "team": "New Hampshire",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Stacy Boss",
+    "team": "New Hampshire",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Amelia Budd",
+    "team": "Temple",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Adriana Hoffman",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Isabella DeCroo",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Polina Belanovski",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 3
+   },
+   {
+    "name": "Eden Stippick",
+    "team": "LIU",
+    "score": 9.775,
+    "place": 10
+   },
+   {
+    "name": "Jade Harden",
+    "team": "Temple",
+    "score": 9.775,
+    "place": 10
+   },
+   {
+    "name": "Isabella Minervini",
+    "team": "Towson",
+    "score": 9.775,
+    "place": 10
+   },
+   {
+    "name": "Alexia Zakaryan",
+    "team": "George Washington",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Lola Montevago",
+    "team": "George Washington",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Brooke Burkhart",
+    "team": "LIU",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Amelia Lannon",
+    "team": "New Hampshire",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "McCall McMullen",
+    "team": "New Hampshire",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Serena Mullin",
+    "team": "New Hampshire",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Brooklyn Thomas",
+    "team": "Temple",
+    "score": 9.75,
+    "place": 13
+   },
+   {
+    "name": "Annalisa Page",
+    "team": "LIU",
+    "score": 9.725,
+    "place": 20
+   },
+   {
+    "name": "Raphaelle Perreault",
+    "team": "LIU",
+    "score": 9.725,
+    "place": 20
+   },
+   {
+    "name": "Zoe Safran",
+    "team": "George Washington",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Kaira Cartwright",
+    "team": "LIU",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Hailey Best",
+    "team": "Temple",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Kyrstin Johnson",
+    "team": "Temple",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Reese Toland",
+    "team": "Towson",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Brooke Izzo",
+    "team": "George Washington",
+    "score": 9.675,
+    "place": 27
+   },
+   {
+    "name": "Zoe Claiborne",
+    "team": "LIU",
+    "score": 9.65,
+    "place": 28
+   },
+   {
+    "name": "Mady Harvey",
+    "team": "New Hampshire",
+    "score": 9.65,
+    "place": 28
+   },
+   {
+    "name": "Alison Mun",
+    "team": "George Washington",
+    "score": 9.275,
+    "place": 30
+   }
+  ],
+  "bars": [
+   {
+    "name": "Lola Montevago",
+    "team": "George Washington",
+    "score": 9.925,
+    "place": 1
+   },
+   {
+    "name": "Isabella Minervini",
+    "team": "Towson",
+    "score": 9.925,
+    "place": 1
+   },
+   {
+    "name": "Abby Scherban",
+    "team": "New Hampshire",
+    "score": 9.875,
+    "place": 3
+   },
+   {
+    "name": "Brisa Carraro",
+    "team": "LIU",
+    "score": 9.85,
+    "place": 4
+   },
+   {
+    "name": "Brissa Portillo",
+    "team": "Towson",
+    "score": 9.85,
+    "place": 4
+   },
+   {
+    "name": "Deana Sheremeta",
+    "team": "George Washington",
+    "score": 9.825,
+    "place": 6
+   },
+   {
+    "name": "Angelina Hogan",
+    "team": "LIU",
+    "score": 9.825,
+    "place": 6
+   },
+   {
+    "name": "Camille Lund Rasmussen",
+    "team": "LIU",
+    "score": 9.825,
+    "place": 6
+   },
+   {
+    "name": "Leah Moreno",
+    "team": "New Hampshire",
+    "score": 9.825,
+    "place": 6
+   },
+   {
+    "name": "Alexia Zakaryan",
+    "team": "George Washington",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Zoe Safran",
+    "team": "George Washington",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Carly Kliewer",
+    "team": "LIU",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Serena Mullin",
+    "team": "New Hampshire",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Ava Sutphen",
+    "team": "Temple",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Hayden Gough",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Lauren Greene",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Piper Slocum",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 10
+   },
+   {
+    "name": "Isabella Savino",
+    "team": "LIU",
+    "score": 9.775,
+    "place": 18
+   },
+   {
+    "name": "Polina Belanovski",
+    "team": "Towson",
+    "score": 9.775,
+    "place": 18
+   },
+   {
+    "name": "Sophia Tyeryar",
+    "team": "George Washington",
+    "score": 9.75,
+    "place": 20
+   },
+   {
+    "name": "Mariella Brueck",
+    "team": "Temple",
+    "score": 9.75,
+    "place": 20
+   },
+   {
+    "name": "Maya Peters",
+    "team": "George Washington",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Peyton Novinger",
+    "team": "New Hampshire",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Megan White",
+    "team": "Temple",
+    "score": 9.7,
+    "place": 22
+   },
+   {
+    "name": "Ella Beck",
+    "team": "Temple",
+    "score": 9.625,
+    "place": 25
+   },
+   {
+    "name": "Poulina Minaev",
+    "team": "New Hampshire",
+    "score": 9.6,
+    "place": 26
+   },
+   {
+    "name": "Reese DeHaan",
+    "team": "Temple",
+    "score": 9.375,
+    "place": 27
+   },
+   {
+    "name": "Robyn Dunne",
+    "team": "Temple",
+    "score": 9.125,
+    "place": 28
+   },
+   {
+    "name": "Raphaelle Perreault",
+    "team": "LIU",
+    "score": 9.05,
+    "place": 29
+   },
+   {
+    "name": "Zoe Arthur",
+    "team": "New Hampshire",
+    "score": 8.975,
+    "place": 30
+   }
+  ],
+  "beam": [
+   {
+    "name": "Mady Harvey",
+    "team": "New Hampshire",
+    "score": 9.875,
+    "place": 1
+   },
+   {
+    "name": "Raphaelle Perreault",
+    "team": "LIU",
+    "score": 9.85,
+    "place": 2
+   },
+   {
+    "name": "Brissa Portillo",
+    "team": "Towson",
+    "score": 9.85,
+    "place": 2
+   },
+   {
+    "name": "Celia Trotter",
+    "team": "Towson",
+    "score": 9.85,
+    "place": 2
+   },
+   {
+    "name": "Hailey Best",
+    "team": "Temple",
+    "score": 9.825,
+    "place": 5
+   },
+   {
+    "name": "Ellorie Cane",
+    "team": "LIU",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Isabella Minervini",
+    "team": "Towson",
+    "score": 9.8,
+    "place": 6
+   },
+   {
+    "name": "Natalie Lindgren",
+    "team": "Towson",
+    "score": 9.775,
+    "place": 8
+   },
+   {
+    "name": "Lola Montevago",
+    "team": "George Washington",
+    "score": 9.75,
+    "place": 9
+   },
+   {
+    "name": "Gwen Ockerbloom",
+    "team": "New Hampshire",
+    "score": 9.75,
+    "place": 9
+   },
+   {
+    "name": "Robyn Dunne",
+    "team": "Temple",
+    "score": 9.75,
+    "place": 9
+   },
+   {
+    "name": "Alina Danilchenko",
+    "team": "LIU",
+    "score": 9.725,
+    "place": 12
+   },
+   {
+    "name": "Riley Himes",
+    "team": "New Hampshire",
+    "score": 9.725,
+    "place": 12
+   },
+   {
+    "name": "Deana Sheremeta",
+    "team": "George Washington",
+    "score": 9.7,
+    "place": 14
+   },
+   {
+    "name": "Kady Bills-McCoy",
+    "team": "LIU",
+    "score": 9.7,
+    "place": 14
+   },
+   {
+    "name": "Ella Beck",
+    "team": "Temple",
+    "score": 9.675,
+    "place": 16
+   },
+   {
+    "name": "Nancy Kiner",
+    "team": "George Washington",
+    "score": 9.625,
+    "place": 17
+   },
+   {
+    "name": "Polina Belanovski",
+    "team": "Towson",
+    "score": 9.6,
+    "place": 18
+   },
+   {
+    "name": "Nikki Rengifo",
+    "team": "Temple",
+    "score": 9.575,
+    "place": 19
+   },
+   {
+    "name": "McCall McMullen",
+    "team": "New Hampshire",
+    "score": 9.55,
+    "place": 20
+   },
+   {
+    "name": "Megan White",
+    "team": "Temple",
+    "score": 9.5,
+    "place": 21
+   },
+   {
+    "name": "Renee Figueroa",
+    "team": "LIU",
+    "score": 9.4,
+    "place": 22
+   },
+   {
+    "name": "Kylie Kazmierski",
+    "team": "George Washington",
+    "score": 9.35,
+    "place": 23
+   },
+   {
+    "name": "Kaira Cartwright",
+    "team": "LIU",
+    "score": 9.325,
+    "place": 24
+   },
+   {
+    "name": "Serena Mullin",
+    "team": "New Hampshire",
+    "score": 9.225,
+    "place": 25
+   },
+   {
+    "name": "Poulina Minaev",
+    "team": "New Hampshire",
+    "score": 9.2,
+    "place": 26
+   },
+   {
+    "name": "Maya Peters",
+    "team": "George Washington",
+    "score": 9,
+    "place": 27
+   },
+   {
+    "name": "Emma Duerre",
+    "team": "Towson",
+    "score": 8.975,
+    "place": 28
+   },
+   {
+    "name": "Brooke Izzo",
+    "team": "George Washington",
+    "score": 8.375,
+    "place": 29
+   },
+   {
+    "name": "Mariella Brueck",
+    "team": "Temple",
+    "score": 8.275,
+    "place": 30
+   }
+  ],
+  "floor": [
+   {
+    "name": "Raphaelle Perreault",
+    "team": "LIU",
+    "score": 9.9,
+    "place": 1
+   },
+   {
+    "name": "Isabella DeCroo",
+    "team": "Towson",
+    "score": 9.9,
+    "place": 1
+   },
+   {
+    "name": "Deana Sheremeta",
+    "team": "George Washington",
+    "score": 9.875,
+    "place": 3
+   },
+   {
+    "name": "Adriana Hoffman",
+    "team": "Towson",
+    "score": 9.875,
+    "place": 3
+   },
+   {
+    "name": "McCall McMullen",
+    "team": "New Hampshire",
+    "score": 9.85,
+    "place": 5
+   },
+   {
+    "name": "Carmella Calafati",
+    "team": "Towson",
+    "score": 9.85,
+    "place": 5
+   },
+   {
+    "name": "Natalie Lindgren",
+    "team": "Towson",
+    "score": 9.85,
+    "place": 5
+   },
+   {
+    "name": "Polina Belanovski",
+    "team": "Towson",
+    "score": 9.85,
+    "place": 5
+   },
+   {
+    "name": "Maya Peters",
+    "team": "George Washington",
+    "score": 9.825,
+    "place": 9
+   },
+   {
+    "name": "Poulina Minaev",
+    "team": "New Hampshire",
+    "score": 9.825,
+    "place": 9
+   },
+   {
+    "name": "Brooklyn Thomas",
+    "team": "Temple",
+    "score": 9.825,
+    "place": 9
+   },
+   {
+    "name": "Nikki Rengifo",
+    "team": "Temple",
+    "score": 9.825,
+    "place": 9
+   },
+   {
+    "name": "Lola Montevago",
+    "team": "George Washington",
+    "score": 9.8,
+    "place": 13
+   },
+   {
+    "name": "Alina Danilchenko",
+    "team": "LIU",
+    "score": 9.8,
+    "place": 13
+   },
+   {
+    "name": "Gwen Ockerbloom",
+    "team": "New Hampshire",
+    "score": 9.8,
+    "place": 13
+   },
+   {
+    "name": "Peyton Novinger",
+    "team": "New Hampshire",
+    "score": 9.775,
+    "place": 16
+   },
+   {
+    "name": "Amelia Budd",
+    "team": "Temple",
+    "score": 9.775,
+    "place": 16
+   },
+   {
+    "name": "Kyrstin Johnson",
+    "team": "Temple",
+    "score": 9.775,
+    "place": 16
+   },
+   {
+    "name": "Aspen Tucker",
+    "team": "George Washington",
+    "score": 9.75,
+    "place": 19
+   },
+   {
+    "name": "Annalisa Page",
+    "team": "LIU",
+    "score": 9.75,
+    "place": 19
+   },
+   {
+    "name": "Stacy Boss",
+    "team": "New Hampshire",
+    "score": 9.75,
+    "place": 19
+   },
+   {
+    "name": "Zoe Claiborne",
+    "team": "LIU",
+    "score": 9.725,
+    "place": 22
+   },
+   {
+    "name": "Robyn Dunne",
+    "team": "Temple",
+    "score": 9.725,
+    "place": 22
+   },
+   {
+    "name": "Serena Mullin",
+    "team": "New Hampshire",
+    "score": 9.7,
+    "place": 24
+   },
+   {
+    "name": "Kylie Kazmierski",
+    "team": "George Washington",
+    "score": 9.675,
+    "place": 25
+   },
+   {
+    "name": "Danyella Holmes",
+    "team": "LIU",
+    "score": 9.675,
+    "place": 25
+   },
+   {
+    "name": "Eden Stippick",
+    "team": "LIU",
+    "score": 9.675,
+    "place": 25
+   },
+   {
+    "name": "Mariella Brueck",
+    "team": "Temple",
+    "score": 9.65,
+    "place": 28
+   },
+   {
+    "name": "Isabella Minervini",
+    "team": "Towson",
+    "score": 9.625,
+    "place": 29
+   },
+   {
+    "name": "Catherine O'Rourke",
+    "team": "George Washington",
+    "score": 9.025,
+    "place": 30
+   }
+  ],
+  "aa": [
+   {
+    "name": "Lola Montevago",
+    "team": "George Washington",
+    "score": 39.225,
+    "place": 1
+   },
+   {
+    "name": "Deana Sheremeta",
+    "team": "George Washington",
+    "score": 39.2,
+    "place": 2
+   },
+   {
+    "name": "Isabella Minervini",
+    "team": "Towson",
+    "score": 39.125,
+    "place": 3
+   },
+   {
+    "name": "Polina Belanovski",
+    "team": "Towson",
+    "score": 39.025000000000006,
+    "place": 4
+   },
+   {
+    "name": "Raphaelle Perreault",
+    "team": "LIU",
+    "score": 38.525,
+    "place": 5
+   },
+   {
+    "name": "Serena Mullin",
+    "team": "New Hampshire",
+    "score": 38.474999999999994,
+    "place": 6
+   }
+  ]
+ }
+}
