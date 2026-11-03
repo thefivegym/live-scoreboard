@@ -118,3 +118,5 @@ main.wrap { flex: 1; padding-top: 10px; padding-bottom: 30px; }
   .rot-table { font-size: .8rem; }
   .rot-table th, .rot-table td { padding: 5px 3px; }
 }
+.badge.iq { background: color-mix(in srgb, var(--accent) 40%, transparent); color: #5a4300; letter-spacing: .04em; }
+@media (prefers-color-scheme: dark) { .badge.iq { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); } }

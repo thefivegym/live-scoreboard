@@ -1,0 +1,113 @@
+{
+ "_comment": "Hand-maintained list of preseason intrasquad / preview meets. The site merges these into the day view. Fields: id (unique slug), school (RTN team name), event, date (local YYYY-MM-DD), time_local (HH:MM 24h, null if unknown), tz (IANA zone of the venue), virtius (session key or null until known), source_url, skip (true = not scored / exhibition; hidden unless a Virtius key turns up), note. scripts/discover-intrasquads.mjs fills keys into data/intrasquads-discovered.json; a key set here always wins.",
+ "events": [
+  {
+   "id": "2024-minnesota-maroon-gold",
+   "school": "Minnesota",
+   "event": "Maroon & Gold Intrasquad",
+   "date": "2024-12-20",
+   "time_local": null,
+   "tz": "America/Chicago",
+   "virtius": "3BGoE0eNKL",
+   "source_url": "https://scores.virti.us/?s=3BGoE0eNKL",
+   "skip": false,
+   "note": "Past event (2025 preseason); two squads, Maroon and Gold."
+  },
+  {
+   "id": "2025-michigan-intrasquad",
+   "school": "Michigan",
+   "event": "Michigan Intrasquad",
+   "date": "2025-12-12",
+   "time_local": null,
+   "tz": "America/Detroit",
+   "virtius": "nxgpeuLsJJ",
+   "source_url": "https://scores.virti.us/?s=nxgpeuLsJJ",
+   "skip": false,
+   "note": "Past event (2026 preseason); scored as one team."
+  },
+  {
+   "id": "2025-minnesota-maroon-gold",
+   "school": "Minnesota",
+   "event": "Maroon vs. Gold Intrasquad",
+   "date": "2025-12-19",
+   "time_local": null,
+   "tz": "America/Chicago",
+   "virtius": "xzRr0AuPWC",
+   "source_url": "https://scores.virti.us/?s=xzRr0AuPWC",
+   "skip": false,
+   "note": "Past event (2026 preseason); two squads, Maroon and Gold."
+  },
+  {
+   "id": "2026-alabama-crimson-couture",
+   "school": "Alabama",
+   "event": "Crimson Couture",
+   "date": "2026-11-20",
+   "time_local": "19:00",
+   "tz": "America/Chicago",
+   "virtius": null,
+   "source_url": "https://rolltide.com/sports/womens-gymnastics/schedule",
+   "skip": true,
+   "note": "Fashion experience / preview event, not a scored meet."
+  },
+  {
+   "id": "2026-sjsu-intrasquad-nov",
+   "school": "San Jose State",
+   "event": "SJSU Intrasquad",
+   "date": "2026-11-21",
+   "time_local": "11:00",
+   "tz": "America/Los_Angeles",
+   "virtius": null,
+   "source_url": "https://sjsuspartans.com/sports/womens-gymnastics/schedule/season/2027",
+   "skip": false,
+   "note": "Listed as 'Intrasquad Meet Exhibition' on the SJSU schedule."
+  },
+  {
+   "id": "2026-oklahoma-sooner-spotlight",
+   "school": "Oklahoma",
+   "event": "Sooner Spotlight",
+   "date": "2026-12-06",
+   "time_local": null,
+   "tz": "America/Chicago",
+   "virtius": null,
+   "source_url": "https://soonersports.com/sports/womens-gymnastics/schedule",
+   "skip": false,
+   "note": "Fan showcase; may not be scored on Virtius."
+  },
+  {
+   "id": "2026-utah-red-rocks-preview",
+   "school": "Utah",
+   "event": "Red Rocks Preview",
+   "date": "2026-12-11",
+   "time_local": null,
+   "tz": "America/Denver",
+   "virtius": null,
+   "source_url": "https://utahutes.com/sports/womens-gymnastics/schedule",
+   "skip": true,
+   "note": "Exhibition."
+  },
+  {
+   "id": "2026-florida-chalk-and-chomp",
+   "school": "Florida",
+   "event": "Chalk & Chomp Preview",
+   "date": "2026-12-13",
+   "time_local": "14:00",
+   "tz": "America/New_York",
+   "virtius": null,
+   "source_url": "https://floridagators.com/news/2026/11/2/gators-gymnastics-chalk-chomp-preview-set-for-dec-13",
+   "skip": false,
+   "note": "Orange & Blue dual-meet format with guest judges; not streamed."
+  },
+  {
+   "id": "2026-alabama-crimson-and-white",
+   "school": "Alabama",
+   "event": "Crimson and White Preview",
+   "date": "2026-12-17",
+   "time_local": "18:30",
+   "tz": "America/Chicago",
+   "virtius": null,
+   "source_url": "https://rolltide.com/sports/womens-gymnastics/schedule",
+   "skip": false,
+   "note": "Coleman Coliseum."
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "generated_at": "2026-11-03T22:58:02.579Z",
+ "source": "scripts/discover-intrasquads.mjs: virti.us links on D1 athletics gymnastics schedule pages, checked against api.virti.us/session/{key}/json",
+ "events": [
+  {
+   "id": "found-MXn0VXQneP",
+   "matched_id": null,
+   "school": "Northern Illinois",
+   "event": "NIU Red-Black Exhibition",
+   "date": "2025-12-19",
+   "time_local": null,
+   "tz": null,
+   "virtius": "MXn0VXQneP",
+   "virtius_name": "NIU Red-Black Exhibition",
+   "squads": [
+    "Red",
+    "Black"
+   ],
+   "source_url": "https://niuhuskies.com/sports/womens-gymnastics/schedule",
+   "already_in_seed": false
+  }
+ ],
+ "virtius_cache": {
+  "MXn0VXQneP": {
+   "meet_date": "2025-12-19",
+   "name": "NIU Red-Black Exhibition",
+   "teams": [
+    "Red",
+    "Black"
+   ],
+   "tricode": "NIU",
+   "intrasquad": true
+  }
+ }
+}

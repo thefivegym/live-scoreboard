@@ -10,6 +10,10 @@ on:
     # Every 10 minutes during meet hours, January–April: 16:00–05:59 UTC (≈10 AM–midnight CT).
     - cron: '*/10 16-23 * 1-4 *'
     - cron: '*/10 0-5 * 1-4 *'
+    # Preseason (November–December) every 10 minutes during meet hours: intrasquad key discovery
+    # only for schools with a key-less intrasquad that day (no Road to Nationals calls).
+    - cron: '*/10 16-23 * 11-12 *'
+    - cron: '*/10 0-5 * 11-12 *'
 
 permissions:
   contents: write
@@ -24,7 +28,7 @@ jobs:
   update:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
@@ -32,7 +36,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Classify run
+        id: kind
+        run: |
+          # Preseason 10-minute runs only look for intrasquad Virtius keys due today.
+          case "${{ github.event.schedule }}" in
+            '*/10 16-23 * 11-12 *'|'*/10 0-5 * 11-12 *') echo "preseason_tick=true" >> "$GITHUB_OUTPUT" ;;
+            *) echo "preseason_tick=false" >> "$GITHUB_OUTPUT" ;;
+          esac
+      - name: Discover intrasquad Virtius keys (all D1 schedule pages)
+        # Daily run and manual runs. Fails soft: never blocks the schedule build or deploy.
+        if: steps.kind.outputs.preseason_tick != 'true' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '15 11 * * *')
+        continue-on-error: true
+        timeout-minutes: 15
+        run: node scripts/discover-intrasquads.mjs
+      - name: Discover intrasquad Virtius keys (schools with an intrasquad today)
+        if: steps.kind.outputs.preseason_tick == 'true' || (github.event.schedule != '15 11 * * *' && github.event_name == 'schedule')
+        continue-on-error: true
+        timeout-minutes: 5
+        run: node scripts/discover-intrasquads.mjs --due
       - name: Build schedule and fallback results from Road to Nationals
+        if: steps.kind.outputs.preseason_tick != 'true'
         run: node scripts/build-schedule.mjs
       - name: Commit changed data
         id: commit

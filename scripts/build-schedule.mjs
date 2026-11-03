@@ -237,6 +237,11 @@ async function main() {
   }
 
   const upcoming = meets.filter(m => m.date >= today);
+  // Preseason intrasquads (data/intrasquads.json + discovered keys) also count as meet days.
+  const iqSeed = (await readJson(join(DATA, 'intrasquads.json'), { events: [] })).events || [];
+  const iqFound = (await readJson(join(DATA, 'intrasquads-discovered.json'), { events: [] })).events || [];
+  const iqDates = [...iqSeed.filter(e => !e.skip || e.virtius), ...iqFound].map(e => e.date).filter(d => d && d >= today).sort();
+  const nextMeet = [upcoming[0]?.date, iqDates[0]].filter(Boolean).sort()[0] || null;
   await writeJsonIfChanged(join(DATA, 'schedule.json'), {
     generated_at: new Date().toISOString(),
     today,
@@ -249,7 +254,8 @@ async function main() {
     meet_count: meets.length,
     first_date: meets[0]?.date || null,
     last_date: meets.at(-1)?.date || null,
-    next_date: upcoming[0]?.date || null,
+    next_date: nextMeet,
+    next_intrasquad_date: iqDates[0] || null,
     meets,
   });
   log(`Schedule: ${meets.length} D1 meets in season ${usedSeason} (published ${season}: ${published})`);
