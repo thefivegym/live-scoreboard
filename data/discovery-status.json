@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T11:50:58.100Z",
+ "generated_at": "2026-11-10T12:00:06.836Z",
  "parsed": 62,
  "total": 62,
  "failed": [],
@@ -29,7 +29,7 @@
     "DdUgp5b9ce"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Alabama": {
    "ok": true,
@@ -41,7 +41,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Alaska": {
    "ok": true,
@@ -53,7 +53,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Arizona State": {
    "ok": true,
@@ -65,7 +65,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Arizona": {
    "ok": true,
@@ -77,7 +77,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Arkansas": {
    "ok": true,
@@ -89,7 +89,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Auburn": {
    "ok": true,
@@ -101,33 +101,19 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "BYU": {
    "ok": true,
    "url": "https://byucougars.com/sports/womens-gymnastics/schedule",
-   "http": 404,
-   "title": "Women's Gymnastics 2026 - BYU Athletics - Official Athletics Website - BYU Cougars",
-   "season": 2026,
-   "dates_seen": 14,
-   "links": 13,
-   "keys": [
-    "s-zulYvxIo",
-    "C1XuuEGIIF",
-    "xCn4y8_yF5",
-    "PIAv4WdUrN",
-    "Xfe98lb-_J",
-    "OYELbVnNUw",
-    "ih5XFSatoU",
-    "LT-t1hW71-",
-    "2hlulKJXIl",
-    "witaXQooTN",
-    "Xh8RMWKfYU",
-    "0L_12Cw45Q",
-    "uRGgiTHKkw"
-   ],
+   "http": 200,
+   "title": "Women's Gymnastics 2027 - BYU Athletics - Official Athletics Website - BYU Cougars",
+   "season": 2027,
+   "dates_seen": 11,
+   "links": 0,
+   "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Ball State": {
    "ok": true,
@@ -139,7 +125,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Boise State": {
    "ok": true,
@@ -151,7 +137,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Bowling Green": {
    "ok": true,
@@ -163,7 +149,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "Brown": {
    "ok": true,
@@ -188,7 +174,7 @@
     "G8OxcKk92U"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:46:37.967Z"
+   "checked_at": "2026-11-10T11:55:48.842Z"
   },
   "California": {
    "ok": true,
@@ -200,7 +186,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:47.827Z"
+   "checked_at": "2026-11-10T11:55:58.736Z"
   },
   "Central Michigan": {
    "ok": true,
@@ -212,7 +198,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:47.906Z"
+   "checked_at": "2026-11-10T11:55:58.826Z"
   },
   "Clemson": {
    "ok": true,
@@ -224,7 +210,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:49.336Z"
+   "checked_at": "2026-11-10T11:56:00.315Z"
   },
   "Cornell": {
    "ok": true,
@@ -238,7 +224,7 @@
     "RaF9vQELpW"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:46:55.432Z"
+   "checked_at": "2026-11-10T11:56:01.043Z"
   },
   "Denver": {
    "ok": true,
@@ -250,7 +236,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:46:55.646Z"
+   "checked_at": "2026-11-10T11:56:06.493Z"
   },
   "Eastern Michigan": {
    "ok": true,
@@ -262,7 +248,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:09.421Z"
+   "checked_at": "2026-11-10T11:56:20.418Z"
   },
   "Florida": {
    "ok": true,
@@ -274,7 +260,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:10.418Z"
+   "checked_at": "2026-11-10T11:56:20.589Z"
   },
   "George Washington": {
    "ok": true,
@@ -297,7 +283,7 @@
     "uRGgiTHKkw"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:47:11.941Z"
+   "checked_at": "2026-11-10T11:56:23.216Z"
   },
   "Georgia": {
    "ok": true,
@@ -309,7 +295,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:14.952Z"
+   "checked_at": "2026-11-10T11:56:26.063Z"
   },
   "Illinois State": {
    "ok": true,
@@ -321,7 +307,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:18.467Z"
+   "checked_at": "2026-11-10T11:56:27.831Z"
   },
   "Illinois": {
    "ok": true,
@@ -333,7 +319,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:15.509Z"
+   "checked_at": "2026-11-10T11:56:26.475Z"
   },
   "Iowa State": {
    "ok": true,
@@ -354,7 +340,7 @@
     "Hbc6skO18X"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:47:21.557Z"
+   "checked_at": "2026-11-10T11:56:33.221Z"
   },
   "Iowa": {
    "ok": true,
@@ -366,31 +352,19 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:20.818Z"
+   "checked_at": "2026-11-10T11:56:31.575Z"
   },
   "Kent State": {
    "ok": true,
    "url": "https://kentstatesports.com/sports/womens-gymnastics/schedule",
    "http": 200,
-   "title": "2025-26 Gymnastics Schedule - Kent State Golden Flashes",
-   "season": 2026,
-   "dates_seen": 19,
-   "links": 11,
-   "keys": [
-    "-yOiSzDV0T",
-    "rx23A0UWi3",
-    "EHciV5q2lV",
-    "oIGnf3aWYd",
-    "kfULK-83rl",
-    "pdDgQYzwKp",
-    "deuf-IZHTL",
-    "kh4N3TlFPm__",
-    "WyMrcXUvyo",
-    "YvPI_0Oysg",
-    "OJtF2Kpw94"
-   ],
+   "title": "2026-27 Gymnastics Schedule - Kent State Golden Flashes",
+   "season": 2027,
+   "dates_seen": 7,
+   "links": 0,
+   "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:25.555Z"
+   "checked_at": "2026-11-10T11:56:35.653Z"
   },
   "Kentucky": {
    "ok": true,
@@ -402,7 +376,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:27.771Z"
+   "checked_at": "2026-11-10T11:56:37.534Z"
   },
   "LIU": {
    "ok": true,
@@ -421,7 +395,7 @@
     "D8CHeQ9UMr"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:47:30.992Z"
+   "checked_at": "2026-11-10T11:56:40.823Z"
   },
   "LSU": {
    "ok": true,
@@ -433,7 +407,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:40.314Z"
+   "checked_at": "2026-11-10T11:56:52.056Z"
   },
   "Maryland": {
    "ok": true,
@@ -445,7 +419,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:42.438Z"
+   "checked_at": "2026-11-10T11:56:52.514Z"
   },
   "Michigan State": {
    "ok": true,
@@ -457,7 +431,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:46.567Z"
+   "checked_at": "2026-11-10T11:56:57.004Z"
   },
   "Michigan": {
    "ok": true,
@@ -469,7 +443,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:44.940Z"
+   "checked_at": "2026-11-10T11:56:56.967Z"
   },
   "Minnesota": {
    "ok": true,
@@ -481,7 +455,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:47.933Z"
+   "checked_at": "2026-11-10T11:56:59.509Z"
   },
   "Missouri": {
    "ok": true,
@@ -493,7 +467,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:54.713Z"
+   "checked_at": "2026-11-10T11:57:01.941Z"
   },
   "Nebraska": {
    "ok": true,
@@ -505,7 +479,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:47:58.617Z"
+   "checked_at": "2026-11-10T11:57:05.480Z"
   },
   "New Hampshire": {
    "ok": true,
@@ -517,7 +491,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:03.132Z"
+   "checked_at": "2026-11-10T11:57:07.387Z"
   },
   "North Carolina State": {
    "ok": true,
@@ -541,7 +515,7 @@
     "-yOiSzDV0T"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:08.654Z"
+   "checked_at": "2026-11-10T11:57:12.828Z"
   },
   "North Carolina": {
    "ok": true,
@@ -549,11 +523,11 @@
    "http": 200,
    "title": "2027 Women's Gymnastics Schedule - University of North Carolina Athletics",
    "season": 2027,
-   "dates_seen": 24,
+   "dates_seen": 23,
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:03.391Z"
+   "checked_at": "2026-11-10T11:57:09.525Z"
   },
   "Northern Illinois": {
    "ok": true,
@@ -576,7 +550,7 @@
     "b-agB5veZQ"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:13.402Z"
+   "checked_at": "2026-11-10T11:57:19.464Z"
   },
   "Ohio State": {
    "ok": true,
@@ -588,7 +562,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:15.715Z"
+   "checked_at": "2026-11-10T11:57:24.231Z"
   },
   "Oklahoma": {
    "ok": true,
@@ -600,7 +574,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:17.356Z"
+   "checked_at": "2026-11-10T11:57:27.959Z"
   },
   "Oregon State": {
    "ok": true,
@@ -624,7 +598,7 @@
     "BCCtPHU0sK"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:18.985Z"
+   "checked_at": "2026-11-10T11:57:28.607Z"
   },
   "Penn State": {
    "ok": true,
@@ -638,7 +612,7 @@
     "QYG4A-rPsU"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:19.541Z"
+   "checked_at": "2026-11-10T11:57:30.784Z"
   },
   "Pennsylvania": {
    "ok": true,
@@ -663,7 +637,7 @@
     "Vlx4JpcKXy"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:26.691Z"
+   "checked_at": "2026-11-10T11:57:32.095Z"
   },
   "Pittsburgh": {
    "ok": true,
@@ -675,7 +649,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:30.375Z"
+   "checked_at": "2026-11-10T11:57:33.540Z"
   },
   "Rutgers": {
    "ok": true,
@@ -687,7 +661,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:34.186Z"
+   "checked_at": "2026-11-10T11:57:38.147Z"
   },
   "S.E. Missouri": {
    "ok": true,
@@ -710,7 +684,7 @@
     "PRKNZshVOj"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:34.618Z"
+   "checked_at": "2026-11-10T11:57:40.487Z"
   },
   "Sacramento State": {
    "ok": true,
@@ -722,7 +696,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:43.805Z"
+   "checked_at": "2026-11-10T11:57:41.442Z"
   },
   "San Jose State": {
    "ok": true,
@@ -734,7 +708,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:46.854Z"
+   "checked_at": "2026-11-10T11:57:54.798Z"
   },
   "Southern Utah": {
    "ok": true,
@@ -746,7 +720,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:48.197Z"
+   "checked_at": "2026-11-10T11:57:56.431Z"
   },
   "Stanford": {
    "ok": true,
@@ -758,7 +732,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:51.162Z"
+   "checked_at": "2026-11-10T11:57:58.618Z"
   },
   "Temple": {
    "ok": true,
@@ -770,7 +744,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:53.145Z"
+   "checked_at": "2026-11-10T11:57:59.141Z"
   },
   "Towson": {
    "ok": true,
@@ -787,7 +761,7 @@
     "nXzWc7FAB_"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:48:54.876Z"
+   "checked_at": "2026-11-10T11:58:04.040Z"
   },
   "UC Davis": {
    "ok": true,
@@ -799,7 +773,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:48:56.685Z"
+   "checked_at": "2026-11-10T11:58:04.782Z"
   },
   "UCLA": {
    "ok": true,
@@ -811,7 +785,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:01.409Z"
+   "checked_at": "2026-11-10T11:58:06.770Z"
   },
   "Utah State": {
    "ok": true,
@@ -833,7 +807,7 @@
     "nXzWc7FAB_"
    ],
    "error": null,
-   "checked_at": "2026-11-08T11:49:05.974Z"
+   "checked_at": "2026-11-10T11:58:10.496Z"
   },
   "Utah": {
    "ok": true,
@@ -845,7 +819,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:05.420Z"
+   "checked_at": "2026-11-10T11:58:10.041Z"
   },
   "Washington": {
    "ok": true,
@@ -857,7 +831,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:16.149Z"
+   "checked_at": "2026-11-10T11:58:13.291Z"
   },
   "West Virginia": {
    "ok": true,
@@ -869,7 +843,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:18.842Z"
+   "checked_at": "2026-11-10T11:58:26.784Z"
   },
   "Western Michigan": {
    "ok": true,
@@ -881,7 +855,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:24.152Z"
+   "checked_at": "2026-11-10T11:58:31.043Z"
   },
   "William & Mary": {
    "ok": true,
@@ -893,7 +867,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:27.733Z"
+   "checked_at": "2026-11-10T11:58:36.130Z"
   },
   "Yale": {
    "ok": true,
@@ -905,7 +879,7 @@
    "links": 0,
    "keys": [],
    "error": null,
-   "checked_at": "2026-11-08T11:49:37.560Z"
+   "checked_at": "2026-11-10T11:58:41.278Z"
   }
  }
 }
