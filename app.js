@@ -627,4 +627,29 @@
     if (state.meets.some(m => meetKey(m) === hashMeet)) document.getElementById(`meet-${hashMeet}`)?.scrollIntoView({ block: 'start' });
     else { state.open.delete(hashMeet); await openDeepLink(hashMeet); }
   });
+
+  // Visit counter: once per browser session so the 30s refresh and date/hash
+  // changes do not inflate the count. Fail silently if the API is down.
+  (function trackVisits() {
+    const elCount = document.getElementById('visit-count');
+    if (!elCount) return;
+    const base = 'https://abacus.jasoncameron.dev';
+    const path = 'thefivegym-live-scoreboard/visits';
+    const storeKey = 'tfts-visit-counted';
+    let already = false;
+    try { already = sessionStorage.getItem(storeKey) === '1'; } catch { /* private mode */ }
+    const url = already ? `${base}/get/${path}` : `${base}/hit/${path}`;
+    fetch(url).then(r => {
+      if (!r.ok) throw new Error(String(r.status));
+      return r.json();
+    }).then(data => {
+      const n = Number(data && data.value);
+      if (!Number.isFinite(n) || n < 1) return;
+      if (!already) {
+        try { sessionStorage.setItem(storeKey, '1'); } catch { /* ignore */ }
+      }
+      elCount.textContent = `👀 ${n.toLocaleString('en-US')} visits`;
+      elCount.hidden = false;
+    }).catch(() => { /* hide and never break the scoreboard */ });
+  })();
 })();
