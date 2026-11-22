@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21T11:57:23.061Z",
- "today": "2026-11-21",
+ "generated_at": "2026-11-22T11:55:36.785Z",
+ "today": "2026-11-22",
  "requested_season": 2027,
  "season": 2026,
  "season_published": false,
@@ -10,8 +10,8 @@
  "meet_count": 342,
  "first_date": "2026-01-02",
  "last_date": "2026-04-18",
- "next_date": "2026-11-21",
- "next_intrasquad_date": "2026-11-21",
+ "next_date": "2026-12-06",
+ "next_intrasquad_date": "2026-12-06",
  "meets": [
   {
    "id": 31517,
