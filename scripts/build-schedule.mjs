@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 // Builds data/schedule.json (D1 women's gymnastics meets) from Road to Nationals,
 // plus data/results/{meet_id}.json fallbacks for non-Virtius meets on today's date.
+// If RTN has not published the current season, announced school-site meets in
+// data/announced/{season}.json are used instead (and written to data/seasons/{season}.json).
+// When RTN later publishes, RTN meets win (ids, Virtius keys); announced meets RTN lacks
+// are kept and de-duplicated by date + overlapping D1 teams.
 // No npm deps; Node 18+ (global fetch).
 //
 // Usage:
@@ -200,6 +204,71 @@ async function buildResults(meets, dates) {
   }
 }
 
+
+// ---------- announced school-site schedules (used until RTN publishes) ----------
+function teamSet(m) { return new Set((m.d1_teams || []).map(t => String(t))); }
+function overlapCount(a, b) {
+  const A = teamSet(a);
+  return [...teamSet(b)].filter(t => A.has(t)).length;
+}
+function announcedMatch(rtnMeet, announcedMeets) {
+  const sameDay = announcedMeets.filter(a => a.date === rtnMeet.date);
+  let best = null, bestN = 0;
+  for (const a of sameDay) {
+    const n = overlapCount(rtnMeet, a);
+    if (n > bestN) { best = a; bestN = n; }
+  }
+  if (bestN >= 2) return best;
+  if (bestN >= 1 && (rtnMeet.d1_teams || []).length <= 2 && (best.d1_teams || []).length <= 2) return best;
+  const rtnDesc = (rtnMeet.desc || '').toLowerCase();
+  if (rtnDesc) {
+    const named = sameDay.find(a => a.desc && (a.desc.toLowerCase() === rtnDesc || a.desc.toLowerCase().includes(rtnDesc) || rtnDesc.includes(a.desc.toLowerCase())));
+    if (named) return named;
+  }
+  return null;
+}
+function mergeRtnWithAnnounced(rtnMeets, announcedMeets) {
+  if (!announcedMeets?.length) return rtnMeets;
+  const used = new Set();
+  const out = rtnMeets.map(m => {
+    const a = announcedMatch(m, announcedMeets);
+    if (a) used.add(a);
+    // Prefer RTN fields; fill location/venue if RTN has none.
+    if (!a) return m;
+    return {
+      ...m,
+      location: m.location || a.location || null,
+      venue: m.venue || a.venue || null,
+    };
+  });
+  for (const a of announcedMeets) {
+    if (used.has(a)) continue;
+    // If a later pass would still match (shouldn't), skip.
+    if (announcedMatch(a, rtnMeets)) continue;
+    out.push({
+      id: a.id,
+      date: a.date,
+      time_et: a.time_et ?? null,
+      start_utc: a.start_utc ?? null,
+      desc: a.desc || '',
+      home: a.home || [],
+      away: a.away || [],
+      d1_teams: a.d1_teams || [],
+      virtius: a.virtius ?? null,
+      stats_link: a.stats_link ?? null,
+      video_link: a.video_link ?? null,
+      video_desc: a.video_desc ?? null,
+      rtn_url: a.rtn_url ?? null,
+      location: a.location || null,
+      venue: a.venue || null,
+      sources: a.sources || [],
+    });
+  }
+  out.sort((a, b) => (a.date + (a.time_et || '')).localeCompare(b.date + (b.time_et || ''))
+    || String(a.id).localeCompare(String(b.id), undefined, { numeric: true }));
+  return out;
+}
+
 // ---------- main ----------
 async function main() {
   const today = ymdInTz(new Date());
@@ -211,29 +280,61 @@ async function main() {
   const overrides = await readJson(join(DATA, 'd1-overrides.json'), { include: [], exclude: [] });
   overrides.include ||= []; overrides.exclude ||= [];
 
+  const announcedFile = join(DATA, 'announced', `${season}.json`);
+  const announced = await readJson(announcedFile);
+
   let raw = await rtnGet(`/schedule/${season}/1`);
   let usedSeason = season, published = validSeason(raw, season);
-  if (!published) {
-    log(`RTN has not published the ${season} schedule yet (response contains other seasons' dates).`);
-    const prev = season - 1;
-    if (validSeason(raw, prev)) raw = raw; else raw = await rtnGet(`/schedule/${prev}/1`);
-    usedSeason = prev;
-    if (!validSeason(raw, prev)) {
-      const cached = await readJson(join(DATA, 'seasons', `${prev}.json`));
-      if (!cached) throw new Error('No usable schedule from RTN');
-      raw = null; log('  using cached season file');
-    }
-  }
-
   let meets;
-  if (raw) {
+  let source;
+  let note = null;
+
+  if (published) {
     meets = normalizeSchedule(raw, d1Set, overrides);
-    await writeJsonIfChanged(join(DATA, 'seasons', `${usedSeason}.json`), {
-      generated_at: new Date().toISOString(), season: usedSeason,
-      source: `${RTN}/schedule/${usedSeason}/1`, meets,
+    meets = mergeRtnWithAnnounced(meets, announced?.meets || []);
+    source = `${RTN}/schedule/${season}/1`;
+    if (announced?.meets?.length) {
+      source += `; plus announced school schedules in data/announced/${season}.json for meets RTN does not yet list`;
+    }
+    await writeJsonIfChanged(join(DATA, 'seasons', `${season}.json`), {
+      generated_at: new Date().toISOString(), season,
+      source, meets,
     });
   } else {
-    meets = (await readJson(join(DATA, 'seasons', `${usedSeason}.json`))).meets;
+    log(`RTN has not published the ${season} schedule yet (response contains other seasons' dates).`);
+    if (announced?.meets?.length) {
+      log(`  using ${announced.meets.length} announced school-site meets for ${season}`);
+      usedSeason = season;
+      published = false;
+      meets = announced.meets;
+      source = announced.source || `data/announced/${season}.json`;
+      note = `The ${season} dates are from official school schedules. Road to Nationals has not published the ${season} schedule yet, so Virtius scoring links will appear when they do.`;
+      await writeJsonIfChanged(join(DATA, 'seasons', `${season}.json`), {
+        generated_at: new Date().toISOString(), season,
+        source, meets,
+      });
+    } else {
+      const prev = season - 1;
+      if (validSeason(raw, prev)) raw = raw; else raw = await rtnGet(`/schedule/${prev}/1`);
+      usedSeason = prev;
+      if (!validSeason(raw, prev)) {
+        const cached = await readJson(join(DATA, 'seasons', `${prev}.json`));
+        if (!cached) throw new Error('No usable schedule from RTN');
+        raw = null; log('  using cached season file');
+      }
+      if (raw) {
+        meets = normalizeSchedule(raw, d1Set, overrides);
+        await writeJsonIfChanged(join(DATA, 'seasons', `${usedSeason}.json`), {
+          generated_at: new Date().toISOString(), season: usedSeason,
+          source: `${RTN}/schedule/${usedSeason}/1`, meets,
+        });
+        source = `${RTN}/schedule/${usedSeason}/1`;
+      } else {
+        meets = (await readJson(join(DATA, 'seasons', `${usedSeason}.json`))).meets;
+        source = `${RTN}/schedule/${usedSeason}/1`;
+      }
+      note = `Road to Nationals has not published the ${season} schedule yet; showing the ${usedSeason} season.`;
+    }
   }
 
   const upcoming = meets.filter(m => m.date >= today);
@@ -243,8 +344,8 @@ async function main() {
     requested_season: season,
     season: usedSeason,
     season_published: published,
-    note: published ? null : `Road to Nationals has not published the ${season} schedule yet; showing the ${usedSeason} season.`,
-    source: `${RTN}/schedule/${usedSeason}/1`,
+    note,
+    source,
     d1_team_source: d1.source,
     meet_count: meets.length,
     first_date: meets[0]?.date || null,

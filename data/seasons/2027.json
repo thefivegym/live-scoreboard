@@ -1,0 +1,8417 @@
+{
+ "generated_at": "2026-11-23T09:13:24.000Z",
+ "season": 2027,
+ "source": "announced school athletics schedules (Sidearm / WMT official team sites), 2026-27 season",
+ "meets": [
+  {
+   "id": "ann-2027-01-08-kentucky-ohiostate",
+   "date": "2027-01-08",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-09T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Ohio State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lexington, Ky. | Historic Memorial Coliseum",
+   "venue": null,
+   "sources": [
+    "https://ukathletics.com/",
+    "https://ohiostatebuckeyes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-best-of-mn",
+   "date": "2027-01-08",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-09T00:30:00.000Z",
+   "desc": "Best of MN",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Winona State",
+    "Hamline",
+    "Gustavus"
+   ],
+   "d1_teams": [
+    "Minnesota"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": null,
+   "venue": "Maturi Pavilion",
+   "sources": [
+    "https://gophersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-arkansas-tri-meet",
+   "date": "2027-01-08",
+   "time_et": "19:45:00",
+   "start_utc": "2027-01-09T00:45:00.000Z",
+   "desc": "Arkansas Tri Meet",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "S.E. Missouri",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "S.E. Missouri",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fayetteville, Ark.",
+   "venue": "Bud Walton Arena",
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://semoredhawks.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-arizona-auburn",
+   "date": "2027-01-08",
+   "time_et": "20:00:00",
+   "start_utc": "2027-01-09T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Arizona"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Auburn, Ala.",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://auburntigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-arizona-state-quad",
+   "date": "2027-01-08",
+   "time_et": "20:30:00",
+   "start_utc": "2027-01-09T01:30:00.000Z",
+   "desc": "Arizona State Quad",
+   "home": [
+    "Rutgers",
+    "UW-La Crosse",
+    "Arizona State"
+   ],
+   "away": [
+    "Air Force"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Arizona State",
+    "Air Force"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tempe, Ariz. (Desert Financial Arena)",
+   "venue": null,
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://thesundevils.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-southernutah-utahstate",
+   "date": "2027-01-08",
+   "time_et": "20:30:00",
+   "start_utc": "2027-01-09T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Utah State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "America First Event Center",
+   "venue": null,
+   "sources": [
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-cal-berkeley-quad-meet",
+   "date": "2027-01-08",
+   "time_et": "21:30:00",
+   "start_utc": "2027-01-09T02:30:00.000Z",
+   "desc": "Cal Berkeley Quad Meet",
+   "home": [
+    "California",
+    "Alaska"
+   ],
+   "away": [
+    "Central Michigan",
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "California",
+    "Alaska",
+    "Central Michigan",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Berkeley, Calif.",
+   "venue": "Haas Pavilion",
+   "sources": [
+    "https://goseawolves.com/",
+    "https://calbears.com/",
+    "https://cmuchippewas.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-michigan-stanford",
+   "date": "2027-01-08",
+   "time_et": "22:00:00",
+   "start_utc": "2027-01-09T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Palo Alto, Calif.",
+   "venue": null,
+   "sources": [
+    "https://mgoblue.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-08-zou-to-the-lou",
+   "date": "2027-01-08",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "Zou to the Lou",
+   "home": [
+    "Missouri",
+    "Illinois",
+    "Nebraska",
+    "Iowa"
+   ],
+   "away": [],
+   "d1_teams": [
+    "Missouri",
+    "Illinois",
+    "Nebraska",
+    "Iowa"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "St. Charles, Mo.",
+   "venue": "Family Arena",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://hawkeyesports.com/",
+    "https://mutigers.com/",
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-09-sprouts-farmer-s-market-collegiate-quad",
+   "date": "2027-01-09",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-09T18:00:00.000Z",
+   "desc": "Sprouts Farmer's Market Collegiate Quad",
+   "home": [],
+   "away": [
+    "Florida",
+    "UCLA",
+    "LSU",
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Florida",
+    "UCLA",
+    "LSU",
+    "Oklahoma"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Greenville, S.C.",
+   "venue": null,
+   "sources": [
+    "https://floridagators.com/",
+    "https://soonersports.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-09-oregon-state-quad-meet",
+   "date": "2027-01-09",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-09T22:00:00.000Z",
+   "desc": "Oregon State Quad Meet",
+   "home": [
+    "Oregon State",
+    "Washington",
+    "Alabama"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Washington",
+    "Alabama",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Corvallis, Oregon",
+   "venue": "Gill Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://byucougars.com/",
+    "https://osubeavers.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-09-illinoisstate-northernillinois-westernmichigan",
+   "date": "2027-01-09",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-09T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois State",
+    "Western Michigan"
+   ],
+   "away": [
+    "Northern Illinois",
+    "UW-Oshkosh"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "Western Michigan",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Battle Creek, Mich. (Kellogg Arena)",
+   "venue": null,
+   "sources": [
+    "https://goredbirds.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-09-michiganstate-northcarolinastate",
+   "date": "2027-01-09",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-10T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "East Lansing, Mich.",
+   "venue": null,
+   "sources": [
+    "https://msuspartans.com/",
+    "https://gopack.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-alaska-sacramentostate-ucdavis",
+   "date": "2027-01-10",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "away": [
+    "Alaska",
+    "UW-Stout"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "UC Davis",
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Sacramento, Calif.",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/",
+    "https://hornetsports.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-cornell-yale",
+   "date": "2027-01-10",
+   "time_et": "12:00:00",
+   "start_utc": "2027-01-10T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Cornell"
+   ],
+   "away": [
+    "Yale"
+   ],
+   "d1_teams": [
+    "Cornell",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ithaca, NY",
+   "venue": null,
+   "sources": [
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-sprouts-farmers-market-collegiate-quad",
+   "date": "2027-01-10",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-10T18:00:00.000Z",
+   "desc": "Sprouts Farmers Market Collegiate Quad",
+   "home": [],
+   "away": [
+    "Clemson",
+    "Georgia",
+    "North Carolina",
+    "Utah"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Georgia",
+    "North Carolina",
+    "Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Greenville, S.C.",
+   "venue": "Bon Secours Wellness Arena",
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://georgiadogs.com/",
+    "https://goheels.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-bowlinggreen-easternmichigan",
+   "date": "2027-01-10",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-10T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Bowling Green"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ypsilanti, Mich.",
+   "venue": "George Gervin GameAbove Center",
+   "sources": [
+    "https://bgsufalcons.com/",
+    "https://emueagles.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-terrapin-quad",
+   "date": "2027-01-10",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-10T18:00:00.000Z",
+   "desc": "Terrapin Quad",
+   "home": [],
+   "away": [
+    "LIU",
+    "Centenary College",
+    "Maryland",
+    "Temple"
+   ],
+   "d1_teams": [
+    "LIU",
+    "Maryland",
+    "Temple"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "College Park, MD",
+   "venue": "XFINITY Center",
+   "sources": [
+    "https://liuathletics.com/",
+    "https://umterps.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-towson-tri-meet",
+   "date": "2027-01-10",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-10T18:00:00.000Z",
+   "desc": "Towson Tri-Meet",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "New Hampshire",
+    "West Chester"
+   ],
+   "d1_teams": [
+    "Towson",
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Towson, Md.",
+   "venue": "SECU Arena",
+   "sources": [
+    "https://unhwildcats.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-georgewashington-pennstate-pittsburgh",
+   "date": "2027-01-10",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-10T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "George Washington",
+    "Pittsburgh",
+    "Ursinus College"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "George Washington",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Park, Pa.",
+   "venue": null,
+   "sources": [
+    "https://gwsports.com/",
+    "https://gopsusports.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-10-boisestate-denver",
+   "date": "2027-01-10",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-10T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Boise State",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Boise State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denver, Colo.",
+   "venue": "Magness Arena",
+   "sources": [
+    "https://broncosports.com/",
+    "https://denverpioneers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-bowling-green-quad",
+   "date": "2027-01-15",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-16T00:00:00.000Z",
+   "desc": "Bowling Green Quad",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Ball State",
+    "University of Wisconsin-Whitewater",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Ball State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Bowling Green, Ohio",
+   "venue": "Stroh Center",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://bgsufalcons.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-georgia-missouri",
+   "date": "2027-01-15",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-16T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Georgia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbia, Mo.",
+   "venue": null,
+   "sources": [
+    "https://georgiadogs.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-kentucky-oklahoma",
+   "date": "2027-01-15",
+   "time_et": "19:15:00",
+   "start_utc": "2027-01-16T00:15:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Kentucky"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Norman, Okla.",
+   "venue": "Lloyd Noble Center",
+   "sources": [
+    "https://ukathletics.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-alabama-auburn",
+   "date": "2027-01-15",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-16T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Auburn"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tuscaloosa, Ala.",
+   "venue": "Coleman Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://auburntigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-arkansas-florida",
+   "date": "2027-01-15",
+   "time_et": "19:45:00",
+   "start_utc": "2027-01-16T00:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Florida"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fayetteville, Ark.",
+   "venue": "Bud Walton Arena",
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://floridagators.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-byu-boisestate-sacramentostate",
+   "date": "2027-01-15",
+   "time_et": "20:00:00",
+   "start_utc": "2027-01-16T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State",
+    "Sacramento State"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Sacramento State",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Boise, Idaho",
+   "venue": "ExtraMile Arena",
+   "sources": [
+    "https://byucougars.com/",
+    "https://broncosports.com/",
+    "https://hornetsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-arizonastate-lsu",
+   "date": "2027-01-15",
+   "time_et": "20:30:00",
+   "start_utc": "2027-01-16T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Arizona State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "N Stadium Dr, Baton Rouge, LA 70802",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-minnesota-nebraska",
+   "date": "2027-01-15",
+   "time_et": "21:00:00",
+   "start_utc": "2027-01-16T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Minneapolis, Minn.",
+   "venue": "Maturi Pavilion",
+   "sources": [
+    "https://gophersports.com/",
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-15-california-clemson",
+   "date": "2027-01-15",
+   "time_et": "22:30:00",
+   "start_utc": "2027-01-16T03:30:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "California",
+    "Clemson"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Berkeley, Calif.",
+   "venue": "Haas Pavilion",
+   "sources": [
+    "https://calbears.com/",
+    "https://clemsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-16-iowa-washington",
+   "date": "2027-01-16",
+   "time_et": "15:00:00",
+   "start_utc": "2027-01-16T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Iowa City, Iowa",
+   "venue": null,
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-16-michiganstate-ohiostate",
+   "date": "2027-01-16",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-16T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Michigan State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbus, Ohio",
+   "venue": "Covelli Center",
+   "sources": [
+    "https://msuspartans.com/",
+    "https://ohiostatebuckeyes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-16-northcarolinastate-stanford",
+   "date": "2027-01-16",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-16T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Stanford, Calif.",
+   "venue": null,
+   "sources": [
+    "https://gopack.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-16-long-island-tri-meet",
+   "date": "2027-01-16",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-16T23:00:00.000Z",
+   "desc": "Long Island Tri Meet",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "S.E. Missouri",
+    "Temple"
+   ],
+   "d1_teams": [
+    "LIU",
+    "S.E. Missouri",
+    "Temple"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pratt Recreation Center",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://liuathletics.com/",
+    "https://semoredhawks.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-16-pennstate-rutgers",
+   "date": "2027-01-16",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-16T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Rutgers"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Park, Pa. (Rec Hall)",
+   "venue": null,
+   "sources": [
+    "https://gopsusports.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-eastern-michigan-quad-meet",
+   "date": "2027-01-17",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-17T18:00:00.000Z",
+   "desc": "Eastern Michigan Quad Meet",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Ball State",
+    "Central Michigan",
+    "University of Wisconsin-Whitewater",
+    "Wisconsin-Whitewater"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Ball State",
+    "Central Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ypsilanti, Mich.",
+   "venue": "Gervin GameAbove Center",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://cmuchippewas.com/",
+    "https://emueagles.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-lindsey-ferris-invitational",
+   "date": "2027-01-17",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-17T18:00:00.000Z",
+   "desc": "Lindsey Ferris Invitational",
+   "home": [],
+   "away": [
+    "George Washington",
+    "Brockport",
+    "William & Mary",
+    "Cornell"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "William & Mary",
+    "Cornell"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Washington, DC",
+   "venue": "Charles E. Smith Center",
+   "sources": [
+    "https://gwsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-newhampshire-pennsylvania-westernmichigan-yale",
+   "date": "2027-01-17",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-17T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Western Michigan",
+    "Pennsylvania",
+    "Yale"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "Western Michigan",
+    "Pennsylvania",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Durham, N.H.",
+   "venue": "Whittemore Center at Key Auto Group Complex",
+   "sources": [
+    "https://unhwildcats.com/",
+    "https://pennathletics.com/",
+    "https://wmubroncos.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-kentstate-westvirginia",
+   "date": "2027-01-17",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-17T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Kent State"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Kent State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Morgantown, W.Va.",
+   "venue": "Hope Coliseum",
+   "sources": [
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-airforce",
+   "date": "2027-01-17",
+   "time_et": "15:00:00",
+   "start_utc": "2027-01-17T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Air Force"
+   ],
+   "d1_teams": [
+    "Air Force"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denton, Texas",
+   "venue": null,
+   "sources": [
+    "https://goairforcefalcons.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-illinoisstate-northernillinois",
+   "date": "2027-01-17",
+   "time_et": "15:00:00",
+   "start_utc": "2027-01-17T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "West Chester",
+    "Northern Illinois",
+    "Greenville"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Normal, Ill.",
+   "venue": null,
+   "sources": [
+    "https://goredbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-maryland-michigan",
+   "date": "2027-01-17",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-17T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "College Park, Md.",
+   "venue": "XFINITY Center",
+   "sources": [
+    "https://umterps.com/",
+    "https://mgoblue.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-northcarolina-pittsburgh",
+   "date": "2027-01-17",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-17T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pittsburgh, Pa.",
+   "venue": "Fitzgerald Field House",
+   "sources": [
+    "https://goheels.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-denver-sanjosestate-ucdavis",
+   "date": "2027-01-17",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-17T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis, San Jose State, Hamline",
+    "UC Davis, Denver, Hamline",
+    "UC Davis"
+   ],
+   "away": [
+    "Denver",
+    "San Jose State",
+    "Hamline"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "Denver",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Credit Union Center",
+   "venue": null,
+   "sources": [
+    "https://denverpioneers.com/",
+    "https://sjsuspartans.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-illinois-ucla",
+   "date": "2027-01-17",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-17T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Illinois"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Los Angeles, Calif.",
+   "venue": "Pauley Pavilion",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-17-arizona",
+   "date": "2027-01-17",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Centenary College"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "Arizona"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denton, Texas",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-18-southernutah-utah",
+   "date": "2027-01-18",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-19T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Salt Lake City, Utah",
+   "venue": "Jon M. Huntsman Center",
+   "sources": [
+    "https://suutbirds.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-19-towson-williammary",
+   "date": "2027-01-19",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-19T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "Towson",
+    "William & Mary"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "SECU Arena",
+   "venue": null,
+   "sources": [
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-georgia-oklahoma",
+   "date": "2027-01-22",
+   "time_et": "16:30:00",
+   "start_utc": "2027-01-22T21:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Oklahoma"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Athens, Ga.",
+   "venue": "Stegeman Coliseum",
+   "sources": [
+    "https://georgiadogs.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-florida-missouri",
+   "date": "2027-01-22",
+   "time_et": "17:45:00",
+   "start_utc": "2027-01-22T22:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Gainesville, Fla.",
+   "venue": "Tower Hill Arena",
+   "sources": [
+    "https://floridagators.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-georgewashington-temple",
+   "date": "2027-01-22",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-22T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "George Washington"
+   ],
+   "d1_teams": [
+    "Temple",
+    "George Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Philadelphia, Pa.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://gwsports.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-clemson-northcarolina",
+   "date": "2027-01-22",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-23T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Clemson, S.C.",
+   "venue": "Littlejohn Coliseum",
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-be-the-change-quad-meet",
+   "date": "2027-01-22",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-23T00:30:00.000Z",
+   "desc": "Be the Change Quad Meet",
+   "home": [],
+   "away": [
+    "Alabama",
+    "New Hampshire",
+    "Sacramento State",
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "New Hampshire",
+    "Sacramento State",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tuscaloosa, Ala.",
+   "venue": "Coleman Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://unhwildcats.com/",
+    "https://semoredhawks.com/",
+    "https://hornetsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-kentucky-lsu",
+   "date": "2027-01-22",
+   "time_et": "19:45:00",
+   "start_utc": "2027-01-23T00:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "LSU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lexington, Ky. | Historic Memorial Coliseum",
+   "venue": null,
+   "sources": [
+    "https://ukathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-arizona-denver",
+   "date": "2027-01-22",
+   "time_et": "20:30:00",
+   "start_utc": "2027-01-23T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Denver"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tucson, Ariz.",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://denverpioneers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-arizonastate-westvirginia",
+   "date": "2027-01-22",
+   "time_et": "21:00:00",
+   "start_utc": "2027-01-23T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "600 E Veterans Way, Tempe, AZ 85281",
+   "venue": "Desert Financial Arena",
+   "sources": [
+    "https://thesundevils.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-byu-utah",
+   "date": "2027-01-22",
+   "time_et": "21:00:00",
+   "start_utc": "2027-01-23T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Provo, Utah",
+   "venue": null,
+   "sources": [
+    "https://byucougars.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-arkansas-auburn",
+   "date": "2027-01-22",
+   "time_et": "21:30:00",
+   "start_utc": "2027-01-23T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Arkansas"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Auburn, Ala.",
+   "venue": null,
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://auburntigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-alaska-cornell",
+   "date": "2027-01-22",
+   "time_et": "22:00:00",
+   "start_utc": "2027-01-23T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Cornell"
+   ],
+   "d1_teams": [
+    "Alaska",
+    "Cornell"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Alaska Airlines Center (aux gym)",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-ohiostate-washington",
+   "date": "2027-01-22",
+   "time_et": "22:00:00",
+   "start_utc": "2027-01-23T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Ohio State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Seattle, Wash.",
+   "venue": null,
+   "sources": [
+    "https://ohiostatebuckeyes.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-bowlinggreen-northernillinois",
+   "date": "2027-01-22",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "Bowling Green"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "DeKalb, Ill.",
+   "venue": "NIU Convocation Center",
+   "sources": [
+    "https://bgsufalcons.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-22-boisestate-utahstate",
+   "date": "2027-01-22",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Boise State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Logan, Utah",
+   "venue": null,
+   "sources": [
+    "https://broncosports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-23-minnesota-pennstate",
+   "date": "2027-01-23",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-23T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Minneapolis, Minn.",
+   "venue": "Maturi Pavilion",
+   "sources": [
+    "https://gophersports.com/",
+    "https://gopsusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-23-california-northcarolinastate",
+   "date": "2027-01-23",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-23T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "California"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Raleigh, N.C.",
+   "venue": "James T. Valvano Arena at William Neal Reynolds Coliseum",
+   "sources": [
+    "https://calbears.com/",
+    "https://gopack.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-23-oregonstate-southernutah",
+   "date": "2027-01-23",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-23T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Corvallis, Ore.",
+   "venue": "Gill Coliseum",
+   "sources": [
+    "https://osubeavers.com/",
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-23-illinois-iowa",
+   "date": "2027-01-23",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-23T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Iowa"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Iowa"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Champaign, Ill.",
+   "venue": "Huff Hall",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://hawkeyesports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-23-michiganstate-nebraska",
+   "date": "2027-01-23",
+   "time_et": "20:00:00",
+   "start_utc": "2027-01-24T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "East Lansing, Mich.",
+   "venue": null,
+   "sources": [
+    "https://msuspartans.com/",
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-ballstate-newhampshire",
+   "date": "2027-01-24",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-24T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "New Hampshire"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Muncie, Ind.",
+   "venue": "Worthen Arena",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://unhwildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-centralmichigan-illinoisstate",
+   "date": "2027-01-24",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-24T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Illinois State"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Illinois State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Mount Pleasant, Mich.",
+   "venue": "McGuirk Arena (GYM)",
+   "sources": [
+    "https://cmuchippewas.com/",
+    "https://goredbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-easternmichigan-westernmichigan",
+   "date": "2027-01-24",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-24T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Eastern Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Arena",
+   "venue": null,
+   "sources": [
+    "https://emueagles.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-tonry-invitational",
+   "date": "2027-01-24",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-24T18:00:00.000Z",
+   "desc": "Tonry Invitational",
+   "home": [],
+   "away": [
+    "Yale"
+   ],
+   "d1_teams": [
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Payne Whitney Gymnasium",
+   "venue": null,
+   "sources": [
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-liu",
+   "date": "2027-01-24",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-24T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bridgeport"
+   ],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Wheeler Recreation Center",
+   "venue": null,
+   "sources": [
+    "https://liuathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-penn-quad-meet",
+   "date": "2027-01-24",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-24T19:00:00.000Z",
+   "desc": "Penn Quad-Meet",
+   "home": [
+    "Pennsylvania",
+    "Towson"
+   ],
+   "away": [
+    "Temple",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "Towson",
+    "Temple",
+    "William & Mary"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Philadelphia, Pa.",
+   "venue": null,
+   "sources": [
+    "https://owlsports.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-maryland-rutgers",
+   "date": "2027-01-24",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-24T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Maryland"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Maryland"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Piscataway, N.J.",
+   "venue": "Jersey Mike's Arena",
+   "sources": [
+    "https://umterps.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-lsu-sanjosestate",
+   "date": "2027-01-24",
+   "time_et": "15:00:00",
+   "start_utc": "2027-01-24T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "LSU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denton, Texas",
+   "venue": null,
+   "sources": [
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-michigan-ucla",
+   "date": "2027-01-24",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-24T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "UCLA"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ann Arbor, Mich.",
+   "venue": null,
+   "sources": [
+    "https://mgoblue.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-pittsburgh-stanford",
+   "date": "2027-01-24",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-24T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "Stanford"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "PIttsburgh, Pa.",
+   "venue": "Victory Heights Arena and Sports Performance Center",
+   "sources": [
+    "https://pittsburghpanthers.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-airforce-brown-ucdavis",
+   "date": "2027-01-24",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-24T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "Air Force",
+    "Brown"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "Air Force",
+    "Brown"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Credit Union Center",
+   "venue": null,
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-24-alaska-cornell",
+   "date": "2027-01-24",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-25T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Cornell"
+   ],
+   "d1_teams": [
+    "Alaska",
+    "Cornell"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Alaska Airlines Center (aux gym)",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-28-nebraska",
+   "date": "2027-01-28",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-29T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Simpson"
+   ],
+   "d1_teams": [
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lincoln, Neb.",
+   "venue": null,
+   "sources": [
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-westernmichigan",
+   "date": "2027-01-29",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-29T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "UW-La Crosse"
+   ],
+   "d1_teams": [
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Arena",
+   "venue": null,
+   "sources": [
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-auburn-florida",
+   "date": "2027-01-29",
+   "time_et": "17:45:00",
+   "start_utc": "2027-01-29T22:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Auburn"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Gainesville, Fla.",
+   "venue": "Tower Hill Arena",
+   "sources": [
+    "https://auburntigers.com/",
+    "https://floridagators.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-pennsylvania-temple-towson",
+   "date": "2027-01-29",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-29T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple",
+    "Towson"
+   ],
+   "away": [
+    "Pennsylvania",
+    "Ursinus College"
+   ],
+   "d1_teams": [
+    "Temple",
+    "Towson",
+    "Pennsylvania"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Philadelphia, Pa.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://pennathletics.com/",
+    "https://owlsports.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-michigan-ohiostate",
+   "date": "2027-01-29",
+   "time_et": "19:00:00",
+   "start_utc": "2027-01-30T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Ohio State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ann Arbor, Mich.",
+   "venue": null,
+   "sources": [
+    "https://mgoblue.com/",
+    "https://ohiostatebuckeyes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-alabama-arkansas",
+   "date": "2027-01-29",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-30T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Alabama"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fayetteville, Ark.",
+   "venue": "Bud Walton Arena",
+   "sources": [
+    "https://rolltide.com/",
+    "https://arkansasrazorbacks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-iowa-minnesota",
+   "date": "2027-01-29",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-30T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Minnesota"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Iowa City, Iowa",
+   "venue": null,
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://gophersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-oklahoma-utahstate",
+   "date": "2027-01-29",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-30T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Utah State",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Utah State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Norman, Okla.",
+   "venue": "Lloyd Noble Center",
+   "sources": [
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-illinoisstate-semissouri",
+   "date": "2027-01-29",
+   "time_et": "19:30:00",
+   "start_utc": "2027-01-30T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Illinois State"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "Illinois State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Cape Girardeau, Mo.",
+   "venue": "Show Me Center",
+   "sources": [
+    "https://goredbirds.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-airforce-ucdavis",
+   "date": "2027-01-29",
+   "time_et": "20:00:00",
+   "start_utc": "2027-01-30T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "UC Davis"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "USAF Academy, Colo.",
+   "venue": "Cadet West Gym - Gymnastics",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-oregonstate-southernutah",
+   "date": "2027-01-29",
+   "time_et": "20:30:00",
+   "start_utc": "2027-01-30T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Oregon State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "America First Event Center",
+   "venue": null,
+   "sources": [
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-georgia-lsu",
+   "date": "2027-01-29",
+   "time_et": "21:00:00",
+   "start_utc": "2027-01-30T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Georgia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Baton Rouge, La.",
+   "venue": null,
+   "sources": [
+    "https://georgiadogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-boisestate-utah",
+   "date": "2027-01-29",
+   "time_et": "21:00:00",
+   "start_utc": "2027-01-30T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Boise State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Salt Lake City, Utah",
+   "venue": "Jon M. Huntsman Center",
+   "sources": [
+    "https://broncosports.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-kentucky-missouri",
+   "date": "2027-01-29",
+   "time_et": "21:30:00",
+   "start_utc": "2027-01-30T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Kentucky"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbia, Mo.",
+   "venue": null,
+   "sources": [
+    "https://ukathletics.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-29-michiganstate-ucla",
+   "date": "2027-01-29",
+   "time_et": "23:00:00",
+   "start_utc": "2027-01-30T04:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Michigan State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Los Angeles, Calif.",
+   "venue": null,
+   "sources": [
+    "https://msuspartans.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-30-illinois-washington",
+   "date": "2027-01-30",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-30T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Champaign, Ill.",
+   "venue": "Huff Hall",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-30-liu",
+   "date": "2027-01-30",
+   "time_et": "18:00:00",
+   "start_utc": "2027-01-30T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "Bridgeport"
+   ],
+   "d1_teams": [
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pratt Recreation Center",
+   "venue": null,
+   "sources": [
+    "https://liuathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-30-byu-denver",
+   "date": "2027-01-30",
+   "time_et": "21:00:00",
+   "start_utc": "2027-01-31T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Denver",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denver, Colorado",
+   "venue": "Magness Arena",
+   "sources": [
+    "https://byucougars.com/",
+    "https://denverpioneers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-centralmichigan-easternmichigan",
+   "date": "2027-01-31",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-31T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Eastern Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Mount Pleasant, MI",
+   "venue": "McGuirk Arena (GYM)",
+   "sources": [
+    "https://cmuchippewas.com/",
+    "https://emueagles.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-brown-yale",
+   "date": "2027-01-31",
+   "time_et": "13:00:00",
+   "start_utc": "2027-01-31T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Yale"
+   ],
+   "away": [
+    "Brown"
+   ],
+   "d1_teams": [
+    "Yale",
+    "Brown"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Payne Whitney Gymnasium",
+   "venue": null,
+   "sources": [
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-ballstate-bowlinggreen",
+   "date": "2027-01-31",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-31T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Ball State"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Ball State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Bowling Green, Ohio",
+   "venue": "Stroh Center",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://bgsufalcons.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-georgewashington-newhampshire",
+   "date": "2027-01-31",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-31T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "George Washington"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "George Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Durham, N.H.",
+   "venue": "Lundholm Gymnasium",
+   "sources": [
+    "https://gwsports.com/",
+    "https://unhwildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-arizona-westvirginia",
+   "date": "2027-01-31",
+   "time_et": "14:00:00",
+   "start_utc": "2027-01-31T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Arizona"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Morgantown, W.Va.",
+   "venue": "Hope Coliseum",
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-nebraska-rutgers",
+   "date": "2027-01-31",
+   "time_et": "15:00:00",
+   "start_utc": "2027-01-31T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Rutgers"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lincoln, Neb. (Devaney Center)",
+   "venue": null,
+   "sources": [
+    "https://huskers.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-clemson-northcarolinastate",
+   "date": "2027-01-31",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-31T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Clemson, S.C.",
+   "venue": null,
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://gopack.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-maryland-pennstate",
+   "date": "2027-01-31",
+   "time_et": "16:00:00",
+   "start_utc": "2027-01-31T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "College Park, Md.",
+   "venue": "XFINITY Center",
+   "sources": [
+    "https://umterps.com/",
+    "https://gopsusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-california-pittsburgh",
+   "date": "2027-01-31",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-31T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "California",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Berkeley, CA",
+   "venue": "Haas Pavilion",
+   "sources": [
+    "https://calbears.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-arizonastate-sacramentostate-sanjosestate",
+   "date": "2027-01-31",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-31T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State",
+    "San Jose State",
+    "Arizona State"
+   ],
+   "away": [],
+   "d1_teams": [
+    "Sacramento State",
+    "San Jose State",
+    "Arizona State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Moraga Way, Sacramento, CA 95819",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://hornetsports.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-01-31-northcarolina-stanford",
+   "date": "2027-01-31",
+   "time_et": "17:00:00",
+   "start_utc": "2027-01-31T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Stanford, Calif.",
+   "venue": "Maples Pavilion",
+   "sources": [
+    "https://goheels.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-northcarolina-northcarolinastate",
+   "date": "2027-02-05",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-05T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Raleigh, N.C.",
+   "venue": "James T. Valvano Arena at William Neal Reynolds Coliseum",
+   "sources": [
+    "https://gopack.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-nebraska-ohiostate",
+   "date": "2027-02-05",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-05T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbus, Ohio",
+   "venue": "Covelli Center",
+   "sources": [
+    "https://huskers.com/",
+    "https://ohiostatebuckeyes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-temple-tri-meet",
+   "date": "2027-02-05",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-05T23:00:00.000Z",
+   "desc": "Temple Tri Meet",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "New Hampshire",
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Temple",
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Philadelphia, Pa.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://unhwildcats.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-towson-yale",
+   "date": "2027-02-05",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-05T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "Yale"
+   ],
+   "d1_teams": [
+    "Towson",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "SECU Arena",
+   "venue": null,
+   "sources": [
+    "https://towsontigers.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-arkansas-georgia",
+   "date": "2027-02-05",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-06T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Arkansas"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Athens, Ga.",
+   "venue": "Stegeman Coliseum",
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://georgiadogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-illinois-state-tri",
+   "date": "2027-02-05",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-06T00:00:00.000Z",
+   "desc": "Illinois State Tri",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "Eastern Michigan",
+    "Centenary College",
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "Eastern Michigan",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Normal, Ill.",
+   "venue": null,
+   "sources": [
+    "https://emueagles.com/",
+    "https://goredbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-semo-quad-meet",
+   "date": "2027-02-05",
+   "time_et": "19:30:00",
+   "start_utc": "2027-02-06T00:30:00.000Z",
+   "desc": "SEMO Quad Meet",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Alaska",
+    "Texas Woman's",
+    "UW-Stout"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Cape Girardeau, Mo.",
+   "venue": "Houck Field House",
+   "sources": [
+    "https://goseawolves.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-auburn-lsu",
+   "date": "2027-02-05",
+   "time_et": "20:00:00",
+   "start_utc": "2027-02-06T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "LSU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Auburn, AL",
+   "venue": null,
+   "sources": [
+    "https://auburntigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-airforce-pennsylvania-sanjosestate",
+   "date": "2027-02-05",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-06T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force",
+    "Pennsylvania"
+   ],
+   "away": [
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Pennsylvania",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "USAF Academy, CO",
+   "venue": "Cadet West Gym - Gymnastics",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://pennathletics.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-arizona-oregonstate",
+   "date": "2027-02-05",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-06T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Oregon State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tucson, Ariz.",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-missouri-oklahoma",
+   "date": "2027-02-05",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-06T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Norman, Okla.",
+   "venue": "Lloyd Noble Center",
+   "sources": [
+    "https://mutigers.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-alabama-florida",
+   "date": "2027-02-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Florida"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tuscaloosa, Ala.",
+   "venue": "Coleman Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://floridagators.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-byu-westvirginia",
+   "date": "2027-02-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "BYU",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Provo, Utah",
+   "venue": "Marriott Center",
+   "sources": [
+    "https://byucougars.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-southernutah-utahstate",
+   "date": "2027-02-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Logan, UT",
+   "venue": null,
+   "sources": [
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-ucla-washington",
+   "date": "2027-02-05",
+   "time_et": "21:30:00",
+   "start_utc": "2027-02-06T02:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Washington",
+    "UCLA"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Seattle, Wash.",
+   "venue": null,
+   "sources": [
+    "https://uclabruins.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-05-denver-utah",
+   "date": "2027-02-05",
+   "time_et": "22:30:00",
+   "start_utc": "2027-02-06T03:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Denver"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Salt Lake City, Utah",
+   "venue": null,
+   "sources": [
+    "https://denverpioneers.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-06-minnesota-rutgers",
+   "date": "2027-02-06",
+   "time_et": "15:00:00",
+   "start_utc": "2027-02-06T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Minnesota"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Piscataway, N.J.",
+   "venue": "Jersey Mike's Arena",
+   "sources": [
+    "https://gophersports.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-06-california-stanford",
+   "date": "2027-02-06",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-06T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Stanford"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "Stanford",
+    "California"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Stanford, Calif.",
+   "venue": null,
+   "sources": [
+    "https://calbears.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-06-iowa-maryland",
+   "date": "2027-02-06",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-06T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Maryland"
+   ],
+   "away": [
+    "Iowa"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Iowa"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "College Park, Md.",
+   "venue": "XFINITY Center",
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://umterps.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-06-illinois-pennstate",
+   "date": "2027-02-06",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-06T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "Illinois"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Park, Pa.",
+   "venue": "Rec Hall",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://gopsusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-06-metroplex-challenge",
+   "date": "2027-02-06",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "Metroplex Challenge",
+   "home": [],
+   "away": [
+    "Arizona State",
+    "Clemson",
+    "Kentucky",
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Clemson",
+    "Kentucky",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fort Worth, Texas",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://clemsontigers.com/",
+    "https://ukathletics.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-ball-state-tri",
+   "date": "2027-02-07",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-07T18:00:00.000Z",
+   "desc": "Ball State Tri",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Central Michigan",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Central Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Muncie, IN.",
+   "venue": "Worthen Arena",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://cmuchippewas.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-bowlinggreen-georgewashington-liu",
+   "date": "2027-02-07",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-07T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington"
+   ],
+   "away": [
+    "Bowling Green",
+    "LIU"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "Bowling Green",
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Charles E. Smith Center",
+   "venue": "Charles E. Smith Center",
+   "sources": [
+    "https://bgsufalcons.com/",
+    "https://gwsports.com/",
+    "https://liuathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-kentstate-westernmichigan",
+   "date": "2027-02-07",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-07T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Kent, Ohio",
+   "venue": null,
+   "sources": [
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-michigan-michiganstate",
+   "date": "2027-02-07",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-07T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "East Lansing, Mich.",
+   "venue": null,
+   "sources": [
+    "https://msuspartans.com/",
+    "https://mgoblue.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-alaska-semissouri",
+   "date": "2027-02-07",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-07T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Alaska"
+   ],
+   "d1_teams": [
+    "S.E. Missouri",
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Cape Girardeau, Mo.",
+   "venue": "Houck Field House",
+   "sources": [
+    "https://goseawolves.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-2027-metroplex-challenge",
+   "date": "2027-02-07",
+   "time_et": "16:30:00",
+   "start_utc": "2027-02-07T21:30:00.000Z",
+   "desc": "2027 Metroplex Challenge",
+   "home": [],
+   "away": [
+    "Georgia",
+    "Missouri",
+    "Oklahoma",
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Missouri",
+    "Oklahoma",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fort Worth, Texas",
+   "venue": null,
+   "sources": [
+    "https://georgiadogs.com/",
+    "https://mutigers.com/",
+    "https://gopack.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-07-sacramentostate-ucdavis",
+   "date": "2027-02-07",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-07T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "Sacramento State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Credit Union Center",
+   "venue": null,
+   "sources": [
+    "https://hornetsports.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-08-southernutah-westvirginia",
+   "date": "2027-02-08",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-08T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "America First Event Center",
+   "venue": "America First Event Center",
+   "sources": [
+    "https://suutbirds.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-08-airforce-denver-pennsylvania-sanjosestate",
+   "date": "2027-02-08",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-09T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver",
+    "Pennsylvania"
+   ],
+   "away": [
+    "Air Force",
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Pennsylvania",
+    "Air Force",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denver, Colo.",
+   "venue": "Magness Arena",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://denverpioneers.com/",
+    "https://pennathletics.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-pennstate-ucla",
+   "date": "2027-02-12",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-12T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "UCLA"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "UCLA"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Park, Pa.",
+   "venue": null,
+   "sources": [
+    "https://gopsusports.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-florida-georgia",
+   "date": "2027-02-12",
+   "time_et": "18:45:00",
+   "start_utc": "2027-02-12T23:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Georgia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Gainesville, Fla.",
+   "venue": "Tower Hill Arena",
+   "sources": [
+    "https://floridagators.com/",
+    "https://georgiadogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-illinois-rutgers",
+   "date": "2027-02-12",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-13T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Rutgers"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Champaign, Ill. (Huff Hall)",
+   "venue": "Huff Hall",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-auburn-kentucky",
+   "date": "2027-02-12",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-13T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Auburn"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lexington, Ky. | Historic Memorial Coliseum",
+   "venue": null,
+   "sources": [
+    "https://auburntigers.com/",
+    "https://ukathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-northcarolina-northcarolinastate",
+   "date": "2027-02-12",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-13T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Chapel Hill, N.C.",
+   "venue": "Carmichael Arena",
+   "sources": [
+    "https://gopack.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-utah-westvirginia",
+   "date": "2027-02-12",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-13T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Morgantown, W.Va.",
+   "venue": "Hope Coliseum",
+   "sources": [
+    "https://utahutes.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-air-force-quad",
+   "date": "2027-02-12",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-13T01:30:00.000Z",
+   "desc": "Air Force Quad",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "Ball State",
+    "Temple",
+    "Centenary College"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "Ball State",
+    "Temple"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "USAF Academy, CO",
+   "venue": "Cadet West Gym - Gymnastics",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://ballstatesports.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-arizona-arizonastate",
+   "date": "2027-02-12",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-13T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Arizona"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "600 E Veterans Way, Tempe, AZ 85281",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://arizonawildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-boisestate-southernutah",
+   "date": "2027-02-12",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-13T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Boise State"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Boise State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "America First Event Center",
+   "venue": null,
+   "sources": [
+    "https://broncosports.com/",
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-alabama-missouri",
+   "date": "2027-02-12",
+   "time_et": "20:45:00",
+   "start_utc": "2027-02-13T01:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Alabama"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbia, Mo.",
+   "venue": "Mizzou Arena",
+   "sources": [
+    "https://rolltide.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-lsu-oklahoma",
+   "date": "2027-02-12",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-13T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Oklahoma"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Baton Rouge, LA",
+   "venue": null,
+   "sources": [
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-alaska-byu",
+   "date": "2027-02-12",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-13T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Alaska",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Alaska Airlines Center (main gym)",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/",
+    "https://byucougars.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-sacramentostate-sanjosestate-ucdavis",
+   "date": "2027-02-12",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-13T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State",
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "away": [],
+   "d1_teams": [
+    "San Jose State",
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "San Jose, Calif.",
+   "venue": null,
+   "sources": [
+    "https://hornetsports.com/",
+    "https://sjsuspartans.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-california-stanford",
+   "date": "2027-02-12",
+   "time_et": "22:30:00",
+   "start_utc": "2027-02-13T03:30:00.000Z",
+   "desc": "",
+   "home": [
+    "California"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "California",
+    "Stanford"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Berkeley, Calif.",
+   "venue": "Haas Pavilion",
+   "sources": [
+    "https://calbears.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-arkansas",
+   "date": "2027-02-12",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Arkansas"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denton, Texas",
+   "venue": null,
+   "sources": [
+    "https://arkansasrazorbacks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-12-michiganstate-washington",
+   "date": "2027-02-12",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Washington"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "East Lansing, Mich.",
+   "venue": null,
+   "sources": [
+    "https://msuspartans.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-13-empire-state-collegiate-championship-bro",
+   "date": "2027-02-13",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-13T19:00:00.000Z",
+   "desc": "Empire State Collegiate Championship (Brockport, Cornell, Cortland, Utica and Ithaca)",
+   "home": [],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Brockport, N.Y. \u2013 Tuttle North Gymnastics Center",
+   "venue": null,
+   "sources": [
+    "https://liuathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-13-minnesota-ohiostate",
+   "date": "2027-02-13",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-13T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Minnesota"
+   ],
+   "away": [
+    "Ohio State"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Ohio State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Minneapolis, Minn.",
+   "venue": "Maturi Pavilion",
+   "sources": [
+    "https://gophersports.com/",
+    "https://ohiostatebuckeyes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-13-clemson-pittsburgh",
+   "date": "2027-02-13",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-13T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "Clemson"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pittsburgh, PA",
+   "venue": "Victory Heights Arena and Sports Performance Center",
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-13-maryland-nebraska",
+   "date": "2027-02-13",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-13T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Maryland"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Maryland"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lincoln, Neb.",
+   "venue": null,
+   "sources": [
+    "https://umterps.com/",
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-13-iowa-michigan",
+   "date": "2027-02-13",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-14T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Iowa City, Iowa",
+   "venue": null,
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://mgoblue.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-easternmichigan-illinoisstate-kentstate-semissouri",
+   "date": "2027-02-14",
+   "time_et": "12:00:00",
+   "start_utc": "2027-02-14T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan",
+    "Illinois State"
+   ],
+   "away": [
+    "Kent State",
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Illinois State",
+    "Kent State",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ypisilanti, Mich.",
+   "venue": "Gervin GameAbove Center",
+   "sources": [
+    "https://emueagles.com/",
+    "https://goredbirds.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-georgewashington-pennsylvania-towson-williammary",
+   "date": "2027-02-14",
+   "time_et": "12:00:00",
+   "start_utc": "2027-02-14T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington",
+    "Towson"
+   ],
+   "away": [
+    "Pennsylvania",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "Towson",
+    "Pennsylvania",
+    "William & Mary"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Washington, D.C.",
+   "venue": "Charles E. Smith Center",
+   "sources": [
+    "https://gwsports.com/",
+    "https://pennathletics.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-yale",
+   "date": "2027-02-14",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-14T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Yale"
+   ],
+   "away": [
+    "Senior Meet"
+   ],
+   "d1_teams": [
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Payne Whitney Gymnasium",
+   "venue": null,
+   "sources": [
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-bowlinggreen-westernmichigan",
+   "date": "2027-02-14",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-14T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Bowling Green, Ohio",
+   "venue": "Stroh Center",
+   "sources": [
+    "https://bgsufalcons.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-newhampshire",
+   "date": "2027-02-14",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-14T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Durham, N.H.",
+   "venue": "Lundholm Gymnasium",
+   "sources": [
+    "https://unhwildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-elevate-the-stage",
+   "date": "2027-02-14",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-14T21:00:00.000Z",
+   "desc": "Elevate the Stage",
+   "home": [],
+   "away": [
+    "Alabama",
+    "Auburn",
+    "Illinois",
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Auburn",
+    "Illinois",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Birmingham, Ala.",
+   "venue": "Legacy Arena",
+   "sources": [
+    "https://rolltide.com/",
+    "https://auburntigers.com/",
+    "https://fightingillini.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-denver-tri-meet",
+   "date": "2027-02-14",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-14T21:00:00.000Z",
+   "desc": "Denver Tri-Meet",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Ball State",
+    "Washington",
+    "Temple"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Ball State",
+    "Washington",
+    "Temple"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denver, Colo.",
+   "venue": "Magness Arena",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://denverpioneers.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-metroplex-challenge",
+   "date": "2027-02-14",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "Metroplex Challenge",
+   "home": [],
+   "away": [
+    "Arkansas",
+    "Boise State",
+    "Utah State",
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Boise State",
+    "Utah State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fort Worth, Texas",
+   "venue": null,
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://broncosports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-14-northern-illinois-tri-meet",
+   "date": "2027-02-14",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "Northern Illinois Tri-Meet",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "Air Force",
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "Air Force",
+    "Central Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "DeKalb, Ill.",
+   "venue": null,
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://cmuchippewas.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-georgia-kentucky",
+   "date": "2027-02-19",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-19T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Kentucky"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Athens, Ga.",
+   "venue": "Stegeman Coliseum",
+   "sources": [
+    "https://georgiadogs.com/",
+    "https://ukathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-illinois-michigan",
+   "date": "2027-02-19",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-19T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "Illinois"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ann Arbor, Mich.",
+   "venue": "Crisler Center",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://mgoblue.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-liu-pennsylvania",
+   "date": "2027-02-19",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-19T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pennsylvania"
+   ],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "The Palestra",
+   "venue": null,
+   "sources": [
+    "https://liuathletics.com/",
+    "https://pennathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-temple-towson-williammary-yale",
+   "date": "2027-02-19",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-19T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Temple",
+    "Towson"
+   ],
+   "away": [
+    "Yale",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "Temple",
+    "Towson",
+    "Yale",
+    "William & Mary"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Philadelphia, Pa.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://owlsports.com/",
+    "https://towsontigers.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-florida-northcarolina",
+   "date": "2027-02-19",
+   "time_et": "18:45:00",
+   "start_utc": "2027-02-19T23:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "North Carolina"
+   ],
+   "d1_teams": [
+    "Florida",
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Gainesville, Fla.",
+   "venue": "Tower Hill Arena",
+   "sources": [
+    "https://floridagators.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-clemson-stanford",
+   "date": "2027-02-19",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-20T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Stanford"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Clemson, S.C.",
+   "venue": null,
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-illinoisstate-semissouri",
+   "date": "2027-02-19",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-20T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois State"
+   ],
+   "away": [
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Normal, Ill.",
+   "venue": null,
+   "sources": [
+    "https://goredbirds.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-michiganstate-rutgers",
+   "date": "2027-02-19",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-20T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Rutgers"
+   ],
+   "away": [
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Michigan State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Piscataway, N.J.",
+   "venue": "Jersey Mike's Arena",
+   "sources": [
+    "https://msuspartans.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-arizona-tri",
+   "date": "2027-02-19",
+   "time_et": "19:30:00",
+   "start_utc": "2027-02-20T00:30:00.000Z",
+   "desc": "Arizona Tri",
+   "home": [
+    "BYU",
+    "Arizona",
+    "Sacramento State"
+   ],
+   "away": [
+    "Arizona State",
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Arizona",
+    "Sacramento State",
+    "Arizona State",
+    "Eastern Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "E University Parkway &, Campus Dr, Provo, UT 84604",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://arizonawildcats.com/",
+    "https://byucougars.com/",
+    "https://emueagles.com/",
+    "https://hornetsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-auburn-oklahoma",
+   "date": "2027-02-19",
+   "time_et": "19:45:00",
+   "start_utc": "2027-02-20T00:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Oklahoma"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Auburn, AL",
+   "venue": null,
+   "sources": [
+    "https://auburntigers.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-iowa-nebraska",
+   "date": "2027-02-19",
+   "time_et": "20:00:00",
+   "start_utc": "2027-02-20T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Iowa"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Iowa"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lincoln, Neb.",
+   "venue": null,
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-alabama-lsu",
+   "date": "2027-02-19",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-20T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "LSU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tuscaloosa, Ala.",
+   "venue": "Coleman Coliseum",
+   "sources": [
+    "https://rolltide.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-boisestate-southernutah",
+   "date": "2027-02-19",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-20T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Boise, Idaho",
+   "venue": "ExtraMile Arena",
+   "sources": [
+    "https://broncosports.com/",
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-california-utah",
+   "date": "2027-02-19",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-20T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "Utah",
+    "California"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Salt Lake City, UT",
+   "venue": null,
+   "sources": [
+    "https://calbears.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-arkansas-missouri",
+   "date": "2027-02-19",
+   "time_et": "21:15:00",
+   "start_utc": "2027-02-20T02:15:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Fayetteville, Ark.",
+   "venue": "Bud Walton Arena",
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-oregonstate-utahstate",
+   "date": "2027-02-19",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-20T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State"
+   ],
+   "away": [
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Utah State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Corvallis, Ore.",
+   "venue": "Gill Coliseum",
+   "sources": [
+    "https://osubeavers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-19-northernillinois-sanjosestate",
+   "date": "2027-02-19",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-20T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "San Jose, Calif.",
+   "venue": null,
+   "sources": [
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-20-minnesota-ucla",
+   "date": "2027-02-20",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-20T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Minnesota"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Los Angeles, Calif.",
+   "venue": null,
+   "sources": [
+    "https://gophersports.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-20-airforce-georgewashington",
+   "date": "2027-02-20",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-21T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Air Force"
+   ],
+   "away": [
+    "George Washington"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "George Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "USAF Academy, CO",
+   "venue": "Cadet West Gym - Gymnastics",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://gwsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-ball-state-tri",
+   "date": "2027-02-21",
+   "time_et": "12:00:00",
+   "start_utc": "2027-02-21T17:00:00.000Z",
+   "desc": "Ball State Tri",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Illinois State",
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Illinois State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Muncie, Ind.",
+   "venue": "Worthen Arena",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://goredbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-centralmichigan-westernmichigan",
+   "date": "2027-02-21",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-21T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Central Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Arena",
+   "venue": null,
+   "sources": [
+    "https://cmuchippewas.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-bowlinggreen-kentstate",
+   "date": "2027-02-21",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-21T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Bowling Green"
+   ],
+   "away": [
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "Kent State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Bowling Green, Ohio",
+   "venue": "Stroh Center",
+   "sources": [
+    "https://bgsufalcons.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-brown-newhampshire",
+   "date": "2027-02-21",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-21T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Brown"
+   ],
+   "away": [
+    "New Hampshire"
+   ],
+   "d1_teams": [
+    "Brown",
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Providence, R.I.",
+   "venue": "Pizzitola Sports Center",
+   "sources": [
+    "https://unhwildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-cornell-liu",
+   "date": "2027-02-21",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-21T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "Cornell"
+   ],
+   "d1_teams": [
+    "LIU",
+    "Cornell"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pratt Recreation Center",
+   "venue": null,
+   "sources": [
+    "https://liuathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-ohiostate-pennstate",
+   "date": "2027-02-21",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-21T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbus, Ohio",
+   "venue": "Covelli Center",
+   "sources": [
+    "https://ohiostatebuckeyes.com/",
+    "https://gopsusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-clemson-georgia",
+   "date": "2027-02-21",
+   "time_et": "15:00:00",
+   "start_utc": "2027-02-21T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Clemson"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Athens, Ga.",
+   "venue": "Stegeman Coliseum",
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://georgiadogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-denver-westvirginia",
+   "date": "2027-02-21",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-21T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Denver",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denver, Colo.",
+   "venue": "Magness Arena",
+   "sources": [
+    "https://denverpioneers.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-northcarolinastate-pittsburgh",
+   "date": "2027-02-21",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-21T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Raleigh, N.C.",
+   "venue": "James T. Valvano Arena at William Neal Reynolds Coliseum",
+   "sources": [
+    "https://gopack.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-maryland-washington",
+   "date": "2027-02-21",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-21T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Washington"
+   ],
+   "away": [
+    "Maryland"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Maryland"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Seattle, Wash.",
+   "venue": null,
+   "sources": [
+    "https://umterps.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-21-northernillinois-ucdavis",
+   "date": "2027-02-21",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-21T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Credit Union Center",
+   "venue": null,
+   "sources": [
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-24-towson-tri-meet",
+   "date": "2027-02-24",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-24T23:00:00.000Z",
+   "desc": "Towson Tri-Meet",
+   "home": [
+    "Towson"
+   ],
+   "away": [
+    "Temple",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Towson",
+    "Temple",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Towson, Md.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://owlsports.com/",
+    "https://towsontigers.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-alabama-kentucky",
+   "date": "2027-02-26",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-26T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Alabama"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lexington, Ky. | Historic Memorial Coliseum",
+   "venue": "Historic Memorial Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://ukathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-bowlinggreen",
+   "date": "2027-02-26",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-27T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Centenary College"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Bowling Green"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Shreveport, La.",
+   "venue": "The Gold Dome",
+   "sources": [
+    "https://bgsufalcons.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-quad-meet-at-clemson",
+   "date": "2027-02-26",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-27T00:00:00.000Z",
+   "desc": "Quad Meet at Clemson",
+   "home": [
+    "Clemson",
+    "Auburn",
+    "Georgia"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Auburn",
+    "Georgia",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Clemson, S.C.",
+   "venue": null,
+   "sources": [
+    "https://auburntigers.com/",
+    "https://clemsontigers.com/",
+    "https://georgiadogs.com/",
+    "https://pittsburghpanthers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-arkansas-oklahoma",
+   "date": "2027-02-26",
+   "time_et": "19:30:00",
+   "start_utc": "2027-02-27T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Arkansas"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Norman, Okla.",
+   "venue": "Lloyd Noble Center",
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-arizona-byu",
+   "date": "2027-02-26",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-27T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tucson, Arizona",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://byucougars.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-southernutah-stanford",
+   "date": "2027-02-26",
+   "time_et": "20:30:00",
+   "start_utc": "2027-02-27T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Southern Utah"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "Southern Utah",
+    "Stanford"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "America First Event Center",
+   "venue": null,
+   "sources": [
+    "https://suutbirds.com/",
+    "https://gostanford.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-boisestate-oregonstate",
+   "date": "2027-02-26",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-27T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Oregon State"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Oregon State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Boise, Idaho",
+   "venue": "ExtraMile Arena",
+   "sources": [
+    "https://broncosports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-denver-utahstate",
+   "date": "2027-02-26",
+   "time_et": "21:00:00",
+   "start_utc": "2027-02-27T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah State"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "Utah State",
+    "Denver"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Logan, Utah",
+   "venue": null,
+   "sources": [
+    "https://denverpioneers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-alaska",
+   "date": "2027-02-26",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-27T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Alaska Airlines Center (aux gym)",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-florida-lsu",
+   "date": "2027-02-26",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-27T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Florida"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Baton Rouge, La.",
+   "venue": null,
+   "sources": [
+    "https://floridagators.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-airforce-sanjosestate",
+   "date": "2027-02-26",
+   "time_et": "22:00:00",
+   "start_utc": "2027-02-27T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Air Force"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Air Force"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "San Jose, Calif.",
+   "venue": null,
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-26-b1g-4-meet",
+   "date": "2027-02-26",
+   "time_et": "22:30:00",
+   "start_utc": "2027-02-27T03:30:00.000Z",
+   "desc": "B1G 4 Meet",
+   "home": [
+    "Big Four Meet",
+    "Washington",
+    "Penn State",
+    "Michigan",
+    "Nebraska"
+   ],
+   "away": [],
+   "d1_teams": [
+    "Washington",
+    "Penn State",
+    "Michigan",
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Seattle, Wash.",
+   "venue": null,
+   "sources": [
+    "https://mgoblue.com/",
+    "https://huskers.com/",
+    "https://gopsusports.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-27-big-four-meet",
+   "date": "2027-02-27",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-27T21:00:00.000Z",
+   "desc": "Big Four Meet",
+   "home": [
+    "UCLA",
+    "Rutgers",
+    "Ohio State",
+    "Iowa"
+   ],
+   "away": [],
+   "d1_teams": [
+    "UCLA",
+    "Rutgers",
+    "Ohio State",
+    "Iowa"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Piscataway, N.J.",
+   "venue": "Jersey Mike's Arena",
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://ohiostatebuckeyes.com/",
+    "https://scarletknights.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-27-liu-newhampshire",
+   "date": "2027-02-27",
+   "time_et": "19:00:00",
+   "start_utc": "2027-02-28T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "LIU"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "LIU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Durham, N.H. \u2013 Lundholm Gymnasium",
+   "venue": "Lundholm Gymnasium",
+   "sources": [
+    "https://liuathletics.com/",
+    "https://unhwildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-ballstate-westernmichigan",
+   "date": "2027-02-28",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-28T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ball State"
+   ],
+   "away": [
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Muncie, Ind.",
+   "venue": "Worthen Arena",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-georgewashington-northcarolinastate",
+   "date": "2027-02-28",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-28T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "George Washington"
+   ],
+   "away": [
+    "North Carolina State"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "North Carolina State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Washington, D.C.",
+   "venue": "Charles E. Smith Center",
+   "sources": [
+    "https://gwsports.com/",
+    "https://gopack.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-centralmichigan-kentstate",
+   "date": "2027-02-28",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-28T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "Central Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Kent, OH",
+   "venue": null,
+   "sources": [
+    "https://cmuchippewas.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-ivy-classic",
+   "date": "2027-02-28",
+   "time_et": "13:00:00",
+   "start_utc": "2027-02-28T18:00:00.000Z",
+   "desc": "Ivy Classic",
+   "home": [],
+   "away": [
+    "Pennsylvania",
+    "Yale"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Providence, R.I.",
+   "venue": null,
+   "sources": [
+    "https://pennathletics.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-illinoisstate-northernillinois",
+   "date": "2027-02-28",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-28T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Northern Illinois"
+   ],
+   "away": [
+    "Illinois State"
+   ],
+   "d1_teams": [
+    "Northern Illinois",
+    "Illinois State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "DeKalb, Ill.",
+   "venue": null,
+   "sources": [
+    "https://goredbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-west-virginia-tri-meet",
+   "date": "2027-02-28",
+   "time_et": "14:00:00",
+   "start_utc": "2027-02-28T19:00:00.000Z",
+   "desc": "West Virginia Tri-Meet",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Eastern Michigan",
+    "Temple"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Eastern Michigan",
+    "Temple"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Morgantown, W.Va.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://emueagles.com/",
+    "https://owlsports.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-twu-tri-meet",
+   "date": "2027-02-28",
+   "time_et": "15:00:00",
+   "start_utc": "2027-02-28T20:00:00.000Z",
+   "desc": "TWU Tri-Meet",
+   "home": [
+    "Texas Woman's"
+   ],
+   "away": [
+    "Bowling Green",
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Bowling Green",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denton, Texas",
+   "venue": "Kitty Magee Arena",
+   "sources": [
+    "https://bgsufalcons.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-california-northcarolina",
+   "date": "2027-02-28",
+   "time_et": "16:00:00",
+   "start_utc": "2027-02-28T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "California"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Chapel Hill, N.C.",
+   "venue": "Carmichael Arena",
+   "sources": [
+    "https://calbears.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-big-4-meet",
+   "date": "2027-02-28",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-28T22:00:00.000Z",
+   "desc": "Big 4 Meet",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Illinois",
+    "Maryland",
+    "Minnesota",
+    "Big Four Meet"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Illinois",
+    "Maryland",
+    "Minnesota"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "East Lansing, Mich.",
+   "venue": "Breslin Center",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://umterps.com/",
+    "https://msuspartans.com/",
+    "https://gophersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-sacramentostate-ucdavis",
+   "date": "2027-02-28",
+   "time_et": "17:00:00",
+   "start_utc": "2027-02-28T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "UC Davis"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "UC Davis"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Sacramento, Calif.",
+   "venue": null,
+   "sources": [
+    "https://hornetsports.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-arizonastate-utah",
+   "date": "2027-02-28",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-28T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "Utah"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "600 E Veterans Way, Tempe, AZ 85281",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-auburn-missouri",
+   "date": "2027-02-28",
+   "time_et": "18:00:00",
+   "start_utc": "2027-02-28T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Missouri"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Missouri",
+    "Auburn"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbia, MO",
+   "venue": null,
+   "sources": [
+    "https://auburntigers.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-02-28-alaska",
+   "date": "2027-02-28",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-01T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alaska"
+   ],
+   "away": [
+    "Wilberforce"
+   ],
+   "d1_teams": [
+    "Alaska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Alaska Airlines Center (aux gym)",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-nc-state-tri-meet",
+   "date": "2027-03-05",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-05T22:00:00.000Z",
+   "desc": "NC State Tri Meet",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "George Washington",
+    "Minnesota"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "George Washington",
+    "Minnesota"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Raleigh, N.C.",
+   "venue": "James T. Valvano Arena at William Neal Reynolds Coliseum",
+   "sources": [
+    "https://gwsports.com/",
+    "https://gophersports.com/",
+    "https://gopack.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-florida-kentucky",
+   "date": "2027-03-05",
+   "time_et": "18:45:00",
+   "start_utc": "2027-03-05T23:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Florida"
+   ],
+   "away": [
+    "Kentucky"
+   ],
+   "d1_teams": [
+    "Florida",
+    "Kentucky"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Gainesville, Fla.",
+   "venue": "Tower Hill Arena",
+   "sources": [
+    "https://floridagators.com/",
+    "https://ukathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-northcarolina",
+   "date": "2027-03-05",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-06T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "Texas Woman's"
+   ],
+   "d1_teams": [
+    "North Carolina"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Chapel Hill, N.C.",
+   "venue": "Carmichael Arena",
+   "sources": [
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-rutgers-tri",
+   "date": "2027-03-05",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-06T00:00:00.000Z",
+   "desc": "Rutgers Tri",
+   "home": [
+    "Rutgers",
+    "Towson"
+   ],
+   "away": [
+    "Pennsylvania"
+   ],
+   "d1_teams": [
+    "Rutgers",
+    "Towson",
+    "Pennsylvania"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Piscataway, N.J.",
+   "venue": "Jersey Mike's Arena",
+   "sources": [
+    "https://scarletknights.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-pennstate-westvirginia",
+   "date": "2027-03-05",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-06T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "West Virginia"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "West Virginia",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Morgantown, W.Va.",
+   "venue": "Hope Coliseum",
+   "sources": [
+    "https://gopsusports.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-airforce-michiganstate-westernmichigan",
+   "date": "2027-03-05",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-06T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Air Force",
+    "Michigan State"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Air Force",
+    "Michigan State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Kalamazoo, Mich.",
+   "venue": null,
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://msuspartans.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-iowa-missouri",
+   "date": "2027-03-05",
+   "time_et": "19:30:00",
+   "start_utc": "2027-03-06T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Iowa City, Iowa",
+   "venue": null,
+   "sources": [
+    "https://hawkeyesports.com/",
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-arkansas-lsu",
+   "date": "2027-03-05",
+   "time_et": "19:45:00",
+   "start_utc": "2027-03-06T00:45:00.000Z",
+   "desc": "",
+   "home": [
+    "Arkansas"
+   ],
+   "away": [
+    "LSU"
+   ],
+   "d1_teams": [
+    "Arkansas",
+    "LSU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Bud Walton Arena",
+   "venue": "Bud Walton Arena",
+   "sources": [
+    "https://arkansasrazorbacks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-auburn-georgia",
+   "date": "2027-03-05",
+   "time_et": "20:00:00",
+   "start_utc": "2027-03-06T01:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Auburn"
+   ],
+   "away": [
+    "Georgia"
+   ],
+   "d1_teams": [
+    "Auburn",
+    "Georgia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Auburn, Ala.",
+   "venue": null,
+   "sources": [
+    "https://auburntigers.com/",
+    "https://georgiadogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-arizonastate-michigan",
+   "date": "2027-03-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-03-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona State"
+   ],
+   "away": [
+    "Michigan"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "600 E Veterans Way, Tempe, AZ 85281",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://mgoblue.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-byu-southernutah",
+   "date": "2027-03-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-03-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "BYU"
+   ],
+   "away": [
+    "Southern Utah"
+   ],
+   "d1_teams": [
+    "BYU",
+    "Southern Utah"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Provo, Utah",
+   "venue": null,
+   "sources": [
+    "https://byucougars.com/",
+    "https://suutbirds.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-boisestate-utahstate",
+   "date": "2027-03-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-03-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Boise State"
+   ],
+   "away": [
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Boise State",
+    "Utah State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Boise, Idaho",
+   "venue": "ExtraMile Arena",
+   "sources": [
+    "https://broncosports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-arizona-utah",
+   "date": "2027-03-05",
+   "time_et": "21:00:00",
+   "start_utc": "2027-03-06T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Utah"
+   ],
+   "away": [
+    "Arizona"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Arizona"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Salt Lake City, Utah",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-sacramento-state-tri-meet",
+   "date": "2027-03-05",
+   "time_et": "21:30:00",
+   "start_utc": "2027-03-06T02:30:00.000Z",
+   "desc": "Sacramento State Tri Meet",
+   "home": [
+    "Sacramento State"
+   ],
+   "away": [
+    "S.E. Missouri",
+    "Bridgeport"
+   ],
+   "d1_teams": [
+    "Sacramento State",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Sacramento, Calif.",
+   "venue": null,
+   "sources": [
+    "https://semoredhawks.com/",
+    "https://hornetsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-05-cal-tri-meet-2027",
+   "date": "2027-03-05",
+   "time_et": "22:30:00",
+   "start_utc": "2027-03-06T03:30:00.000Z",
+   "desc": "Cal Tri Meet 2027",
+   "home": [
+    "California",
+    "Washington",
+    "San Jose State"
+   ],
+   "away": [],
+   "d1_teams": [
+    "California",
+    "Washington",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Berkeley, Calif.",
+   "venue": "Haas Pavilion",
+   "sources": [
+    "https://calbears.com/",
+    "https://sjsuspartans.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-06-alumni-night",
+   "date": "2027-03-06",
+   "time_et": "16:00:00",
+   "start_utc": "2027-03-06T21:00:00.000Z",
+   "desc": "Alumni Night",
+   "home": [
+    "Temple"
+   ],
+   "away": [
+    "Maryland",
+    "Southern Conn."
+   ],
+   "d1_teams": [
+    "Temple",
+    "Maryland"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Philadelphia, Pa.",
+   "venue": "McGonigle Hall",
+   "sources": [
+    "https://umterps.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-pittsburgh-westernmichigan",
+   "date": "2027-03-07",
+   "time_et": "12:00:00",
+   "start_utc": "2027-03-07T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Western Michigan"
+   ],
+   "away": [
+    "Pittsburgh"
+   ],
+   "d1_teams": [
+    "Western Michigan",
+    "Pittsburgh"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Arena",
+   "venue": null,
+   "sources": [
+    "https://pittsburghpanthers.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-bowlinggreen-centralmichigan",
+   "date": "2027-03-07",
+   "time_et": "13:00:00",
+   "start_utc": "2027-03-07T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Central Michigan"
+   ],
+   "away": [
+    "Bowling Green"
+   ],
+   "d1_teams": [
+    "Central Michigan",
+    "Bowling Green"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Mount Pleasant, Mich.",
+   "venue": "McGuirk Arena",
+   "sources": [
+    "https://bgsufalcons.com/",
+    "https://cmuchippewas.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-ballstate-kentstate",
+   "date": "2027-03-07",
+   "time_et": "13:00:00",
+   "start_utc": "2027-03-07T18:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kent State"
+   ],
+   "away": [
+    "Ball State"
+   ],
+   "d1_teams": [
+    "Kent State",
+    "Ball State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Kent, OH",
+   "venue": null,
+   "sources": [
+    "https://ballstatesports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-washington-quad-meet",
+   "date": "2027-03-07",
+   "time_et": "13:00:00",
+   "start_utc": "2027-03-07T18:00:00.000Z",
+   "desc": "Washington Quad Meet",
+   "home": [
+    "Washington",
+    "Ohio State",
+    "Illinois State",
+    "Towson"
+   ],
+   "away": [
+    "Arizona",
+    "LIU",
+    "Yale"
+   ],
+   "d1_teams": [
+    "Washington",
+    "Ohio State",
+    "Illinois State",
+    "Towson",
+    "Arizona",
+    "LIU",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbus, Ohio \u2013 Covelli Center",
+   "venue": "Covelli Center",
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://goredbirds.com/",
+    "https://liuathletics.com/",
+    "https://ohiostatebuckeyes.com/",
+    "https://towsontigers.com/",
+    "https://gohuskies.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-new-hampshire-tri",
+   "date": "2027-03-07",
+   "time_et": "14:00:00",
+   "start_utc": "2027-03-07T19:00:00.000Z",
+   "desc": "New Hampshire Tri",
+   "home": [
+    "New Hampshire"
+   ],
+   "away": [
+    "Brown",
+    "Rutgers"
+   ],
+   "d1_teams": [
+    "New Hampshire",
+    "Brown",
+    "Rutgers"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Durham, N.H. (Whittemore Center at Key Auto Group Complex)",
+   "venue": "Whittemore Center at Key Auto Group Complex",
+   "sources": [
+    "https://unhwildcats.com/",
+    "https://scarletknights.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-northcarolinastate-pennstate-pennsylvania-westvirginia",
+   "date": "2027-03-07",
+   "time_et": "14:00:00",
+   "start_utc": "2027-03-07T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Penn State"
+   ],
+   "away": [
+    "North Carolina State",
+    "Pennsylvania",
+    "West Virginia"
+   ],
+   "d1_teams": [
+    "Penn State",
+    "North Carolina State",
+    "Pennsylvania",
+    "West Virginia"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Park, Pa.",
+   "venue": "Rec Hall",
+   "sources": [
+    "https://gopack.com/",
+    "https://gopsusports.com/",
+    "https://pennathletics.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-nebraska-northernillinois",
+   "date": "2027-03-07",
+   "time_et": "15:00:00",
+   "start_utc": "2027-03-07T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Nebraska"
+   ],
+   "away": [
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Nebraska",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lincoln, Neb.",
+   "venue": null,
+   "sources": [
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-uc-davis-tri-meet",
+   "date": "2027-03-07",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-07T22:00:00.000Z",
+   "desc": "UC Davis Tri Meet",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "S.E. Missouri",
+    "Bridgeport"
+   ],
+   "d1_teams": [
+    "UC Davis",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "University Credit Union Center",
+   "venue": null,
+   "sources": [
+    "https://semoredhawks.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-clemson-northcarolina",
+   "date": "2027-03-07",
+   "time_et": "17:30:00",
+   "start_utc": "2027-03-07T22:30:00.000Z",
+   "desc": "",
+   "home": [
+    "North Carolina"
+   ],
+   "away": [
+    "Clemson"
+   ],
+   "d1_teams": [
+    "North Carolina",
+    "Clemson"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Chapel Hill, N.C.",
+   "venue": "Carmichael Arena",
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://goheels.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-alabama-oklahoma",
+   "date": "2027-03-07",
+   "time_et": "18:00:00",
+   "start_utc": "2027-03-07T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Alabama"
+   ],
+   "away": [
+    "Oklahoma"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Oklahoma"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tuscaloosa, Ala.",
+   "venue": "Coleman Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-stanford-ucla",
+   "date": "2027-03-07",
+   "time_et": "21:00:00",
+   "start_utc": "2027-03-08T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "Stanford"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "Stanford"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Los Angeles, Calif.",
+   "venue": null,
+   "sources": [
+    "https://gostanford.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-07-easternmichigan-michiganstate",
+   "date": "2027-03-07",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "Michigan State"
+   ],
+   "away": [
+    "Eastern Michigan"
+   ],
+   "d1_teams": [
+    "Michigan State",
+    "Eastern Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "East Lansing, Mich.",
+   "venue": null,
+   "sources": [
+    "https://emueagles.com/",
+    "https://msuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-08-arizonastate-denver",
+   "date": "2027-03-08",
+   "time_et": "21:00:00",
+   "start_utc": "2027-03-09T02:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Denver"
+   ],
+   "away": [
+    "Arizona State"
+   ],
+   "d1_teams": [
+    "Denver",
+    "Arizona State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "2250 E Jewell Ave, Denver, CO 80208",
+   "venue": "Magness Arena",
+   "sources": [
+    "https://thesundevils.com/",
+    "https://denverpioneers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-towson-quad",
+   "date": "2027-03-12",
+   "time_et": "18:00:00",
+   "start_utc": "2027-03-12T23:00:00.000Z",
+   "desc": "Towson Quad",
+   "home": [
+    "Towson",
+    "George Washington",
+    "Pennsylvania"
+   ],
+   "away": [
+    "Maryland"
+   ],
+   "d1_teams": [
+    "Towson",
+    "George Washington",
+    "Pennsylvania",
+    "Maryland"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Towson, MD",
+   "venue": null,
+   "sources": [
+    "https://gwsports.com/",
+    "https://umterps.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-clemson-michiganstate-pennstate-westvirginia",
+   "date": "2027-03-12",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-13T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Clemson",
+    "Michigan State",
+    "West Virginia"
+   ],
+   "away": [
+    "Penn State"
+   ],
+   "d1_teams": [
+    "Clemson",
+    "Michigan State",
+    "West Virginia",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Clemson, S.C.",
+   "venue": "Littlejohn Coliseum",
+   "sources": [
+    "https://clemsontigers.com/",
+    "https://msuspartans.com/",
+    "https://gopsusports.com/",
+    "https://wvusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-arkansas-kentucky",
+   "date": "2027-03-12",
+   "time_et": "19:00:00",
+   "start_utc": "2027-03-13T00:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Kentucky"
+   ],
+   "away": [
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Kentucky",
+    "Arkansas"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Lexington, Ky. | Historic Memorial Coliseum",
+   "venue": null,
+   "sources": [
+    "https://arkansasrazorbacks.com/",
+    "https://ukathletics.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-iowa-tri",
+   "date": "2027-03-12",
+   "time_et": "19:30:00",
+   "start_utc": "2027-03-13T00:30:00.000Z",
+   "desc": "Iowa Tri",
+   "home": [
+    "Iowa"
+   ],
+   "away": [
+    "Ball State",
+    "Northern Illinois"
+   ],
+   "d1_teams": [
+    "Iowa",
+    "Ball State",
+    "Northern Illinois"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Iowa City, Iowa",
+   "venue": null,
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://hawkeyesports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-florida-oklahoma",
+   "date": "2027-03-12",
+   "time_et": "19:30:00",
+   "start_utc": "2027-03-13T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "Oklahoma"
+   ],
+   "away": [
+    "Florida"
+   ],
+   "d1_teams": [
+    "Oklahoma",
+    "Florida"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Norman, Okla.",
+   "venue": "Lloyd Noble Center",
+   "sources": [
+    "https://floridagators.com/",
+    "https://soonersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-semissouri",
+   "date": "2027-03-12",
+   "time_et": "19:30:00",
+   "start_utc": "2027-03-13T00:30:00.000Z",
+   "desc": "",
+   "home": [
+    "S.E. Missouri"
+   ],
+   "away": [
+    "Centenary College"
+   ],
+   "d1_teams": [
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Cape Girardeau, Mo.",
+   "venue": "Houck Field House",
+   "sources": [
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-lsu-missouri",
+   "date": "2027-03-12",
+   "time_et": "20:30:00",
+   "start_utc": "2027-03-13T01:30:00.000Z",
+   "desc": "",
+   "home": [
+    "LSU"
+   ],
+   "away": [
+    "Missouri"
+   ],
+   "d1_teams": [
+    "LSU",
+    "Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Baton Rouge, La.",
+   "venue": null,
+   "sources": [
+    "https://mutigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-12-sacramentostate-sanjosestate",
+   "date": "2027-03-12",
+   "time_et": "22:00:00",
+   "start_utc": "2027-03-13T03:00:00.000Z",
+   "desc": "",
+   "home": [
+    "San Jose State"
+   ],
+   "away": [
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "San Jose State",
+    "Sacramento State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "San Jose, Calif.",
+   "venue": null,
+   "sources": [
+    "https://hornetsports.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-auburn-ohiostate",
+   "date": "2027-03-13",
+   "time_et": "12:00:00",
+   "start_utc": "2027-03-13T17:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Ohio State"
+   ],
+   "away": [
+    "Auburn"
+   ],
+   "d1_teams": [
+    "Ohio State",
+    "Auburn"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbus, Ohio",
+   "venue": "Covelli Center",
+   "sources": [
+    "https://auburntigers.com/",
+    "https://ohiostatebuckeyes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-easternmichigan-kentstate",
+   "date": "2027-03-13",
+   "time_et": "14:00:00",
+   "start_utc": "2027-03-13T19:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Eastern Michigan"
+   ],
+   "away": [
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Eastern Michigan",
+    "Kent State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ypsilanti, Mich.",
+   "venue": "Gervin GameAbove Center",
+   "sources": [
+    "https://emueagles.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-les-olson-it-best-of-utah",
+   "date": "2027-03-13",
+   "time_et": "14:00:00",
+   "start_utc": "2027-03-13T19:00:00.000Z",
+   "desc": "Les Olson IT Best of Utah",
+   "home": [
+    "Utah",
+    "Southern Utah",
+    "Utah State"
+   ],
+   "away": [
+    "BYU"
+   ],
+   "d1_teams": [
+    "Utah",
+    "Southern Utah",
+    "Utah State",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "West Valley City, Utah",
+   "venue": null,
+   "sources": [
+    "https://byucougars.com/",
+    "https://suutbirds.com/",
+    "https://utahutes.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-denver-illinois",
+   "date": "2027-03-13",
+   "time_et": "15:00:00",
+   "start_utc": "2027-03-13T20:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Illinois"
+   ],
+   "away": [
+    "Denver"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Denver"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Urbana-Champaign, Ill.",
+   "venue": "Huff Hall",
+   "sources": [
+    "https://denverpioneers.com/",
+    "https://fightingillini.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-arizona-nebraska",
+   "date": "2027-03-13",
+   "time_et": "16:00:00",
+   "start_utc": "2027-03-13T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Arizona"
+   ],
+   "away": [
+    "Nebraska"
+   ],
+   "d1_teams": [
+    "Arizona",
+    "Nebraska"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tucson, Ariz.",
+   "venue": null,
+   "sources": [
+    "https://arizonawildcats.com/",
+    "https://huskers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-michigan-newhampshire",
+   "date": "2027-03-13",
+   "time_et": "16:00:00",
+   "start_utc": "2027-03-13T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Michigan"
+   ],
+   "away": [
+    "New Hampshire"
+   ],
+   "d1_teams": [
+    "Michigan",
+    "New Hampshire"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ann Arbor, Mich.",
+   "venue": "Crisler Center",
+   "sources": [
+    "https://mgoblue.com/",
+    "https://unhwildcats.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-nc-state-quad-meet",
+   "date": "2027-03-13",
+   "time_et": "16:00:00",
+   "start_utc": "2027-03-13T21:00:00.000Z",
+   "desc": "NC State Quad Meet",
+   "home": [
+    "North Carolina State"
+   ],
+   "away": [
+    "Rutgers",
+    "Temple",
+    "William & Mary"
+   ],
+   "d1_teams": [
+    "North Carolina State",
+    "Rutgers",
+    "Temple",
+    "William & Mary"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Raleigh, N.C. (Reynolds Coliseum)",
+   "venue": "James T. Valvano Arena at William Neal Reynolds Coliseum",
+   "sources": [
+    "https://gopack.com/",
+    "https://scarletknights.com/",
+    "https://owlsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-pittsburgh-westernmichigan",
+   "date": "2027-03-13",
+   "time_et": "16:00:00",
+   "start_utc": "2027-03-13T21:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Pittsburgh"
+   ],
+   "away": [
+    "Western Michigan"
+   ],
+   "d1_teams": [
+    "Pittsburgh",
+    "Western Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pittsburgh, Pa,",
+   "venue": "Victory Heights Arena and Sports Performance Center",
+   "sources": [
+    "https://pittsburghpanthers.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-minnesota-quad-meet",
+   "date": "2027-03-13",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-13T22:00:00.000Z",
+   "desc": "Minnesota Quad Meet",
+   "home": [
+    "Minnesota",
+    "Illinois State"
+   ],
+   "away": [
+    "Air Force",
+    "Central Michigan"
+   ],
+   "d1_teams": [
+    "Minnesota",
+    "Illinois State",
+    "Air Force",
+    "Central Michigan"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Minneapolis, Minn.",
+   "venue": "Maturi Pavilion",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://cmuchippewas.com/",
+    "https://goredbirds.com/",
+    "https://gophersports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-boisestate-oregonstate-ucdavis",
+   "date": "2027-03-13",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-13T22:00:00.000Z",
+   "desc": "",
+   "home": [
+    "Oregon State",
+    "UC Davis"
+   ],
+   "away": [
+    "Boise State",
+    "Texas Woman's",
+    "Texas Women's"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "UC Davis",
+    "Boise State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Corvallis, Ore.",
+   "venue": "Gill Coliseum",
+   "sources": [
+    "https://broncosports.com/",
+    "https://osubeavers.com/",
+    "https://ucdavisaggies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-liu-yale",
+   "date": "2027-03-13",
+   "time_et": "18:00:00",
+   "start_utc": "2027-03-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "LIU"
+   ],
+   "away": [
+    "Yale"
+   ],
+   "d1_teams": [
+    "LIU",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Pratt Recreation Center",
+   "venue": null,
+   "sources": [
+    "https://liuathletics.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-13-california-ucla",
+   "date": "2027-03-13",
+   "time_et": "18:00:00",
+   "start_utc": "2027-03-13T23:00:00.000Z",
+   "desc": "",
+   "home": [
+    "UCLA"
+   ],
+   "away": [
+    "California"
+   ],
+   "d1_teams": [
+    "UCLA",
+    "California"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Los Angeles, Calif.",
+   "venue": null,
+   "sources": [
+    "https://calbears.com/",
+    "https://uclabruins.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-14-maryland-quad",
+   "date": "2027-03-14",
+   "time_et": "13:00:00",
+   "start_utc": "2027-03-14T17:00:00.000Z",
+   "desc": "Maryland Quad",
+   "home": [
+    "Maryland",
+    "Towson"
+   ],
+   "away": [
+    "Bowling Green",
+    "George Washington"
+   ],
+   "d1_teams": [
+    "Maryland",
+    "Towson",
+    "Bowling Green",
+    "George Washington"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "College Park, Md.",
+   "venue": "XFINITY Center",
+   "sources": [
+    "https://bgsufalcons.com/",
+    "https://gwsports.com/",
+    "https://umterps.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-14-alabama-georgia",
+   "date": "2027-03-14",
+   "time_et": "16:15:00",
+   "start_utc": "2027-03-14T20:15:00.000Z",
+   "desc": "",
+   "home": [
+    "Georgia"
+   ],
+   "away": [
+    "Alabama"
+   ],
+   "d1_teams": [
+    "Georgia",
+    "Alabama"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Athens, Ga.",
+   "venue": "Stegeman Coliseum",
+   "sources": [
+    "https://rolltide.com/",
+    "https://georgiadogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-14-stanford-quad-meet",
+   "date": "2027-03-14",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-14T21:00:00.000Z",
+   "desc": "Stanford Quad Meet",
+   "home": [
+    "Sacramento State",
+    "Stanford",
+    "Washington",
+    "Arizona State"
+   ],
+   "away": [],
+   "d1_teams": [
+    "Sacramento State",
+    "Stanford",
+    "Washington",
+    "Arizona State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "655 Campus Drive, Stanford, CA 94305",
+   "venue": null,
+   "sources": [
+    "https://thesundevils.com/",
+    "https://hornetsports.com/",
+    "https://gostanford.com/",
+    "https://gohuskies.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-19-big-ten-championship",
+   "date": "2027-03-19",
+   "time_et": "13:00:00",
+   "start_utc": "2027-03-19T17:00:00.000Z",
+   "desc": "Big Ten Championship",
+   "home": [],
+   "away": [
+    "Illinois",
+    "Iowa",
+    "Maryland",
+    "Michigan State",
+    "Michigan",
+    "Minnesota",
+    "Nebraska",
+    "Ohio State",
+    "Rutgers",
+    "Washington",
+    "UCLA",
+    "Session I",
+    "Penn State",
+    "Session III",
+    "Session II"
+   ],
+   "d1_teams": [
+    "Illinois",
+    "Iowa",
+    "Maryland",
+    "Michigan State",
+    "Michigan",
+    "Minnesota",
+    "Nebraska",
+    "Ohio State",
+    "Rutgers",
+    "Washington",
+    "UCLA",
+    "Penn State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Columbus, Ohio (Covelli Center)",
+   "venue": "Covelli Center",
+   "sources": [
+    "https://fightingillini.com/",
+    "https://hawkeyesports.com/",
+    "https://umterps.com/",
+    "https://msuspartans.com/",
+    "https://mgoblue.com/",
+    "https://gophersports.com/",
+    "https://huskers.com/",
+    "https://ohiostatebuckeyes.com/",
+    "https://scarletknights.com/",
+    "https://gohuskies.com/",
+    "https://uclabruins.com/",
+    "https://gopsusports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-19-mic-championship",
+   "date": "2027-03-19",
+   "time_et": "18:00:00",
+   "start_utc": "2027-03-19T22:00:00.000Z",
+   "desc": "MIC Championship",
+   "home": [],
+   "away": [
+    "Illinois State",
+    "S.E. Missouri"
+   ],
+   "d1_teams": [
+    "Illinois State",
+    "S.E. Missouri"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Denton, Texas",
+   "venue": null,
+   "sources": [
+    "https://goredbirds.com/",
+    "https://semoredhawks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-acc-championship",
+   "date": "2027-03-20",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "ACC Championship",
+   "home": [],
+   "away": [
+    "California",
+    "North Carolina State",
+    "North Carolina",
+    "Pittsburgh",
+    "Stanford",
+    "Clemson"
+   ],
+   "d1_teams": [
+    "California",
+    "North Carolina State",
+    "North Carolina",
+    "Pittsburgh",
+    "Stanford",
+    "Clemson"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Greensboro, N.C.",
+   "venue": "First Horizon Coliseum",
+   "sources": [
+    "https://calbears.com/",
+    "https://gopack.com/",
+    "https://goheels.com/",
+    "https://pittsburghpanthers.com/",
+    "https://gostanford.com/",
+    "https://clemsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-mac-championship",
+   "date": "2027-03-20",
+   "time_et": "14:00:00",
+   "start_utc": "2027-03-20T18:00:00.000Z",
+   "desc": "MAC Championship",
+   "home": [],
+   "away": [
+    "Ball State",
+    "Mid-American Conference",
+    "Bowling Green",
+    "Central Michigan",
+    "Eastern Michigan",
+    "Western Michigan",
+    "Kent State"
+   ],
+   "d1_teams": [
+    "Ball State",
+    "Bowling Green",
+    "Central Michigan",
+    "Eastern Michigan",
+    "Western Michigan",
+    "Kent State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Ypsilanti, Mich.",
+   "venue": "George Gervin GameAbove Center",
+   "sources": [
+    "https://ballstatesports.com/",
+    "https://bgsufalcons.com/",
+    "https://cmuchippewas.com/",
+    "https://emueagles.com/",
+    "https://wmubroncos.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-mpsf-championship",
+   "date": "2027-03-20",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-20T21:00:00.000Z",
+   "desc": "MPSF Championship",
+   "home": [],
+   "away": [
+    "Alaska",
+    "Sacramento State"
+   ],
+   "d1_teams": [
+    "Alaska",
+    "Sacramento State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Sacramento, Calif.",
+   "venue": null,
+   "sources": [
+    "https://goseawolves.com/",
+    "https://hornetsports.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-eagl-championship",
+   "date": "2027-03-20",
+   "time_et": "17:00:00",
+   "start_utc": "2027-03-20T21:00:00.000Z",
+   "desc": "EAGL Championship",
+   "home": [],
+   "away": [
+    "George Washington",
+    "LIU",
+    "New Hampshire",
+    "Towson",
+    "Temple"
+   ],
+   "d1_teams": [
+    "George Washington",
+    "LIU",
+    "New Hampshire",
+    "Towson",
+    "Temple"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Charles E. Smith Center",
+   "venue": "Charles E. Smith Center",
+   "sources": [
+    "https://gwsports.com/",
+    "https://liuathletics.com/",
+    "https://unhwildcats.com/",
+    "https://owlsports.com/",
+    "https://towsontigers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-mountain-west-championship",
+   "date": "2027-03-20",
+   "time_et": "18:00:00",
+   "start_utc": "2027-03-20T22:00:00.000Z",
+   "desc": "Mountain West Championship",
+   "home": [],
+   "away": [
+    "Air Force",
+    "San Jose State"
+   ],
+   "d1_teams": [
+    "Air Force",
+    "San Jose State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "USAFA, Colo.",
+   "venue": "Cadet West Gym - Gymnastics",
+   "sources": [
+    "https://goairforcefalcons.com/",
+    "https://sjsuspartans.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-big-12-championship",
+   "date": "2027-03-20",
+   "time_et": "20:00:00",
+   "start_utc": "2027-03-21T00:00:00.000Z",
+   "desc": "Big 12 Championship",
+   "home": [],
+   "away": [
+    "Arizona State",
+    "Arizona",
+    "Denver",
+    "West Virginia",
+    "Utah",
+    "BYU"
+   ],
+   "d1_teams": [
+    "Arizona State",
+    "Arizona",
+    "Denver",
+    "West Virginia",
+    "Utah",
+    "BYU"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "West Valley City, Utah",
+   "venue": "Maverik Center",
+   "sources": [
+    "https://thesundevils.com/",
+    "https://arizonawildcats.com/",
+    "https://denverpioneers.com/",
+    "https://wvusports.com/",
+    "https://utahutes.com/",
+    "https://byucougars.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-sec-championship",
+   "date": "2027-03-20",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "SEC Championship",
+   "home": [],
+   "away": [
+    "Alabama",
+    "Florida",
+    "Georgia",
+    "Kentucky",
+    "Missouri",
+    "Oklahoma",
+    "Arkansas"
+   ],
+   "d1_teams": [
+    "Alabama",
+    "Florida",
+    "Georgia",
+    "Kentucky",
+    "Missouri",
+    "Oklahoma",
+    "Arkansas"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Tampa, Fla.",
+   "venue": "Benchmark International Arena",
+   "sources": [
+    "https://rolltide.com/",
+    "https://floridagators.com/",
+    "https://georgiadogs.com/",
+    "https://ukathletics.com/",
+    "https://mutigers.com/",
+    "https://soonersports.com/",
+    "https://arkansasrazorbacks.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-pac-12-championship",
+   "date": "2027-03-20",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "Pac-12 Championship",
+   "home": [],
+   "away": [
+    "Oregon State",
+    "Boise State",
+    "Southern Utah",
+    "Utah State"
+   ],
+   "d1_teams": [
+    "Oregon State",
+    "Boise State",
+    "Southern Utah",
+    "Utah State"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Corvallis, Ore.",
+   "venue": "Gill Coliseum",
+   "sources": [
+    "https://broncosports.com/",
+    "https://osubeavers.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-gec-championship",
+   "date": "2027-03-20",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "GEC Championship",
+   "home": [],
+   "away": [
+    "Pennsylvania",
+    "Yale",
+    "Gymnastics East Conference"
+   ],
+   "d1_teams": [
+    "Pennsylvania",
+    "Yale"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "New Haven, CT",
+   "venue": null,
+   "sources": [
+    "https://pennathletics.com/",
+    "https://yalebulldogs.com/"
+   ]
+  },
+  {
+   "id": "ann-2027-03-20-ucdavis",
+   "date": "2027-03-20",
+   "time_et": null,
+   "start_utc": null,
+   "desc": "",
+   "home": [
+    "UC Davis"
+   ],
+   "away": [
+    "Mountain West Conference"
+   ],
+   "d1_teams": [
+    "UC Davis"
+   ],
+   "virtius": null,
+   "stats_link": null,
+   "video_link": null,
+   "video_desc": null,
+   "rtn_url": null,
+   "location": "Colorado Springs, Colo.",
+   "venue": null,
+   "sources": [
+    "https://ucdavisaggies.com/"
+   ]
+  }
+ ]
+}

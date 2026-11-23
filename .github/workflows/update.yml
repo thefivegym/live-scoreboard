@@ -4,9 +4,16 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      scrape_announced:
+        description: 'Re-scrape announced 2027 meets from school athletics sites'
+        type: boolean
+        default: false
   schedule:
     # Daily schedule refresh (11:15 UTC = 6:15 AM CT / 5:15 AM CDT-ish). Runs year-round.
     - cron: '15 11 * * *'
+    # Weekly announced-schedule refresh (Sunday 12:15 UTC) until RTN publishes 2027.
+    - cron: '15 12 * * 0'
     # Every 10 minutes during meet hours, January–April: 16:00–05:59 UTC (≈10 AM–midnight CT).
     - cron: '*/10 16-23 * 1-4 *'
     - cron: '*/10 0-5 * 1-4 *'
@@ -32,6 +39,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - uses: actions/setup-python@v5
+        if: github.event.schedule == '15 12 * * 0' || github.event.inputs.scrape_announced == 'true'
+        with:
+          python-version: '3.12'
+      - name: Refresh announced 2027 schedules from school athletics sites
+        if: github.event.schedule == '15 12 * * 0' || github.event.inputs.scrape_announced == 'true'
+        env:
+          SCOREBOARD_REPO: ${{ github.workspace }}
+        run: python3 scripts/announced-schedule/reparse_or_scrape.py
       - name: Build schedule and fallback results from Road to Nationals
         run: node scripts/build-schedule.mjs
       - name: Commit changed data
