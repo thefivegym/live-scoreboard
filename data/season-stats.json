@@ -1,0 +1,619 @@
+{
+ "generated_at": "2026-11-23T09:17:07.155Z",
+ "seasons": {
+  "2026": {
+   "meets": 342,
+   "meets_with_virtius": 288,
+   "meets_scored": 287,
+   "meets_missing": [],
+   "source": "Virtius session JSON for official D1 season meets (final scores only; exhibitions excluded)",
+   "perfect10s": [
+    {
+     "athlete": "Avery Neff",
+     "team": "Utah",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-01-10",
+     "meet": "Sprouts Farmers Market Collegiate Quad",
+     "meet_id": 32607,
+     "virtius": "9WRjkzZznl"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-01-17",
+     "meet": "UCLA vs Nebraska",
+     "meet_id": 31661,
+     "virtius": "p4OyNaVP3X"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-01-23",
+     "meet": "LSU vs Kentucky",
+     "meet_id": 31725,
+     "virtius": "v70RnqTKph"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-01-25",
+     "meet": "Michigan State vs UCLA",
+     "meet_id": 31772,
+     "virtius": "y_wp7CWqKE"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-01-30",
+     "meet": "UCLA vs Washington",
+     "meet_id": 31817,
+     "virtius": "xJWEgtJCQ7"
+    },
+    {
+     "athlete": "Lily Smith",
+     "team": "Georgia",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-01-30",
+     "meet": "Georgia / CMU / Temple / Fisk",
+     "meet_id": 31809,
+     "virtius": "L_aMxS0wGe"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-02-07",
+     "meet": "Minnesota vs UCLA",
+     "meet_id": 31927,
+     "virtius": "UK43F2OoT_"
+    },
+    {
+     "athlete": "Addison Fatta",
+     "team": "Oklahoma",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-02-13",
+     "meet": "Florida vs Oklahoma",
+     "meet_id": 31983,
+     "virtius": "gLf7AdegRW"
+    },
+    {
+     "athlete": "Avery Neff",
+     "team": "Utah",
+     "event": "bars",
+     "score": 10,
+     "date": "2026-02-13",
+     "meet": "Utah vs BYU",
+     "meet_id": 31989,
+     "virtius": "ih5XFSatoU"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-02-13",
+     "meet": "LSU vs Auburn",
+     "meet_id": 31994,
+     "virtius": "J7gHSsh5x-"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-02-14",
+     "meet": "UCLA vs Michigan",
+     "meet_id": 32012,
+     "virtius": "sRODbpKVC0"
+    },
+    {
+     "athlete": "Avery Neff",
+     "team": "Utah",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-02-20",
+     "meet": "Utah vs Southern Utah",
+     "meet_id": 32095,
+     "virtius": "ndi_E3zXZf"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-02-20",
+     "meet": "Oklahoma vs LSU",
+     "meet_id": 32103,
+     "virtius": "wgRDf2c3-1"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-02-20",
+     "meet": "Oklahoma vs LSU",
+     "meet_id": 32103,
+     "virtius": "wgRDf2c3-1"
+    },
+    {
+     "athlete": "Morgan Price",
+     "team": "Arkansas",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-02-20",
+     "meet": "Arkansas vs Kentucky",
+     "meet_id": 32099,
+     "virtius": "ei1d-Sqdki"
+    },
+    {
+     "athlete": "Anna Roberts",
+     "team": "Stanford",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-02-27",
+     "meet": "Oregon State vs Stanford",
+     "meet_id": 32187,
+     "virtius": "jfCXCKej2P"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-02-27",
+     "meet": "LSU vs Alabama",
+     "meet_id": 32203,
+     "virtius": "AVnfA4eZ9s"
+    },
+    {
+     "athlete": "Skye Blakely",
+     "team": "Florida",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-02-27",
+     "meet": "TWU / Florida / Arizona State / Fisk",
+     "meet_id": 32195,
+     "virtius": "81i9ZkWi9w"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "bars",
+     "score": 10,
+     "date": "2026-03-07",
+     "meet": "Stanford vs UCLA",
+     "meet_id": 32303,
+     "virtius": "N9DghGCiZu"
+    },
+    {
+     "athlete": "Selena Harris-Miranda",
+     "team": "Florida",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-03-08",
+     "meet": "Florida vs LSU",
+     "meet_id": 32342,
+     "virtius": "uk1Y2G_Tkw"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-03-13",
+     "meet": "LSU vs Arkansas",
+     "meet_id": 32386,
+     "virtius": "tUaf8gfgTb"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-03-13",
+     "meet": "LSU vs Arkansas",
+     "meet_id": 32386,
+     "virtius": "tUaf8gfgTb"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-03-13",
+     "meet": "LSU vs Arkansas",
+     "meet_id": 32386,
+     "virtius": "tUaf8gfgTb"
+    },
+    {
+     "athlete": "Selena Harris-Miranda",
+     "team": "Florida",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-03-13",
+     "meet": "Kentucky vs Florida",
+     "meet_id": 32375,
+     "virtius": "lAKDlXEzgu"
+    },
+    {
+     "athlete": "Anna Roberts",
+     "team": "Stanford",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-03-15",
+     "meet": "Stanford vs Boise State",
+     "meet_id": 32425,
+     "virtius": "x1e_Alp7AQ"
+    },
+    {
+     "athlete": "Anna Roberts",
+     "team": "Stanford",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-03-15",
+     "meet": "Stanford vs Boise State",
+     "meet_id": 32425,
+     "virtius": "x1e_Alp7AQ"
+    },
+    {
+     "athlete": "Arianna Ostrum",
+     "team": "Minnesota",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-03-15",
+     "meet": "Minnesota / Illinois / Iowa / NIU",
+     "meet_id": 32663,
+     "virtius": "ooimYI6H54"
+    },
+    {
+     "athlete": "Nikki Smith",
+     "team": "Michigan State",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-03-15",
+     "meet": "Michigan State vs Brown",
+     "meet_id": 32416,
+     "virtius": "Fju_qn_8ov"
+    },
+    {
+     "athlete": "Faith Torrez",
+     "team": "Oklahoma",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-03-21",
+     "meet": "SEC Conference",
+     "meet_id": 32710,
+     "virtius": "ehuT37YgcP"
+    },
+    {
+     "athlete": "Selena Harris-Miranda",
+     "team": "Florida",
+     "event": "bars",
+     "score": 10,
+     "date": "2026-03-21",
+     "meet": "SEC Conference",
+     "meet_id": 32710,
+     "virtius": "ehuT37YgcP"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-04-02",
+     "meet": "Tempe Regional - Round 2, Session II",
+     "meet_id": 32810,
+     "virtius": "zb45zMSdyR"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-04-02",
+     "meet": "Tempe Regional - Round 2, Session II",
+     "meet_id": 32810,
+     "virtius": "zb45zMSdyR"
+    },
+    {
+     "athlete": "Nikki Smith",
+     "team": "Michigan State",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-04-02",
+     "meet": "Tempe Regional - Round 2, Session I",
+     "meet_id": 32720,
+     "virtius": "uRGgiTHKkw"
+    },
+    {
+     "athlete": "Aurélie Tran",
+     "team": "Iowa",
+     "event": "bars",
+     "score": 10,
+     "date": "2026-04-03",
+     "meet": "Corvallis Regional - Round 2, Session II",
+     "meet_id": 32807,
+     "virtius": "kAxFuxrCrO"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-04-04",
+     "meet": "Baton Rouge Regional - Final",
+     "meet_id": 32784,
+     "virtius": "LJevA_TmY6"
+    },
+    {
+     "athlete": "Kaliya Lincoln",
+     "team": "LSU",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-04-04",
+     "meet": "Baton Rouge Regional - Final",
+     "meet_id": 32784,
+     "virtius": "LJevA_TmY6"
+    },
+    {
+     "athlete": "Faith Torrez",
+     "team": "Oklahoma",
+     "event": "beam",
+     "score": 10,
+     "date": "2026-04-05",
+     "meet": "Lexington Regional - Final",
+     "meet_id": 32793,
+     "virtius": "tBd8CrXBoV"
+    },
+    {
+     "athlete": "Jordan Chiles",
+     "team": "UCLA",
+     "event": "floor",
+     "score": 10,
+     "date": "2026-04-05",
+     "meet": "Corvallis Regional - Final",
+     "meet_id": 32802,
+     "virtius": "5x98j5g2VO"
+    },
+    {
+     "athlete": "Kailin Chio",
+     "team": "LSU",
+     "event": "vault",
+     "score": 10,
+     "date": "2026-04-18",
+     "meet": "NCAA Championships Finals",
+     "meet_id": 32829,
+     "virtius": "MFrZ9epozB"
+    }
+   ],
+   "allAroundHigh": {
+    "score": 39.875,
+    "tied": [
+     {
+      "athlete": "Jordan Chiles",
+      "team": "UCLA",
+      "score": 39.875,
+      "date": "2026-01-25",
+      "meet": "Michigan State vs UCLA",
+      "meet_id": 31772,
+      "virtius": "y_wp7CWqKE"
+     },
+     {
+      "athlete": "Jordan Chiles",
+      "team": "UCLA",
+      "score": 39.875,
+      "date": "2026-01-30",
+      "meet": "UCLA vs Washington",
+      "meet_id": 31817,
+      "virtius": "xJWEgtJCQ7"
+     },
+     {
+      "athlete": "Kailin Chio",
+      "team": "LSU",
+      "score": 39.875,
+      "date": "2026-02-13",
+      "meet": "LSU vs Auburn",
+      "meet_id": 31994,
+      "virtius": "J7gHSsh5x-"
+     },
+     {
+      "athlete": "Anna Roberts",
+      "team": "Stanford",
+      "score": 39.875,
+      "date": "2026-02-27",
+      "meet": "Oregon State vs Stanford",
+      "meet_id": 32187,
+      "virtius": "jfCXCKej2P"
+     }
+    ]
+   },
+   "allAroundHighByDate": [
+    {
+     "as_of": "2026-01-02",
+     "score": 39.35,
+     "tied": [
+      {
+       "athlete": "Ella Zirbes",
+       "team": "Utah",
+       "score": 39.35,
+       "date": "2026-01-02",
+       "meet": "Utah / Minnesota / Iowa",
+       "meet_id": 31517,
+       "virtius": "yLmIWwKtU0"
+      }
+     ]
+    },
+    {
+     "as_of": "2026-01-03",
+     "score": 39.725,
+     "tied": [
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.725,
+       "date": "2026-01-03",
+       "meet": "Washington / California / Oregon State / UCLA",
+       "meet_id": 31525,
+       "virtius": "57h4x8lXRL"
+      }
+     ]
+    },
+    {
+     "as_of": "2026-01-23",
+     "score": 39.775,
+     "tied": [
+      {
+       "athlete": "Kailin Chio",
+       "team": "LSU",
+       "score": 39.775,
+       "date": "2026-01-23",
+       "meet": "LSU vs Kentucky",
+       "meet_id": 31725,
+       "virtius": "v70RnqTKph"
+      }
+     ]
+    },
+    {
+     "as_of": "2026-01-25",
+     "score": 39.875,
+     "tied": [
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-25",
+       "meet": "Michigan State vs UCLA",
+       "meet_id": 31772,
+       "virtius": "y_wp7CWqKE"
+      }
+     ]
+    },
+    {
+     "as_of": "2026-01-30",
+     "score": 39.875,
+     "tied": [
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-25",
+       "meet": "Michigan State vs UCLA",
+       "meet_id": 31772,
+       "virtius": "y_wp7CWqKE"
+      },
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-30",
+       "meet": "UCLA vs Washington",
+       "meet_id": 31817,
+       "virtius": "xJWEgtJCQ7"
+      }
+     ]
+    },
+    {
+     "as_of": "2026-02-13",
+     "score": 39.875,
+     "tied": [
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-25",
+       "meet": "Michigan State vs UCLA",
+       "meet_id": 31772,
+       "virtius": "y_wp7CWqKE"
+      },
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-30",
+       "meet": "UCLA vs Washington",
+       "meet_id": 31817,
+       "virtius": "xJWEgtJCQ7"
+      },
+      {
+       "athlete": "Kailin Chio",
+       "team": "LSU",
+       "score": 39.875,
+       "date": "2026-02-13",
+       "meet": "LSU vs Auburn",
+       "meet_id": 31994,
+       "virtius": "J7gHSsh5x-"
+      }
+     ]
+    },
+    {
+     "as_of": "2026-02-27",
+     "score": 39.875,
+     "tied": [
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-25",
+       "meet": "Michigan State vs UCLA",
+       "meet_id": 31772,
+       "virtius": "y_wp7CWqKE"
+      },
+      {
+       "athlete": "Jordan Chiles",
+       "team": "UCLA",
+       "score": 39.875,
+       "date": "2026-01-30",
+       "meet": "UCLA vs Washington",
+       "meet_id": 31817,
+       "virtius": "xJWEgtJCQ7"
+      },
+      {
+       "athlete": "Kailin Chio",
+       "team": "LSU",
+       "score": 39.875,
+       "date": "2026-02-13",
+       "meet": "LSU vs Auburn",
+       "meet_id": 31994,
+       "virtius": "J7gHSsh5x-"
+      },
+      {
+       "athlete": "Anna Roberts",
+       "team": "Stanford",
+       "score": 39.875,
+       "date": "2026-02-27",
+       "meet": "Oregon State vs Stanford",
+       "meet_id": 32187,
+       "virtius": "jfCXCKej2P"
+      }
+     ]
+    }
+   ]
+  },
+  "2027": {
+   "meets": 290,
+   "meets_with_virtius": 0,
+   "meets_scored": 0,
+   "meets_missing": [],
+   "source": "Virtius session JSON for official D1 season meets (final scores only; exhibitions excluded)",
+   "perfect10s": [],
+   "allAroundHigh": {
+    "score": null,
+    "tied": []
+   },
+   "allAroundHighByDate": []
+  }
+ }
+}

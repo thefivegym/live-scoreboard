@@ -50,6 +50,8 @@ jobs:
         run: python3 scripts/announced-schedule/reparse_or_scrape.py
       - name: Build schedule and fallback results from Road to Nationals
         run: node scripts/build-schedule.mjs
+      - name: Build national rankings and season stats
+        run: node scripts/build-stats.mjs
       - name: Commit changed data
         id: commit
         run: |

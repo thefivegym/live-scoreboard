@@ -188,3 +188,38 @@ button.card-head .team-link { pointer-events: auto; }
 .wl { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 6px; font-size: .72rem; font-weight: 800; }
 .wl.win { background: #1d8a4b; color: #fff; }
 .wl.loss { background: var(--line); color: var(--muted); }
+
+.pulse { display: grid; gap: 10px; margin: 4px 0 10px; }
+.pulse:empty, .pulse[hidden] { display: none; }
+.pulse-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 14px 10px; }
+.pulse-card h2 { margin: 0 4px 0 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 800; display: inline; }
+.pulse-kicker { margin: 0 0 8px; font-size: .8rem; color: var(--muted); line-height: 1.4; }
+.pulse-preview { margin: 0 0 8px; font-size: .8rem; }
+.rank-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.rank-table th { text-align: left; font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; padding: 0 6px 4px 0; }
+.rank-table th.num, .rank-table td.num { text-align: right; }
+.rank-table td { padding: 4px 6px 4px 0; border-top: 1px solid var(--line); font-size: .92rem; vertical-align: baseline; }
+.rank-table td.rk { width: 2.2em; font-weight: 800; color: var(--muted); }
+.rank-table tr:nth-child(-n+3) td.rk { color: var(--ink); }
+.rank-move { font-size: .78rem; font-weight: 800; margin-left: 4px; white-space: nowrap; }
+.rank-move.up { color: #1d8a4b; }
+.rank-move.down { color: var(--live); }
+.rank-move.same { color: var(--muted); font-weight: 600; }
+.pulse-card details { margin-top: 6px; }
+.pulse-card summary { cursor: pointer; color: var(--up); font-weight: 600; font-size: .85rem; list-style: none; }
+.pulse-card summary::-webkit-details-marker { display: none; }
+.pulse-empty { margin: 2px 0 0; font-size: .92rem; }
+.p10-count { font-size: 1.35rem; font-weight: 800; letter-spacing: -.02em; margin: 0 0 4px; }
+.p10-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.p10-list li, .aa-high { font-size: .9rem; line-height: 1.35; }
+.p10-list a, .aa-high a { font-weight: 600; }
+.aa-score { font-size: 1.45rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.aa-who { margin: 2px 0 0; font-size: .95rem; }
+.profile-rank { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin: 8px 0 0; }
+.profile-rank .rk-num { font-size: 1.15rem; font-weight: 800; }
+.profile-rank .rk-src { font-size: .8rem; color: var(--muted); }
+
+@media (min-width: 640px) {
+  .pulse { grid-template-columns: 1.3fr .9fr; align-items: start; }
+  .pulse-side { display: grid; gap: 10px; }
+}

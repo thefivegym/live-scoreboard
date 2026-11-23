@@ -3,7 +3,9 @@
 A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 [@thefivethatscore](https://x.com/thefivethatscore). Built for GitHub Pages.
 
-- **Team profiles** via a searchable “Meet by team” picker or `?team=slug` (for example `?team=oklahoma`). Each profile shows upcoming meets and previous results with jump links to the meet on the calendar, plus a meet record, season high and average when scores are available. Until the next season is published it labels the last completed season and says the new schedule is coming; it switches automatically once `data/seasons/{year}.json` (or an announced-schedule file) is present, with a link to view last season. Team names on meet cards link to the profile.
+- **National rankings** on the home page (Top 25, expandable to the full list) and each team profile (current rank and movement since the previous week). In the offseason this is the WCGA/CGA preseason coaches poll once it is released, or “Preseason poll coming soon” until then — ranks are never invented. During the season it switches to Road to Nationals official NQS rankings, refreshed by the daily Action. Labels name the source (“Preseason Coaches Poll” vs “RTN National Rankings, updated &lt;date&gt;”).
+- **Perfect 10s** and **highest all-around** of the season, computed from official-meet Virtius scores (10.0 finals only; all-around = all four events in one meet). Ties for the top AA are all listed. Today’s live meets are merged in the browser. Empty seasons say “No perfect 10s yet this season.” Preview a past season with `?season=2026` or a mid-season date with `?now=2026-03-15`.
+- **Team profiles** via a searchable “Meet by team” picker or `?team=slug` (for example `?team=oklahoma`). Each profile shows upcoming meets and previous results with jump links to the meet on the calendar, plus a meet record, season high and average when scores are available, and the team’s national rank. Until the next season is published it labels the last completed season and says the new schedule is coming; it switches automatically once `data/seasons/{year}.json` (or an announced-schedule file) is present, with a link to view last season. Team names on meet cards link to the profile.
 - **Next meet** at the top of the page: teams, date and time in Central Time, a jump link to that day on the calendar (`?date=YYYY-MM-DD#meet=KEY`), and “+N more that day” when several meets share the date. On a live meet day it becomes **Live now**. When Road to Nationals has not published the season yet, the calendar is filled from official school athletics schedules (no live scoring links until RTN/Virtius keys appear). The Next meet bar jumps to the first announced meet.
 - **Every D1 meet for a day** (defaults to today in America/Chicago) as a card: teams, running team
   scores, LIVE / FINAL / UPCOMING badge, start time in CT, TV and stats links.
@@ -25,6 +27,8 @@ A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 |---|---|---|
 | Schedule (dates, teams, times, Virtius keys, video links) | GitHub Actions → `data/schedule.json`, `data/seasons/{year}.json` | Road to Nationals `GET /api/women/schedule/{year}/1` |
 | D1 team list | GitHub Actions → `data/d1-teams.json` | Road to Nationals national rankings `GET /api/women/results/{year}/{week}/0/5`, rows with `div = "Div I"` |
+| National rankings | GitHub Actions → `data/rankings.json` | WCGA preseason coaches poll (when published); in season, RTN `GET /api/women/results/{year}/{week}/0/5` (NQS), with the previous week for movement |
+| Perfect 10s and AA high | GitHub Actions → `data/season-stats.json` | Virtius session JSON for official season meets; the browser also detects 10s/AA in today’s live meets |
 | Live scores | Visitor's browser, every 30 s | Virtius `GET https://api.virti.us/session/{key}/json` (public, CORS `*`) |
 | Fallback results for meets not on Virtius | GitHub Actions every 10 min → `data/results/{meet_id}.json` | Road to Nationals `GET /api/women/meetresults/{meet_id}` |
 
@@ -49,13 +53,17 @@ For RTN fallback meets, RTN's `info.live` flag is used.
 
 ```
 index.html, app.js, styles.css     the site (vanilla JS, no build step)
-scripts/build-schedule.mjs         Node 18+ data builder, no npm deps
+scripts/build-schedule.mjs         Node 18+ schedule builder, no npm deps
+scripts/build-stats.mjs            rankings, perfect 10s, and season AA high
 .github/workflows/update.yml       scheduled data refresh + Pages deploy
 data/schedule.json                 current (or latest published) season, D1 meets only
 data/seasons/{year}.json           per-season archive (used for browsing past seasons and demo)
 data/results/{meet_id}.json        RTN fallback results for non-Virtius meets
 data/d1-teams.json                 D1 team list (from RTN rankings)
 data/d1-overrides.json             manual include/exclude corrections
+data/rankings.json                 preseason poll + weekly RTN NQS rankings
+data/season-stats.json             perfect 10s and highest all-around, per season
+data/virtius-score-cache.json      extracted Virtius scores so stats can update incrementally
 screenshots/                       preview screenshots (not needed for the site)
 ```
 
@@ -64,6 +72,7 @@ screenshots/                       preview screenshots (not needed for the site)
 ```sh
 node scripts/build-schedule.mjs                          # takes a few minutes because of the 30 s crawl delay
 node scripts/build-schedule.mjs --results-date=2026-03-21  # also build fallbacks for a given date
+node scripts/build-stats.mjs                             # rankings + perfect 10s / AA (use --history once to archive weekly ranks)
 python3 -m http.server 8000                              # then open http://localhost:8000/?demo
 ```
 
@@ -81,7 +90,7 @@ also deploys it, which sidesteps the rule that pushes made with `GITHUB_TOKEN` d
 
 Workflow triggers:
 - `push` to `main` → deploy only.
-- Daily at 11:15 UTC → refresh schedule/team list; deploy if data changed.
+- Daily at 11:15 UTC → refresh schedule/team list, national rankings, and season stats; deploy if data changed.
 - Every 10 min, 16:00–05:59 UTC, January–April → refresh schedule (stats links are often added on meet day)
   and RTN fallback results for today/yesterday; deploy if data changed.
 - Manual `workflow_dispatch` → refresh + deploy.
@@ -95,5 +104,6 @@ on it, since the browser fetches them directly; only the fallback results and ne
 
 ## Credits
 
-Live scores: [Virtius](https://virti.us). Schedule and fallback results:
-[Road to Nationals](https://www.roadtonationals.com). Unofficial; not affiliated with the NCAA, Virtius or RTN.
+Live scores: [Virtius](https://virti.us). Schedule, national rankings (NQS) and fallback results:
+[Road to Nationals](https://www.roadtonationals.com). Preseason rankings: WCGA / CGA coaches poll
+(via [USA Gymnastics](https://usagym.org/college/national-rankings/)). Unofficial; not affiliated with the NCAA, Virtius, RTN or WCGA.
