@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T09:17:07.155Z",
+ "generated_at": "2026-11-23T12:03:43.591Z",
  "seasons": {
   "2026": {
    "meets": 342,
@@ -603,7 +603,7 @@
    ]
   },
   "2027": {
-   "meets": 290,
+   "meets": 313,
    "meets_with_virtius": 0,
    "meets_scored": 0,
    "meets_missing": [],
