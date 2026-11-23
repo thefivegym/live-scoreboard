@@ -21,8 +21,24 @@ main.wrap { flex: 1; padding-top: 10px; padding-bottom: 30px; }
 .site-header h1 { margin: 0; font-size: 1.12rem; line-height: 1.25; font-weight: 700; letter-spacing: .01em; }
 .site-header .brand { color: var(--accent); }
 .site-header .dash { opacity: .6; }
+.header-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .handle { color: #cfcaf5; text-decoration: none; font-size: .9rem; font-weight: 600; }
 .handle:hover { color: #fff; text-decoration: underline; }
+.visit-count {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent);
+  color: #14112b;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+  font-variant-numeric: tabular-nums;
+  padding: 4px 10px;
+  border-radius: 999px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
 
 .datebar { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .datebar .wrap { display: flex; align-items: center; gap: 8px; padding-top: 8px; padding-bottom: 8px; }
@@ -118,6 +134,3 @@ main.wrap { flex: 1; padding-top: 10px; padding-bottom: 30px; }
   .rot-table { font-size: .8rem; }
   .rot-table th, .rot-table td { padding: 5px 3px; }
 }
-.badge.iq { background: color-mix(in srgb, var(--accent) 40%, transparent); color: #5a4300; letter-spacing: .04em; }
-@media (prefers-color-scheme: dark) { .badge.iq { background: color-mix(in srgb, var(--accent) 22%, transparent); color: var(--accent); } }
-.visit-count { margin: 8px 0 0; font-variant-numeric: tabular-nums; }

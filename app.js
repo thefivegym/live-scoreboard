@@ -17,15 +17,6 @@
   const EV_BY_NAME = { VAULT: 'vault', BARS: 'bars', BEAM: 'beam', FLOOR: 'floor', 'ALL AROUND': 'aa', 'ALL-AROUND': 'aa', AA: 'aa' };
   // Virtius session keys are URL-safe tokens (letters, digits, and occasionally - or _).
   const VIRTIUS_KEY = /^[A-Za-z0-9_-]{6,32}$/;
-  // Intrasquad squads share one school's tricode/colour, so colour them by squad name.
-  const SQUAD_COLORS = {
-    maroon: '#7a0019', gold: '#f2b705', crimson: '#9e1b32', white: '#b9b6c8', red: '#d1213b', blue: '#1f5bd6',
-    navy: '#1b2a57', orange: '#f26b1d', black: '#2b2b2b', purple: '#6b2fa3', green: '#1d8a4b', gray: '#7d8088',
-    grey: '#7d8088', silver: '#a7a9ac', pink: '#e0569b', cardinal: '#9d2235', scarlet: '#c4001f', garnet: '#73000a',
-    teal: '#008c95', yellow: '#f5c400', cream: '#cbb994', brown: '#6b4226', ghosts: '#8f8aa8', goblins: '#2f9e44',
-  };
-  const SQUAD_PALETTE = ['#3a6df0', '#e5243b', '#1d8a4b', '#f2a20d', '#6b2fa3', '#008c95'];
-
   const $ = sel => document.querySelector(sel);
   const el = {
     meets: $('#meets'), date: $('#date'), dateText: $('#date-text'), prev: $('#prev'), next: $('#next'),
@@ -45,7 +36,6 @@
     lastUpdate: null,
     timer: null,
     renderToken: 0,
-    iq: null,             // preseason intrasquads (hand list + discovered keys)
     adhoc: {},            // date -> meets built from a #meet=KEY deep link
   };
 
@@ -64,7 +54,7 @@
   const longDate = ymd => new Date(ymd + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   const shortDate = ymd => new Date(ymd + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
   const timeCT = iso => iso ? new Date(iso).toLocaleTimeString('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' }) + ' CT' : 'Time TBA';
-  const meetKey = m => m.virtius || (m.intrasquad ? `iq-${m.id}` : `rtn-${m.id}`);
+  const meetKey = m => m.virtius || `rtn-${m.id}`;
   // Wall-clock time in an IANA zone -> ISO UTC (two passes handle DST edges).
   const tzOffsetMs = (utcMs, tz) => {
     const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' })
@@ -116,70 +106,19 @@
     return state.schedules[season];
   }
 
-  // ---------- intrasquads (preseason) ----------
-  // data/intrasquads.json is hand-maintained; data/intrasquads-discovered.json is written by
-  // scripts/discover-intrasquads.mjs. A key in the hand-maintained file always wins.
-  function intrasquadMeet(e) {
-    const school = e.school || 'Intrasquad';
-    const ev = (e.event || '').trim();
-    // Discovered sessions with no hand-listed event keep the Virtius meet name as-is.
-    const title = !ev ? `${school} Intrasquad` : ((e.virtius_name && !e.matched_id) || ev.toLowerCase().includes(school.toLowerCase()) ? ev : `${school} ${ev}`);
-    const key = e.virtius && isVirtiusKey(e.virtius) ? e.virtius : null;
-    return {
-      id: e.id, date: e.date, intrasquad: true,
-      start_utc: e.start_utc || (e.time_local ? zonedToUtcIso(e.date, e.time_local, e.tz || TZ) : null),
-      desc: title, school, home: [school], away: [], d1_teams: [school],
-      virtius: key, stats_link: key ? VIRTIUS_PAGE(key) : null,
-      video_link: e.video_link || null, video_desc: e.video_desc || null,
-      rtn_url: null, source_url: e.source_url || null,
-    };
-  }
-  async function loadIntrasquads() {
-    if (state.iq) return state.iq;
-    const [seed, found] = await Promise.all([
-      getJson('data/intrasquads.json').catch(() => null),
-      getJson('data/intrasquads-discovered.json').catch(() => null),
-    ]);
-    const list = ((seed && seed.events) || []).filter(e => e && isYmd(e.date)).map(e => ({ ...e }));
-    ((found && found.events) || []).forEach(f => {
-      if (!f || !isVirtiusKey(f.virtius) || !isYmd(f.date)) return;
-      if (list.some(e => e.virtius === f.virtius)) return;
-      const m = list.find(e => (f.matched_id && e.id === f.matched_id) || (e.school === f.school && e.date === f.date));
-      if (m) { if (!m.virtius) { m.virtius = f.virtius; m.skip = false; } }
-      else list.push({ ...f, skip: false });
-    });
-    // Exhibitions / un-scored events stay hidden unless a Virtius key turns up for them.
-    state.iq = list.filter(e => !e.skip || e.virtius).map(intrasquadMeet);
-    return state.iq;
-  }
-  // A Virtius session is an intrasquad when all its teams share one school (team_id / tricode).
-  function isIntrasquadSession(m) {
-    const teams = (m && m.teams) || [];
-    if (!teams.length) return false;
-    return new Set(teams.map(t => String(t.team_id || t.tricode || ''))).size === 1;
-  }
-  function squadColors(teams) {
-    const used = new Set();
-    teams.forEach((t, i) => {
-      const words = String(t.name || '').toLowerCase().split(/[^a-z]+/);
-      let c = words.map(w => SQUAD_COLORS[w]).find(Boolean);
-      if (!c || used.has(c)) c = SQUAD_PALETTE.find(p => !used.has(p)) || SQUAD_PALETTE[i % SQUAD_PALETTE.length];
-      used.add(c); t.color = c;
-    });
-  }
   // Deep link to a Virtius session that is not in any schedule: build a meet from the session itself.
   async function adhocMeet(key) {
     if (!isVirtiusKey(key)) return null;
     const j = await getJson(VIRTIUS_API(key));
     const m = j && j.meet;
     if (!m || !m.teams) return null;
-    const iq = isIntrasquadSession(m);
     const date = isYmd(m.meet_date) ? m.meet_date : todayChicago();
     const names = m.teams.map(t => t.name).filter(Boolean);
     const meet = {
-      id: `adhoc-${key}`, date, adhoc: true, intrasquad: iq, start_utc: null,
-      desc: m.name || (iq ? 'Intrasquad' : names.join(' vs ')), school: iq ? (m.teams[0].tricode || '') : '',
-      home: iq ? [] : m.teams.filter(t => t.home_team).map(t => t.name), away: iq ? [] : m.teams.filter(t => !t.home_team).map(t => t.name),
+      id: `adhoc-${key}`, date, adhoc: true, start_utc: null,
+      desc: m.name || names.join(' vs '), school: '',
+      home: m.teams.filter(t => t.home_team).map(t => t.name),
+      away: m.teams.filter(t => !t.home_team).map(t => t.name),
       d1_teams: [], virtius: key, stats_link: VIRTIUS_PAGE(key), video_link: null, video_desc: null, rtn_url: null, source_url: null,
     };
     (state.adhoc[date] ||= []).push(meet);
@@ -231,9 +170,7 @@
     const all = out.length > 0 && out.every(t => EVENTS.every(e => t.rotations.some(r => r.event === e.key && r.complete)));
     const status = inferStatus(any, all, meet);
     const curRot = Math.max(0, ...out.flatMap(t => t.rotations.filter(r => r.started).map(r => r.rotation || 0)));
-    const intrasquad = isIntrasquadSession(m) || !!(meet && meet.intrasquad);
-    if (intrasquad) { out.forEach(t => { t.home = false; }); squadColors(out); }
-    return { source: 'virtius', name: m.name, location: m.location, status, teams: rankTeams(out, status), leaderboards, rotation: curRot || null, intrasquad, single: out.length === 1 };
+    return { source: 'virtius', name: m.name, location: m.location, status, teams: rankTeams(out, status), leaderboards, rotation: curRot || null, single: out.length === 1 };
   }
 
   function normalizeRtn(r, meet) {
@@ -310,8 +247,8 @@
     if (s === 'LIVE') return true;
     if (s !== 'UPCOMING') return false;
     const start = meet.start_utc ? Date.parse(meet.start_utc) : null;
-    // Intrasquads / deep-linked sessions often have no start time: watch them all day.
-    if (!start && meet.virtius && (meet.intrasquad || meet.adhoc)) return meet.date === todayChicago();
+    // Deep-linked sessions often have no start time: watch them all day.
+    if (!start && meet.virtius && meet.adhoc) return meet.date === todayChicago();
     // A meet becomes LIVE once its first score posts, so keep checking from 15 min before start.
     return !!start && Date.now() >= start - 15 * 60e3 && Date.now() <= start + 6 * 3600e3;
   }
@@ -334,8 +271,6 @@
     let rows;
     if (d && d.teams && d.teams.length) {
       rows = d.teams.map(t => ({ name: t.name, home: t.home, score: t.score, place: d.status === 'UPCOMING' || d.single ? null : t.place, color: t.color }));
-    } else if (meet.intrasquad) {
-      rows = [{ name: meet.school || meetTitle(meet), home: false }];
     } else {
       rows = [...meet.away.map(n => ({ name: n, home: false })), ...meet.home.map(n => ({ name: n, home: true }))];
     }
@@ -358,8 +293,8 @@
     }
     const cols = Array.from({ length: maxRot }, (_, i) => i + 1);
     return `<div class="table-scroll"><table class="rot-table"><thead><tr><th>Team</th>${cols.map(c => `<th>R${c}</th>`).join('')}<th>Total</th></tr></thead><tbody>
-      ${d.teams.map(t => `<tr><th scope="row"><span class="swatch" style="${t.color ? `background:${esc(t.color)}` : ''}"></span>${esc(d.intrasquad ? t.name : (t.tricode || t.name))}</th>${cols.map(c => {
-        // Usually one event per rotation; intrasquads sometimes run two events in one rotation.
+      ${d.teams.map(t => `<tr><th scope="row"><span class="swatch" style="${t.color ? `background:${esc(t.color)}` : ''}"></span>${esc(t.tricode || t.name)}</th>${cols.map(c => {
+        // Usually one event per rotation; some sessions run two events in one rotation.
         const rs = t.rotations.filter(x => x.rotation === c);
         if (!rs.length) return '<td class="bye">bye</td>';
         return `<td class="${d.status !== 'FINAL' && rs.some(r => r.started && !r.complete) ? 'inprog' : ''}">${rs.map(r => {
@@ -409,7 +344,7 @@
     ].filter(Boolean).join(' · ');
     if (!d || d.error || !d.teams || !d.teams.length || d.status === 'UPCOMING' && !d.teams.some(t => t.rotations.some(r => r.gymnasts.length))) {
       const msg = d && d.error ? 'Scores unavailable right now.' : (meet.virtius ? 'Scores will appear here once the meet starts.' :
-        meet.intrasquad ? (statusOf(meet) === 'PAST' ? 'No Virtius live scoring was found for this intrasquad.' : 'Preseason intrasquad. Live scores appear here if the school posts a Virtius link (checked automatically).') : (statusOf(meet) === 'PAST' ? 'This meet was not scored on Virtius; see the links for results.' : 'This meet is not on Virtius; results refresh from Road to Nationals about every 10 minutes once it starts.'));
+        (statusOf(meet) === 'PAST' ? 'This meet was not scored on Virtius; see the links for results.' : 'This meet is not on Virtius; results refresh from Road to Nationals about every 10 minutes once it starts.'));
       return `<div class="detail"><p class="muted">${msg}</p><p class="links">${links}</p></div>`;
     }
     const tab = state.tab[key] || defaultTab(d);
@@ -446,7 +381,6 @@
         <div class="meta">
           <span class="time">${esc(timeCT(meet.start_utc))}</span>
           ${badge(status, d && d.rotation)}
-          ${meet.intrasquad || (d && d.intrasquad) ? '<span class="badge iq">Intrasquad</span>' : ''}
         </div>
         <h2 class="mtitle">${esc(d && d.name && meet.desc ? meet.desc : meetTitle(meet))}</h2>
         <ul class="teams">${teamRows(meet, d)}</ul>
@@ -468,7 +402,7 @@
     el.meets.innerHTML = sorted.map(cardHtml).join('');
     const live = state.meets.filter(m => statusOf(m) === 'LIVE').length;
     const stamp = state.lastUpdate ? `Updated ${state.lastUpdate.toLocaleTimeString('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit', second: '2-digit' })} CT` : '';
-    el.status.innerHTML = `${state.meets.length} ${state.meets.every(m => m.intrasquad || (state.details[meetKey(m)] || {}).intrasquad) ? 'intrasquad' : 'D1'} meet${state.meets.length === 1 ? '' : 's'}${live ? ` · <strong class="livecount">${live} live</strong> · refreshing every 30s` : ''}${stamp ? ` · ${stamp}` : ''}`;
+    el.status.innerHTML = `${state.meets.length} D1 meet${state.meets.length === 1 ? '' : 's'}${live ? ` · <strong class="livecount">${live} live</strong> · refreshing every 30s` : ''}${stamp ? ` · ${stamp}` : ''}`;
   }
 
   function emptyHtml() {
@@ -478,13 +412,13 @@
     const dateLink = (ymd, label) => `<a class="jump" href="${dateHref(ymd)}" data-date="${ymd}">${esc(label || shortDate(ymd))}</a>`;
     let html = `<div class="empty"><h2>No D1 meets on ${esc(shortDate(state.date))}</h2>`;
     const src = sched || main;
-    const dates = [...new Set([...(src ? src.meets : []), ...(state.iq || []), ...Object.values(state.adhoc).flat()].map(m => m.date))].sort();
+    const dates = [...new Set([...(src ? src.meets : []), ...Object.values(state.adhoc).flat()].map(m => m.date))].sort();
     const next = dates.find(d => d > state.date);
     const prev = [...dates].reverse().find(d => d < state.date);
     if (next) html += `<p>Next meet day: ${dateLink(next, longDate(next))}</p>`;
     if (!next) {
       const season = seasonFor(state.date);
-      if (main && main.season_published === false && main.requested_season >= season && !(state.iq || []).some(m => m.date > state.date)) {
+      if (main && main.season_published === false && main.requested_season >= season) {
         html += `<p>Road to Nationals hasn't published the ${main.requested_season} schedule yet. The season usually starts in early January — check back soon.</p>`;
       } else if (!sched) {
         html += `<p>No schedule data for the ${season} season.</p>`;
@@ -504,18 +438,13 @@
     if (!keepOpen) state.open.clear();
     await loadMain();
     const season = seasonFor(ymd);
-    const [sched, iq] = await Promise.all([scheduleFor(season), loadIntrasquads()]);
+    const sched = await scheduleFor(season);
     if (token !== state.renderToken) return;
     state.currentSchedule = sched;
     const regular = sched ? sched.meets.filter(m => m.date === ymd) : [];
-    // Preseason intrasquads + deep-linked sessions for this date (skip any already in the schedule).
+    // Deep-linked sessions for this date (skip any already in the schedule).
     const keys = new Set(regular.map(m => m.virtius).filter(Boolean));
-    const extra = [];
-    [...iq, ...(state.adhoc[ymd] || [])].forEach(m => {
-      if (m.date !== ymd || (m.virtius && keys.has(m.virtius))) return;
-      if (m.virtius) keys.add(m.virtius);
-      extra.push(m);
-    });
+    const extra = (state.adhoc[ymd] || []).filter(m => m.date === ymd && !(m.virtius && keys.has(m.virtius)));
     state.meets = [...regular, ...extra];
     syncUrl();
     render();
@@ -590,11 +519,11 @@
     await openDeepLink(k);
   });
 
-  // #meet=KEY for a meet that is not on the current date: find its date in the schedule or the
-  // intrasquad list, else load the Virtius session directly and show it on its own date.
+  // #meet=KEY for a meet that is not on the current date: find its date in the schedule,
+  // else load the Virtius session directly and show it on its own date.
   async function openDeepLink(key) {
-    await Promise.all([loadMain(), loadIntrasquads()]);
-    const known = [...((state.main && state.main.meets) || []), ...(state.iq || []), ...Object.values(state.adhoc).flat()]
+    await loadMain();
+    const known = [...((state.main && state.main.meets) || []), ...Object.values(state.adhoc).flat()]
       .find(m => meetKey(m) === key);
     let date = known ? known.date : null;
     if (!date && isVirtiusKey(key)) {
@@ -628,28 +557,39 @@
     else { state.open.delete(hashMeet); await openDeepLink(hashMeet); }
   });
 
-  // Visit counter: once per browser session so the 30s refresh and date/hash
-  // changes do not inflate the count. Fail silently if the API is down.
+  // Visit counter: show a number immediately (never hide it), then refresh from
+  // Count API. Count once per browser session so the 30s refresh does not inflate it.
   (function trackVisits() {
     const elCount = document.getElementById('visit-count');
     if (!elCount) return;
-    const base = 'https://abacus.jasoncameron.dev';
-    const path = 'thefivegym-live-scoreboard/visits';
-    const storeKey = 'tfts-visit-counted';
+    const FLOOR = 233;
+    const base = 'https://countapi.mileshilliard.com/api/v1';
+    const key = 'thefivegym-live-scoreboard-visits';
+    const countedKey = 'tfts-visit-counted';
+    const lastKey = 'tfts-visit-last';
+    const format = n => `${n.toLocaleString('en-US')} visits`;
+    const readLast = () => { try { return Number(localStorage.getItem(lastKey)); } catch { return 0; } };
+    const saveLast = n => { try { localStorage.setItem(lastKey, String(n)); } catch { /* ignore */ } };
+    const show = n => {
+      const last = readLast();
+      const v = Math.max(FLOOR, Number.isFinite(n) ? n : 0, Number.isFinite(last) ? last : 0);
+      elCount.textContent = format(v);
+      saveLast(v);
+    };
+    show();
     let already = false;
-    try { already = sessionStorage.getItem(storeKey) === '1'; } catch { /* private mode */ }
-    const url = already ? `${base}/get/${path}` : `${base}/hit/${path}`;
-    fetch(url).then(r => {
+    try { already = sessionStorage.getItem(countedKey) === '1'; } catch { /* private mode */ }
+    const url = already ? `${base}/get/${encodeURIComponent(key)}` : `${base}/hit/${encodeURIComponent(key)}`;
+    fetch(url, { signal: AbortSignal.timeout(8000) }).then(r => {
       if (!r.ok) throw new Error(String(r.status));
       return r.json();
     }).then(data => {
       const n = Number(data && data.value);
       if (!Number.isFinite(n) || n < 1) return;
       if (!already) {
-        try { sessionStorage.setItem(storeKey, '1'); } catch { /* ignore */ }
+        try { sessionStorage.setItem(countedKey, '1'); } catch { /* ignore */ }
       }
-      elCount.textContent = `👀 ${n.toLocaleString('en-US')} visits`;
-      elCount.hidden = false;
-    }).catch(() => { /* hide and never break the scoreboard */ });
+      show(n);
+    }).catch(() => { /* keep the fallback number and never break the scoreboard */ });
   })();
 })();
