@@ -134,3 +134,15 @@ main.wrap { flex: 1; padding-top: 10px; padding-bottom: 30px; }
   .rot-table { font-size: .8rem; }
   .rot-table th, .rot-table td { padding: 5px 3px; }
 }
+
+.next-meet { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; align-items: start; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 10px 12px; margin: 4px 0 8px; box-shadow: var(--shadow); }
+.next-meet:empty { display: none; }
+.next-meet.is-live { border-left-color: var(--live); }
+.nm-label { font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.nm-body { grid-column: 2; display: flex; flex-direction: column; color: var(--ink); text-decoration: none; line-height: 1.35; min-width: 0; }
+.next-meet.soon .nm-body { display: block; }
+.nm-when { font-size: .82rem; color: var(--muted); }
+.nm-more { font-size: .82rem; color: var(--muted); }
+.nm-go { grid-column: 2; justify-self: start; margin-top: 6px; background: var(--brand); color: #fff; text-decoration: none; font-weight: 700; font-size: .85rem; padding: 8px 12px; border-radius: 10px; white-space: nowrap; }
+@media (prefers-color-scheme: dark) { .nm-go { background: var(--accent); color: #14112b; } }
+.card.flash { box-shadow: 0 0 0 3px var(--accent); transition: box-shadow .4s; }

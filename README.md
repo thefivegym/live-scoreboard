@@ -3,6 +3,7 @@
 A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 [@thefivethatscore](https://x.com/thefivethatscore). Built for GitHub Pages.
 
+- **Next meet** at the top of the page: teams, date and time in Central Time, a jump link to that day on the calendar (`?date=YYYY-MM-DD#meet=KEY`), and “+N more that day” when several meets share the date. On a live meet day it becomes **Live now**. When the next season is not published yet, it says the schedule is coming (usually January) with no broken link, and it lights up on its own once the scheduled data refresh pulls in new meets.
 - **Every D1 meet for a day** (defaults to today in America/Chicago) as a card: teams, running team
   scores, LIVE / FINAL / UPCOMING badge, start time in CT, TV and stats links.
 - **Expand a meet** for rotation-by-rotation team event scores, each athlete's score on vault, bars,

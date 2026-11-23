@@ -37,6 +37,7 @@
     timer: null,
     renderToken: 0,
     adhoc: {},            // date -> meets built from a #meet=KEY deep link
+    flashKey: null,
   };
 
   // ---------- utilities ----------
@@ -47,7 +48,8 @@
   const needs4 = n => n !== null && n !== undefined && Math.round(n * 10000) % 10 !== 0;
   const fmtScore = n => n === null || n === undefined ? '—' : n.toFixed(Math.max(prec, needs4(n) ? 4 : 3));
   const precisionOf = d => (d && d.teams && d.teams.some(t => needs4(t.score) || t.rotations.some(r => needs4(r.score) || r.gymnasts.some(g => needs4(g.score))))) ? 4 : 3;
-  const todayChicago = () => new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  const NOW_OVERRIDE = (() => { const v = new URLSearchParams(location.search).get('now'); return /^\d{4}-\d{2}-\d{2}$/.test(v || '') ? v : null; })();
+  const todayChicago = () => NOW_OVERRIDE || new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const addDays = (ymd, n) => { const d = new Date(ymd + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
   const seasonFor = ymd => { const [y, m] = ymd.split('-').map(Number); return m >= 7 ? y + 1 : y; };
   const isYmd = s => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && !Number.isNaN(Date.parse(s));
@@ -55,6 +57,12 @@
   const shortDate = ymd => new Date(ymd + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
   const timeCT = iso => iso ? new Date(iso).toLocaleTimeString('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' }) + ' CT' : 'Time TBA';
   const meetKey = m => m.virtius || `rtn-${m.id}`;
+  function flashMeet(key) {
+    if (!key) return;
+    state.flashKey = key;
+    clearTimeout(flashMeet._t);
+    flashMeet._t = setTimeout(() => { if (state.flashKey === key) { state.flashKey = null; render(); } }, 2500);
+  }
   // Wall-clock time in an IANA zone -> ISO UTC (two passes handle DST edges).
   const tzOffsetMs = (utcMs, tz) => {
     const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' })
@@ -68,6 +76,12 @@
       let t = guess - tzOffsetMs(guess, tz); t = guess - tzOffsetMs(t, tz);
       return new Date(t).toISOString();
     } catch { return null; }
+  };
+  // ?now=YYYY-MM-DD is a preview clock (noon CT that day) so next-meet and status can be tested.
+  const nowMs = () => {
+    if (!NOW_OVERRIDE) return Date.now();
+    const iso = zonedToUtcIso(NOW_OVERRIDE, '12:00', TZ);
+    return iso ? Date.parse(iso) : Date.now();
   };
 
   async function getJson(url, opts = {}) {
@@ -85,6 +99,7 @@
   function syncUrl() {
     const p = new URLSearchParams();
     if (demo) p.set('demo', '');
+    if (NOW_OVERRIDE) p.set('now', NOW_OVERRIDE);
     p.set('date', state.date);
     const last = [...state.open].pop();
     const qs = p.toString().replace(/^demo=&?/, 'demo&').replace(/demo=$/, 'demo');
@@ -193,11 +208,13 @@
   }
 
   function inferStatus(any, allDone, meet) {
+    const start = meet && meet.start_utc ? Date.parse(meet.start_utc) : null;
+    // A clock override (or a mis-set start time) should not treat a meet as final before it begins.
+    if (start && nowMs() < start) return 'UPCOMING';
     if (!any) return 'UPCOMING';
     if (allDone) return 'FINAL';
-    const start = meet && meet.start_utc ? Date.parse(meet.start_utc) : null;
     if (meet && meet.date < todayChicago()) return 'FINAL';
-    if (start && Date.now() - start > 6 * 3600e3) return 'FINAL';
+    if (start && nowMs() - start > 6 * 3600e3) return 'FINAL';
     return 'LIVE';
   }
 
@@ -239,7 +256,7 @@
     const d = state.details[meetKey(meet)];
     if (d && d.status) return d.status;
     const start = meet.start_utc ? Date.parse(meet.start_utc) : null;
-    if (meet.date < todayChicago() || (start && Date.now() - start > 6 * 3600e3)) return 'PAST';
+    if (meet.date < todayChicago() || (start && nowMs() - start > 6 * 3600e3)) return 'PAST';
     return 'UPCOMING';
   }
   function shouldPoll(meet) {
@@ -250,7 +267,7 @@
     // Deep-linked sessions often have no start time: watch them all day.
     if (!start && meet.virtius && meet.adhoc) return meet.date === todayChicago();
     // A meet becomes LIVE once its first score posts, so keep checking from 15 min before start.
-    return !!start && Date.now() >= start - 15 * 60e3 && Date.now() <= start + 6 * 3600e3;
+    return !!start && nowMs() >= start - 15 * 60e3 && nowMs() <= start + 6 * 3600e3;
   }
 
   // ---------- rendering ----------
@@ -376,7 +393,7 @@
     const status = statusOf(meet);
     const open = state.open.has(key);
     prec = precisionOf(d);
-    return `<article class="card ${status.toLowerCase()} ${open ? 'open' : ''}" id="meet-${esc(key)}" data-key="${esc(key)}">
+    return `<article class="card ${status.toLowerCase()} ${open ? 'open' : ''}${state.flashKey === key ? ' flash' : ''}" id="meet-${esc(key)}" data-key="${esc(key)}">
       <button class="card-head" aria-expanded="${open}" data-toggle="${esc(key)}">
         <div class="meta">
           <span class="time">${esc(timeCT(meet.start_utc))}</span>
@@ -429,7 +446,64 @@
     return html + '</div>';
   }
 
-  function dateHref(ymd) { return `?${demo ? 'demo&' : ''}date=${ymd}`; }
+  function dateHref(ymd) { return `?${demo ? 'demo&' : ''}${NOW_OVERRIDE ? `now=${NOW_OVERRIDE}&` : ''}date=${ymd}`; }
+
+  // ---------- next meet ----------
+  async function renderNextMeet() {
+    const box = document.getElementById('next-meet');
+    if (!box) return;
+    const today = todayChicago();
+    const season = seasonFor(today);
+    const [main, cur] = await Promise.all([loadMain(), scheduleFor(season)]);
+    const pool = [...((cur && cur.meets) || []), ...((main && main.meets) || [])];
+    const seen = new Set();
+    const stillOn = m => {
+      if (m.date > today) return true;
+      if (m.date < today) return false;
+      const st = statusOf(m);
+      if (st === 'FINAL' || st === 'PAST') return false;
+      if (st === 'LIVE') return true;
+      const start = m.start_utc ? Date.parse(m.start_utc) : null;
+      return !start || nowMs() - start <= 6 * 3600e3;
+    };
+    const meets = pool.filter(m => { const k = meetKey(m); if (seen.has(k)) return false; seen.add(k); return stillOn(m); })
+      .sort((a, b) => (a.date + (a.start_utc || '')).localeCompare(b.date + (b.start_utc || '')) || a.id - b.id);
+    if (!meets.length) {
+      const yr = (main && main.requested_season) || (main && main.season_published === false && main.season + 1) || seasonFor(addDays(today, 1));
+      box.innerHTML = `<span class="nm-label">Next meet</span><span class="nm-body"><strong>${esc(yr)} schedule coming soon</strong> <span class="muted">· season starts in January</span></span>`;
+      box.className = 'next-meet soon';
+      return;
+    }
+    const day = meets[0].date;
+    const sameDay = meets.filter(m => m.date === day);
+    const first = sameDay[0];
+    const isToday = day === today;
+    const live = sameDay.some(m => statusOf(m) === 'LIVE');
+    const more = sameDay.length - 1;
+    const loc = (state.details[meetKey(first)] || {}).location || first.location || first.venue || '';
+    const href = `${dateHref(day)}#meet=${encodeURIComponent(meetKey(first))}`;
+    const label = live ? '<span class="badge live"><i class="dot"></i>LIVE NOW</span>' : `<span class="nm-label">${isToday ? 'Today' : 'Next meet'}</span>`;
+    const when = `${isToday ? 'Today' : shortDate(day)} · ${esc(timeCT(first.start_utc))}`;
+    box.className = `next-meet${live ? ' is-live' : ''}`;
+    box.innerHTML = `${label}
+      <a class="nm-body" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">
+        <strong>${esc(meetTitle(first))}</strong>
+        <span class="nm-when">${when}${loc ? ` · ${esc(loc)}` : ''}</span>${more > 0 ? `<span class="nm-more">+${more} more that day</span>` : ''}
+      </a>
+      <a class="nm-go" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">${live ? 'Watch scores' : 'Go to meet'} ›</a>`;
+  }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('[data-nm-date]');
+    if (!a) return;
+    e.preventDefault();
+    const key = a.dataset.nmKey;
+    state.open.add(key);
+    setDate(a.dataset.nmDate, { keepOpen: true }).then(() => {
+      flashMeet(key);
+      const card = document.getElementById(`meet-${key}`);
+      if (card) card.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+  });
 
   // ---------- flow ----------
   async function setDate(ymd, { keepOpen = false } = {}) {
@@ -448,11 +522,13 @@
     state.meets = [...regular, ...extra];
     syncUrl();
     render();
+    renderNextMeet();
     el.status.textContent = state.meets.length ? 'Loading scores…' : '';
     await pool(state.meets, 4, loadDetail);
     if (token !== state.renderToken) return;
     state.lastUpdate = new Date();
     render();
+    renderNextMeet();
     schedulePoll();
   }
 
@@ -474,6 +550,7 @@
     if (token !== state.renderToken) return;
     state.lastUpdate = new Date();
     render();
+    renderNextMeet();
     schedulePoll();
   }
   document.addEventListener('visibilitychange', () => { if (!document.hidden && state.date) poll(); });
@@ -534,6 +611,7 @@
     }
     if (!date) return;
     state.open.add(key);
+    flashMeet(key);
     await setDate(date, { keepOpen: true });
     document.getElementById(`meet-${key}`)?.scrollIntoView({ block: 'start' });
   }
@@ -553,7 +631,7 @@
   if (hashMeet) state.open.add(hashMeet);
   setDate(start, { keepOpen: true }).then(async () => {
     if (!hashMeet) return;
-    if (state.meets.some(m => meetKey(m) === hashMeet)) document.getElementById(`meet-${hashMeet}`)?.scrollIntoView({ block: 'start' });
+    if (state.meets.some(m => meetKey(m) === hashMeet)) { flashMeet(hashMeet); document.getElementById(`meet-${hashMeet}`)?.scrollIntoView({ block: 'start' }); }
     else { state.open.delete(hashMeet); await openDeepLink(hashMeet); }
   });
 
