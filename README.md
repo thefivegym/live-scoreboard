@@ -3,6 +3,7 @@
 A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 [@thefivethatscore](https://x.com/thefivethatscore). Built for GitHub Pages.
 
+- **Team profiles** via a searchable “Meet by team” picker or `?team=slug` (for example `?team=oklahoma`). Each profile shows upcoming meets and previous results with jump links to the meet on the calendar, plus a meet record, season high and average when scores are available. Until the next season is published it labels the last completed season and says the new schedule is coming; it switches automatically once `data/seasons/{year}.json` (or an announced-schedule file) is present, with a link to view last season. Team names on meet cards link to the profile.
 - **Next meet** at the top of the page: teams, date and time in Central Time, a jump link to that day on the calendar (`?date=YYYY-MM-DD#meet=KEY`), and “+N more that day” when several meets share the date. On a live meet day it becomes **Live now**. When the next season is not published yet, it says the schedule is coming (usually January) with no broken link, and it lights up on its own once the scheduled data refresh pulls in new meets.
 - **Every D1 meet for a day** (defaults to today in America/Chicago) as a card: teams, running team
   scores, LIVE / FINAL / UPCOMING badge, start time in CT, TV and stats links.

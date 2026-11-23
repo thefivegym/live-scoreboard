@@ -38,6 +38,10 @@
     renderToken: 0,
     adhoc: {},            // date -> meets built from a #meet=KEY deep link
     flashKey: null,
+    d1: null,             // D1 team list + meta (slug, colors)
+    team: null,           // slug when a team profile is open
+    teamSeason: null,
+    teamLists: null,      // {upcoming, past, ...} for the open profile
   };
 
   // ---------- utilities ----------
@@ -100,7 +104,14 @@
     const p = new URLSearchParams();
     if (demo) p.set('demo', '');
     if (NOW_OVERRIDE) p.set('now', NOW_OVERRIDE);
-    p.set('date', state.date);
+    if (state.team) {
+      p.set('team', state.team);
+      if (state.teamSeason && state.teamSeason !== defaultSeason()) p.set('season', String(state.teamSeason));
+      const qs = p.toString().replace(/^demo=&?/, 'demo&').replace(/demo=$/, 'demo');
+      history.replaceState(null, '', `${location.pathname}?${qs}`);
+      return;
+    }
+    if (state.date) p.set('date', state.date);
     const last = [...state.open].pop();
     const qs = p.toString().replace(/^demo=&?/, 'demo&').replace(/demo=$/, 'demo');
     const url = `${location.pathname}?${qs}${last ? `#meet=${last}` : ''}`;
@@ -116,9 +127,29 @@
   }
   async function scheduleFor(season) {
     if (season in state.schedules) return state.schedules[season];
-    try { state.schedules[season] = await getJson(`data/seasons/${season}.json`); }
-    catch { state.schedules[season] = null; }
-    return state.schedules[season];
+    const urls = [
+      `data/seasons/${season}.json`,
+      `data/seasons/${season}-announced.json`,
+      `data/announced-schedule.json`,
+    ];
+    for (const url of urls) {
+      try {
+        const j = await getJson(url);
+        if (!j) continue;
+        const meets = j.meets || j.events || [];
+        const yr = j.season || j.requested_season || season;
+        if (url.endsWith('announced-schedule.json') && yr !== season) {
+          const relevant = meets.filter(m => m.date && seasonFor(m.date) === season);
+          if (!relevant.length) continue;
+          state.schedules[season] = { ...j, season, meets: relevant };
+          return state.schedules[season];
+        }
+        state.schedules[season] = { ...j, meets, season: yr };
+        return state.schedules[season];
+      } catch { /* try the next path */ }
+    }
+    state.schedules[season] = null;
+    return null;
   }
 
   // Deep link to a Virtius session that is not in any schedule: build a meet from the session itself.
@@ -295,7 +326,7 @@
       <li class="team-row">
         <span class="place">${r.place ? r.place : ''}</span>
         <span class="swatch" style="${r.color ? `background:${esc(r.color)}` : ''}"></span>
-        <span class="tname">${esc(r.name)}${r.home ? ' <em class="home">home</em>' : ''}</span>
+        <span class="tname">${teamLink(r.name)}${r.home ? ' <em class="home">home</em>' : ''}</span>
         <span class="tscore">${r.score !== undefined && r.score !== null ? fmtScore(r.score) : ''}</span>
       </li>`).join('');
   }
@@ -409,10 +440,13 @@
   }
 
   function render() {
-    el.dateText.textContent = matchMedia('(max-width: 430px)').matches ? shortDate(state.date) + ', ' + state.date.slice(0, 4) : longDate(state.date);
-    el.date.value = state.date;
+    if (state.date) {
+      el.dateText.textContent = matchMedia('(max-width: 430px)').matches ? shortDate(state.date) + ', ' + state.date.slice(0, 4) : longDate(state.date);
+      el.date.value = state.date;
+    }
     const t = todayChicago();
-    el.today.hidden = state.date === t && !demo;
+    el.today.hidden = !state.team && state.date === t && !demo;
+    if (state.team) { renderTeamProfile(); return; }
     if (!state.meets.length) { el.meets.innerHTML = emptyHtml(); return; }
     const order = { LIVE: 0, UPCOMING: 1, FINAL: 2, PAST: 3 };
     const sorted = state.meets.slice().sort((a, b) => (order[statusOf(a)] - order[statusOf(b)]) || (a.start_utc || '').localeCompare(b.start_utc || ''));
@@ -447,6 +481,286 @@
   }
 
   function dateHref(ymd) { return `?${demo ? 'demo&' : ''}${NOW_OVERRIDE ? `now=${NOW_OVERRIDE}&` : ''}date=${ymd}`; }
+
+  // ---------- teams ----------
+  const teamSlug = name => String(name || '').toLowerCase().replace(/&/g, 'and').replace(/s\.e\./g, 'se').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  function defaultSeason() {
+    const main = state.main;
+    const natural = seasonFor(todayChicago()); // Jul–Dec → next spring year (Nov 2026 → 2027)
+    if (main && main.season_published && main.season) return main.season;
+    return natural;
+  }
+  async function loadTeams() {
+    if (state.d1) return state.d1;
+    const [raw, meta] = await Promise.all([
+      getJson('data/d1-teams.json').catch(() => null),
+      getJson('data/team-meta.json').catch(() => null),
+    ]);
+    const metaByName = new Map(((meta && meta.teams) || []).map(t => [t.name, t]));
+    const list = ((raw && raw.teams) || []).map(t => {
+      const m = metaByName.get(t.name) || {};
+      return {
+        tid: t.tid, name: t.name, conference: t.conference || m.conference || '',
+        slug: m.slug || teamSlug(t.name), abbr: m.abbr || t.name.slice(0, 4).toUpperCase(),
+        color: m.color || '#3a6df0', color2: m.color2 || '#ffffff',
+      };
+    });
+    state.d1 = {
+      teams: list,
+      bySlug: new Map(list.map(t => [t.slug, t])),
+      byName: new Map(list.map(t => [t.name, t])),
+    };
+    return state.d1;
+  }
+  function teamHref(slug, season) {
+    const p = [];
+    if (demo) p.push('demo');
+    if (NOW_OVERRIDE) p.push(`now=${NOW_OVERRIDE}`);
+    p.push(`team=${encodeURIComponent(slug)}`);
+    if (season && season !== defaultSeason()) p.push(`season=${season}`);
+    return `?${p.join('&')}`;
+  }
+  function teamLink(name) {
+    const t = state.d1 && state.d1.byName.get(name);
+    if (!t) return esc(name);
+    return `<a class="team-link" href="${esc(teamHref(t.slug))}" data-team="${esc(t.slug)}">${esc(name)}</a>`;
+  }
+  function teamInMeet(m, name) {
+    return (m.d1_teams || []).includes(name) || (m.home || []).includes(name) || (m.away || []).includes(name);
+  }
+  function meetHa(m, name) {
+    if ((m.home || []).includes(name)) return 'Home';
+    if ((m.away || []).includes(name) && (m.home || []).length) return 'Away';
+    return 'Neutral';
+  }
+  function meetOpponents(m, name) {
+    return [...(m.home || []), ...(m.away || [])].filter(t => t !== name);
+  }
+  function meetHref(m) {
+    const key = meetKey(m);
+    return `${dateHref(m.date)}${m.virtius || m.id ? `#meet=${encodeURIComponent(key)}` : ''}`;
+  }
+  function teamScoreRow(meet, name) {
+    const d = state.details[meetKey(meet)];
+    if (!d || !d.teams || !d.teams.length) return null;
+    const mine = d.teams.find(t => t.name === name);
+    if (!mine || mine.score == null) return { location: d.location, status: d.status };
+    const others = d.teams.filter(t => t.name !== name && t.score != null).sort((a, b) => (a.place || 99) - (b.place || 99));
+    const placed = d.teams.filter(t => t.score != null).length;
+    const win = mine.place === 1;
+    return { score: mine.score, place: mine.place, field: placed, win, others, location: d.location, status: d.status };
+  }
+
+  async function openTeam(slug, season) {
+    await Promise.all([loadMain(), loadTeams()]);
+    const team = state.d1.bySlug.get(slug);
+    if (!team) {
+      el.status.textContent = 'That team was not found.';
+      return;
+    }
+    const yr = season || defaultSeason();
+    state.team = team.slug;
+    state.teamSeason = yr;
+    if (!state.date) state.date = todayChicago();
+    clearTimeout(state.timer);
+    document.title = `${team.name} — The Five That Score`;
+    ++state.renderToken;
+    const token = state.renderToken;
+    state.teamLists = await teamMeetLists(team.name, yr);
+    if (token !== state.renderToken) return;
+    syncUrl();
+    render();
+    renderNextMeet();
+    const { upcoming, past } = state.teamLists;
+    await pool([...past, ...upcoming.slice(0, 6)], 4, loadDetail);
+    if (token !== state.renderToken || state.team !== team.slug) return;
+    render();
+  }
+  function closeTeam() {
+    state.team = null;
+    state.teamSeason = null;
+    document.title = 'The Five That Score — Live D1 Scoreboard';
+  }
+
+  async function teamMeetLists(name, yr) {
+    const natural = defaultSeason();
+    const today = todayChicago();
+    const thisSched = await scheduleFor(yr);
+    const lastYear = yr - 1;
+    const lastSched = await scheduleFor(lastYear);
+    const from = sched => ((sched && sched.meets) || []).filter(m => teamInMeet(m, name))
+      .sort((a, b) => (a.date + (a.start_utc || '')).localeCompare(b.date + (b.start_utc || '')) || a.id - b.id);
+    const current = from(thisSched);
+    const stillUp = m => {
+      if (m.date > today) return true;
+      if (m.date < today) return false;
+      const st = statusOf(m);
+      if (st === 'FINAL' || st === 'PAST') return false;
+      return true;
+    };
+    let upcoming = current.filter(stillUp);
+    let past = current.filter(m => !stillUp(m));
+    let upcomingYear = yr, pastYear = yr, upcomingSoon = false;
+    // Default preseason view (e.g. Nov 2026 looking at 2027): if this season has no past
+    // meets yet, show last season's results. If the new season file is missing, say so.
+    if (!thisSched && yr === natural) {
+      upcoming = [];
+      upcomingSoon = true;
+      past = from(lastSched);
+      pastYear = lastYear;
+    } else if (thisSched && !past.length && lastSched && yr === natural) {
+      past = from(lastSched);
+      pastYear = lastYear;
+    } else if (!thisSched) {
+      upcomingSoon = true;
+    }
+    return { upcoming, past, upcomingYear, pastYear, upcomingSoon, hasThis: !!thisSched, hasLast: !!lastSched };
+  }
+
+  function renderTeamProfile() {
+    const team = state.d1 && state.d1.bySlug.get(state.team);
+    if (!team) { el.meets.innerHTML = `<div class="empty"><h2>Team not found</h2><p><a class="jump" href="${dateHref(todayChicago())}" data-date="${todayChicago()}">Back to the scoreboard</a></p></div>`; return; }
+    const lists = state.teamLists || { upcoming: [], past: [], upcomingYear: state.teamSeason, pastYear: state.teamSeason, upcomingSoon: false, hasLast: false };
+    const { upcoming, past, upcomingYear, pastYear, upcomingSoon, hasLast } = lists;
+    const scored = past.map(m => ({ m, s: teamScoreRow(m, team.name) })).filter(x => x.s && x.s.score != null);
+    const wins = scored.filter(x => x.s.win).length;
+    const losses = scored.length - wins;
+    const high = scored.reduce((a, x) => Math.max(a, x.s.score), 0);
+    const avg = scored.length ? scored.reduce((a, x) => a + x.s.score, 0) / scored.length : 0;
+    const natural = defaultSeason();
+    const seasonNote = state.teamSeason !== natural
+      ? `<a class="jump" href="${esc(teamHref(team.slug, natural))}" data-team="${esc(team.slug)}" data-team-season="${natural}">Current season</a>`
+      : (hasLast || pastYear === natural - 1 ? `<a class="jump" href="${esc(teamHref(team.slug, natural - 1))}" data-team="${esc(team.slug)}" data-team-season="${natural - 1}">View ${natural - 1} season</a>` : '');
+    const stats = scored.length
+      ? `<div class="profile-stats"><span><strong>${wins}–${losses}</strong> meet record</span><span>High <strong>${high.toFixed(3)}</strong></span><span>Avg <strong>${avg.toFixed(3)}</strong></span></div>`
+      : (past.length ? `<div class="profile-stats muted">Loading scores…</div>` : '');
+    const upHtml = upcomingSoon && !upcoming.length
+      ? `<p class="muted">Upcoming: ${esc(String(upcomingYear || natural))} schedule coming soon${upcomingYear || natural ? ' (season starts in January)' : ''}.</p>`
+      : (upcoming.length ? `<ol class="profile-meets">${upcoming.map((m, i) => teamMeetRow(m, team.name, { upcoming: true, highlight: i === 0 })).join('')}</ol>`
+        : `<p class="muted">No upcoming meets on the ${esc(String(upcomingYear || state.teamSeason))} schedule.</p>`);
+    const pastHtml = past.length
+      ? `<ol class="profile-meets">${past.slice().reverse().map(m => teamMeetRow(m, team.name, { upcoming: false })).join('')}</ol>`
+      : `<p class="muted">No previous results in the ${esc(String(pastYear || state.teamSeason))} season yet.</p>`;
+    el.status.textContent = '';
+    el.meets.innerHTML = `<article class="profile">
+      <p class="profile-back"><a class="jump" href="${dateHref(todayChicago())}" data-date="${todayChicago()}">‹ All meets</a></p>
+      <header class="profile-head">
+        <div class="crest" style="background:${esc(team.color)};color:${esc(crestInk(team))}">${esc(team.abbr)}</div>
+        <div class="profile-id">
+          <h2>${esc(team.name)}</h2>
+          <p class="muted">${esc(team.conference)}${team.conference ? ' · ' : ''}<span class="season-tag">${esc(String(pastYear || state.teamSeason))} season</span>${upcomingYear && upcomingYear !== pastYear && upcoming.length ? ` · ${esc(String(upcomingYear))} upcoming` : ''}</p>
+          ${seasonNote ? `<p class="season-switch">${seasonNote}</p>` : ''}
+        </div>
+      </header>
+      ${stats}
+      <section class="profile-section">
+        <h3>Upcoming</h3>
+        ${upHtml}
+      </section>
+      <section class="profile-section">
+        <h3>Previous results${pastYear && (!upcoming.length || pastYear !== upcomingYear) ? ` <span class="muted">· ${esc(String(pastYear))} season</span>` : ''}</h3>
+        ${pastHtml}
+      </section>
+    </article>`;
+  }
+  function crestInk(team) {
+    const c = (team.color2 || '#fff').replace('#', '');
+    const hex = c.length === 3 ? c.split('').map(x => x + x).join('') : c;
+    if (!/^[0-9a-fA-F]{6}$/.test(hex)) return '#fff';
+    const r = parseInt(hex.slice(0, 2), 16), g = parseInt(hex.slice(2, 4), 16), b = parseInt(hex.slice(4, 6), 16);
+    // Prefer the secondary color when it stays readable on the primary.
+    const pr = team.color.replace('#', '');
+    const phex = pr.length === 3 ? pr.split('').map(x => x + x).join('') : pr;
+    const prr = parseInt(phex.slice(0, 2), 16), pg = parseInt(phex.slice(2, 4), 16), pb = parseInt(phex.slice(4, 6), 16);
+    const contrast = (a, b) => {
+      const L = x => { const s = x / 255; const y = s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4; return y; };
+      const la = 0.2126 * L(a[0]) + 0.7152 * L(a[1]) + 0.0722 * L(a[2]);
+      const lb = 0.2126 * L(b[0]) + 0.7152 * L(b[1]) + 0.0722 * L(b[2]);
+      const hi = Math.max(la, lb), lo = Math.min(la, lb);
+      return (hi + 0.05) / (lo + 0.05);
+    };
+    return contrast([prr, pg, pb], [r, g, b]) >= 2.2 ? team.color2 : '#fff';
+  }
+  function teamMeetRow(m, name, { upcoming, highlight }) {
+    const ha = meetHa(m, name);
+    const opps = meetOpponents(m, name);
+    const title = m.desc ? m.desc : (opps.length ? `${ha === 'Home' ? 'vs' : ha === 'Away' ? 'at' : 'with'} ${opps.join(', ')}` : meetTitle(m));
+    const href = meetHref(m);
+    const s = teamScoreRow(m, name);
+    const loc = (s && s.location) || m.location || m.venue || '';
+    let result = '';
+    if (!upcoming) {
+      if (s && s.score != null) {
+        const wl = s.win ? '<span class="wl win">W</span>' : '<span class="wl loss">L</span>';
+        const place = s.place ? `${s.place}${placeSuffix(s.place)}${s.field ? ` of ${s.field}` : ''}` : '';
+        const others = (s.others || []).map(o => `${teamLink(o.name)} ${fmtScore(o.score)}`).join(' · ');
+        result = `<div class="pm-result">${wl}<span class="pm-score">${fmtScore(s.score)}</span><span class="muted">${esc(place)}</span></div>${others ? `<div class="pm-others muted">${others}</div>` : ''}`;
+      } else if (s && (s.status === 'FINAL' || statusOf(m) === 'PAST' || statusOf(m) === 'FINAL')) {
+        result = `<div class="pm-result muted">Score not on Virtius</div>`;
+      } else {
+        result = `<div class="pm-result muted">Loading…</div>`;
+      }
+    }
+    const when = `${shortDate(m.date)} · ${esc(timeCT(m.start_utc))}`;
+    return `<li class="pm-row${highlight ? ' next-up' : ''}">
+      <div class="pm-main" data-nm-date="${m.date}" data-nm-key="${esc(meetKey(m))}" role="link" tabindex="0">
+        <span class="pm-when">${when}</span>
+        <strong class="pm-title">${m.desc ? `${esc(m.desc)}${opps.length ? ` · ${opps.map(teamLink).join(', ')}` : ''}` : `${ha === 'Home' ? 'vs ' : ha === 'Away' ? 'at ' : ''}${opps.map(teamLink).join(', ') || esc(meetTitle(m))}`}</strong>
+        <span class="pm-meta muted">${esc(ha)}${loc ? ` · ${esc(loc)}` : ''}</span>
+        ${result}
+      </div>
+    </li>`;
+  }
+  function placeSuffix(n) {
+    const v = n % 100, d = n % 10;
+    if (v >= 11 && v <= 13) return 'th';
+    return d === 1 ? 'st' : d === 2 ? 'nd' : d === 3 ? 'rd' : 'th';
+  }
+
+  function initTeamPicker() {
+    const input = document.getElementById('team-search');
+    const list = document.getElementById('team-list');
+    if (!input || !list) return;
+    let active = -1;
+    const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); active = -1; };
+    const open = () => { list.hidden = false; input.setAttribute('aria-expanded', 'true'); };
+    const items = () => [...list.querySelectorAll('[role="option"]')];
+    const paint = () => {
+      const q = input.value.trim().toLowerCase();
+      const teams = (state.d1 && state.d1.teams) || [];
+      const filtered = teams.filter(t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q));
+      list.innerHTML = filtered.length ? filtered.map(t => `<li role="option" data-team="${esc(t.slug)}" id="opt-${esc(t.slug)}">
+        <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
+        <span class="opt-name">${esc(t.name)}</span>
+        <span class="opt-con muted">${esc(t.conference)}</span>
+      </li>`).join('') : `<li class="muted" aria-disabled="true">No teams match “${esc(input.value)}”</li>`;
+      open();
+      active = filtered.length ? 0 : -1;
+      highlight();
+    };
+    const highlight = () => {
+      items().forEach((it, i) => it.setAttribute('aria-selected', i === active ? 'true' : 'false'));
+      const cur = items()[active];
+      if (cur) { input.setAttribute('aria-activedescendant', cur.id); cur.scrollIntoView({ block: 'nearest' }); }
+    };
+    const choose = slug => { close(); input.value = ''; input.blur(); if (slug) openTeam(slug); };
+    input.addEventListener('focus', () => { if (state.d1) paint(); });
+    input.addEventListener('input', paint);
+    input.addEventListener('keydown', e => {
+      const opts = items().filter(it => it.dataset.team);
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (list.hidden) paint(); active = Math.min(opts.length - 1, active + 1); highlight(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); active = Math.max(0, active - 1); highlight(); }
+      else if (e.key === 'Enter') { e.preventDefault(); if (opts[active]) choose(opts[active].dataset.team); }
+      else if (e.key === 'Escape') { close(); }
+    });
+    list.addEventListener('mousedown', e => {
+      const it = e.target.closest('[data-team]');
+      if (it) { e.preventDefault(); choose(it.dataset.team); }
+    });
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.team-picker')) close();
+    });
+  }
 
   // ---------- next meet ----------
   async function renderNextMeet() {
@@ -493,21 +807,32 @@
       <a class="nm-go" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">${live ? 'Watch scores' : 'Go to meet'} ›</a>`;
   }
   document.addEventListener('click', e => {
+    const teamEl = e.target.closest('[data-team]');
+    if (teamEl) {
+      e.preventDefault();
+      e.stopPropagation();
+      const yr = teamEl.dataset.teamSeason ? Number(teamEl.dataset.teamSeason) : null;
+      openTeam(teamEl.dataset.team, yr || undefined);
+      return;
+    }
     const a = e.target.closest('[data-nm-date]');
     if (!a) return;
     e.preventDefault();
     const key = a.dataset.nmKey;
-    state.open.add(key);
+    if (key) state.open.add(key);
     setDate(a.dataset.nmDate, { keepOpen: true }).then(() => {
-      flashMeet(key);
-      const card = document.getElementById(`meet-${key}`);
-      if (card) card.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (key) {
+        flashMeet(key);
+        const card = document.getElementById(`meet-${key}`);
+        if (card) card.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }
     });
   });
 
   // ---------- flow ----------
   async function setDate(ymd, { keepOpen = false } = {}) {
     const token = ++state.renderToken;
+    if (state.team) closeTeam();
     state.date = ymd;
     if (!keepOpen) state.open.clear();
     await loadMain();
@@ -557,6 +882,7 @@
 
   // ---------- events ----------
   el.meets.addEventListener('click', async e => {
+    if (e.target.closest('[data-team]')) return; // handled on document
     const jump = e.target.closest('a.jump[data-date]');
     if (jump) { e.preventDefault(); setDate(jump.dataset.date); return; }
     const tab = e.target.closest('[data-tab]');
@@ -626,14 +952,22 @@
       <a href="./">Exit demo</a>`;
   }
   const qDate = params.get('date');
+  const qTeam = (params.get('team') || '').toLowerCase();
+  const qSeason = params.get('season');
+  const seasonArg = qSeason && /^\d{4}$/.test(qSeason) ? Number(qSeason) : null;
   const start = isYmd(qDate) ? qDate : (demo ? DEMO.date : todayChicago());
-  const hashMeet = readHashMeet() || (demo && !qDate ? DEMO.meet : null);
+  const hashMeet = readHashMeet() || (demo && !qDate && !qTeam ? DEMO.meet : null);
   if (hashMeet) state.open.add(hashMeet);
-  setDate(start, { keepOpen: true }).then(async () => {
-    if (!hashMeet) return;
-    if (state.meets.some(m => meetKey(m) === hashMeet)) { flashMeet(hashMeet); document.getElementById(`meet-${hashMeet}`)?.scrollIntoView({ block: 'start' }); }
-    else { state.open.delete(hashMeet); await openDeepLink(hashMeet); }
-  });
+  loadTeams().then(() => { initTeamPicker(); if (state.date && !state.team) render(); }).catch(() => initTeamPicker());
+  if (qTeam) {
+    openTeam(qTeam, seasonArg);
+  } else {
+    setDate(start, { keepOpen: true }).then(async () => {
+      if (!hashMeet) return;
+      if (state.meets.some(m => meetKey(m) === hashMeet)) { flashMeet(hashMeet); document.getElementById(`meet-${hashMeet}`)?.scrollIntoView({ block: 'start' }); }
+      else { state.open.delete(hashMeet); await openDeepLink(hashMeet); }
+    });
+  }
 
   // Visit counter: show a number immediately (never hide it), then refresh from
   // Count API. Count once per browser session so the 30s refresh does not inflate it.

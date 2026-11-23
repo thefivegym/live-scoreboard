@@ -1,0 +1,563 @@
+{
+ "source": "School colors used for monograms only; not official logos. Names match data/d1-teams.json.",
+ "teams": [
+  {
+   "name": "Air Force",
+   "tid": 1,
+   "conference": "MW",
+   "slug": "air-force",
+   "abbr": "AFA",
+   "color": "#003087",
+   "color2": "#8A8D8F"
+  },
+  {
+   "name": "Alabama",
+   "tid": 2,
+   "conference": "SEC",
+   "slug": "alabama",
+   "abbr": "ALA",
+   "color": "#9E1B32",
+   "color2": "#C5B783"
+  },
+  {
+   "name": "Alaska",
+   "tid": 3,
+   "conference": "MPSF",
+   "slug": "alaska",
+   "abbr": "AK",
+   "color": "#0033A0",
+   "color2": "#F2A900"
+  },
+  {
+   "name": "Arizona",
+   "tid": 4,
+   "conference": "Big 12",
+   "slug": "arizona",
+   "abbr": "ARIZ",
+   "color": "#CC0033",
+   "color2": "#003366"
+  },
+  {
+   "name": "Arizona State",
+   "tid": 5,
+   "conference": "Big 12",
+   "slug": "arizona-state",
+   "abbr": "ASU",
+   "color": "#8C1D40",
+   "color2": "#FFC627"
+  },
+  {
+   "name": "Arkansas",
+   "tid": 6,
+   "conference": "SEC",
+   "slug": "arkansas",
+   "abbr": "ARK",
+   "color": "#9D2235",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "Auburn",
+   "tid": 7,
+   "conference": "SEC",
+   "slug": "auburn",
+   "abbr": "AUB",
+   "color": "#0C2340",
+   "color2": "#E87722"
+  },
+  {
+   "name": "Ball State",
+   "tid": 9,
+   "conference": "MAC",
+   "slug": "ball-state",
+   "abbr": "BALL",
+   "color": "#BA0C2F",
+   "color2": "#000000"
+  },
+  {
+   "name": "Boise State",
+   "tid": 10,
+   "conference": "MW",
+   "slug": "boise-state",
+   "abbr": "BSU",
+   "color": "#0033A0",
+   "color2": "#D64309"
+  },
+  {
+   "name": "Bowling Green",
+   "tid": 11,
+   "conference": "MAC",
+   "slug": "bowling-green",
+   "abbr": "BGSU",
+   "color": "#FE5000",
+   "color2": "#4F2C1D"
+  },
+  {
+   "name": "Brown",
+   "tid": 14,
+   "conference": "GEC",
+   "slug": "brown",
+   "abbr": "BRWN",
+   "color": "#4E3629",
+   "color2": "#C8102E"
+  },
+  {
+   "name": "BYU",
+   "tid": 8,
+   "conference": "Big 12",
+   "slug": "byu",
+   "abbr": "BYU",
+   "color": "#002E5D",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "California",
+   "tid": 15,
+   "conference": "ACC",
+   "slug": "california",
+   "abbr": "CAL",
+   "color": "#003262",
+   "color2": "#FDB515"
+  },
+  {
+   "name": "Central Michigan",
+   "tid": 17,
+   "conference": "MAC",
+   "slug": "central-michigan",
+   "abbr": "CMU",
+   "color": "#6A0032",
+   "color2": "#FFC82E"
+  },
+  {
+   "name": "Clemson",
+   "tid": 163,
+   "conference": "ACC",
+   "slug": "clemson",
+   "abbr": "CLEM",
+   "color": "#F66733",
+   "color2": "#522D80"
+  },
+  {
+   "name": "Cornell",
+   "tid": 18,
+   "conference": "GEC",
+   "slug": "cornell",
+   "abbr": "COR",
+   "color": "#B31B1B",
+   "color2": "#222222"
+  },
+  {
+   "name": "Denver",
+   "tid": 20,
+   "conference": "Big 12",
+   "slug": "denver",
+   "abbr": "DEN",
+   "color": "#8B2332",
+   "color2": "#A3A9AC"
+  },
+  {
+   "name": "Eastern Michigan",
+   "tid": 21,
+   "conference": "MAC",
+   "slug": "eastern-michigan",
+   "abbr": "EMU",
+   "color": "#006633",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "Florida",
+   "tid": 22,
+   "conference": "SEC",
+   "slug": "florida",
+   "abbr": "FLA",
+   "color": "#0021A5",
+   "color2": "#FA4616"
+  },
+  {
+   "name": "George Washington",
+   "tid": 23,
+   "conference": "EAGL",
+   "slug": "george-washington",
+   "abbr": "GW",
+   "color": "#002654",
+   "color2": "#A9A18F"
+  },
+  {
+   "name": "Georgia",
+   "tid": 24,
+   "conference": "SEC",
+   "slug": "georgia",
+   "abbr": "UGA",
+   "color": "#BA0C2F",
+   "color2": "#000000"
+  },
+  {
+   "name": "Illinois",
+   "tid": 28,
+   "conference": "Big Ten",
+   "slug": "illinois",
+   "abbr": "ILL",
+   "color": "#E84A27",
+   "color2": "#13294B"
+  },
+  {
+   "name": "Illinois State",
+   "tid": 27,
+   "conference": "MIC",
+   "slug": "illinois-state",
+   "abbr": "ILST",
+   "color": "#CE1126",
+   "color2": "#000000"
+  },
+  {
+   "name": "Iowa",
+   "tid": 29,
+   "conference": "Big Ten",
+   "slug": "iowa",
+   "abbr": "IOWA",
+   "color": "#000000",
+   "color2": "#FFCD00"
+  },
+  {
+   "name": "Iowa State",
+   "tid": 30,
+   "conference": "Big 12",
+   "slug": "iowa-state",
+   "abbr": "ISU",
+   "color": "#C8102E",
+   "color2": "#F1BE48"
+  },
+  {
+   "name": "Kent State",
+   "tid": 32,
+   "conference": "MAC",
+   "slug": "kent-state",
+   "abbr": "KENT",
+   "color": "#002664",
+   "color2": "#EAAB00"
+  },
+  {
+   "name": "Kentucky",
+   "tid": 33,
+   "conference": "SEC",
+   "slug": "kentucky",
+   "abbr": "UK",
+   "color": "#0033A0",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "LIU",
+   "tid": 128,
+   "conference": "EAGL",
+   "slug": "liu",
+   "abbr": "LIU",
+   "color": "#69B3E7",
+   "color2": "#000000"
+  },
+  {
+   "name": "LSU",
+   "tid": 34,
+   "conference": "SEC",
+   "slug": "lsu",
+   "abbr": "LSU",
+   "color": "#461D7C",
+   "color2": "#FDD023"
+  },
+  {
+   "name": "Maryland",
+   "tid": 36,
+   "conference": "Big Ten",
+   "slug": "maryland",
+   "abbr": "MD",
+   "color": "#E03A3E",
+   "color2": "#FFD520"
+  },
+  {
+   "name": "Michigan",
+   "tid": 37,
+   "conference": "Big Ten",
+   "slug": "michigan",
+   "abbr": "MICH",
+   "color": "#00274C",
+   "color2": "#FFCB05"
+  },
+  {
+   "name": "Michigan State",
+   "tid": 38,
+   "conference": "Big Ten",
+   "slug": "michigan-state",
+   "abbr": "MSU",
+   "color": "#18453B",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "Minnesota",
+   "tid": 39,
+   "conference": "Big Ten",
+   "slug": "minnesota",
+   "abbr": "MINN",
+   "color": "#7A0019",
+   "color2": "#FFCC33"
+  },
+  {
+   "name": "Missouri",
+   "tid": 40,
+   "conference": "SEC",
+   "slug": "missouri",
+   "abbr": "MIZ",
+   "color": "#000000",
+   "color2": "#F1B82D"
+  },
+  {
+   "name": "Nebraska",
+   "tid": 41,
+   "conference": "Big Ten",
+   "slug": "nebraska",
+   "abbr": "NEB",
+   "color": "#E41C38",
+   "color2": "#000000"
+  },
+  {
+   "name": "New Hampshire",
+   "tid": 42,
+   "conference": "EAGL",
+   "slug": "new-hampshire",
+   "abbr": "UNH",
+   "color": "#003591",
+   "color2": "#C4A35A"
+  },
+  {
+   "name": "North Carolina",
+   "tid": 43,
+   "conference": "ACC",
+   "slug": "north-carolina",
+   "abbr": "UNC",
+   "color": "#7BAFD4",
+   "color2": "#13294B"
+  },
+  {
+   "name": "North Carolina State",
+   "tid": 44,
+   "conference": "ACC",
+   "slug": "north-carolina-state",
+   "abbr": "NCST",
+   "color": "#CC0000",
+   "color2": "#000000"
+  },
+  {
+   "name": "Northern Illinois",
+   "tid": 45,
+   "conference": "MAC",
+   "slug": "northern-illinois",
+   "abbr": "NIU",
+   "color": "#BA0C2F",
+   "color2": "#000000"
+  },
+  {
+   "name": "Ohio State",
+   "tid": 46,
+   "conference": "Big Ten",
+   "slug": "ohio-state",
+   "abbr": "OSU",
+   "color": "#BB0000",
+   "color2": "#666666"
+  },
+  {
+   "name": "Oklahoma",
+   "tid": 47,
+   "conference": "SEC",
+   "slug": "oklahoma",
+   "abbr": "OKLA",
+   "color": "#841617",
+   "color2": "#FDF2D9"
+  },
+  {
+   "name": "Oregon State",
+   "tid": 48,
+   "conference": "PAC-12",
+   "slug": "oregon-state",
+   "abbr": "ORST",
+   "color": "#DC4405",
+   "color2": "#000000"
+  },
+  {
+   "name": "Penn State",
+   "tid": 49,
+   "conference": "Big Ten",
+   "slug": "penn-state",
+   "abbr": "PSU",
+   "color": "#041E42",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "Pennsylvania",
+   "tid": 50,
+   "conference": "GEC",
+   "slug": "pennsylvania",
+   "abbr": "PENN",
+   "color": "#011F5B",
+   "color2": "#990000"
+  },
+  {
+   "name": "Pittsburgh",
+   "tid": 51,
+   "conference": "ACC",
+   "slug": "pittsburgh",
+   "abbr": "PITT",
+   "color": "#003594",
+   "color2": "#FFB81C"
+  },
+  {
+   "name": "Rutgers",
+   "tid": 53,
+   "conference": "Big Ten",
+   "slug": "rutgers",
+   "abbr": "RUT",
+   "color": "#CC0033",
+   "color2": "#5F6A72"
+  },
+  {
+   "name": "S.E. Missouri",
+   "tid": 54,
+   "conference": "MIC",
+   "slug": "se-missouri",
+   "abbr": "SEMO",
+   "color": "#C8102E",
+   "color2": "#000000"
+  },
+  {
+   "name": "Sacramento State",
+   "tid": 55,
+   "conference": "MPSF",
+   "slug": "sacramento-state",
+   "abbr": "SAC",
+   "color": "#043927",
+   "color2": "#C4B581"
+  },
+  {
+   "name": "San Jose State",
+   "tid": 56,
+   "conference": "MW",
+   "slug": "san-jose-state",
+   "abbr": "SJSU",
+   "color": "#0055A2",
+   "color2": "#E5A823"
+  },
+  {
+   "name": "Southern Utah",
+   "tid": 59,
+   "conference": "MPSF",
+   "slug": "southern-utah",
+   "abbr": "SUU",
+   "color": "#C41230",
+   "color2": "#000000"
+  },
+  {
+   "name": "Stanford",
+   "tid": 61,
+   "conference": "ACC",
+   "slug": "stanford",
+   "abbr": "STAN",
+   "color": "#8C1515",
+   "color2": "#FFFFFF"
+  },
+  {
+   "name": "Temple",
+   "tid": 62,
+   "conference": "EAGL",
+   "slug": "temple",
+   "abbr": "TEM",
+   "color": "#9D2235",
+   "color2": "#A7A8AA"
+  },
+  {
+   "name": "Towson",
+   "tid": 64,
+   "conference": "EAGL",
+   "slug": "towson",
+   "abbr": "TOW",
+   "color": "#000000",
+   "color2": "#FFBB00"
+  },
+  {
+   "name": "UC Davis",
+   "tid": 65,
+   "conference": "MPSF",
+   "slug": "uc-davis",
+   "abbr": "UCD",
+   "color": "#002855",
+   "color2": "#C4B581"
+  },
+  {
+   "name": "UCLA",
+   "tid": 66,
+   "conference": "Big Ten",
+   "slug": "ucla",
+   "abbr": "UCLA",
+   "color": "#2D68C4",
+   "color2": "#F2A900"
+  },
+  {
+   "name": "Utah",
+   "tid": 69,
+   "conference": "Big 12",
+   "slug": "utah",
+   "abbr": "UTAH",
+   "color": "#CC0000",
+   "color2": "#000000"
+  },
+  {
+   "name": "Utah State",
+   "tid": 70,
+   "conference": "MW",
+   "slug": "utah-state",
+   "abbr": "USU",
+   "color": "#0F2439",
+   "color2": "#0F5A32"
+  },
+  {
+   "name": "Washington",
+   "tid": 71,
+   "conference": "Big Ten",
+   "slug": "washington",
+   "abbr": "WASH",
+   "color": "#4B2E83",
+   "color2": "#E8D3A2"
+  },
+  {
+   "name": "West Virginia",
+   "tid": 73,
+   "conference": "Big 12",
+   "slug": "west-virginia",
+   "abbr": "WVU",
+   "color": "#002855",
+   "color2": "#EAAA00"
+  },
+  {
+   "name": "Western Michigan",
+   "tid": 74,
+   "conference": "MAC",
+   "slug": "western-michigan",
+   "abbr": "WMU",
+   "color": "#6C4023",
+   "color2": "#B5A167"
+  },
+  {
+   "name": "William & Mary",
+   "tid": 75,
+   "conference": "GEC",
+   "slug": "william-and-mary",
+   "abbr": "W&M",
+   "color": "#115740",
+   "color2": "#B9975B"
+  },
+  {
+   "name": "Yale",
+   "tid": 82,
+   "conference": "GEC",
+   "slug": "yale",
+   "abbr": "YALE",
+   "color": "#00356B",
+   "color2": "#FFFFFF"
+  }
+ ]
+}
