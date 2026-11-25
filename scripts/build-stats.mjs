@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Builds data/rankings.json (WCGA preseason poll + Road to Nationals national
-// rankings) and data/season-stats.json (perfect 10s and highest all-around)
-// from official D1 season meets on Virtius.
+// Builds data/rankings.json (WCGA preseason poll, Road to Nationals weekly
+// national rankings, and official final standings after NCAA Championships)
+// and data/season-stats.json (perfect 10s and highest all-around) from
+// official D1 season meets on Virtius.
 //
 // Separate from scripts/build-schedule.mjs so schedule refreshes stay untouched.
 // No npm deps; Node 18+ (global fetch).
@@ -183,6 +184,82 @@ function withMovement(teams, prevByTid) {
     const move = (t.rank != null && prev != null) ? prev - t.rank : null; // positive = moved up
     return { ...t, prev_rank: prev, move };
   });
+}
+const cleanScore = v => {
+  const n = num(v);
+  if (n === null) return null;
+  if (n === 0) return null;
+  return Number(n.toFixed(4));
+};
+function championshipDate(meets) {
+  const labeled = (meets || []).filter(m => /championship/i.test(m.desc || m.name || '') && /final/i.test(m.desc || m.name || ''));
+  const pool = labeled.length ? labeled : (meets || []);
+  const dates = pool.map(m => m.date).filter(isYmd).sort();
+  return dates[dates.length - 1] || null;
+}
+function mapFinalRow(r) {
+  const name = decode(r.team_name || r.name);
+  const ncaa_final = cleanScore(r.ncaa_final);
+  const ncaa = cleanScore(r.ncaa);
+  const regional = cleanScore(r.regionals || r.regional);
+  const nqs = cleanScore(r.rqs);
+  const score = ncaa_final ?? ncaa ?? regional ?? nqs;
+  const stage = ncaa_final != null ? 'championship' : ncaa != null ? 'semifinal' : regional != null ? 'regional' : 'nqs';
+  const rankRaw = r.rank;
+  const rank = num(String(rankRaw ?? '').replace(/\(t\)/gi, '')) ?? num(rankRaw);
+  return {
+    tid: r.team_id ?? r.tid ?? null,
+    name,
+    rank,
+    nqs, avg: cleanScore(r.average_score), high: cleanScore(r.high_score),
+    ncaa_final, ncaa, regional, score, stage,
+  };
+}
+function withRegSeasonMove(finalTeams, week12teams) {
+  const prevByName = new Map((week12teams || []).filter(t => t.name).map(t => [t.name, t.rank]));
+  const prevByTid = new Map((week12teams || []).filter(t => t.tid != null).map(t => [String(t.tid), t.rank]));
+  return finalTeams.map(t => {
+    const prev = (t.name && prevByName.has(t.name)) ? prevByName.get(t.name)
+      : (t.tid != null && prevByTid.has(String(t.tid)) ? prevByTid.get(String(t.tid)) : null);
+    const move = (t.rank != null && prev != null) ? prev - t.rank : null;
+    return { ...t, prev_rank: prev, move };
+  });
+}
+async function fetchFinal(season) {
+  const res = await rtnGet(`/finalresults/${season}`);
+  const raw = res?.data || [];
+  const d1 = raw.filter(r => r.division_id === 1 || r.division_id === '1' || r.div === 'Div I')
+    .map(mapFinalRow).filter(t => t.name);
+  d1.sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99) || (a.name || '').localeCompare(b.name || ''));
+  return { teams: d1, hasChamp: d1.some(t => t.ncaa_final != null) };
+}
+async function maybeStoreFinal(season, prev, weeks, today, meets) {
+  const lastMeet = championshipDate(meets) || championshipDate((meets || []).length ? meets : null);
+  const seasonOver = lastMeet && today >= lastMeet;
+  // Only treat RTN finalresults as official post-championship standings
+  // once the NCAA team final has been contested (a team has ncaa_final).
+  if (!seasonOver && !(prev.final && prev.final.teams && prev.final.teams.length)) return prev.final || null;
+  try {
+    const { teams, hasChamp } = await fetchFinal(season);
+    if (!hasChamp || !teams.length) {
+      log(`  ${season}: finalresults not yet post-championship; keeping previous final if any`);
+      return prev.final || null;
+    }
+    const lastWeekly = [...(weeks || [])].sort((a, b) => a.week - b.week).at(-1);
+    const dated = lastMeet || prev.final?.date || today;
+    return {
+      type: 'rtn-final',
+      label: `${season} Final Standings (after NCAA Championships)`,
+      source: 'Road to Nationals final standings (NCAA championship order of finish)',
+      source_url: `https://www.roadtonationals.com/results/standings/final/${season}`,
+      date: dated,
+      metric: 'score',
+      teams: withRegSeasonMove(teams, lastWeekly?.teams || prev.current?.teams || prev.weeks?.at?.(-1)?.teams),
+    };
+  } catch (e) {
+    log(`  ${season} final standings fetch failed: ${e.message}`);
+    return prev.final || null;
+  }
 }
 
 // When RTN does not give a published date, estimate Week N's Monday from a
@@ -427,6 +504,7 @@ async function dropUnstartedRtn(seasons, today) {
       block.current = null;
       block.weeks = [];
     }
+    // Never drop a completed season's final championship standings.
   }
 }
 
@@ -439,15 +517,27 @@ async function buildRankings() {
   const freshMs = Date.now() - Date.parse(existing.generated_at || 0);
   const skipFetch = !args.history && !args.force && existing.seasons && Number.isFinite(freshMs) && freshMs < 20 * 3600e3;
   if (skipFetch) {
-    log(`Rankings fetched ${Math.round(freshMs / 3600e3)}h ago; skipping RTN until 20h have passed (use --force to refresh).`);
+    log(`Rankings fetched ${Math.round(freshMs / 3600e3)}h ago; skipping weekly RTN until 20h have passed (use --force to refresh).`);
     seasons['2026'] = { ...(seasons['2026'] || {}), preseason: POLL_2026 };
     if (!seasons['2027'] || seasons['2027'].preseason?.status !== 'published') {
       seasons['2027'] = { ...(seasons['2027'] || {}), preseason: emptyPreseason(2027, today), current: null, weeks: [] };
     }
     await dropUnstartedRtn(seasons, today);
+    // If a completed season is missing official post-championship standings, fetch just that.
+    for (const yr of Object.keys(seasons)) {
+      const block = seasons[yr];
+      if (block?.final?.teams?.length) continue;
+      const season = Number(yr);
+      const { meets } = await loadSeasonMeets(season);
+      const last = championshipDate(meets);
+      if (last && today >= last) {
+        const fin = await maybeStoreFinal(season, block || {}, block?.weeks || [], today, meets);
+        if (fin) seasons[yr] = { ...block, final: fin };
+      }
+    }
     await writeJsonIfChanged(path, {
       generated_at: existing.generated_at || new Date().toISOString(),
-      source: existing.source || 'WCGA preseason coaches poll (when published) and Road to Nationals national team rankings (GET /api/women/results/{year}/{week}/0/5, Div I)',
+      source: existing.source || 'WCGA preseason coaches poll (when published); in season, Road to Nationals weekly NQS; after championships, RTN final standings (GET /api/women/finalresults/{year})',
       seasons,
     }, ['generated_at']);
     return;
@@ -483,6 +573,7 @@ async function buildRankings() {
           preseason: prev.preseason || (season === 2026 ? POLL_2026 : emptyPreseason(season, today)),
           current: null,
           weeks: [],
+          final: prev.final || null,
         };
         continue;
       }
@@ -492,6 +583,7 @@ async function buildRankings() {
           preseason: prev.preseason || emptyPreseason(season, today),
           current: null,
           weeks: [],
+          final: prev.final || null,
         };
         continue;
       }
@@ -502,7 +594,8 @@ async function buildRankings() {
       const latest = maxWeek;
       if (!latest) {
         log(`  no ranking weeks for ${season}`);
-        seasons[String(season)] = { ...prev, preseason: prev.preseason || (season === 2026 ? POLL_2026 : emptyPreseason(season, today)), current: prev.current || null, weeks: prev.weeks || [] };
+        const fin = await maybeStoreFinal(season, prev, prev.weeks || [], today, meets);
+        seasons[String(season)] = { ...prev, preseason: prev.preseason || (season === 2026 ? POLL_2026 : emptyPreseason(season, today)), current: prev.current || null, weeks: prev.weeks || [], final: fin };
         continue;
       }
       const have = new Map((prev.weeks || []).map(w => [w.week, w]));
@@ -551,18 +644,21 @@ async function buildRankings() {
         metric: 'NQS',
         teams: last.teams,
       } : (prev.current || null);
+      const fin = await maybeStoreFinal(season, prev, weeks, today, meets);
       seasons[String(season)] = {
         preseason: prev.preseason || (season === 2026 ? POLL_2026 : emptyPreseason(season, today)),
         current,
         weeks,
+        final: fin,
       };
-      log(`  ${season}: ${weeks.length} week(s) stored; current week ${current?.week ?? 'none'}`);
+      log(`  ${season}: ${weeks.length} week(s) stored; current week ${current?.week ?? 'none'}; final ${fin ? fin.teams.length + ' teams' : 'none'}`);
     } catch (e) {
       log(`  rankings for ${season} failed: ${e.message}`);
       seasons[String(season)] = {
         preseason: prev.preseason || (season === 2026 ? POLL_2026 : emptyPreseason(season, today)),
         current: prev.current || null,
         weeks: prev.weeks || [],
+        final: prev.final || null,
       };
     }
   }
@@ -570,7 +666,7 @@ async function buildRankings() {
   await dropUnstartedRtn(seasons, today);
   await writeJsonIfChanged(path, {
     generated_at: new Date().toISOString(),
-    source: 'WCGA preseason coaches poll (when published) and Road to Nationals national team rankings (GET /api/women/results/{year}/{week}/0/5, Div I)',
+    source: 'WCGA preseason coaches poll (when published); in season, Road to Nationals weekly NQS; after championships, RTN final standings (GET /api/women/finalresults/{year}, Div I)',
     seasons,
   });
 }

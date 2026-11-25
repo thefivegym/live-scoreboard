@@ -20,7 +20,7 @@
   const $ = sel => document.querySelector(sel);
   const el = {
     meets: $('#meets'), date: $('#date'), dateText: $('#date-text'), prev: $('#prev'), next: $('#next'),
-    today: $('#today'), banner: $('#banner'), status: $('#status-line'), pulse: $('#season-pulse'),
+    today: $('#today'), banner: $('#banner'), status: $('#status-line'), pulse: $('#season-pulse'), hero: $('#season-hero'),
   };
 
   const params = new URLSearchParams(location.search);
@@ -450,8 +450,13 @@
     }
     const t = todayChicago();
     el.today.hidden = !state.team && state.date === t && !demo;
-    if (state.team) { if (el.pulse) el.pulse.hidden = true; renderTeamProfile(); return; }
+    if (state.team) {
+      if (el.pulse) el.pulse.hidden = true;
+      if (el.hero) el.hero.hidden = true;
+      renderTeamProfile(); return;
+    }
     if (el.pulse) el.pulse.hidden = false;
+    if (el.hero) el.hero.hidden = false;
     renderSeasonPulse();
     if (!state.meets.length) { el.meets.innerHTML = emptyHtml(); return; }
     const order = { LIVE: 0, UPCOMING: 1, FINAL: 2, PAST: 3 };
@@ -798,31 +803,39 @@
     const root = kind === 'rankings' ? state.rankings : state.seasonStats;
     return root && root.seasons && root.seasons[yr] || null;
   }
+  function finalBlock(block, seasonYear) {
+    if (block && block.final && block.final.teams && block.final.teams.length) {
+      return { ...block.final, seasonYear: seasonYear || null };
+    }
+    return null;
+  }
+  function asFinalRank(fin) {
+    if (!fin) return null;
+    return {
+      kind: 'final',
+      teams: fin.teams,
+      label: fin.label || `${fin.seasonYear || ''} Final Standings (after NCAA Championships)`.trim(),
+      date: fin.date,
+      source: fin.source,
+      source_url: fin.source_url,
+      metric: 'score',
+      week: null,
+      message: null,
+      seasonYear: fin.seasonYear || null,
+    };
+  }
   function pickRankings(block, season) {
-    if (!block) return { kind: 'none', teams: [], label: '', date: null, week: null, metric: null };
     const asOf = statsAsOf(season);
-    const weeks = (block.weeks || []).slice().sort((a, b) => a.week - b.week);
+    const weeks = ((block && block.weeks) || []).slice().sort((a, b) => a.week - b.week);
     const inSeason = weeks.filter(w => w.teams && w.teams.length && (!asOf || (w.date && w.date <= asOf)));
     const latest = inSeason.length ? inSeason[inSeason.length - 1] : null;
-    const poll = block.preseason;
+    const poll = block && block.preseason;
     const pollOut = poll && poll.status === 'published' && poll.teams && poll.teams.length;
     const firstWeek = weeks.find(w => w.teams && w.teams.length);
-    const beforeWeekly = !latest && pollOut;
-    const pollStillLeads = pollOut && asOf && firstWeek && firstWeek.date && asOf < firstWeek.date;
-    if (beforeWeekly || pollStillLeads) {
-      return {
-        kind: 'preseason',
-        teams: poll.teams,
-        also: poll.also_receiving || [],
-        label: poll.label || 'Preseason Coaches Poll',
-        date: poll.date,
-        source: poll.source,
-        metric: 'points',
-        week: null,
-        message: null,
-      };
-    }
-    if (latest) {
+    const fin = finalBlock(block, season);
+    const afterChamps = !!(fin && (!asOf || (fin.date && asOf >= fin.date)));
+    // Regular season (and mid-season previews): weekly RTN NQS, until championships are over.
+    if (latest && !afterChamps) {
       const cur = block.current && block.current.week === latest.week ? block.current : null;
       const label = cur && cur.label
         ? cur.label
@@ -838,6 +851,26 @@
         message: null,
       };
     }
+    if (afterChamps) return asFinalRank(fin);
+    const beforeWeekly = !latest && pollOut;
+    const pollStillLeads = pollOut && asOf && firstWeek && firstWeek.date && asOf < firstWeek.date;
+    if (beforeWeekly || pollStillLeads || (pollOut && !latest)) {
+      return {
+        kind: 'preseason',
+        teams: poll.teams,
+        also: poll.also_receiving || [],
+        label: poll.label || 'Preseason Coaches Poll',
+        date: poll.date,
+        source: poll.source,
+        metric: 'points',
+        week: null,
+        message: null,
+      };
+    }
+    // New season, poll not out yet: show last season's official championship standings.
+    const prev = state.rankings && state.rankings.seasons && state.rankings.seasons[season - 1];
+    const prevFinal = asFinalRank(finalBlock(prev, season - 1));
+    if (prevFinal) return prevFinal;
     if (poll && poll.status === 'upcoming') {
       return { kind: 'upcoming', teams: [], label: poll.label || 'Preseason Coaches Poll', date: null, message: poll.message || 'Preseason poll coming soon', metric: null, week: null };
     }
@@ -850,8 +883,10 @@
   }
   function metricCell(t, metric) {
     if (metric === 'points') return t.points != null ? t.points.toLocaleString('en-US') : '—';
-    const n = t.nqs != null ? t.nqs : t.avg;
-    return n != null ? Number(n).toFixed(3) : '—';
+    const n = metric === 'score' ? (t.score != null ? t.score : t.ncaa_final || t.ncaa || t.regional || t.nqs)
+      : (t.nqs != null ? t.nqs : t.avg);
+    if (n == null) return '—';
+    return fmtScore(Number(n));
   }
   function meetJumpHref(date, key) {
     if (!date) return null;
@@ -932,36 +967,42 @@
       .sort((a, b) => (a.date || '').localeCompare(b.date || '') || a.athlete.localeCompare(b.athlete));
     return { score: best, tied };
   }
+  const seenTenKeys = new Set();
+  let tensInitialized = false;
+  function flagNewTens(tens) {
+    const keys = tens.map(tenKey);
+    const fresh = tensInitialized
+      ? tens.filter(p => p.live || !seenTenKeys.has(tenKey(p)))
+      : tens.filter(p => p.live);
+    tensInitialized = true;
+    keys.forEach(k => seenTenKeys.add(k));
+    const newKeys = new Set(fresh.map(tenKey));
+    return tens.map(p => newKeys.has(tenKey(p)) ? { ...p, isNew: true } : p);
+  }
   function renderSeasonPulse() {
-    const box = el.pulse;
-    if (!box || box.hidden) return;
     const season = statsSeason();
     const asOf = statsAsOf(season);
-    const openIds = [...box.querySelectorAll('details[open]')].map(d => d.id);
+    const openIds = [...document.querySelectorAll('#season-pulse details[open], #season-hero details[open]')].map(d => d.id);
     const blockR = seasonBlock('rankings');
     const blockS = seasonBlock('stats');
     const rank = pickRankings(blockR, season);
     const live = liveSeasonExtras(season, asOf);
-    const tens = mergePerfect10s((blockS && blockS.perfect10s) || [], live.tens).filter(p => !asOf || (p.date && p.date <= asOf));
+    let tens = mergePerfect10s((blockS && blockS.perfect10s) || [], live.tens).filter(p => !asOf || (p.date && p.date <= asOf));
+    tens = flagNewTens(tens).slice().sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.athlete.localeCompare(b.athlete));
     const aa = aaHighAsOf(blockS, asOf, live.aas);
     const preview = SEASON_OVERRIDE || NOW_OVERRIDE
-      ? `<p class="pulse-preview muted">${SEASON_OVERRIDE && seasonFor(todayChicago()) !== season ? `Showing the ${season} season.` : ''}${NOW_OVERRIDE ? ` Preview date ${esc(NOW_OVERRIDE)} (noon CT).` : ''} <a class="jump" href="./">Back to today</a></p>`
+      ? `<p class="hero-preview muted">${SEASON_OVERRIDE && seasonFor(todayChicago()) !== season ? `Showing the ${season} season.` : ''}${NOW_OVERRIDE ? ` Preview date ${esc(NOW_OVERRIDE)} (noon CT).` : ''} <a class="jump" href="./">Back to today</a></p>`
       : '';
     const viewLast = season === seasonFor(todayChicago()) && season > 2026
-      ? `<p class="pulse-preview muted"><a class="jump" href="?season=${season - 1}">View ${season - 1} season</a></p>`
+      ? `<p class="hero-preview muted"><a class="jump" href="?season=${season - 1}">View ${season - 1} season</a></p>`
       : '';
-    box.innerHTML = `${preview}${viewLast}
-      <article class="pulse-card" id="rankings-card">
-        ${rankingsCardHtml(rank, season)}
-      </article>
-      <div class="pulse-side">
-        <article class="pulse-card" id="perfect10s-card">
-          ${perfect10sHtml(tens, season)}
-        </article>
-        <article class="pulse-card" id="aa-card">
-          ${aaHighHtml(aa, season)}
-        </article>
-      </div>`;
+    if (el.hero && !el.hero.hidden) {
+      el.hero.innerHTML = `${preview}${viewLast}${seasonHeroHtml(tens, aa, season)}`;
+    }
+    const box = el.pulse;
+    if (box && !box.hidden) {
+      box.innerHTML = `<article class="pulse-card" id="rankings-card">${rankingsCardHtml(rank, season)}</article>`;
+    }
     openIds.forEach(id => { const d = document.getElementById(id); if (d) d.open = true; });
   }
   function rankingsCardHtml(rank, season) {
@@ -973,6 +1014,7 @@
       if (rank.date) bits.push(esc(shortDate(rank.date)));
       bits.push('ranked by NQS');
     }
+    if (rank.kind === 'final' && rank.date) bits.push(esc(shortDate(rank.date)));
     const kicker = `<p class="pulse-kicker"><span>${esc(rank.label || 'National rankings')}</span>${bits.length ? ' · ' + bits.join(' · ') : ''}</p>`;
     if (rank.kind === 'upcoming' || (rank.message && !rank.teams.length)) {
       return `<h2>Top 25</h2>${kicker}<p class="pulse-empty">${esc(rank.message || 'Preseason poll coming soon')}</p>`;
@@ -983,21 +1025,29 @@
     const top = rank.teams.filter(t => (t.rank || 99) <= 25).slice(0, 25);
     const rest = rank.teams.slice(top.length);
     const metric = rank.metric === 'points' ? 'Pts' : (rank.metric || 'NQS');
+    const linkSeason = rank.kind === 'final' && rank.seasonYear ? rank.seasonYear : season;
     const rows = teams => teams.map(t => {
       const tm = state.d1 && state.d1.byName.get(t.name);
-      const href = tm ? teamHref(tm.slug, season) : null;
-      const name = href ? `<a class="team-link" href="${esc(href)}" data-team="${esc(tm.slug)}" data-team-season="${season}">${esc(t.name)}</a>` : esc(t.name);
-      const move = rank.kind === 'rtn' ? fmtMove(t.move) : (t.first_place ? `<span class="muted"> ${t.first_place} first-place</span>` : '');
-      return `<tr><td class="rk">${t.rank != null ? t.rank : ''}</td><td>${name}${move}</td><td class="num">${esc(metricCell(t, rank.metric === 'points' ? 'points' : 'nqs'))}</td></tr>`;
+      const href = tm ? teamHref(tm.slug, linkSeason) : null;
+      const name = href ? `<a class="team-link" href="${esc(href)}" data-team="${esc(tm.slug)}" data-team-season="${linkSeason}">${esc(t.name)}</a>` : esc(t.name);
+      const move = (rank.kind === 'rtn' || rank.kind === 'final') ? fmtMove(t.move) : (t.first_place ? `<span class="muted"> ${t.first_place} first-place</span>` : '');
+      const stage = rank.kind === 'final' && t.stage && t.stage !== 'nqs'
+        ? `<span class="rank-stage">${t.stage === 'championship' ? 'final' : t.stage}</span>` : '';
+      const col = rank.kind === 'final' ? 'score' : (rank.metric === 'points' ? 'points' : 'nqs');
+      return `<tr><td class="rk">${t.rank != null ? t.rank : ''}</td><td>${name}${move}${stage}</td><td class="num">${esc(metricCell(t, col))}</td></tr>`;
     }).join('');
+    const colLabel = rank.kind === 'final' ? 'Score' : metric;
     const more = rest.length
       ? `<details id="rank-full"><summary>Show all ${rank.teams.length} teams</summary>
-          <table class="rank-table"><thead><tr><th>Rk</th><th>Team</th><th class="num">${esc(metric)}</th></tr></thead><tbody>${rows(rest)}</tbody></table>
+          <table class="rank-table"><thead><tr><th>Rk</th><th>Team</th><th class="num">${esc(colLabel)}</th></tr></thead><tbody>${rows(rest)}</tbody></table>
         </details>`
       : '';
+    const note = rank.kind === 'final'
+      ? `<p class="rank-note">Official NCAA championship order of finish, via Road to Nationals. Scores are the championship final, semifinal, or regional final; teams that did not make postseason follow in final regular-season NQS order. Movement is versus the final regular-season NQS rank.${rank.source_url ? ` <a href="${esc(rank.source_url)}" target="_blank" rel="noopener">Source</a>` : ''}</p>`
+      : '';
     return `<h2>Top 25</h2>${kicker}
-      <table class="rank-table"><thead><tr><th>Rk</th><th>Team</th><th class="num">${esc(metric)}</th></tr></thead><tbody>${rows(top)}</tbody></table>
-      ${more}`;
+      <table class="rank-table"><thead><tr><th>Rk</th><th>Team</th><th class="num">${esc(colLabel)}</th></tr></thead><tbody>${rows(top)}</tbody></table>
+      ${more}${note}`;
   }
   function personMeet(p) {
     const href = meetJumpHref(p.date, p.virtius);
@@ -1006,36 +1056,58 @@
     const label = [when, meet].filter(Boolean).join(' · ');
     return href ? `<a class="jump" href="${esc(href)}" data-date="${esc(p.date || '')}" data-meet="${esc(p.virtius || '')}">${label}</a>` : esc(label);
   }
-  function perfect10sHtml(tens, season) {
+  function seasonHeroHtml(tens, aa, season) {
     const n = tens.length;
-    const head = `<h2>Perfect 10s</h2><p class="p10-count">Perfect 10s: ${n}</p>`;
-    if (!n) return `${head}<p class="pulse-empty">No perfect 10s yet this season</p>`;
-    const items = tens.map(p => `<li><strong>${esc(p.athlete)}</strong> · ${teamLink(p.team, season)} · ${esc(EVENT_LABEL[p.event] || p.event)} · ${personMeet(p)}</li>`).join('');
-    return `${head}<details id="p10-list"><summary>Show all ${n}</summary><ol class="p10-list">${items}</ol></details>`;
-  }
-  function aaHighHtml(aa, season) {
-    const head = `<h2>Highest all-around</h2>`;
+    const hasNew = tens.some(p => p.isNew);
+    const items = p => `<li class="${p.isNew ? 'is-new' : ''}"><span class="who">${esc(p.athlete)}${p.isNew ? ' <span class="hero-new-badge">NEW</span>' : ''}</span><span class="meta"><span>${teamLink(p.team, season)} · ${esc(EVENT_LABEL[p.event] || p.event)}</span> ${personMeet(p)}</span></li>`;
+    const highlight = tens.slice(0, 3).map(items).join('');
+    const rest = tens.slice(3);
+    const list = n
+      ? `<ol class="hero-list" id="p10-highlights">${highlight}</ol>
+         ${rest.length ? `<details id="p10-list"><summary>Show all ${n} perfect 10s</summary><ol class="hero-list">${tens.map(items).join('')}</ol></details>` : (n > 0 && n <= 3 ? '' : '')}`
+      : `<p class="hero-empty">No perfect 10s yet this season — the first one will be celebrated right here.</p>`;
+    const tenCol = `<div class="hero-10" id="perfect10s-card">
+        <p class="hero-kicker">Perfect 10s</p>
+        <div class="hero-10-top">
+          <p class="ten-mark" aria-hidden="true">10.0</p>
+          <div class="ten-count-wrap">
+            <p class="ten-count">Perfect 10s: <strong>${n}</strong></p>
+            <p class="ten-sub">${n ? `${n} official perfect 10${n === 1 ? '' : 's'} this season` : 'Waiting on the first 10.0 of the season'}</p>
+          </div>
+        </div>
+        ${list}
+      </div>`;
+    let aaCol;
     if (!aa || aa.score == null || !aa.tied.length) {
-      return `${head}<p class="pulse-empty">No all-around scores yet this season</p>`;
+      aaCol = `<div class="hero-aa" id="aa-card">
+        <p class="hero-kicker"><span class="aa-crown" aria-hidden="true">👑</span>Highest all-around</p>
+        <p class="hero-empty">No all-around scores yet this season. The first 4-event total will take this crown.</p>
+      </div>`;
+    } else {
+      const listAa = aa.tied.map(p => `<p class="aa-who"><strong>${esc(p.athlete)}</strong> · ${teamLink(p.team, season)} · ${personMeet(p)}</p>`).join('');
+      const tieNote = aa.tied.length > 1 ? `<p class="tie-note">Tied for the season high.</p>` : '';
+      aaCol = `<div class="hero-aa" id="aa-card">
+        <p class="hero-kicker"><span class="aa-crown" aria-hidden="true">👑</span>Highest all-around</p>
+        <p class="aa-score">${fmtScore(aa.score)}</p>
+        ${listAa}${tieNote}
+      </div>`;
     }
-    const list = aa.tied.map(p => `<p class="aa-who"><strong>${esc(p.athlete)}</strong> · ${teamLink(p.team, season)} · ${personMeet(p)}</p>`).join('');
-    const tieNote = aa.tied.length > 1 ? `<p class="muted">Tied for the season high.</p>` : '';
-    return `${head}<p class="aa-score">${fmtScore(aa.score)}</p>${list}${tieNote}`;
+    return `<div class="hero-banner${hasNew ? ' has-new' : ''}">
+      <span class="sparkle"></span><span class="sparkle"></span><span class="sparkle"></span>
+      <span class="sparkle"></span><span class="sparkle"></span><span class="sparkle"></span>
+      <div class="hero-grid">${tenCol}${aaCol}</div>
+    </div>`;
   }
   function teamRankHtml(team, season) {
     const block = state.rankings && state.rankings.seasons && state.rankings.seasons[season];
     const rank = pickRankings(block, season);
     const row = (rank.teams || []).find(t => t.name === team.name);
     if (!row) {
-      const last = season > 2026 ? pickRankings(state.rankings && state.rankings.seasons && state.rankings.seasons[season - 1], season - 1) : null;
-      const lastRow = last && (last.teams || []).find(t => t.name === team.name);
-      const lastBit = lastRow && lastRow.rank != null
-        ? `<div class="profile-rank"><span class="rk-src">${season - 1} finish: No. ${lastRow.rank}</span></div>`
-        : '';
-      const pending = (rank.kind === 'upcoming' || rank.kind === 'none' || (rank.message && !rank.teams.length))
-        ? `<div class="profile-rank"><span class="rk-src">${esc(rank.message || 'Preseason poll coming soon')}</span></div>`
-        : '';
-      return pending + lastBit;
+      return `<div class="profile-rank"><span class="rk-src">${esc(rank.message || 'Rankings are not available yet.')}</span></div>`;
+    }
+    if (rank.kind === 'final') {
+      const yr = rank.seasonYear || (rank.date ? seasonFor(rank.date) : season);
+      return `<div class="profile-rank"><span class="rk-num">No. ${row.rank}</span><span class="rk-src">${yr} final</span></div>`;
     }
     const move = rank.kind === 'rtn' ? fmtMove(row.move) : '';
     const src = rank.kind === 'preseason'
@@ -1097,7 +1169,7 @@
       openTeam(teamEl.dataset.team, yr || undefined);
       return;
     }
-    const pulseJump = e.target.closest('#season-pulse a.jump[data-date]');
+    const pulseJump = e.target.closest('#season-pulse a.jump[data-date], #season-hero a.jump[data-date]');
     if (pulseJump) {
       e.preventDefault();
       const key = pulseJump.dataset.meet;
