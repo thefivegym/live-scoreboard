@@ -1,0 +1,14 @@
+name = "live-scoreboard-polls"
+main = "src/index.js"
+compatibility_date = "2026-11-27"
+account_id = "068acebf1e247f8976366c3ada4ce668"
+workers_dev = true
+
+# Fan poll API for the GitHub Pages scoreboard.
+# Deploy from this directory: npx wrangler deploy
+# Set the vote-hash salt once: npx wrangler secret put VOTE_SALT
+
+[[d1_databases]]
+binding = "DB"
+database_name = "live-scoreboard-polls"
+database_id = "9f03122d-b472-42ba-aa2a-5283c727742e"

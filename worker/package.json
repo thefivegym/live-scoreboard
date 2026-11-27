@@ -1,0 +1,12 @@
+{
+  "name": "live-scoreboard-polls",
+  "private": true,
+  "description": "Cloudflare Worker + D1 API for The Five That Score Fan Polls",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.47.0"
+  }
+}

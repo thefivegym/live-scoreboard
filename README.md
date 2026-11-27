@@ -13,7 +13,7 @@ A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 - **Share** on meet cards and Perfect 10s opens a dark/gold `@thefivethatscore` score card (PNG) with Download, system Share, and Copy link.
 - **Installable** as a Progressive Web App (`manifest.webmanifest`, icons, and a network-first `sw.js` so live scores are not served stale).
 - **Weekend Highs & 197+ Watch** sits under the Perfect 10s / AA hero: the latest weekend’s 197+ team scores and event highs (VT/UB/BB/FX), clickable to the meet. `?season=2026` previews last season; the 2027 preseason shows a clean empty state.
-- **Fan Polls** sits under Weekend Highs on the home page (hidden on team profiles): vote links for the [NCAA Champions Poll](https://rocket-forge-comet-vivid.grok.me/) and the [AA Champion Poll](https://forge-fleet-tundra-zinc.grok.me/), the 2027 preseason ballots from The Five That Score.
+- **Fan Polls** sits under Weekend Highs on the home page (hidden on team profiles): in-page **NCAA Champions** and **AA Champion** ballots with live tallies. One locked vote per poll (your pick is final). A later Championships poll can be added in `worker/src/catalog.js`. The API is a Cloudflare Worker + D1 database at `https://live-scoreboard-polls.thefivegym.workers.dev`.
 - **Every D1 meet for a day** (defaults to today in America/Chicago) as a card: teams, running team
   scores, LIVE / FINAL / UPCOMING badge, local start time, TV/stream badges when known, and stats links.
 - **Expand a meet** for rotation-by-rotation team event scores, each athlete's score on vault, bars,

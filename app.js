@@ -768,6 +768,7 @@
   }
 
   async function openTeam(slug, season) {
+    closePollModal();
     closeFavPicker();
     const teamSearch = document.getElementById('team-search');
     const teamList = document.getElementById('team-list');
@@ -1255,27 +1256,242 @@
     }
     return w;
   }
-  const FAN_POLLS = [
-    {
-      title: 'NCAA Champions Poll',
-      blurb: '2027 preseason — who takes the national title?',
-      href: 'https://rocket-forge-comet-vivid.grok.me/',
-    },
-    {
-      title: 'AA Champion Poll',
-      blurb: '2027 all-around — one vote, national tally.',
-      href: 'https://forge-fleet-tundra-zinc.grok.me/',
-    },
-  ];
+  const POLL_API = 'https://live-scoreboard-polls.thefivegym.workers.dev';
+  const POLL_STORE_KEY = 'tf_poll_votes_v1';
+
+  function emptyPollStore() {
+    const voterId = (crypto.randomUUID && crypto.randomUUID()) || (`v-${Date.now()}-${Math.random().toString(16).slice(2)}`);
+    return { voterId, votes: {} };
+  }
+  function loadPollStore() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(POLL_STORE_KEY) || 'null');
+      if (raw && typeof raw === 'object' && typeof raw.voterId === 'string' && raw.voterId.length >= 8) {
+        return { voterId: raw.voterId, votes: raw.votes && typeof raw.votes === 'object' ? raw.votes : {} };
+      }
+    } catch {}
+    const store = emptyPollStore();
+    savePollStore(store);
+    return store;
+  }
+  function savePollStore(store) {
+    try { localStorage.setItem(POLL_STORE_KEY, JSON.stringify({ voterId: store.voterId, votes: store.votes || {} })); } catch {}
+  }
+  function pollById(id) {
+    return (state.polls || []).find(p => p.id === id) || null;
+  }
+  function lockedOption(poll) {
+    if (!poll) return null;
+    const store = loadPollStore();
+    return poll.myVote || store.votes[poll.id] || null;
+  }
+  function pollSummaryLine(poll) {
+    if (!poll) return 'Loading live tallies…';
+    if (!poll.totalVotes) return 'Be the first to vote';
+    const lead = poll.leader ? `${poll.leader.label} leads` : 'No leader yet';
+    const n = poll.totalVotes;
+    return `${lead} · ${n} vote${n === 1 ? '' : 's'}`;
+  }
   function fanPollsHtml() {
-    const rows = FAN_POLLS.map(p => `<a class="fp-row" href="${esc(p.href)}" target="_blank" rel="noopener noreferrer">
-        <span class="fp-copy"><span class="fp-title">${esc(p.title)}</span><span class="fp-blurb">${esc(p.blurb)}</span></span>
-        <span class="fp-vote">Vote</span>
-      </a>`).join('');
+    let rows;
+    if (state.pollError && !state.polls) {
+      rows = `<div class="fp-status">Live tallies could not be loaded. The rest of the scoreboard is still up to date. <button type="button" class="fp-retry" data-poll-retry>Retry</button></div>`;
+    } else if (!state.polls) {
+      rows = `<div class="fp-status">Loading live tallies…</div>`;
+    } else {
+      rows = `<div class="fp-list">${state.polls.map(p => {
+        const locked = lockedOption(p);
+        const cta = locked ? 'View results · Voted' : 'Vote';
+        return `<div class="fp-row" data-poll-open="${esc(p.id)}">
+          <span class="fp-copy"><span class="fp-title">${esc(p.title)}</span><span class="fp-blurb">${esc(pollSummaryLine(p))}</span></span>
+          <button type="button" class="fp-vote" data-poll-open="${esc(p.id)}">${esc(cta)}</button>
+        </div>`;
+      }).join('')}</div>`;
+      if (state.pollError) rows += `<p class="fp-status muted">Couldn’t refresh tallies. <button type="button" class="fp-retry" data-poll-retry>Retry</button></p>`;
+    }
     return `<section class="fan-polls" id="fan-polls" aria-label="Fan Polls">
       <div class="fp-head"><h2>Fan Polls</h2><p class="fp-lead">Make your pick for the 2027 season.</p></div>
-      <div class="fp-list">${rows}</div>
+      ${rows}
     </section>`;
+  }
+  function paintFanPolls() {
+    if (el.hero && el.hero.hidden) return;
+    const card = document.getElementById('fan-polls');
+    const html = fanPollsHtml();
+    if (card) card.outerHTML = html;
+    else if (el.hero && !el.hero.hidden && el.hero.innerHTML) el.hero.insertAdjacentHTML('beforeend', html);
+  }
+  async function loadFanPolls() {
+    if (state.pollLoading) return;
+    state.pollLoading = true;
+    paintFanPolls();
+    try {
+      const store = loadPollStore();
+      const res = await fetch(`${POLL_API}/api/polls?voterId=${encodeURIComponent(store.voterId)}`, {
+        headers: { 'X-Voter-Id': store.voterId },
+      });
+      if (!res.ok) throw new Error('polls-http');
+      const data = await res.json();
+      const polls = Array.isArray(data.polls) ? data.polls : [];
+      state.polls = polls;
+      state.pollError = false;
+      for (const p of polls) {
+        if (p.myVote) store.votes[p.id] = p.myVote;
+      }
+      savePollStore(store);
+    } catch {
+      state.pollError = true;
+    } finally {
+      state.pollLoading = false;
+      paintFanPolls();
+      if (state.pollOpen) paintPollModal();
+    }
+  }
+  function closePollModal() {
+    const modal = document.getElementById('poll-modal');
+    if (modal) modal.hidden = true;
+    document.body.classList.remove('poll-open');
+    state.pollOpen = null;
+    state.pollFilter = '';
+    state.pollPicked = null;
+    state.pollShowAll = false;
+    state.pollBusy = false;
+    state.pollVoteError = null;
+  }
+  function openPollModal(pollId) {
+    const poll = pollById(pollId);
+    if (!poll) { loadFanPolls(); return; }
+    state.pollOpen = pollId;
+    state.pollFilter = '';
+    state.pollPicked = lockedOption(poll);
+    state.pollShowAll = false;
+    state.pollVoteError = null;
+    const modal = document.getElementById('poll-modal');
+    if (modal) modal.hidden = false;
+    document.body.classList.add('poll-open');
+    paintPollModal();
+    loadFanPolls();
+    const search = document.getElementById('poll-search');
+    if (search) search.focus();
+  }
+  function optionMatches(opt, q) {
+    if (!q) return true;
+    const hay = [opt.label, opt.sublabel, opt.id, opt.meta && opt.meta.abbr, opt.meta && opt.meta.school, opt.meta && opt.meta.conference, opt.meta && opt.meta.mascot].filter(Boolean).join(' ').toLowerCase();
+    return hay.includes(q);
+  }
+  function ballotOptions(poll, q) {
+    const list = poll.options.slice().filter(o => optionMatches(o, q));
+    list.sort((a, b) => {
+      const ac = a.meta && a.meta.contender ? 0 : 1;
+      const bc = b.meta && b.meta.contender ? 0 : 1;
+      if (ac !== bc) return ac - bc;
+      return (a.sortOrder - b.sortOrder) || a.label.localeCompare(b.label);
+    });
+    return list;
+  }
+  function resultOptions(poll, locked) {
+    const ranked = poll.options.slice().sort((a, b) => b.votes - a.votes || a.label.localeCompare(b.label));
+    if (state.pollShowAll || ranked.length <= (poll.resultsPreview || 15)) return ranked;
+    const keep = new Set(ranked.slice(0, poll.resultsPreview || 15).map(o => o.id));
+    if (locked) keep.add(locked);
+    return ranked.filter(o => keep.has(o.id));
+  }
+  function paintPollModal() {
+    const body = document.getElementById('poll-modal-body');
+    const poll = pollById(state.pollOpen);
+    if (!body) return;
+    if (!poll) {
+      body.innerHTML = `<h2 id="poll-title">Fan Polls</h2><p class="poll-note">${state.pollError ? 'Couldn’t load this poll.' : 'Loading…'} ${state.pollError ? '<button type="button" class="fp-retry" data-poll-retry>Retry</button>' : ''}</p>`;
+      return;
+    }
+    const locked = lockedOption(poll);
+    const title = `<h2 id="poll-title">${esc(poll.title)}</h2>
+      <p class="poll-sub">${esc(poll.subtitle || '')}</p>
+      <p class="poll-note">${esc(poll.note || 'One vote per poll — your pick is final.')}</p>`;
+    if (locked) {
+      const shown = resultOptions(poll, locked);
+      const hidden = poll.options.length - shown.length;
+      const rows = shown.map((o, i) => {
+        const mine = o.id === locked;
+        const rank = poll.options.slice().sort((a, b) => b.votes - a.votes || a.label.localeCompare(b.label)).findIndex(x => x.id === o.id) + 1;
+        return `<li class="poll-result${mine ? ' is-mine' : ''}">
+          <div class="poll-result-top">
+            <span class="poll-rank">${rank}</span>
+            <span class="poll-result-who"><strong>${esc(o.label)}</strong>${o.sublabel ? `<span class="poll-result-sub">${esc(o.sublabel)}</span>` : ''}${mine ? ' <span class="poll-yours">Your pick</span>' : ''}</span>
+            <span class="poll-result-n">${o.votes}<span class="poll-pct">${o.pct}%</span></span>
+          </div>
+          <span class="poll-bar" aria-hidden="true"><span class="poll-bar-fill${mine ? ' is-mine' : ''}" style="width:${Math.max(o.pct, o.votes ? 1.5 : 0)}%"></span></span>
+        </li>`;
+      }).join('');
+      body.innerHTML = `${title}
+        <p class="poll-tally"><strong>${poll.totalVotes}</strong> vote${poll.totalVotes === 1 ? '' : 's'} · ${esc(pollSummaryLine(poll))}</p>
+        <ol class="poll-results">${rows}</ol>
+        ${hidden > 0 ? `<button type="button" class="poll-all" data-poll-all>Show all ${poll.options.length} ${poll.kind === 'athlete' ? 'gymnasts' : 'teams'}</button>` : (poll.options.length > (poll.resultsPreview || 15) && state.pollShowAll ? `<button type="button" class="poll-all" data-poll-all>Show top ${poll.resultsPreview || 15}</button>` : '')}`;
+      return;
+    }
+    const q = (state.pollFilter || '').trim().toLowerCase();
+    const opts = ballotOptions(poll, q);
+    const search = poll.searchable && poll.options.length > 10
+      ? `<label class="poll-search-label">Find your ${poll.kind === 'athlete' ? 'gymnast' : 'team'}
+          <input id="poll-search" class="poll-search" type="search" placeholder="${poll.kind === 'athlete' ? 'Search gymnasts…' : 'Search teams…'}" value="${esc(state.pollFilter || '')}" autocomplete="off" spellcheck="false">
+        </label>`
+      : '';
+    const cards = opts.length
+      ? opts.map(o => {
+          const on = state.pollPicked === o.id;
+          return `<label class="poll-opt${on ? ' is-on' : ''}" data-poll-option="${esc(o.id)}">
+            <input type="radio" name="poll-option" value="${esc(o.id)}" ${on ? 'checked' : ''}>
+            <span class="poll-opt-copy"><span class="poll-opt-name">${esc(o.label)}</span>${o.sublabel ? `<span class="poll-opt-sub">${esc(o.sublabel)}</span>` : ''}</span>
+          </label>`;
+        }).join('')
+      : `<p class="poll-empty">No matches. Try another search.</p>`;
+    const err = state.pollVoteError ? `<p class="poll-error">${esc(state.pollVoteError)}</p>` : '';
+    body.innerHTML = `${title}${search}
+      <div class="poll-options" role="radiogroup" aria-label="${esc(poll.title)}">${cards}</div>
+      ${err}
+      <button type="button" class="poll-lock" data-poll-lock ${!state.pollPicked || state.pollBusy ? 'disabled' : ''}>${state.pollBusy ? 'Locking in…' : 'Lock in vote'}</button>`;
+    const input = document.getElementById('poll-search');
+    if (input) {
+      const val = input.value;
+      input.focus();
+      try { input.setSelectionRange(val.length, val.length); } catch {}
+    }
+  }
+  async function submitPollVote() {
+    const poll = pollById(state.pollOpen);
+    const optionId = state.pollPicked;
+    if (!poll || !optionId || state.pollBusy || lockedOption(poll)) return;
+    state.pollBusy = true;
+    state.pollVoteError = null;
+    paintPollModal();
+    const store = loadPollStore();
+    try {
+      const res = await fetch(`${POLL_API}/api/polls/${encodeURIComponent(poll.id)}/vote`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'X-Voter-Id': store.voterId },
+        body: JSON.stringify({ optionId, voterId: store.voterId }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (data.poll) {
+        state.polls = (state.polls || []).map(p => p.id === data.poll.id ? data.poll : p);
+      }
+      const locked = data.lockedOptionId || (data.poll && data.poll.myVote);
+      if (locked) {
+        store.votes[poll.id] = locked;
+        savePollStore(store);
+        state.pollPicked = locked;
+        state.pollBusy = false;
+        state.pollVoteError = null;
+        paintFanPolls();
+        paintPollModal();
+        return;
+      }
+      throw new Error(data.error || 'vote-failed');
+    } catch {
+      state.pollBusy = false;
+      state.pollVoteError = 'Your vote could not be saved. Check your connection and try again.';
+      paintPollModal();
+    }
   }
   function weekendWatchHtml(block, asOf, season) {
     const stored = (block && block.weekends) || [];
@@ -1443,6 +1659,7 @@
     if (el.hero && !el.hero.hidden) {
       state.heroTens = tens;
       el.hero.innerHTML = `${preview}${viewLast}${seasonHeroHtml(tens, aa, season)}${weekendWatchHtml(blockS, asOf, season)}${fanPollsHtml()}`;
+      if (!state.polls && !state.pollLoading) loadFanPolls();
     }
     const box = el.pulse;
     if (box && !box.hidden) {
@@ -1639,6 +1856,25 @@
     if (shareSys) { e.preventDefault(); systemShare(); return; }
     const shareCopy = e.target.closest('[data-share-copy]');
     if (shareCopy) { e.preventDefault(); copyShareLink(shareCopy); return; }
+    if (e.target.id === 'poll-modal' || e.target.closest('[data-poll-close]')) {
+      closePollModal();
+      return;
+    }
+    const pollOpenBtn = e.target.closest('[data-poll-open]');
+    if (pollOpenBtn) { e.preventDefault(); openPollModal(pollOpenBtn.dataset.pollOpen); return; }
+    const pollRetry = e.target.closest('[data-poll-retry]');
+    if (pollRetry) { e.preventDefault(); loadFanPolls(); return; }
+    const pollOpt = e.target.closest('[data-poll-option]');
+    if (pollOpt) {
+      state.pollPicked = pollOpt.dataset.pollOption;
+      state.pollVoteError = null;
+      paintPollModal();
+      return;
+    }
+    const pollLock = e.target.closest('[data-poll-lock]');
+    if (pollLock) { e.preventDefault(); submitPollVote(); return; }
+    const pollAll = e.target.closest('[data-poll-all]');
+    if (pollAll) { e.preventDefault(); state.pollShowAll = !state.pollShowAll; paintPollModal(); return; }
     const teamEl = e.target.closest('[data-team]');
     if (teamEl) {
       e.preventDefault();
@@ -2027,6 +2263,7 @@
 
   function closeChrome() {
     closeShareModal();
+    closePollModal();
     const favBox = document.getElementById('fav-picker');
     const favBtn = document.getElementById('fav-picker-btn');
     if (favBox) favBox.hidden = true;
@@ -2113,6 +2350,15 @@
   }
   document.getElementById('home-btn')?.addEventListener('click', goHome);
   document.getElementById('title-home')?.addEventListener('click', goHome);
+  document.addEventListener('input', e => {
+    if (e.target && e.target.id === 'poll-search') {
+      state.pollFilter = e.target.value;
+      paintPollModal();
+    }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && state.pollOpen) closePollModal();
+  });
   window.addEventListener('popstate', () => { applyFromUrl(); });
 
   // ---------- boot ----------
