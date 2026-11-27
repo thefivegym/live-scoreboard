@@ -24,7 +24,7 @@
   };
 
   const params = new URLSearchParams(location.search);
-  const demo = params.has('demo');
+  let demo = params.has('demo');
   const state = {
     date: null,
     schedules: {},        // season -> {meets, ...} | null
@@ -57,8 +57,8 @@
   const needs4 = n => n !== null && n !== undefined && Math.round(n * 10000) % 10 !== 0;
   const fmtScore = n => n === null || n === undefined ? '—' : n.toFixed(Math.max(prec, needs4(n) ? 4 : 3));
   const precisionOf = d => (d && d.teams && d.teams.some(t => needs4(t.score) || t.rotations.some(r => needs4(r.score) || r.gymnasts.some(g => needs4(g.score))))) ? 4 : 3;
-  const NOW_OVERRIDE = (() => { const v = new URLSearchParams(location.search).get('now'); return /^\d{4}-\d{2}-\d{2}$/.test(v || '') ? v : null; })();
-  const SEASON_OVERRIDE = (() => { const v = new URLSearchParams(location.search).get('season'); return /^\d{4}$/.test(v || '') ? Number(v) : null; })();
+  let NOW_OVERRIDE = (() => { const v = new URLSearchParams(location.search).get('now'); return /^\d{4}-\d{2}-\d{2}$/.test(v || '') ? v : null; })();
+  let SEASON_OVERRIDE = (() => { const v = new URLSearchParams(location.search).get('season'); return /^\d{4}$/.test(v || '') ? Number(v) : null; })();
   const todayChicago = () => NOW_OVERRIDE || new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const addDays = (ymd, n) => { const d = new Date(ymd + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
   const seasonFor = ymd => { const [y, m] = ymd.split('-').map(Number); return m >= 7 ? y + 1 : y; };
@@ -242,10 +242,11 @@
       history.replaceState(null, '', `${location.pathname}?${qs}`);
       return;
     }
-    if (state.date) p.set('date', state.date);
     const last = [...state.open].pop();
+    const isDefaultHome = !demo && !NOW_OVERRIDE && !SEASON_OVERRIDE && !state.team && !last && state.date === todayChicago();
+    if (state.date && !isDefaultHome) p.set('date', state.date);
     const qs = p.toString().replace(/^demo=&?/, 'demo&').replace(/demo=$/, 'demo');
-    const url = `${location.pathname}?${qs}${last ? `#meet=${last}` : ''}`;
+    const url = `${location.pathname}${qs ? `?${qs}` : ''}${last ? `#meet=${last}` : ''}`;
     history.replaceState(null, '', url);
   }
 
@@ -1929,7 +1930,7 @@
   el.prev.addEventListener('click', () => setDate(addDays(state.date, -1)));
   el.next.addEventListener('click', () => setDate(addDays(state.date, 1)));
   el.today.addEventListener('click', () => {
-    if (demo) { location.href = location.pathname; return; }
+    if (demo) { goHome(); return; }
     setDate(todayChicago());
   });
   el.date.addEventListener('change', () => { if (isYmd(el.date.value)) setDate(el.date.value); });
@@ -1971,6 +1972,96 @@
     await setDate(date, { keepOpen: true });
     document.getElementById(`meet-${key}`)?.scrollIntoView({ block: 'start' });
   }
+
+  function closeChrome() {
+    closeShareModal();
+    const favBox = document.getElementById('fav-picker');
+    const favBtn = document.getElementById('fav-picker-btn');
+    if (favBox) favBox.hidden = true;
+    if (favBtn) favBtn.setAttribute('aria-expanded', 'false');
+    const teamList = document.getElementById('team-list');
+    const teamSearch = document.getElementById('team-search');
+    if (teamList) teamList.hidden = true;
+    if (teamSearch) {
+      teamSearch.value = '';
+      teamSearch.setAttribute('aria-expanded', 'false');
+    }
+  }
+  function homePath() {
+    return new URL('./', document.baseURI).pathname;
+  }
+  function isCleanHomeUrl() {
+    return !location.search && !location.hash;
+  }
+  async function goHome(ev) {
+    if (ev) ev.preventDefault();
+    const already = isCleanHomeUrl() && !demo && !NOW_OVERRIDE && !SEASON_OVERRIDE && !state.team && (state.filter || 'all') === 'all' && !state.open.size && state.date === todayChicago();
+    if (!already) history.pushState(null, '', homePath());
+    await resetToDefaultHome();
+  }
+  async function resetToDefaultHome() {
+    demo = false;
+    NOW_OVERRIDE = null;
+    SEASON_OVERRIDE = null;
+    if (el.banner) { el.banner.hidden = true; el.banner.innerHTML = ''; }
+    closeChrome();
+    state.filter = 'all';
+    state.open.clear();
+    state.tab = {};
+    state.flashKey = null;
+    closeTeam();
+    document.title = 'The Five That Score — Live D1 Scoreboard';
+    window.scrollTo(0, 0);
+    await setDate(todayChicago());
+  }
+  async function applyFromUrl() {
+    const p = new URLSearchParams(location.search);
+    demo = p.has('demo');
+    const now = p.get('now');
+    NOW_OVERRIDE = /^\d{4}-\d{2}-\d{2}$/.test(now || '') ? now : null;
+    const s = p.get('season');
+    SEASON_OVERRIDE = /^\d{4}$/.test(s || '') ? Number(s) : null;
+    if (demo) {
+      el.banner.hidden = false;
+      el.banner.innerHTML = `<strong>Demo mode</strong> — real 2026 data, so you can preview the scoreboard in the offseason.
+      <a href="?demo&date=${DEMO.date}#meet=${DEMO.meet}">2026 NCAA final</a> ·
+      <a href="?demo&date=${DEMO.regular}">Regular season (Feb 13)</a> ·
+      <a href="?demo&date=${DEMO.conf}">Conference championships (Mar 21)</a> ·
+      <a href="./">Exit demo</a>`;
+    } else if (el.banner) {
+      el.banner.hidden = true;
+      el.banner.innerHTML = '';
+    }
+    closeChrome();
+    state.filter = 'all';
+    state.open.clear();
+    state.flashKey = null;
+    const qDate = p.get('date');
+    const qTeam = (p.get('team') || '').toLowerCase();
+    const qSeason = p.get('season');
+    const seasonArg = qSeason && /^\d{4}$/.test(qSeason) ? Number(qSeason) : null;
+    const start = isYmd(qDate) ? qDate : (demo ? DEMO.date : todayChicago());
+    const hashMeet = readHashMeet() || (demo && !qDate && !qTeam ? DEMO.meet : null);
+    if (hashMeet) state.open.add(hashMeet);
+    if (qTeam) {
+      await openTeam(qTeam, seasonArg);
+    } else {
+      closeTeam();
+      await setDate(start, { keepOpen: !!hashMeet });
+      if (hashMeet) {
+        if (state.meets.some(m => meetKey(m) === hashMeet)) {
+          flashMeet(hashMeet);
+          document.getElementById(`meet-${hashMeet}`)?.scrollIntoView({ block: 'start' });
+        } else {
+          state.open.delete(hashMeet);
+          await openDeepLink(hashMeet);
+        }
+      }
+    }
+  }
+  document.getElementById('home-btn')?.addEventListener('click', goHome);
+  document.getElementById('title-home')?.addEventListener('click', goHome);
+  window.addEventListener('popstate', () => { applyFromUrl(); });
 
   // ---------- boot ----------
   loadFavs();

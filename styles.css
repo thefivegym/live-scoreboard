@@ -17,13 +17,49 @@ main.wrap { flex: 1; padding-top: 10px; padding-bottom: 30px; }
 .muted { color: var(--muted); }
 
 .site-header { background: var(--brand); color: #fff; padding: 14px 0 12px; padding-top: max(14px, env(safe-area-inset-top)); }
-.site-header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; }
-.site-header h1 { margin: 0; font-size: 1.12rem; line-height: 1.25; font-weight: 700; letter-spacing: .01em; }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
+.header-brand { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1 1 220px; }
+.site-header h1 { margin: 0; font-size: 1.12rem; line-height: 1.25; font-weight: 700; letter-spacing: .01em; min-width: 0; }
 .site-header .brand { color: var(--accent); }
 .site-header .dash { opacity: .6; }
-.header-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.handle { color: #cfcaf5; text-decoration: none; font-size: .9rem; font-weight: 600; }
+.title-home { color: inherit; text-decoration: none; }
+.title-home:hover, .title-home:focus-visible { text-decoration: none; }
+.title-home:hover .brand, .title-home:focus-visible .brand { color: #ffe389; }
+.title-home:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.home-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  padding: 0 10px 0 8px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 75%, #fff);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .03em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.home-btn:hover, .home-btn:focus-visible {
+  background: var(--accent);
+  color: #14112b;
+  border-color: var(--accent);
+}
+.home-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.home-icon { display: block; flex-shrink: 0; }
+.header-meta { display: flex; align-items: center; justify-content: flex-end; gap: 8px 10px; flex-wrap: wrap; margin-left: auto; }
+.handle { color: #cfcaf5; text-decoration: none; font-size: .82rem; font-weight: 600; white-space: nowrap; }
 .handle:hover { color: #fff; text-decoration: underline; }
+@media (max-width: 430px) {
+  .site-header { padding: 10px 0 10px; padding-top: max(10px, env(safe-area-inset-top)); }
+  .site-header h1 { font-size: 1rem; }
+  .home-btn { height: 28px; padding: 0 9px 0 7px; font-size: .72rem; }
+  .handle { font-size: .75rem; }
+}
 .visit-count {
   margin: 0;
   display: inline-flex;

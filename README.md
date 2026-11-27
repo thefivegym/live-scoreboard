@@ -1,7 +1,7 @@
 # The Five That Score — Live D1 Scoreboard
 
 A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
-[@thefivethatscore](https://x.com/thefivethatscore). Built for GitHub Pages.
+[@TheFiveThatScore](https://www.instagram.com/TheFiveThatScore/) on Instagram and [@TheFiveGym](https://x.com/TheFiveGym) on X. Built for GitHub Pages.
 
 - **Perfect 10s** and **highest all-around** sit in a gold highlight at the top of the home page (just under the header; the Next meet bar and visit counter stay visible). They are computed from official-meet Virtius scores (10.0 finals only; all-around = all four events in one meet). Ties for the top AA are all listed. Today’s live meets are merged in the browser, with a brief “NEW” highlight when a 10 lands live. Empty seasons still get a celebratory card: “No perfect 10s yet this season.” Preview a past season with `?season=2026` or a mid-season date with `?now=2026-03-15`.
 - **National rankings** below that (Top 25, expandable to the full list) and on each team profile. After NCAA Championships the card shows official final standings (champion, other Four on the Floor, semifinalists, regional field, then remaining teams in final regular-season NQS order), labeled “{year} Final Standings (after NCAA Championships),” from Road to Nationals `GET /api/women/finalresults/{year}`. Until the next WCGA/CGA preseason coaches poll is released, the home page and profiles keep showing that final championship order (profiles: “No. X — 2026 final”). The poll then takes over automatically once it is stored as published; weekly RTN NQS rankings follow once the new season starts. Ranks are never invented.
