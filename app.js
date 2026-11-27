@@ -189,7 +189,7 @@
     if (!t) return '';
     const on = state.favs.has(t.slug);
     const label = on ? `Unstar ${t.name}` : `Star ${t.name}`;
-    return `<span class="star-btn${on ? ' on' : ''}${compact ? ' compact' : ''}" role="button" tabindex="0" data-fav-toggle="${esc(t.slug)}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">★</span>`;
+    return `<span class="star-btn${on ? ' on' : ''}${compact ? ' compact' : ''}" role="button" tabindex="0" data-fav-toggle="${esc(t.slug)}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">${on ? '★' : '☆'}</span>`;
   }
   function flashMeet(key) {
     if (!key) return;
@@ -768,6 +768,14 @@
   }
 
   async function openTeam(slug, season) {
+    closeFavPicker();
+    const teamSearch = document.getElementById('team-search');
+    const teamList = document.getElementById('team-list');
+    if (teamList) teamList.hidden = true;
+    if (teamSearch) {
+      teamSearch.value = '';
+      teamSearch.setAttribute('aria-expanded', 'false');
+    }
     await Promise.all([loadMain(), loadTeams()]);
     const team = state.d1.bySlug.get(slug);
     if (!team) {
@@ -947,10 +955,13 @@
       const q = input.value.trim().toLowerCase();
       const teams = (state.d1 && state.d1.teams) || [];
       const filtered = teams.filter(t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q));
-      list.innerHTML = filtered.length ? filtered.map(t => `<li role="option" data-team="${esc(t.slug)}" id="opt-${esc(t.slug)}">
-        <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
-        <span class="opt-name">${esc(t.name)}</span>
-        <span class="opt-con muted">${esc(t.conference)}</span>
+      list.innerHTML = filtered.length ? filtered.map(t => `<li role="option" data-team="${esc(t.slug)}" id="opt-${esc(t.slug)}" class="team-opt">
+        <span class="team-opt-main">
+          <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
+          <span class="opt-name">${esc(t.name)}</span>
+          <span class="opt-con muted">${esc(t.conference)}</span>
+        </span>
+        ${starBtn(t.name)}
       </li>`).join('') : `<li class="muted" aria-disabled="true">No teams match “${esc(input.value)}”</li>`;
       open();
       active = filtered.length ? 0 : -1;
@@ -972,6 +983,7 @@
       else if (e.key === 'Escape') { close(); }
     });
     list.addEventListener('mousedown', e => {
+      if (e.target.closest('[data-fav-toggle]')) { e.preventDefault(); e.stopPropagation(); return; }
       const it = e.target.closest('[data-team]');
       if (it) { e.preventDefault(); choose(it.dataset.team); }
     });
@@ -981,9 +993,20 @@
   }
 
 
+  function favRow(t) {
+    const on = state.favs.has(t.slug);
+    const label = on ? `Unstar ${t.name}` : `Star ${t.name}`;
+    return `<li class="fav-pick-item${on ? ' is-fav' : ''}">
+      <button type="button" class="star-btn fav-star${on ? ' on' : ''}" data-fav-toggle="${esc(t.slug)}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">${on ? '★' : '☆'}</button>
+      <a class="fav-pick-main" href="${esc(teamHref(t.slug))}" data-team="${esc(t.slug)}">
+        <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
+        <span class="opt-name">${esc(t.name)}</span>
+        <span class="opt-con muted">${esc(t.conference)}</span>
+      </a>
+    </li>`;
+  }
   function renderFavPicker() {
     const btn = document.getElementById('fav-picker-btn');
-    const box = document.getElementById('fav-picker');
     const list = document.getElementById('fav-picker-list');
     const search = document.getElementById('fav-picker-search');
     if (!btn || !list) return;
@@ -991,33 +1014,39 @@
     btn.classList.toggle('has-favs', n > 0);
     btn.innerHTML = n ? `★ Favorites <span class="pill-count">${n}</span>` : '★ Favorites';
     const q = (search && search.value || '').trim().toLowerCase();
-    const teams = ((state.d1 && state.d1.teams) || []).slice().sort((a, b) => {
-      const fa = state.favs.has(a.slug) ? 0 : 1, fb = state.favs.has(b.slug) ? 0 : 1;
-      return (fa - fb) || a.name.localeCompare(b.name);
-    }).filter(t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q));
-    list.innerHTML = teams.map(t => {
-      const on = state.favs.has(t.slug);
-      return `<li>
-        <button type="button" class="fav-pick-row${on ? ' on' : ''}" data-fav-toggle="${esc(t.slug)}">
-          <span class="star-btn${on ? ' on' : ''}" aria-hidden="true">★</span>
-          <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
-          <span class="opt-name">${esc(t.name)}</span>
-          <span class="opt-con muted">${esc(t.conference)}</span>
-        </button>
-      </li>`;
-    }).join('') || '<li class="muted" style="padding:8px 12px">No teams match.</li>';
+    const match = t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q);
+    const all = ((state.d1 && state.d1.teams) || []).filter(match);
+    const favs = all.filter(t => state.favs.has(t.slug)).sort((a, b) => a.name.localeCompare(b.name));
+    const rest = all.filter(t => !state.favs.has(t.slug)).sort((a, b) => a.name.localeCompare(b.name));
+    let html = '';
+    if (favs.length) {
+      html += `<li class="fav-group-label">Your favorites</li>` + favs.map(favRow).join('');
+      if (rest.length) html += `<li class="fav-group-label">All teams</li>`;
+    }
+    html += rest.map(favRow).join('');
+    if (!html) html = `<li class="muted fav-empty">No teams match.</li>`;
+    list.innerHTML = html;
+  }
+  function closeFavPicker() {
+    const box = document.getElementById('fav-picker');
+    const btn = document.getElementById('fav-picker-btn');
+    if (box) box.hidden = true;
+    if (btn) btn.setAttribute('aria-expanded', 'false');
   }
   function initFavPicker() {
     const btn = document.getElementById('fav-picker-btn');
     const box = document.getElementById('fav-picker');
     const search = document.getElementById('fav-picker-search');
     if (!btn || !box) return;
-    const close = () => { box.hidden = true; btn.setAttribute('aria-expanded', 'false'); };
     const open = () => { renderFavPicker(); box.hidden = false; btn.setAttribute('aria-expanded', 'true'); search && search.focus(); };
-    btn.addEventListener('click', e => { e.stopPropagation(); box.hidden ? open() : close(); });
+    btn.addEventListener('click', e => { e.stopPropagation(); box.hidden ? open() : closeFavPicker(); });
     if (search) search.addEventListener('input', renderFavPicker);
     document.addEventListener('click', e => {
-      if (!box.hidden && !e.target.closest('#fav-picker, #fav-picker-btn')) close();
+      if (box.hidden) return;
+      // Re-rendering the list during a star click detaches the target, so also
+      // ignore detached star clicks and anything still inside the picker.
+      if (e.target.closest('#fav-picker, #fav-picker-btn, [data-fav-toggle]')) return;
+      closeFavPicker();
     });
     renderFavPicker();
   }
@@ -1559,6 +1588,7 @@
     if (favEl) {
       e.preventDefault();
       e.stopPropagation();
+      if (typeof e.stopImmediatePropagation === 'function') e.stopImmediatePropagation();
       toggleFav(favEl.dataset.favToggle);
       return;
     }

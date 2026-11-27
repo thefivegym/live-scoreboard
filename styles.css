@@ -423,9 +423,10 @@ button.card-head .team-link { pointer-events: auto; }
 .pill.on .pill-count, .fav-picker-btn.has-favs .pill-count { background: color-mix(in srgb, #fff 20%, transparent); color: inherit; }
 @media (prefers-color-scheme: dark) { .pill.on .pill-count { background: #14112b; color: var(--accent); } }
 
-.star-btn { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 999px; color: var(--muted); cursor: pointer; font-size: .95rem; line-height: 1; flex-shrink: 0; }
-.star-btn.compact { width: 20px; height: 20px; font-size: .85rem; }
+.star-btn { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border: 0; background: transparent; border-radius: 999px; color: var(--muted); cursor: pointer; font-size: 1.05rem; line-height: 1; flex-shrink: 0; padding: 0; font-family: inherit; }
+.star-btn.compact { width: 28px; height: 28px; font-size: 1rem; }
 .star-btn:hover, .star-btn:focus-visible { color: var(--accent); outline: none; background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.star-btn:active { transform: scale(.94); background: color-mix(in srgb, var(--accent) 28%, transparent); }
 .star-btn.on { color: var(--accent); text-shadow: 0 0 8px color-mix(in srgb, var(--accent) 50%, transparent); }
 .card.is-fav { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
 .fav-flag { color: #14112b; background: var(--accent); font-size: .65rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; }
@@ -440,9 +441,19 @@ a.tv-badge:hover { border-color: var(--up); color: var(--up); }
 .fav-picker { position: absolute; z-index: 9; left: 0; right: 0; top: 100%; margin: 4px 0 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 10px 10px 8px; }
 .fav-picker[hidden] { display: none; }
 #fav-picker-search { width: 100%; height: 36px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px; padding: 0 10px; font: inherit; margin: 4px 0 8px; }
-.fav-picker-list { list-style: none; margin: 0; padding: 0; max-height: min(50vh, 320px); overflow: auto; }
-.fav-pick-row { display: flex; width: 100%; align-items: center; gap: 8px; padding: 7px 8px; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; border-radius: 8px; }
-.fav-pick-row:hover, .fav-pick-row.on { background: color-mix(in srgb, var(--accent) 22%, var(--card)); }
+.fav-picker-list { list-style: none; margin: 0; padding: 0; max-height: min(50vh, 360px); overflow: auto; }
+.fav-group-label { font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 8px 4px; }
+.fav-group-label:first-child { padding-top: 2px; }
+.fav-empty { padding: 8px 12px; }
+.fav-pick-item { display: flex; align-items: center; gap: 2px; border-radius: 10px; }
+.fav-pick-item.is-fav { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.fav-star { width: 44px; height: 44px; flex: 0 0 44px; font-size: 1.25rem; }
+.fav-pick-main { display: flex; flex: 1; align-items: center; gap: 8px; min-width: 0; min-height: 44px; padding: 6px 10px 6px 4px; border-radius: 8px; color: inherit; text-decoration: none; cursor: pointer; }
+.fav-pick-main:hover, .fav-pick-main:focus-visible { background: color-mix(in srgb, var(--accent) 22%, var(--card)); outline: none; }
+.fav-pick-main:focus-visible { box-shadow: 0 0 0 2px var(--accent); }
+.team-opt { display: flex; align-items: center; gap: 4px; }
+.team-opt-main { display: flex; flex: 1; align-items: center; gap: 10px; min-width: 0; }
+.team-list li.team-opt .star-btn { margin-right: 6px; }
 
 .weekend-watch {
   margin: 10px 0 0;
