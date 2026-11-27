@@ -21,6 +21,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { mergeVirtiusHighs } from './build-rosters.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
@@ -293,7 +294,7 @@ async function loadSeasonMeets(season) {
 
 function extractSession(json, meet) {
   const m = json && json.meet;
-  if (!m) return { perfect10s: [], allArounds: [], teamScores: [], eventHighs: [] };
+  if (!m) return { perfect10s: [], allArounds: [], teamScores: [], eventHighs: [], gymnastScores: [] };
   const title = meet.desc || m.name || [ ...(meet.home || []), ...(meet.away || []) ].join(' vs ');
   const date = isYmd(meet.date) ? meet.date : (isYmd(m.meet_date) ? m.meet_date : null);
   const perfect10s = [];
@@ -379,7 +380,15 @@ function extractSession(json, meet) {
       .filter((x, i, arr) => arr.findIndex(y => y.athlete === x.athlete && y.team === x.team) === i);
     eventHighs.push(...tied);
   }
-  return { perfect10s, allArounds, teamScores, eventHighs };
+  const gymnastScores = [...aaMap.values()].map(rec => ({
+    athlete: rec.athlete, team: rec.team,
+    vault: rec.events.vault ?? null, bars: rec.events.bars ?? null,
+    beam: rec.events.beam ?? null, floor: rec.events.floor ?? null,
+    aa: EVENTS.every(e => rec.events[e] != null)
+      ? Number(EVENTS.reduce((s, e) => s + rec.events[e], 0).toFixed(4))
+      : null,
+  }));
+  return { perfect10s, allArounds, teamScores, eventHighs, gymnastScores };
 }
 
 async function fetchVirtius(key, attempt = 1) {
@@ -563,6 +572,7 @@ async function buildSeasonStats() {
           date: meet.date, meet_id: meet.id ?? null, name: meet.desc || meet.name || null,
           perfect10s: extracted.perfect10s, allArounds: extracted.allArounds,
           teamScores: extracted.teamScores, eventHighs: extracted.eventHighs,
+          gymnastScores: extracted.gymnastScores,
           fetched_at: new Date().toISOString(),
         };
         ok++;
@@ -595,6 +605,24 @@ async function buildSeasonStats() {
   // Drop cache entries that no longer belong to a known session? Keep them; they are small.
   await writeJsonIfChanged(cachePath, { generated_at: new Date().toISOString(), sessions: cache.sessions }, ['generated_at', 'fetched_at']);
   await writeJsonIfChanged(outPath, { generated_at: new Date().toISOString(), seasons });
+
+  // Merge official Virtius event highs into committed roster files (fill n/a as the season progresses).
+  // Does not invent athletes or lower a verified existing high.
+  for (const yr of Object.keys(seasons)) {
+    const season = Number(yr);
+    const rosterPath = join(DATA, 'rosters', `${season}.json`);
+    const roster = await readJson(rosterPath);
+    if (!roster || !roster.teams) continue;
+    const { rosterFile, updated } = mergeVirtiusHighs(roster, cache.sessions, { season });
+    if (updated) {
+      rosterFile.generated_at = new Date().toISOString();
+      rosterFile.coverage = { ...(rosterFile.coverage || {}), virtius_highs_merged: updated };
+      await writeJsonIfChanged(rosterPath, rosterFile, ['generated_at']);
+      log(`  merged ${updated} Virtius season-high updates into rosters/${season}.json`);
+    } else {
+      log(`  roster highs unchanged for ${season}`);
+    }
+  }
 }
 
 async function fetchWeek(season, week) {

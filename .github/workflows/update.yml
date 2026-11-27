@@ -9,6 +9,10 @@ on:
         description: 'Re-scrape announced 2027 meets from school athletics sites'
         type: boolean
         default: false
+      refresh_rosters_coaches:
+        description: 'Refresh official school rosters and coaching staff bios'
+        type: boolean
+        default: false
   schedule:
     # Daily schedule refresh (11:15 UTC = 6:15 AM CT / 5:15 AM CDT-ish). Runs year-round.
     - cron: '15 11 * * *'
@@ -31,7 +35,7 @@ jobs:
   update:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
@@ -48,6 +52,11 @@ jobs:
         env:
           SCOREBOARD_REPO: ${{ github.workspace }}
         run: python3 scripts/announced-schedule/reparse_or_scrape.py
+      - name: Refresh coaching staff bios and official 2027 rosters
+        if: github.event.schedule == '15 12 * * 0' || github.event.inputs.refresh_rosters_coaches == 'true'
+        run: |
+          node scripts/build-coaches.mjs
+          node scripts/build-rosters.mjs --schools-only
       - name: Build schedule and fallback results from Road to Nationals
         run: node scripts/build-schedule.mjs
       - name: Build national rankings and season stats

@@ -1,0 +1,1847 @@
+{
+ "generated_at": "2026-11-27T15:25:03.606Z",
+ "source": "Official school athletics coaching staff / roster pages",
+ "teams": {
+  "air-force": {
+   "name": "Air Force",
+   "sourceUrl": "https://goairforcefalcons.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Josh Loeser",
+     "title": "Interim Head Coach",
+     "bio": "Josh Loeser, a USAG and conference coach of the year, is in his sixth season as the head coach of the Air Force men\u2019s gymnastics team. The Falcons have soared to new heights under Loeser\u2019s watch, accounting for the program\u2019s first-ever NCAA champion and the team\u2019s best national finish in more than 50 years.",
+     "role": "head"
+    },
+    {
+     "name": "Eddie Penev",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Lt Col Jessa Liegl",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "alabama": {
+   "name": "Alabama",
+   "sourceUrl": "https://rolltide.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Ashley Johnston",
+     "title": "Head Coach",
+     "bio": "Personal Information Hometown: Wheaton, Ill. Education: Alabama, 2011 (bachelor's); Alabama, 2013 (master's) Spouse: Jason Children: Colton, Josie Coaching Experience 2022-present: Alabama, Head Coach 2019-22: Auburn, Associate Head Coach 2018: Illinois, Assistant Coach Playing Experience 2009-2013: Alabama Ashley Johnston, a 10-time All-American and member of Alabama's national championship winning teams in 2011 and 2012, is entering her fifth year as head coach of the Alabama gymnastics program.",
+     "role": "head"
+    },
+    {
+     "name": "Justin Spring",
+     "title": "Associate Head Coach",
+     "bio": "Personal Information Hometown: Burke, Va. Education: Illinois, 2006 (bachelor's); Illinois, 2014 (master's) Spouse: Tori Children: Callie, Cody, Elliot Coaching Experience 2024-present: Alabama, Associate Head Coach 2022-23: Alabama, Assistant Coach 2011-22: Illinois, Head Coach (Men's) 2007-10: Illinois, Assistant Coach (Men's) Playing Experience 2016-19: Illinois Justin Spring, entering his fifth season with the Crimson Tide, joined the Alabama gymnastics staff in June 2022.",
+     "role": "assistant"
+    },
+    {
+     "name": "Amelia Hundley",
+     "title": "Assistant Coach",
+     "bio": "Personal Information Hometown: Hamilton, Ohio Education: Florida, 2021 (bachelor's) Coaching Experience 2023-present: Alabama, Assistant Coach 2022-23: North Carolina, Assistant Coach 2021: Florida, Student Assistant Coach Playing Experience 2017-20: Florida Amelia Hundley, entering her fourth season with the Crimson Tide, joined the Alabama gymnastics staff in May 2023.",
+     "role": "assistant"
+    },
+    {
+     "name": "Ross Thompson",
+     "title": "Assistant Coach",
+     "bio": "Personal Information Hometown: Kansas City, Mo. Coaching Experience 2024-present: Alabama, Assistant Coach 2023-24: Illinois, Head Coach Playing Experience 2016-19: Illinois Ross Thompson, entering his third season with the Crimson Tide, joined the Alabama gymnastics staff in May 2024.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "alaska": {
+   "name": "Alaska",
+   "sourceUrl": "https://goseawolves.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Marie-Sophie Boggasch",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Katie Davenport",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Kendra McPheters",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "arizona": {
+   "name": "Arizona",
+   "sourceUrl": "https://arizonawildcats.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "John Court",
+     "title": "Head Coach",
+     "bio": "Veteran Arizona gymnastics assistant coach John Court wrapped up his eighth season as the program's head coach in 2026. He earned the full-time title of head coach in March of 2018 after earlier being named the interim head coach in August of 2017.",
+     "role": "head"
+    },
+    {
+     "name": "Emma Strom",
+     "title": "Assistant Coach & Co-Recruiting Coordinator",
+     "bio": "Strom was hired as an assistant coach in April 2026. Strom is beginning her coaching career at Arizona following her four-year career as a GymCat.",
+     "role": "assistant"
+    },
+    {
+     "name": "Jaime Fernandez",
+     "title": "Assistant Coach, Performance Enhancement",
+     "bio": "Assistant Director, Performance Enhancement MS in Kinesiology, CSCS, SCCC \u00b7 Performance enhancement coach for Gymnastics, Men\u2019s Tennis, and Track and Field - Cross Country \u00b7 Responsible for undergraduate internship program and McKale weight room schedule and organization \u00b7 Master of Science in Kinesiology \u2013 University of Wisconsin Madison \u00b7 Bachelor of Science in Exercise Physiology \u2013 Brigham Young University Idaho \u00b7 Three straight NCAA tournament appearances, including national championship\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Julie Ballard Clark",
+     "title": "Assistant Coach",
+     "bio": "Ballard Clark was hired as an assistant coach in April 2026. Ballard Clark, a Georgia graduate, comes to Arizona with experience as a highly accomplished coach, program director, and former elite gymnast.",
+     "role": "assistant"
+    },
+    {
+     "name": "Kendra Combs",
+     "title": "Assistant Coach & Co-Recruiting Coordinator",
+     "bio": "Kendra Combs was hired as Arizona Gymnastics' third assistant coach in September 2026. Combs comes to Arizona following three years at Illinois State where she was the lead vault coach, co-lead bars coach, and assisted on beam and floor for the Redbirds.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "arizona-state": {
+   "name": "Arizona State",
+   "sourceUrl": "https://thesundevils.com/sports/gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Jay Santos",
+     "title": "Head Coach",
+     "bio": "Coaching Honors: --2023 Pac-12 Coach of the Year --2021 WCGA Regional Coach of the Year --2018 Pac-12 Coach of the Year --2016 NCAA Central Regional Coach of the Year In 10 seasons with Arizona State, Jay Santos has led the team to NCAA Regionals in nine-consecutive seasons (all but his first). In those seasons, the Sun Devils also have not had a losing record.",
+     "role": "head"
+    },
+    {
+     "name": "Gracie Reeves",
+     "title": "Assistant Coach",
+     "bio": "Gracie Reeves joined Sun Devil Gymnastics as an assistant coach in June 2026 . A native of Phoenix, Reeves competed for the Sun Devils from 2020-24 and was a consistent presence across all four events throughout her time in Tempe.",
+     "role": "assistant"
+    },
+    {
+     "name": "Kristen Harold",
+     "title": "Assistant Coach",
+     "bio": "Kristen Harold was announced as an assistant coach for the Gym Devils on October 1, 2024. The 2026 season was the second season in the Big 12 Conference and was a season of growth with a young roster.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "arkansas": {
+   "name": "Arkansas",
+   "sourceUrl": "https://arkansasrazorbacks.com/sport/w-gym/roster/",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Chris Brooks",
+     "title": "Head Coach",
+     "bio": "Chris Brooks was named the fourth head coach of Arkansas gymnastics on April 28, 2026 by Vice Chancellor and Director of Athletics Hunter Yurachek after spending seven season on Jordyn Wieber's staff as an assistant. \u201cAfter learning of Coach Wieber\u2019s desire to step away from athletics, my mind immediately focused on how to keep the program\u2019s momentum moving forward.",
+     "role": "head"
+    },
+    {
+     "name": "Catelyn Branson",
+     "title": "Associate Head Coach",
+     "bio": "Catelyn Branson rejoined the Gymbacks staff ahead of the 2025 season, serving as Arkansas\u2019 choreographer and floor coach, and was promoted to associate head coach in June of 2026. Since her return, Branson has led the Gymbacks to two of their top five best floor scores ever and Arkansas has been ranked as high as No. 2 in the country on floor.",
+     "role": "assistant"
+    },
+    {
+     "name": "Kyla Ross",
+     "title": "Associate Head Coach",
+     "bio": "Olympic gold medalist and five-time NCAA champion Kyla Ross was promoted to associate head coach of the Gymbacks in June of 2026 and has kept the Hogs on historic pace since her arrival. Since 2024, Ross has primarily coached the Gymbacks on vault, an event the team has seen marked growth on.",
+     "role": "assistant"
+    },
+    {
+     "name": "Zan Jones",
+     "title": "Assistant Coach",
+     "bio": "Zan Jones comes to the Gymbacks after two excellent seasons with the Texas Woman\u2019s University Pioneers. With Jones\u2019 assistance, the Pioneers won back-to-back WCGNIC national titles in 2025 and 2026.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "auburn": {
+   "name": "Auburn",
+   "sourceUrl": "https://auburntigers.com/sports/gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Ryan Roberts",
+     "title": "Head Coach",
+     "bio": "Ryan Roberts has been named the next Auburn gymnastics head coach, athletics director John Cohen announced on April 21. Roberts brings a wealth of Southeastern Conference experience to the Plains, having spent the past eight seasons coaching within in the league.",
+     "role": "head"
+    },
+    {
+     "name": "Aja Sims-Fletcher",
+     "title": "Associate Head Coach",
+     "bio": "Aja Sims-Fletcher has been named the associate head coach for Auburn gymnastics on April 29, 2026. Sims-Fletcher returns to the state of Alabama with a wealth of experience both as a coach and a gymnast.",
+     "role": "assistant"
+    },
+    {
+     "name": "Adam Duncan",
+     "title": "Assistant Coach",
+     "bio": "Adam Duncan was named an assistant coach on April 29, 2026 An experienced coach and technician, Duncan comes to the Plains after extensive time in the Dallas area. With 17-plus years of experience as a club coach and clinician, Duncan is skilled in technical athletic development and brings a vast recruiting network.",
+     "role": "assistant"
+    },
+    {
+     "name": "Sophia Davila",
+     "title": "Assistant Coach",
+     "bio": "Former Auburn All-American Sophia Davila (n\u00e9e Groth) was been named an assistant coach on April 29, 2026. Davila was a two-time All-American and an All-SEC performer for the Tigers, competing for Auburn from 2022-25.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "ball-state": {
+   "name": "Ball State",
+   "sourceUrl": "https://ballstatesports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Joanna Saleem",
+     "title": "Head Coach",
+     "bio": "To see the impact 14th-year head coach Joanna Saleem has made on Ball State gymnastics one has to look no further than the program\u2019s record book. Entering the 2027 season, the top 41 team scores in program history have all come under Saleem\u2019s guidance, led by the program-record mark of 198.025 at the 2024 Tennessee Collegiate Classic (Jan. 19, 2024).",
+     "role": "head"
+    },
+    {
+     "name": "Kim Hermansen",
+     "title": "Assistant Coach",
+     "bio": "Kim Hermansen, a passionate and experienced coach with over two decades of experience developing young athletes, enters her second season as an assistant coach for the Ball State gymnastics program in 2027. Hermansen led the Cardinals to five floor titles as the primary floor coach and choreographer in 2026, sending Ava Molina to NCAA Regionals as well as Zoe Middleton in the all-around.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "boise-state": {
+   "name": "Boise State",
+   "sourceUrl": "https://broncosports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Tina Bird",
+     "title": "Head Coach",
+     "bio": "Tina Bird, a former Boise State gymnast, has spent the last 30-plus years on staff with the Broncos, and has been either head coach or co-head coach since 2008. Becoming the Broncos\u2019 lone head coach in 2020, Bird led the team to winning the inaugural Mountain West Championship in 2024, while also being named conference coach of the year.",
+     "role": "head"
+    },
+    {
+     "name": "Ivan Alexov",
+     "title": "Associate Head Coach",
+     "bio": "Ivan Alexov joined the Boise State gymnastics team as an assistant coach for the 2020 season and was promoted to associate head coach for the 2024 season. He primarily coaches vault and bars. Alexov has coached three individual conference champions, including two-time Courtney Blackson (2021 and 2023, MRGC), two-time Emily Mulenhaupt (2021 and 2022, MRGC) and Emily Lopez (2024, MW).",
+     "role": "assistant"
+    },
+    {
+     "name": "Adriana Popp",
+     "title": "Assistant Coach",
+     "bio": "Adriana Popp, a former Boise State gymnast, was added as an assistant coach July 2024. In her position at Boise State, Popp will concentrate on recruiting new athletes while also utilizing this opportunity to coach across all events, allowing her to identify her strengths.",
+     "role": "assistant"
+    },
+    {
+     "name": "Patty Resnick",
+     "title": "Assistant Coach",
+     "bio": "Patty Jo Resnick has been an assistant coach with the Boise State gymnastics team since 2008. Her primary responsibilities include coaching both floor and beam, including choreography for each gymnast\u2019s routine in the events.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "bowling-green": {
+   "name": "Bowling Green",
+   "sourceUrl": "https://bgsufalcons.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Brittney Emmons",
+     "title": "Head Gymnastics Coach",
+     "bio": "Brittney Emmons was named the fourth head coach in BGSU gymnastics program history in August 2024. She came to BGSU after five seasons at William & Mary where she was the ECAC Assistant Coach of the Year.",
+     "role": "head"
+    },
+    {
+     "name": "Ciera Martin",
+     "title": "Assistant Gymnastics Coach",
+     "bio": "Ciera Martin officially joined Brittney Emmons' Bowling Green staff on Oct. 1, 2024 as an assistant coach. Martin brings with her an impressive gymnastics background, both as a standout athlete and a dedicated coach, with experience that will contribute greatly to the program's continued success.",
+     "role": "assistant"
+    },
+    {
+     "name": "Stephen Avgerinos",
+     "title": "Assistant Gymnastics Coach",
+     "bio": "Stephen Avgerinos joined Brittney Emmons' staff in September 2025 as her lead assistant coach. Avgerinos arrives at Bowling Green after five seasons at the University of New Hampshire, where he served as associate head coach and recruiting coordinator since 2019.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "brown": {
+   "name": "Brown",
+   "sourceUrl": "https://brownbears.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Brittany Harris",
+     "title": "Head Coach",
+     "bio": "Brittany Harris is in her fifth season in 2027 as the head coach of Brown gymnastics. Harris was introduced as the fourth head coach in program history on August 3, 2022, and serves as the event coach for both vault and floor.",
+     "role": "head"
+    },
+    {
+     "name": "Dante Cecil",
+     "title": "Assistant Coach",
+     "bio": "Dante Cecil joined the Brown gymnastics program as an assistant coach in August 2025. Cecil joined the Bears having spent the previous three seasons at Springfield College.",
+     "role": "assistant"
+    },
+    {
+     "name": "Sophia Hyderally",
+     "title": "Assistant Coach, Recruiting Coordinator",
+     "bio": "Sophia Hyderally is in her fourth season in 2027 as Assistant Coach, Recruiting Coordinator with Brown gymnastics after joining the program ahead of the 2024 season. A former NCAA Regional qualifier on beam, Hyderally previously served as an assistant coach at Temple and Nebraska in addition to coaching at the club level.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "byu": {
+   "name": "BYU",
+   "sourceUrl": "https://byucougars.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Natalie Broekman",
+     "title": "Head Coach",
+     "bio": "Years at BYU Head Coach (2026-present) Associate Head Coach (2021-2026) Assistant Coach (2015-2021) Responsibilities Head Coach of the BYU women's gymnastics team Primary balance beam coach Assists with all aspects of the program, including: athlete development, recruiting, summer camps, team promotion, community outreach, competitions and alumni relations BYU Highlights As BYU's primary beam coach, she was instrumental in developing All-American Elease Rollins and guided Brynlee\u2026",
+     "role": "head"
+    },
+    {
+     "name": "Brogan Evanson",
+     "title": "Associate Head Coach",
+     "bio": "Responsibilities Vault Coach, Recruiting Coordinator & oversee Athlete Welfare Years at BYU 2015- 2026 (assistant coach) 2026-present (associate head coach) Responsibilities Primary vault and floor coach Team floor choreographer Assists with all aspects of the program, including: athlete development, recruiting, summer camps, team promotion, community outreach, competitions and alumni relations Prior to BYU Level 10 Official for the NCAA and USA-Gymnastics since 2007 Gymnastics Program Director\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Makenna Giles",
+     "title": "Assistant Coach",
+     "bio": "Years at BYU Assistant Coach: 2025-present Volunteer Assistant Coach: 2022-2023 Responsibilities Assistant Coach of the BYU women's gymnastics team Assists with all aspects of the program, including: athlete development, recruiting, summer camps, team promotion, community outreach, competitions and alumni relations Prior to BYU Coached at her childhood gym, All-American Gymnastics Gymnastics Career Competed at the University of Utah from 2016-2019 Nine-time All-American (4 NCAA, 5 regular\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Shannon Evans",
+     "title": "Assistant Coach",
+     "bio": "Years at BYU Assistant Coach: 2026-present Responsibilities Assistant Coach of the BYU women's gymnastics team BYU's main floor coach Assists with all aspects of the program, including: athlete development, recruiting, summer camps, team promotion, community outreach, competitions and alumni relations Prior to BYU Co-head coach at Magic City Gymnastics in Billings, Montana Floor choreographer, designing routines for athletes across the country Worked as a labor and delivery nurse for two years\u2026",
+     "role": "assistant"
+    }
+   ]
+  },
+  "california": {
+   "name": "California",
+   "sourceUrl": "https://calbears.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Geralen Stack-Eaton",
+     "title": "Head Coach",
+     "bio": "Geralen Stack-Eaton became the 14th head coach of the California women's gymnastics team on June 12, 2025. In her first season in Berkeley, Stack-Eaton led the Golden Bears to a top-15 national ranking and a second-place finish in the ACC's regular-season standings.",
+     "role": "head"
+    },
+    {
+     "name": "Rich Stenger",
+     "title": "Associate Head Coach",
+     "bio": "Rich Stenger was named associate head coach of the Cal women's gymnastics team in the summer of 2025. In is first season in Berkeley, Stenger assisted the Golden Bears to a top-15 national ranking and a second-place finish in the ACC's regular-season standings.",
+     "role": "assistant"
+    },
+    {
+     "name": "Brittany McClure",
+     "title": "Assistant Coach",
+     "bio": "Brittany McClure was hired as an assistant coach of Cal women's gymnastics in July of 2025. In her first season in Berkeley, McClure assisted the Golden Bears to a top-15 national ranking and a second-place finish in the ACC's regular-season standings.",
+     "role": "assistant"
+    },
+    {
+     "name": "Miki Aderinto",
+     "title": "Volunteer Assistant Coach",
+     "bio": "Miki Aderinto enters her first season as a volunteer assistant coach with the California women\u2019s gymnastics program during the 2027 competition season. Aderinto returns to Berkeley following a four-year career with the Golden Bears from 2023-26.",
+     "role": "assistant"
+    },
+    {
+     "name": "Cheryl Cox",
+     "title": "Assistant Athletic Performance Coach",
+     "bio": "Cheryl Cox is in her sixth season as an assistant strength and conditioning coach at Cal in 2020. She serves as the head strength coach for the beach volleyball and women's gymnastics programs, and previously coached at Georgetown University and Pepperdine University.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "central-michigan": {
+   "name": "Central Michigan",
+   "sourceUrl": "https://cmuchippewas.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Christine MacDonald",
+     "title": "Head Coach",
+     "bio": "Former Central Michigan gymnast and longtime assistant coach Christine MacDonald is in her seventh season as the Chippewas\u2019 head coach in 2025-26. MacDonald, who was named the Mid-American Conference Coach of the Year in 2026 and 2022, has guided Central Michigan to four MAC Championships titles in the last five seasons (2022, 2023, 2025, 2026) and two regular-season titles (2022, 2026).",
+     "role": "head"
+    },
+    {
+     "name": "George Young",
+     "title": "Assistant Coach",
+     "bio": "George Young is in his second season as the Chippewas\u2019 assistant coach. In 2025, Young helped the Chippewas to a Mid-American Conference Championships title and uneven bars title, mentoring senior Lia Kmieciak tied for second at the MAC Championships on bars and senior Hannah Appleget took home an all-around title at the meet.",
+     "role": "assistant"
+    },
+    {
+     "name": "Katy Ordway",
+     "title": "Assistant Coach",
+     "bio": "Katy (Clements) Ordway, a former Central Michigan gymnastics standout, is in her seventh year as an assistant coach with the Chippewa gymnastics program. In 2025, Ordway helped guide the Chippewas to their fourth Mid-American Conference Championships title in five years (2022 regular season, 2022 championships, 2023 championships, 2025 championships).",
+     "role": "assistant"
+    }
+   ]
+  },
+  "clemson": {
+   "name": "Clemson",
+   "sourceUrl": "https://clemsontigers.com/sports/gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Elisabeth Crandall-Howell",
+     "title": "Co-Head Coach",
+     "bio": "2x College Gym News Coaching Staff of the Year (21, 24) 2016 NACGC/W National Assistant Coach of the Year NACGC/W Region Assistant Coach of the Year (2015, 2016) Elisabeth Crandall-Howell \u2013 a distinguished international brevet-level judge, an internationally experienced gymnast, and a collegiate All-American \u2013 has served as co-head coach of the Clemson gymnastics program since May 2025, and has already made a significant impact.",
+     "role": "head"
+    },
+    {
+     "name": "Justin Howell",
+     "title": "Co-Head Coach",
+     "bio": "2-time College Gym News Coaching Staff of the Year (2021, 2024) 2016 Jamaican Olympic Coach Justin Howell was named as the co-head coach of the Clemson gymnastics program in May of 2025, after spending 13 seasons at the helm of the Cal Golden Bears\u2019 Women\u2019s Gymnastics program. Howell was named the head coach at Cal in June of 2012, then in 2018 he took on the role of Co-Head Coach with his wife, Co-Head Coach Elisabeth Crandall-Howell.",
+     "role": "head"
+    },
+    {
+     "name": "Jessie McDonough",
+     "title": "Assistant Coach",
+     "bio": "Former Utah gymnast and nationally recognized club gymnastics coach, Jessie (Duke) McDonough,joined the Clemson gymnastics staff as an assistant coach in the summer of 2024. In her first season at Clemson, McDonough played a key role in helping guide the Tigers to a historic 2026 campaign.",
+     "role": "assistant"
+    },
+    {
+     "name": "Luke Wasson",
+     "title": "Assistant Coach",
+     "bio": "Luke Wasson was added to the Clemson gymnastics staff as an assistant coach in July of 2025. In his first season at Clemson, assistant coach Luke Wasson helped guide the Tigers to the most successful season in program history.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "cornell": {
+   "name": "Cornell",
+   "sourceUrl": "https://cornellbigred.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Melanie Hall",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Mike Brackmann",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "denver": {
+   "name": "Denver",
+   "sourceUrl": "https://denverpioneers.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Melissa Kutcher-Rinehart",
+     "title": "Joy S. Burns Head Women's Gymnastics Coach",
+     "bio": "Melissa Kutcher-Rinehart will enter her 29th season at the helm of the University of Denver gymnastics program in 2026-27. She is the team's lead coach on beam. Since arriving in 1998-99, Kutcher-Rinehart has led Denver to 27-consecutive appearances at NCAA Regionals and six NCAA Nationals team berths.",
+     "role": "head"
+    },
+    {
+     "name": "Ava Mabanta",
+     "title": "Women's Gymnastics Assistant Coach",
+     "bio": "Ava Mabanta will enter her first season as an assistant coach in 2026-27. She was a student-athlete on the team for the 2022-23, 2023-24 and 2024-25 seasons before transitioning to a role as student assistant coach in 2025-26.",
+     "role": "assistant"
+    },
+    {
+     "name": "John Carney",
+     "title": "Women's Gymnastics Assistant Coach",
+     "bio": "John Carney will enter his second season as an assistant coach at Denver in 2026-27. He is the team's lead bars coach and co-lead vault coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Mary Rice",
+     "title": "Women's Gymnastics Assistant Coach",
+     "bio": "Mary Rice will enter her second season at Denver as an assistant coach in 2026-27. She is the team's lead floor coach and co-lead vault coach. 2025-26 Helped lead Cecilia Cooley to No. 1 national ranking on floor twice and a final national ranking of No. 18 Coached Cooley to near-perfect 9.975 on floor Guided team to season-high 49.600 on floor on March 9, tying the fourth highest score in program history Led team to No.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "eastern-michigan": {
+   "name": "Eastern Michigan",
+   "sourceUrl": "https://emueagles.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Katie Minasola",
+     "title": "Head Gymnastics Coach",
+     "bio": "Katie Minasola was named as the fifth Head Women\u2019s Gymnastics Coach at Eastern Michigan University, July 25, 2017, by Vice President/Director of Athletics Scott Wetherbee. The 2025 season marks Minasola\u2019s tenth at the helm of the Eagles.",
+     "role": "head"
+    },
+    {
+     "name": "Keira Boetel",
+     "title": "Assistant Coach",
+     "bio": "Keira Boetel joined the Eastern Michigan University gymnastics program as an assistant coach in 2026. Boetel came to Ypsilanti after spending the 2025 and 2026 seasons as an assistant coach at Southeast Missouri State University, where she led the beam rotation and assisted with in-gym conditioning.",
+     "role": "assistant"
+    },
+    {
+     "name": "Sam Higgins",
+     "title": "Assistant Coach",
+     "bio": "Sam Higgins begins her seventh season as an assistant coach for the Eastern Michigan University gymnastics team, heading into the 2027 season. Leading the beam lineup in 2022, Higgins coached freshman Ella Chemotti to qualify for the 2022 NCAA Regionals in the event with a Mid-American Conference leading 9.875 NQS.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "florida": {
+   "name": "Florida",
+   "sourceUrl": "https://floridagators.com/sports/gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Jenny Rowland",
+     "title": "Head Coach",
+     "bio": "Jenny Rowland, who swept all possible coaching honors in 2020, begins season 12 as University of Florida\u2019s head gymnastics coach. Rowland is the seventh head coach for the Gator program, which begins its 55 th season in 2027.",
+     "role": "head"
+    },
+    {
+     "name": "Adrian Burde",
+     "title": "Associate Head Coach",
+     "bio": "Adrian Burde (pronounced bur-DAY) enters season 21 with the Florida gymnastics program in the fall of 2026. He coaches vault as well as aids in recruiting and team conditioning.",
+     "role": "assistant"
+    },
+    {
+     "name": "Owen Field",
+     "title": "Associate Head Coach / General Manager",
+     "bio": "Owen Field is the Gators Associate Head Coach / General Manager who is in his 12th season with Florida in 2026-27. He was elevated to Associate Head Coach in the summer of 2024 and became the first in collegiate gymnastics to add G.M. title in the summer of 2025 .",
+     "role": "assistant"
+    },
+    {
+     "name": "Jeremy Miranda",
+     "title": "Assistant Coach",
+     "bio": "Jeremy Miranda was elevated to Assistant Coach in summer of 2023 after 16 seasons as Florida\u2019s Volunteer Coach. He coaches Florida\u2019s floor exercise performers, overseeing all creative aspects musically and choreographically as well as the tumbling.",
+     "role": "assistant"
+    },
+    {
+     "name": "Meredith Lucero",
+     "title": "Assistant to the Head Coach",
+     "bio": "Meredith Lucero joins the gymnastics staff for the 2024-25 season as Assistant to the Head Coach. Lucero focuses on the many details in the Gators\u2019 daily and travel schedules.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "george-washington": {
+   "name": "George Washington",
+   "sourceUrl": "https://gwsports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Hilary Steele",
+     "title": "Head Coach",
+     "bio": "Hilary Steele was named head coach of the storied GW gymnastics program in July 2026. Steele comes to Foggy Bottom with a decorated resume that includes multiple national championships as a collegiate competitor, international medals as a USA Gymnastics National Team member, and extensive club and collegiate coaching experience, including the last three years as head coach of the Temple Owls in the East Atlantic Gymnastics League (EAGL).",
+     "role": "head"
+    },
+    {
+     "name": "Don Houlton",
+     "title": "Assistant Coach",
+     "bio": "GW gymnastics Head Coach Hilary Steele announced today that Don Houlton will serve as the lead assistant coach of the program, as the team has begun training under Steele in her first year at GW. Houlton comes to Foggy Bottom after a four-year stint at Western Michigan, where he also served as an assistant coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Madison McMullen",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Olivia Courtney-Daniels",
+     "title": "Assistant Coach",
+     "bio": "Olivia Daniels was appointed Assistant Coach by Head Coach Hilary Steele in her first year at GW. Daniels joined the LIU gymnastics program as an assistant coach in November 2022 and was the 2023 EAGL Assistant Coach of the Year.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "georgia": {
+   "name": "Georgia",
+   "sourceUrl": "https://georgiadogs.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "C\u00e9cile Canqueteau-Landi",
+     "title": "Head Coach",
+     "bio": "Hall of Fame USA Gymnastics coach C&eacute;cile Canqueteau-Landi was named co-head coach of the Georgia GymDogs in April 2024, and was named the head coach in 2026. In just two seasons at the helm of the program, Canqueteau-Landi has brought the Georgia GymDogs back to national prominence.",
+     "role": "head"
+    },
+    {
+     "name": "Laurent Landi",
+     "title": "Associate Head Coach",
+     "bio": "USA Gymnastics Hall of Fame coach Laurent Landi has been named Associate Head Coach on Head Coach C&eacute;cile Canqueteau-Landi\u2019s staff for the 2026-27 season. \u201cI\u2019m incredibly honored to join a program with such a strong tradition and limitless potential,\u201d Landi said.",
+     "role": "assistant"
+    },
+    {
+     "name": "Brenna Brooks",
+     "title": "Assistant Coach",
+     "bio": "Brenna Brooks has been named an assistant coach on C&eacute;cile Canqueteau-Landi\u2019s staff for the upcoming 2027 season. \u201cI am very excited to join the coaching staff at Georgia gymnastics,\u201d Brooks said.",
+     "role": "assistant"
+    },
+    {
+     "name": "Megan Haught",
+     "title": "Assistant Coach",
+     "bio": "Former GymDog Megan Haught (n&eacute;e Dowlen) has been named an assistant coach on Head Coach C&eacute;cile Canqueteau-Landi\u2019s staff for the 2026-27 season. \u201cJoining the University of Georgia gymnastics staff under Cecile Canqueteau-Landi is a true full-circle moment for me,\u201d Haught said.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "illinois": {
+   "name": "Illinois",
+   "sourceUrl": "https://fightingillini.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Josh Nilson",
+     "title": "Head Coach",
+     "bio": "Josh Nilson was named head women's gymnastics coach on Tuesday, May 20, 2025, agreeing to a five-year contract. The 2027 season marks his second season at the helm of the program.",
+     "role": "head"
+    },
+    {
+     "name": "Daniel Ungerecht",
+     "title": "Assistant Coach",
+     "bio": "Daniel Ungerecht enters his first season as an assistant coach, joining the Orange and Blue on June 12, 2026. Ungerecht joins the Fighting Illini after serving as a level 10 head coach at the World Champions Centre in Spring, Texas.",
+     "role": "assistant"
+    },
+    {
+     "name": "Jaclyn Bertrand",
+     "title": "Assistant Coach",
+     "bio": "Jaclyn Bertrand enters her first season as an assistant coach for the Fighting Illini women's gymnastics program. She spent the 2025-26 season as an assistant at Gustavus Adolphus College, where she planned and supervised practices on all four events, with a primary focus on balance beam, while also developing beam and floor choreography.",
+     "role": "assistant"
+    },
+    {
+     "name": "Montana Rall",
+     "title": "Assistant Coach/Recruiting Coordinator",
+     "bio": "Montana Rall was named an assistant coach and recruiting coordinator for the Illinois women's gymnastics program on May 27, 2026. She joins the Fighting Illini after spending the 2026 campaign as an assistant coach at Nebraska.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "illinois-state": {
+   "name": "Illinois State",
+   "sourceUrl": "https://goredbirds.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Cassandra Ringer",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Adeline Kenlin",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Makayla Curtis",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "iowa": {
+   "name": "Iowa",
+   "sourceUrl": "https://hawkeyesports.com/sports/wgym/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Jen Llewellyn",
+     "title": "Head Coach",
+     "bio": "Llewellyn comes to the Hawkeyes after three years as head coach at the University of Washington. At Washington, Llewellyn led the Huskies to three-straight NCAA second round regional appearances, including a sweet 16 appearance in 2023.",
+     "role": "head"
+    },
+    {
+     "name": "Craig Ballard",
+     "title": "Assistant Coach",
+     "bio": "Craig Ballard was named an assistant coach for the University of Iowa gymnastics team on July 11, 2024. 2026 In his second season at Iowa, Craig Ballard helped guide the Hawkeyes to a 6-3 record and a fourth-place Big Ten conference Championship finish after being projected sixth. The Gymhawks placed third at Corvallis Regionals posting a 196.750.",
+     "role": "assistant"
+    },
+    {
+     "name": "Kyle Grable",
+     "title": "Assistant Coach",
+     "bio": "Kyle Grable was named an assistant coach on July 26, 2024. 2026 In his second season at Iowa, Kyle Grable guided the bars lineup to nine event titles and helped the Hawkeyes produce five of the top 10 bars scores in program history. Iowa broke the school record on the event twice, most recently posting a 49.575 at NCAA Regionals on April 3.",
+     "role": "assistant"
+    },
+    {
+     "name": "Lydia Test",
+     "title": "Assistant Coach",
+     "bio": "Test joins the Hawkeyes after spending the last four years at Southeast Missouri State, serving two seasons as a student assistant and the past two as a full-time assistant coach from 2024-26. She was the head floor and vault coach, while also leading the program\u2019s recruiting efforts.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "iowa-state": {
+   "name": "Iowa State",
+   "sourceUrl": "https://cyclones.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Ashley Miles Greig",
+     "title": "Head Coach",
+     "bio": "Audio Pronunciation: Greeg Four-time NCAA champion Ashley Miles Greig was named the eighth head coach in the history of the Iowa State women's gymnastics program on April 26, 2023. She led the program until the university discontinued it, a decision announced on March 3, 2026. 2026 Iowa State opened its 2026 campaign posting its lowest score since 1999 as it earned a 191.325 in a loss at No. 7 Missouri.",
+     "role": "head"
+    },
+    {
+     "name": "Jazmyn Estrella",
+     "title": "Assistant Coach",
+     "bio": "Estrella was hired as an assistant gymnastics coach on June 9, 2025, and was with the program until it was discontinued on March 3, 2026. Prior to Iowa State Estrella, a former collegiate gymnast at both Utah State (2017-18) and Temple (2019-20), spent time coaching at both Temple (2023) and the University of New Hampshire (2024-25).",
+     "role": "assistant"
+    },
+    {
+     "name": "Mary Wise",
+     "title": "Assistant Coach",
+     "bio": "Wise was hired as an assistant gymnastics coach on June 9, 2025, and was with the program until it was discontinued on March 3, 2026. Prior to Iowa State Wise worked as a coach/consultant/director of various gymnastics organizations over the past 20 years.",
+     "role": "assistant"
+    },
+    {
+     "name": "Ragan Smith",
+     "title": "Assistant Coach",
+     "bio": "Smith was hired as an assistant gymnastics coach on June 30, 2025, and was with the program until it was discontinued on March 3, 2026. Prior to Iowa State Ragan Smith was a five-time NCAA All-American with Oklahoma (2020-24) where she also spent time as a student coach (2025).",
+     "role": "assistant"
+    }
+   ]
+  },
+  "kent-state": {
+   "name": "Kent State",
+   "sourceUrl": "https://kentstatesports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Austyn Fobes",
+     "title": "Head Coach",
+     "bio": "Austyn Fobes joined Kent State Gymnastics as an assistant coach in August 2024 and was elevated to head coach on June 1, 2026 following the retirement of Brice Biggin. In her first season with the Golden Flashes, Fobes helped the team win the 2025 MAC Regular Season Championship, finishing 6-0 in conference regular season meets.",
+     "role": "head"
+    },
+    {
+     "name": "Brice Biggin",
+     "title": "Head Gymnastics Coach Emeritus",
+     "bio": "Brice Biggin is entering his 35th season as head coach of the Kent State gymnastics team in 2026 and has been associated with the program for more than 40 years. During Biggin's tenure with Kent State, the Golden Flashes have appeared in 23 NCAA Regionals, captured eight Mid-American Championships and won eleven MAC regular season titles.",
+     "role": "head"
+    },
+    {
+     "name": "Emma Masse",
+     "title": "Assistant Coach",
+     "bio": "Kent State head gymnastics coach Austyn Fobes has announced the addition of Emma Masse to the Golden Flashes coaching staff as an assistant coach, she announced Tuesday, June 9, 2026. A familiar face in the Flash Family, Masse spent four seasons as a student-athlete for Kent State from 2023 to 2026.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "kentucky": {
+   "name": "Kentucky",
+   "sourceUrl": "https://ukathletics.com/sports/wgym/roster/",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Tim Garrison",
+     "title": "Head Coach",
+     "bio": "Tim Garrison enters his 15th season as gymnastics head coach at the University of Kentucky in 2026, following more than a decade of unprecedented success at the helm. Prior to Garrison\u2019s tenure, the program\u2019s highest single-meet score stood at 196.375 for a full decade.",
+     "role": "head"
+    },
+    {
+     "name": "Rachel Garrison",
+     "title": "Associate Head Coach",
+     "bio": "Rachel Garrison enters her eighth season as gymnastics associate head coach\u2014after a four-year stint as assistant coach and four additional years volunteering with the program\u2014at the University of Kentucky in 2026. Garrison, a 2018 and 2023 National Association of Collegiate Gymnastics Coaches/Women National Assistant Coach of the Year, has helped guide the Wildcats to over 100 wins while splitting duties as a recruiter and beam coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Anna Marsh",
+     "title": "Assistant Coach",
+     "bio": "Anna Marsh is entering her first season as an assistant coach in 2026. Marsh was a Wildcat gymnast from 2019-2022, earning All-SEC honors in 2021.",
+     "role": "assistant"
+    },
+    {
+     "name": "Chad Wiest",
+     "title": "Assistant Coach",
+     "bio": "Chad Wiest enters his fifth season as gymnastics assistant coach at the University of Kentucky in 2025. With a major role in recruiting, Wiest leads the Wildcats on vault and floor exercise.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "liu": {
+   "name": "LIU",
+   "sourceUrl": "https://www.liuathletics.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Taylor Colwell",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Dalton Struebin",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Renee Figueroa",
+     "title": "Volunteer Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "lsu": {
+   "name": "LSU",
+   "sourceUrl": "https://lsusports.net/sports/gm/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Jay Clark",
+     "title": "Head Coach",
+     "bio": "Jay Clark, the leader of the LSU Gymnastics program, wrapped up his sixth season as the Head Coach of the Tigers in 2026, which culminated in the program\u2019s third trip to the NCAA Championship Final under his tenure and a finish as NCAA National Runner-Up. A native of Roswell, Georgia, Clark was tabbed as the third head coach in program history in August 2021 following the retirement of former coach D-D Breaux.",
+     "role": "head"
+    },
+    {
+     "name": "Courtney McCool Griffeth",
+     "title": "Associate Head Coach",
+     "bio": "Courtney McCool Griffeth, a 2004 Olympian and NCAA Champion, enters her fourth season as an assistant coach for the LSU Gymnastics program under head coach Jay Clark in 2025. McCool Griffeth primarily leads the floor squad, who was the best in the nation in 2024.",
+     "role": "assistant"
+    },
+    {
+     "name": "Garrett Griffeth",
+     "title": "Associate Head Coach / Recruiting Coordinator",
+     "bio": "In 2025, Garrett Griffeth will enter his fourth season as assistant coach for the LSU Gymnastics program under head coach Jay Clark. This past season, t he Tigers finished the regular season ranked No. 2 in the country on vault with their NQS of 49.510 and placed in the top five for all 12 weeks of competition in 2024.",
+     "role": "assistant"
+    },
+    {
+     "name": "Haleigh Bryant",
+     "title": "Assistant Coach",
+     "bio": "LSU Gymnastics Head Coach Jay Clark announced Haleigh Bryant as the program\u2019s newest assistant coach on July 15, 2025. One of the most accomplished gymnasts in LSU and NCAA history, Bryant will stay in Baton Rouge in a new role following a decorated collegiate career that cemented her legacy among the sport\u2019s all-time greats.",
+     "role": "assistant"
+    },
+    {
+     "name": "Emily Innes",
+     "title": "Graduate Student Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Bri Jaso",
+     "title": "Special Assistant to the Head Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "maryland": {
+   "name": "Maryland",
+   "sourceUrl": "https://umterps.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Brett Nelligan",
+     "title": "Head Gymnastics Coach",
+     "bio": "Brett Nelligan enters his 17th season as head coach of the Terrapins in 2025-26. After growing up in College Park and with the GymTerps, Nelligan became the fourth head coach in program history on May 1, 2009, following the retirement of his father, Bob Nelligan.",
+     "role": "head"
+    },
+    {
+     "name": "Erinn Dooley",
+     "title": "Assistant Gymnastics Coach",
+     "bio": "Dooley has served as Maryland's beam coach since 2009. She helped lead the Terps to seven straight NCAA Regional appearances from 2009-15 and then 2018-2019.",
+     "role": "assistant"
+    },
+    {
+     "name": "JJ Ferreira",
+     "title": "Assistant Gymnastics Coach",
+     "bio": "Assistant coach JJ Ferreira returned to the Maryland women\u2019s gymnastics staff for a second stint in June 2018 and has spent over a decade with the program. Ferreira had previously served on head coach Brett Nelligan's staff as an assistant for the Terrapins for six years from 2010 thru 2016.",
+     "role": "assistant"
+    },
+    {
+     "name": "Morgan Epps",
+     "title": "Assistant Gymnastics Coach",
+     "bio": "Morgan Epps joined the gymnastics coaching staff ahead of the 2024 season as an assistant coach. \"I am very honored and excited to be working in College Park with the GymTerps and their phenomenal staff and athletes,\" said Epps.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "michigan": {
+   "name": "Michigan",
+   "sourceUrl": "https://mgoblue.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Maile'ana Kanewa-Hermelyn",
+     "title": "Head Coach",
+     "bio": "Maile'ana Kanewa-Hermelyn enters her second season as the head coach of the Michigan women\u2019s gymnastics team. Kanewa-Hermelyn spent seven total seasons with the coaching staff \u2013 six as a full-time assistant (2020-2025) and one as a volunteer assistant coach (2019) prior to being named the head coach on July 16, 2025.",
+     "role": "head"
+    },
+    {
+     "name": "Scott Sherman",
+     "title": "Associate Head Coach",
+     "bio": "Scott Sherman completed his 30th season with the women's gymnastics program in 2026. He was promoted to Associate Head Coach on Sept. 17, 2019 after 23 years as an assistant coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Cali Hager",
+     "title": "Assistant Coach",
+     "bio": "Cali Hager finished her third season as an assistant coach with women's gymnastics in 2026 as she coached the floor team after previously helping with uneven bars and floor in her first two seasons. Michigan earned six scores of 197.000 or better in the 2026 campaign, doubling its three total from the 2025 season.",
+     "role": "assistant"
+    },
+    {
+     "name": "Quest Hayden",
+     "title": "Assistant Coach",
+     "bio": "Quest Hayden enters his second season as an assistant coach for the Wolverines in 2027. Hayden joined associate head coach Scott Sherman and assistant coach Cali Hager to complete Maile'ana Kanewa-Hermelyn\u2019s first coaching staff in the 2026 campaign.",
+     "role": "assistant"
+    },
+    {
+     "name": "Lucie Kirchner",
+     "title": "Student Assistant Coach",
+     "bio": "Sophomore Lucie Kirchner is in her second season as a student coach with the Wolverines after retiring from gymnastics following the 2025 campaign. Student-Athlete Bio Information Freshman (2025) \u2022 Did not compete due to injury Club \u2022 Competed at the club level for Jaycie Phelps Athletic Center (JPAC) \u2022 Is a three-time national qualifier \u2022 Was the regional champion on the floor in 2022 and the beam in 2021 \u2022 Is a six-time state champion winning the all-around for three straight years and also\u2026",
+     "role": "assistant"
+    }
+   ]
+  },
+  "michigan-state": {
+   "name": "Michigan State",
+   "sourceUrl": "https://msuspartans.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Mike Rowe",
+     "title": "Head Coach",
+     "bio": "Contact Mike Rowe Phone: 517-432-3189 Email: Email Coach Rowe Mike Rowe enters his ninth season as head coach of the Michigan State gymnastics program in 2025-26 and 12th season overall on the Spartan coaching staff at his alma mater. In his eight seasons as head coach of the Spartans, Rowe has coached 15 All-Big Ten gymnasts for a total of 31 All-Big Ten selections, 40 Big Ten Distinguished Scholars, 54 Academic All-Big Ten gymnasts and 40 WCGA Scholastic All-America Award winners.",
+     "role": "head"
+    },
+    {
+     "name": "Alex Wright",
+     "title": "Assistant Coach",
+     "bio": "Alex Wright was named an assistant coach for Michigan State gymnastics in June 2026. Wright arrives in East Lansing with over 15 years of coaching experience in the Dallas-Fort Worth area and most recently spent the past year coaching at World Olympic Gymnastics Academy (WOGA) Gymnastics.",
+     "role": "assistant"
+    },
+    {
+     "name": "Rachel Inniss",
+     "title": "Assistant Coach",
+     "bio": "Rachel Inniss joined the Michigan State gymnastics staff as an assistant coach in June 2026. An experienced coach in the Big Ten Conference, Inniss joins the Spartans after spending the 2025-26 season as an assistant coach at Illinois.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "minnesota": {
+   "name": "Minnesota",
+   "sourceUrl": "https://gophersports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Jenny Hansen",
+     "title": "Head Coach",
+     "bio": "Phone: 612-624-7848 Email: alfx0001@umn.edu Photo Gallery Head coach Jenny Hansen is entering her 13th year in charge of the Minnesota gymnastics program in 2027. Year 12 was the best yet for coach Hansen as she led the Golden Gophers to Four on the Floor for the first time in school history.",
+     "role": "head"
+    },
+    {
+     "name": "Grace McCallum",
+     "title": "Assistant Coach",
+     "bio": "The Minnesota gymnastics program hired Grace McCallum as an assistant coach in June 2026. McCallum comes to Minnesota after spending last season as a student assistant coach at her alma mater, Utah.",
+     "role": "assistant"
+    },
+    {
+     "name": "Kiki Parenteau",
+     "title": "Assistant Coach",
+     "bio": "Kiki Parenteau is entering her sixth year as a member of the Minnesota Gymnastics coaching staff in 20207. She has served as the volunteer assistant coach during the past two seasons for the Gophers, where she primarily coached floor and vault.",
+     "role": "assistant"
+    },
+    {
+     "name": "Sam Scherwinski",
+     "title": "Assistant Coach",
+     "bio": "Sam Scherwinski is entering his third season as an assistant coach for Gopher gymnastics. Scherwinski joined the program back in July of 2025.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "missouri": {
+   "name": "Missouri",
+   "sourceUrl": "https://mutigers.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Shannon Welker",
+     "title": "Head Coach",
+     "bio": "Louis Gym Centre Coach/Program Director 2007-08 Bowling Green Assistant Coach 2008-13 Michigan Assistant Coach 2014-Present Missouri Head Coach At the helm of the Mizzou gymnastics program, two-time SEC Coach of the Year, 2025 WCGA National Coach of the Year and leader of the 2025 College Gym News Coaching Staff of the Year, Shannon Welker continues to make the Tigers a rising power nationally. 2026 The 2026 campaign marked the 13th season of the Welker era at Mizzou.",
+     "role": "head"
+    },
+    {
+     "name": "Whitney Snowden",
+     "title": "Associate Head Coach",
+     "bio": "Whitney Snowden Career 2007-10 Legacy Gymnastics Team Director 2010-18 Cincinnati Gymnastics Academy Head level 8, 9, and 10 Coach 2018-19 St. Vincent and the Grenadines Development of Sport Structure Coach 2019-22 Michigan State Assistant Coach 2022-24 Missouri Assistant Coach 2024-Present Missouri Associate Head Coach Whitney Snowden, part of the 2025 WCGA Assistant Coaches of the Year staff and the College Gym News Coaching Staff of the Year, enters her fifth season on the Mizzou gymnastics\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Jackie Terpak",
+     "title": "Assistant Coach",
+     "bio": "Jackie Terpak Career 2018-20 Temple Athlete 2020-22 Temple Student Assistant Coach 2022-23 Arkansas Volunteer Assistant Coach and Choreographer 2023-Present Missouri Assistant Coach and Choreographer Jackie Terpak, part of the 2025 WCGA Assistant Coaches of the Year staff and the College Gym News Coaching Staff of the Year, enters her fourth season on the Mizzou gymnastics staff in 2027. She joined the program as an assistant coach in June 2023.",
+     "role": "assistant"
+    },
+    {
+     "name": "Oleksii Koltakov",
+     "title": "Assistant Coach",
+     "bio": "Oleksii Koltakov Career 2021-22 Alabama Volunteer Assistant Coach 2023-24 Nebraska Assistant Coach 2025-26 Georgia Assistant Coach 2026-Present Missouri Assistant Coach Oleksii Koltakov joined the Mizzou gymnastics staff as an assistant coach in June 2026, bringing SEC coaching experience, an international competitive background and a track record of developing All-Americans to Columbia. The 2027 season is his first with the Tigers.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "nebraska": {
+   "name": "Nebraska",
+   "sourceUrl": "https://huskers.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Nicole Jones",
+     "title": "Head Coach",
+     "bio": "An elite program builder with a proven record of elevating team performance and developing national-level athletes, Nicole Jones was named the sixth women's gymnastics coach in Nebraska history by Athletic Director Troy Dannen on Saturday, April 25. Jones, who has spent the past 16 seasons helping build Michigan State into a Big Ten and national power, comes to Lincoln after assisting MSU's run to its fifth consecutive NCAA Regional appearance.",
+     "role": "head"
+    },
+    {
+     "name": "Devin Wright",
+     "title": "Associate Head Coach",
+     "bio": "Devin Wright joined Head Coach Nicole Jones' first Nebraska women's gymnastics staff as an assistant coach for the 2026-27 season. Wright, who brings a reputation as one of the nation's top floor and vault coaches, worked alongside Jones as WCGA Regional Assistant Coaches of the Year three times (2023, 2025, 2026) in their four seasons on staff together at Michigan State.",
+     "role": "assistant"
+    },
+    {
+     "name": "Brett Wargo",
+     "title": "Assistant Coach",
+     "bio": "One of the nation's premier elite level coach, Brett Wargo joined the Nebraska women's gymnastics staff for the 2026-27 season to begin his collegiate coaching career on May 14, 2026. Wargo comes to Nebraska from Ascend Gymnastics in Auburn, Washington, which was named the USAG National Program of the Year in 2022.",
+     "role": "assistant"
+    },
+    {
+     "name": "Jordan Gamboa",
+     "title": "Assistant Coach",
+     "bio": "Four-time NCAA Champion and 28-time All-American Jordan Gamboa joins the Nebraska women's gymnastics team for her first season as a full-time collegiate coach in 2026-27. Born and raised in Lincoln, Nebraska, Gamboa competed as Jordan Bowers throughout her collegiate career at Oklahoma, helping the Sooners to three NCAA team titles.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "new-hampshire": {
+   "name": "New Hampshire",
+   "sourceUrl": "https://unhwildcats.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Lindsey Bruck Ayotte",
+     "title": "Head Coach",
+     "bio": "Lindsey Bruck Ayotte is in her seventh season as head coach of the UNH gymnastics program in 2025-26. In 2025, the UNH gymnastics team placed 51 st nationally with a 195.005 NQS.",
+     "role": "head"
+    },
+    {
+     "name": "Kylie Kratchwell",
+     "title": "Associate Head Coach",
+     "bio": "UNH gymnastics head coach Lindsey Bruck Ayotte announced the hire of former Wildcat captain and two-time All-EAGL Second Team gymnast Kylie Kratchwell , a 2021 UNH graduate, as associate head coach in July 2026. Kylie helps serve as the Wildcats' recruiting coordinator alongside assistant coaches Alyssa Worthington and Nick Cramer .",
+     "role": "assistant"
+    },
+    {
+     "name": "Alyssa Worthington",
+     "title": "Assistant Coach",
+     "bio": "Alyssa Worthington '23 joined her alma mater as an assistant coach for Lindsey Bruck Ayotte in August 2024. In 2026, her second season on the coaching staff, Alyssa takes on the elevated role of primary choreographer for the balance beam lineup, the lead for home event setup and the primary liaison for the UNH Gymnastics Community Program.",
+     "role": "assistant"
+    },
+    {
+     "name": "Nick Cramer",
+     "title": "Assistant Coach",
+     "bio": "Nick Cramer joined the UNH gymnastics program as an assistant coach under seventh-year head coach Lindsey Bruck Ayotte in September 2025, bringing with him a versatile coaching background and extensive experience in both men\u2019s and women\u2019s gymnastics. At UNH, Cramer serves as the primary coach on vault and floor exercise, while also playing a key role in the team\u2019s recruiting efforts alongside fellow assistant coach Alyssa Worthington \u201923.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "north-carolina": {
+   "name": "North Carolina",
+   "sourceUrl": "https://goheels.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Danna Durante",
+     "title": "Head Coach",
+     "bio": "Danna Durante was named the head coach of the North Carolina gymnastics team in June 2021, becoming the fourth head coach in program history. The 2026-27 season marks her sixth year at the helm.",
+     "role": "head"
+    },
+    {
+     "name": "Marie Denick",
+     "title": "Associate Head Coach",
+     "bio": "Marie Case Denick will begin her 10th season at North Carolina in 2026-27, and her sixth alongside head coach Danna Durante. In Summer 2024, she was elevated to Associate Head Coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Matt DeGrandpre",
+     "title": "Assistant Coach",
+     "bio": "The 2026-27 campaign marks the third year Matt DeGrandpre is on the North Carolina gymnastics staff as an assistant coach. In his first season as a Tar Heel, DeGrandpre helped lead Carolina to a top three finish in their second season in the ACC (2025).",
+     "role": "assistant"
+    },
+    {
+     "name": "Sami Durante-Money",
+     "title": "Assistant Coach",
+     "bio": "The 2026-27 season will mark the fourth year for Sami Money as an assistant coach with Carolina Gymnastics after being hired in July 2023. In this role, she assumes all director of operations responsibilities as well as assists on all four events.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "north-carolina-state": {
+   "name": "North Carolina State",
+   "sourceUrl": "https://gopack.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Kim Landrus",
+     "title": "Head Coach",
+     "bio": "Kim Landrus concluded her ninth season as head coach of the NC State gymnastics program in 2026, after having taken over the Wolfpack in 2017. In 2026, she guided the Wolfpack to a 17-11 season that included a 4-2 mark in ACC dual meets and a 6-1 record at home.",
+     "role": "head"
+    },
+    {
+     "name": "Avery Balser",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Bob Starkell",
+     "title": "Assistant Coach",
+     "bio": "Bob Starkell finished his 15th season as an assistant coach for NC State gymnastics in the 2026, focusing primarily on uneven bars. Starkell has enjoyed a successful tenure in Raleigh after being named to his position with the Wolfpack on September 12, 2011.",
+     "role": "assistant"
+    },
+    {
+     "name": "Philip Ogletree",
+     "title": "Assistant Coach",
+     "bio": "Phil Ogletree serves as an assistant coach for NC State gymnastics, finishing his ninth season with the Pack in 2026 after arriving in Raleigh in 2017. He works primarily with vault and floor.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "northern-illinois": {
+   "name": "Northern Illinois",
+   "sourceUrl": "https://niuhuskies.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Dawnita \"Nita\" Teague",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Chris Weiss",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Michael Regula",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "ohio-state": {
+   "name": "Ohio State",
+   "sourceUrl": "https://ohiostatebuckeyes.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Randy Monahan",
+     "title": "Interim Head Coach",
+     "bio": "Randy Monahan is entering his 13th season as a coach for the women's gymnastics program and was named interim head coach in November of 2026. He is the primary uneven bars coach for the Buckeyes and has coached the team to program record marks on the apparatus in his time on the coaching staff.",
+     "role": "head"
+    },
+    {
+     "name": "Mallory Gregory",
+     "title": "Assistant Coach/Director of Operations",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Mickayla Stuckey",
+     "title": "Assistant Coach",
+     "bio": "Mickayla Stuckey joined the Buckeye coaching staff in August of 2023. She currently serves as an assistant coach and in an operations role for the Buckeyes.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "oklahoma": {
+   "name": "Oklahoma",
+   "sourceUrl": "https://soonersports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "K.J. Kindler",
+     "title": "Head Coach",
+     "bio": "In two decades at the helm of Oklahoma women\u2019s gymnastics, head coach K.J. Kindler has elevated the Sooners into one of the sport\u2019s true dynasties.",
+     "role": "head"
+    },
+    {
+     "name": "Lou Ball",
+     "title": "Associate Head Coach",
+     "bio": "Iowa State, 1999 Family wife, K.J. daughters, Maggie Grace and Adelade Coaching History 2006-present, Oklahoma Assistant Coach 1995-06, Iowa State Assistant Coach Coaching Accomplishments Four-time National Assistant Coach of the Year (2005, 2010, 2020, 2024) 10-time Region Assistant Coach of the Year (2002, 2004, 2010, 2011, 2013, 2014, 2015, 2017, 2024, 2026) Helped lead two separate programs to the NCAA Finals (Iowa State \u2013 2006; Oklahoma \u2013 2010, 2011, 2013-23) Helped lead Oklahoma to eight\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Tom Haley",
+     "title": "Associate Head Coach",
+     "bio": "San Antonio, Texas Family wife, Kelli son, Levi daughter, Nina daughter, Kaia Coaching History 2006-present, Oklahoma Assistant Coach 2004-06, Kentucky Assistant Coach 2002-03, Gwinnett Gymnastics Center Club Coach 2000-01, Alabama Volunteer Assistant Coach 1996-2002, 'Bama Bounders Club Coach Coaching Accomplishments Three-time National Assistant Coach of the Year (2010, 2020, 2024) Nine-time Regional Assistant Coach of the Year (2006, 2010, 2011, 2013, 2014, 2015, 2017, 2024, 2026) Helped\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Olivia Trautman",
+     "title": "Assistant Coach",
+     "bio": "A four-time national champion and one of the most accomplished gymnasts in Oklahoma history, Olivia Trautman joined the Sooners' coaching staff in June 2026 after spending the 2026 season as an assistant coach at Utah State. Working primarily with USU\u2019s beam squad, she helped guide the Aggies to Mountain West Conference regular season and postseason championships and coached two first-team All-Mountain West beam performers in her first season as a full-time collegiate coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Faith Torrez",
+     "title": "Student Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "oregon-state": {
+   "name": "Oregon State",
+   "sourceUrl": "https://osubeavers.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Tanya Chaplin",
+     "title": "Head Coach",
+     "bio": "National Team Competed in the 1983 World Championships in Budapest, Hungary Competed in the 1984 U.S. Olympic Trials USA GYMNASTICS Chair, USA Gymnastics Advisory Council (1996-98) Athlete Representative (1990-99) The 2027 season will be Tanya Chaplin's 29th leading Oregon State Gymnastics.",
+     "role": "head"
+    },
+    {
+     "name": "Michael Chaplin",
+     "title": "Associate Head Coach",
+     "bio": "Senior National Team 1987 World Championship team alternate 1987 Pac-10 Champion \u2013 Still Rings Two-year member of the U.S. Junior National Team Associate head coach Michael Chaplin will enter his 29th season coaching at Oregon State in 2027; after spending his first seven seasons at OSU as an assistant coach, Chaplin was elevated to associate head coach prior to the 2005 season and currently coaches the Beaver bars lineup.",
+     "role": "assistant"
+    },
+    {
+     "name": "Brian Carey",
+     "title": "Assistant Coach",
+     "bio": "Brian Carey officially joined the Oregon State coaching staff in July of 2023. During his second full season in 2025, Carey\u2019s vault squad was highlighted by consistency and adding skills, as multiple student-athletes upgraded their vaults this season.",
+     "role": "assistant"
+    },
+    {
+     "name": "Kaytianna Kell",
+     "title": "Assistant Coach",
+     "bio": "Kaytianna Kell is in her fourth season on the Oregon State Gymnastics coaching staff in 2026. Kell\u2019s floor lineup dominated in 2025, ranking as high as No. 7 in the nation and spending seven weeks in the top 10.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "penn-state": {
+   "name": "Penn State",
+   "sourceUrl": "https://gopsusports.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Jennifer Green",
+     "title": "Head Coach",
+     "bio": "Penn State Vice President for Intercollegiate Athletics Dr. Patrick Kraft announced the selection of Jennifer Green as head coach for the Penn State Nittany Lion women\u2019s gymnastics program On Tuesday, August 4.",
+     "role": "head"
+    },
+    {
+     "name": "Sharon Kelly",
+     "title": "Associate Head Coach",
+     "bio": "Head Women\u2019s Gymnastics Coach Jennifer Green announced the addition of Sharon Kelly to her inaugural staff at Penn State on September 14. Kelly currently serves as the associate head coach for the Nittany Lions.",
+     "role": "assistant"
+    },
+    {
+     "name": "Tim Levandowski",
+     "title": "Assistant Coach",
+     "bio": "Head Women\u2019s Gymnastics Coach Jennifer Green announced the addition of Tim Levandowski to her inaugural staff at Penn State on September 14. Levandowski currently serves as an assistant coach for the Nittany Lions.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "pennsylvania": {
+   "name": "Pennsylvania",
+   "sourceUrl": "https://pennathletics.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Kirsten Becker",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "India Anderson",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Johanny Sotillo-Alston",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "pittsburgh": {
+   "name": "Pittsburgh",
+   "sourceUrl": "https://pittsburghpanthers.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Casey Jo MacPherson",
+     "title": "Head Coach, Women's Gymnastics",
+     "bio": "MacPherson enters her fourth season at the helm of the Pitt gymnastics program after spending the previous 10 seasons at the University of Missouri. She served as the associate head coach for three years after spending her first six seasons as an assistant coach at Mizzou.",
+     "role": "head"
+    },
+    {
+     "name": "Lexi Funk",
+     "title": "Associate Head Coach",
+     "bio": "Funk has been an integral part of the rise of Pitt Gymnastics. She was promoted to associate head coach in April of 2026 following her third season on the Pitt coaching staff.",
+     "role": "assistant"
+    },
+    {
+     "name": "Connor McCool",
+     "title": "Assistant Coach/Recruiting Coordinator",
+     "bio": "In his first season at Pitt, McCool guided the Panthers' vault squad to steady improvement throughout the year. The team posted a season-high score of 49.075 against West Virginia and Illinois State on March 15.",
+     "role": "assistant"
+    },
+    {
+     "name": "Mollie Korth",
+     "title": "Assistant Coach",
+     "bio": "Mollie Korth joined the University of Pittsburgh gymnastics program as assistant coach in June 2026. Korth comes to Pitt after spending the past two seasons at Nebraska.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "rutgers": {
+   "name": "Rutgers",
+   "sourceUrl": "https://scarletknights.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Anastasia Candia",
+     "title": "Head Coach",
+     "bio": "Anastasia Candia , a four-year letterwinner across three events for the Scarlet Knights from 2012-15, was named the head coach of Rutgers Gymnastics in April 2025. 2026 will mark Candia's first season at the helm of the program after six seasons as an assistant coach and serving as the acting head coach for the 2025 campaign. Prior to being appointed head coach, Candia spent seven seasons in various roles, including as acting head coach (2025), associate head coach (2022-24) and assistant coach (2018-21).",
+     "role": "head"
+    },
+    {
+     "name": "Anna Pagliaro",
+     "title": "Assistant Coach",
+     "bio": "Anna Pagliaro joined the Rutgers Gymnastics staff as an assistant coach in August 2025. A four-year letterwinner for the Scarlet Knights, Pagliaro competed on vault, beam and floor during her career.",
+     "role": "assistant"
+    },
+    {
+     "name": "Danielle DeMarco",
+     "title": "Assistant Coach",
+     "bio": "Danielle DeMarco enters her fourth season as an assistant coach for Rutgers gymnastics in 2025-26. A former Rutgers gymnast from 2011-13, DeMarco (n&eacute;e D\u2019Elia) previously served an assistant coach with the program from 2014-17 and has experience working with Elite level gymnasts.",
+     "role": "assistant"
+    },
+    {
+     "name": "Michael Rosso",
+     "title": "Assistant Coach",
+     "bio": "Michael Rosso is set for the eighth season as an assistant coach for Rutgers gymnastics in 2025-26. In his role, Rosso primarily focuses on vault and floor exercise.",
+     "role": "assistant"
+    },
+    {
+     "name": "Gabrielle Dildy",
+     "title": "Student Assistant Coach",
+     "bio": "One of the most accomplished gymnasts in school history, Gabrielle Dildy joined Rutgers Gymnastics as a student assistant coach in June 2026. Dildy joined the coaching staff at RU after a historic four-year career on the Banks that saw her named First Team All-Big Ten and post the second-highest all-around score in program history at 39.525.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "se-missouri": {
+   "name": "S.E. Missouri",
+   "sourceUrl": "https://semoredhawks.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Ashley Lawson",
+     "title": "Head Coach",
+     "bio": "The 2026 season marks the eighth season for the Southeast Missouri Gymnastics program under Head Coach Ashley Lawson. Lawson will continue coaching the bars during the 2026 campaign.",
+     "role": "head"
+    },
+    {
+     "name": "Kaitlin De Guzman",
+     "title": "Assistant Coach",
+     "bio": "Kaitlin De Guzman is in her first season as an assistant coach with the Gymhawks. De Guzman started her collegiate career at the University of Kentucky and competed for four seasons.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "sacramento-state": {
+   "name": "Sacramento State",
+   "sourceUrl": "https://hornetsports.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Melissa Genovese",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Amber Koeth",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Megan Kyle",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Nicole Brandt",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "san-jose-state": {
+   "name": "San Jose State",
+   "sourceUrl": "https://sjsuspartans.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Joanne Bowers",
+     "title": "Head Coach",
+     "bio": "Joanne Bowers, who throughout her career has guided athletes to the highest levels of collegiate women's gymnastics, was named the sixth head coach in San Jos&eacute; State gymnastics now 50-year history in August of 2018. From 2007 through 2016, Bowers was the head women's gymnastics coach at the University of Washington during which time she returned that program to national prominence.",
+     "role": "head"
+    },
+    {
+     "name": "Neal Gallant",
+     "title": "Assistant Coach",
+     "bio": "SIMPKINS ATHLETICS ADMINISTRATION BUILDING 1393 South 7th Street San Jose, CA 95112 408-924-1200",
+     "role": "assistant"
+    },
+    {
+     "name": "Tucker McClure",
+     "title": "Assistant Coach",
+     "bio": "SIMPKINS ATHLETICS ADMINISTRATION BUILDING 1393 South 7th Street San Jose, CA 95112 408-924-1200",
+     "role": "assistant"
+    },
+    {
+     "name": "Ben Stupay",
+     "title": "Assistant Athletic Performance Coach (Football, Women\u2019s Gymnastics, Men\u2019s Golf)",
+     "bio": "SIMPKINS ATHLETICS ADMINISTRATION BUILDING 1393 South 7th Street San Jose, CA 95112 408-924-1200",
+     "role": "assistant"
+    }
+   ]
+  },
+  "southern-utah": {
+   "name": "Southern Utah",
+   "sourceUrl": "https://suutbirds.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Scotty Bauman",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Jamie Wysong",
+     "title": "Associate Head Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Ellie Cacciola",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Jeff Richards",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "stanford": {
+   "name": "Stanford",
+   "sourceUrl": "https://gostanford.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Tabitha Yim",
+     "title": "Rodgers Family Director of Women\u2019s Gymnastics",
+     "bio": "Tabitha Yim enters her tenth season as Rodgers Family Director of Gymnastics of the Cardinal in 2026-27. Yim, who returned to coach her alma mater back in the summer of 2017, is steadily rebuilding the Stanford program, fostering notable athletic and academic achievements with each year spent at the helm of the Cardinal Women\u2019s Gymnastics program.",
+     "role": "head"
+    },
+    {
+     "name": "Vince Smurro",
+     "title": "Chris Swircek Associate Head Women\u2019s Gymnastics Coach",
+     "bio": "Vince Smurro enters his sixth season with Stanford women\u2019s gymnastics in 2026-27. He spent his first three seasons as an assistant coach before being promoted to associate head coach in the summer of 2024.",
+     "role": "assistant"
+    },
+    {
+     "name": "Caleb Rickard",
+     "title": "Assistant Coach",
+     "bio": "Caleb Rickard, a former Cal men\u2019s gymnastics student-athlete with deep ties to the Cardinal and the Bay Area, enters his third season with Stanford women's gymnastics in 2026-27. Rickard took over coaching the Cardinal on vault during the 2025\u201326 season, guiding Stanford to one of its strongest years on the event in recent program history.",
+     "role": "assistant"
+    },
+    {
+     "name": "Hallie Mossett",
+     "title": "Fontaine and Langenfeld Women\u2019s Gymnastics First Assistant Coach",
+     "bio": "Hallie Mossett enters her fifth season on The Farm in 2026-27. She spent her first two seasons with the Cardinal as an assistant coach before being promoted to first assistant coach in the summer of 2024.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "temple": {
+   "name": "Temple",
+   "sourceUrl": "https://owlsports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Brittney Miller",
+     "title": "Interim Gymnastics Head Coach",
+     "bio": "Miller joined Temple in August of 2023 after a decorated gymnastics career at the University Nebraska, Division I coaching experience with stops at the University of Penn and Pitt, and various club gymnastics stops in Pennsylvania and the New Jersey area. To conclude the 2026 EAGL Championships, Miller was named an EAGL Assistant Coach of the year.",
+     "role": "head"
+    },
+    {
+     "name": "Jazmyn Estrella",
+     "title": "Assistant Coach",
+     "bio": "Temple women\u2019s gymnastics announced Thursday the return of Jazmyn Estrella to the Temple family as she has been named assistant coach. \u201cWe are incredibly excited to welcome Jazmyn Estrella back to Temple University,\u201d said Interim Head Coach Brittney Miller.",
+     "role": "assistant"
+    },
+    {
+     "name": "Joel Shugart",
+     "title": "Assistant Coach / Recruiting Coordinator",
+     "bio": "To conclude the 2026 EAGL Championships, Shugart was named an EAGL Assistant Coach of the year. As the team's uneven bars coach, he has helped develop a young lineup while instilling confidence throughout the group.",
+     "role": "assistant"
+    },
+    {
+     "name": "Margzetta Frazier",
+     "title": "Assistant Coach",
+     "bio": "Interim head gymnastics coach Brittney Miller announced Friday the hiring of former NCAA gymnast Margzetta Frazier as an assistant coach ahead of the 2027 season. \"We couldn't be more excited to welcome Margzetta to Temple.",
+     "role": "assistant"
+    },
+    {
+     "name": "Gabby Linden",
+     "title": "Gymnastics Student Coach",
+     "bio": "Gabby Linden returns to Temple Gymnastics for the 2027 season as a Student Coach. Linden spent the 2025 season as a Student Manager for Temple Gymnastics.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "towson": {
+   "name": "Towson",
+   "sourceUrl": "https://towsontigers.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Jay Ramirez",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Ashley LeVine",
+     "title": "Associate Head Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Kyle Wilhelm",
+     "title": "Volunteer Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "uc-davis": {
+   "name": "UC Davis",
+   "sourceUrl": "https://ucdavisaggies.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Tanya Ho Gomez",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Rebekah Thompson",
+     "title": "Associate Head Coach/Recruiting Coordinator",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "David Seiler",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Tamara Ross",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "ucla": {
+   "name": "UCLA",
+   "sourceUrl": "https://uclabruins.com/sports/womens-gymnastics/roster",
+   "parser": "wmt-nuxt",
+   "coaches": [
+    {
+     "name": "Janelle McDonald",
+     "title": "The R.C. Rothman UCLA Head Gymnastics Coach",
+     "bio": "Follow @janel2001 on Instagram Janelle McDonald was named the new head coach of the UCLA Gymnastics team on May 9, 2022 and in the first three seasons has brought the Bruins back into national prominence with a 2025 NCAA runner-up finish and three conference titles. In 2025, UCLA\u2019s first year in the Big Ten Conference, McDonald led the Bruins to big success.",
+     "role": "head"
+    },
+    {
+     "name": "BJ Das",
+     "title": "Associate Head Coach",
+     "bio": "Follow @beejaydas on Instagram Professional choreographer and dancer BJ Das begins her seventh season on UCLA\u2019s coaching staff and fourth as a full-time assistant after serving as the volunteer assistant coach from 2020-22. She was promoted to Associate Head Coach in June 2025.",
+     "role": "assistant"
+    },
+    {
+     "name": "Lacy Dagen",
+     "title": "Assistant Coach",
+     "bio": "Follow @lacy_dagen97 on Instagram Lacy Dagen begins her second season as an assistant coach for UCLA. In her first season with the Bruins, she helped lead UCLA to a NCAA runner-up finish and to Big Ten regular season and conference championship titles.",
+     "role": "assistant"
+    },
+    {
+     "name": "Mark Freeman",
+     "title": "Assistant Coach",
+     "bio": "Follow @markfreeman1984 on Instagram After coaching on the men\u2019s gymnastics side for eight years, Mark Freeman begins his second year as an assistant coach for the UCLA women. In his first year in Westwood, Freeman helped guide the Bruins to the Big Ten regular season and conference championship titles and to a second-place NCAA Championships finish.",
+     "role": "assistant"
+    },
+    {
+     "name": "Jordan Chiles",
+     "title": "Student Coach",
+     "bio": "Four-time NCAA champion and 2024 Olympic gold medalist Jordan Chiles joins the 2027 UCLA Gymnastics coaching staff as a student coach. Chiles completed her collegiate career (2021-26) as a 23-time All-American, seven-time conference champion and 19-time perfect 10 scorer.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "utah": {
+   "name": "Utah",
+   "sourceUrl": "https://utahutes.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Carly Dockendorf",
+     "title": "Gymnastics Head Coach",
+     "bio": "Head Coach 4th Year/10th Overall Coaching Timeline 2018-present Utah 2024-Present Head Coach 2023 Associate Head Coach 2020-22 Assistant Coach 2019 Director of Recruiting and Player Development 2018 Volunteer Assistant Coach 2012-17 Falcon Gymnastics Center Assistant Coach 2009-17 Seattle Pacific 2013-17 Assistant Gymnastics Coach 2010-12 Assistant Track and Field Coach 2009 Assistant Gymnastics Coach 2006-08 Seattle Academy of the Arts & Science Head JV Soccer Coach Assistant Track and Field\u2026",
+     "role": "head"
+    },
+    {
+     "name": "Mike Hunger",
+     "title": "Assistant Coach",
+     "bio": "Coaching Timeline 2024- Present Utah 2016- Present USA National Team, Staff 1987- 2024 Twin City Twisters, Owner/Coach Coaching Highlights Over 100 NCAA athletes produced NCAA All-Americans: 1 Mike Hunger will be taking on his third season with the Red Rocks in 2027 after being brought on in May 2024 ahead of the 2025 competition season as Carly Dockendorf's first official hire as head coach. The vault lineup continued to flourish under Hunger in 2026, improving from No. 6 in 2025 to No.",
+     "role": "assistant"
+    },
+    {
+     "name": "Myia Hambrick",
+     "title": "Assistant Coach",
+     "bio": "Coaching Timeline 2023-present Utah, Assistant Coach 2021-23 Utah, Volunteer Assistant Coach 2019-21 Georgia Elite Gymnastics, J.O. Optional Coach 2014-21 USAG J.O. Program, Choreographer Coaching Highlights NCAA Region Assistant Coach of the Year: 2022 NCAA All-Americans: 9 Education LSU, 2018 Bachelor\u2019s in Mass Communication: Journalism LSU, 2021 Master\u2019s in Sports Management Myia Hambrick is set to begin her fifth season as an assistant coach handling floor responsibilities in 2026-27, and\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Steve Arkell",
+     "title": "Assistant Coach",
+     "bio": "USA National Team coach Steve Arkell is joining the Red Rocks as the program\u2019s new bars coach and will start preparations for the 2027 season including being a key presence in Utah's recruiting efforts. With more than 40 years of elite coaching experience, Arkell brings a powerhouse resume to Utah Gymnastics.",
+     "role": "assistant"
+    },
+    {
+     "name": "Makenna Smith",
+     "title": "Gymnastics Student Coach",
+     "bio": "Makenna Smith returns to Utah Gymnastics in her first year as a student coach where she will focus on the operational side of the program for the 2027 college gymnastics season. The Red Rocks alum is a 12-time All-American (5 regular season; 7 NCAA) who ended her career with 46 event victories, 216-220 hit routines, and career highs of 9.95 or better (9.975 on vault, bars, and floor; 9.95 on beam) in all four events.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "utah-state": {
+   "name": "Utah State",
+   "sourceUrl": "https://utahstateaggies.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Kristin White",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Abby Mueller",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Brianna Brooks",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Robert Ladanyi",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "washington": {
+   "name": "Washington",
+   "sourceUrl": "https://gohuskies.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Jessa Hansen Parker",
+     "title": "Head Coach",
+     "bio": "The Jessa Hansen Parker era continues on Montlake as the Washington gymnastics head coach has agreed to a five-year contract exension that will kepp her with the GymDawgs through the 2031 season. Hansen has entered her third season at Washington after being named the ninth head coach in the program's history, as announced by UW Director of Athletics Pat Chun on July 2, 2024.",
+     "role": "head"
+    },
+    {
+     "name": "Jeffrey Langenstein",
+     "title": "Associate Head Coach",
+     "bio": "BIOGRAPHY Jeffrey Langenstein enters his sixth season with Washington gymnastics and his second as Associate Head Coach after being promoted to the position in November 2025. Langenstein originally joined the Washington gymnastics program as an assistant coach in July 2021 and was retained on Jessa Hansen Parker\u2019s inaugural coaching staff in July 2024.",
+     "role": "assistant"
+    },
+    {
+     "name": "Gibran Campos",
+     "title": "Assistant Coach/Recruiting Coordinator",
+     "bio": "Gibran Campos enters his third season on Jessa Hansen Parker's Washington coaching staff, serving as an assistant coach and recruiting coordinator for the Dawgs. Campos brings deep ties to the California club gymnastics scene, having worked with SCEGA Gymnastics, Airborne Gymnastics, and Winners Gymnastics over the last decade-plus.",
+     "role": "assistant"
+    },
+    {
+     "name": "Rachel David",
+     "title": "Assistant Coach",
+     "bio": "Rachel David enters her third season on Jessa Hansen Parker's Washington coaching staff, serving as an assistant coach for the Dawgs. David reunites with Hansen Parker after spending four seasons together with the Iowa Hawkeyes program.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "west-virginia": {
+   "name": "West Virginia",
+   "sourceUrl": "https://wvusports.com/sports/womens-gymnastics/coaches",
+   "parser": "sidearm-nuxt",
+   "coaches": [
+    {
+     "name": "Jason Butts",
+     "title": "Head Coach",
+     "bio": "Follow @coachjasonbutts The Butts File Personal Information Birthday June 12 Hometown Athens, Ga. Education Georgia, 2006 (Bachelor's) West Virginia, 2012 (Master's) Coaching History 2006-09 West Virginia - Assistant Coach 2010-11 West Virginia - Assistant Head Coach 2012-present West Virginia - Head Coach Following a five-year tenure that saw him rise from assistant coach to associate head coach, Jason Butts became West Virginia University\u2019s third gymnastics head coach in April 2011.",
+     "role": "head"
+    },
+    {
+     "name": "Travis Doak",
+     "title": "Associate Head Coach",
+     "bio": "Follow @TavisDoak The Doak File Personal Information Birthday March 16 Hometown Beverly, W.Va. Education West Virginia, 2006 (Bachelor's) West Virginia, 2008 (Master's) Coaching History 2004 West Virginia - Volunteer Assistant Coach 2006-07 New Hampshire - Assistant Coach 2008 Penn State - Assistant Coach 2009-14 West Virginia - Assistant Coach 2015-present West Virginia - Associate Head Coach Travis Doak enters his 19th year at his alma mater and his 13th as the team\u2019s associate head coach.",
+     "role": "assistant"
+    },
+    {
+     "name": "Jessica Yamzon",
+     "title": "Assistant Coach",
+     "bio": "The Yamzon File Personal Information Birthday April 16 Hometown Las Vegas, Nevada Education The University of Arkansas, 2019 (Bachelor's) The University of Arkansas, 2021 (Master's) Playing Career Arkansas, 2017-2020 Coaching History 2021 University of Arkansas - Graduate Assistant Coach 2022 Lindenwood University - Volunteer Assistant Coach 2023 Illinois State University - Assistant Coach 2023 - Present West Virginia - Assistant Coach Jessica Yamzon enters her fourth season on the Mountaineer\u2026",
+     "role": "assistant"
+    },
+    {
+     "name": "Kaylyn Millick",
+     "title": "Assistant Coach",
+     "bio": "Follow @KayMillick_WVU The Millick File Personal Information Hometown Washington, Pa. Education West Virginia, 2014 (Bachelor's) Carlow University, 2018 (Bachelor's) Coaching History 2014 West Virginia - Student Assistant 2015-17 West Virginia - Assistant Coach 2019-20 West Virginia - Assistant Coach 2025-present West Virginia - Assistant Coach Kaylyn Millick enters her eighth season on the Mountaineer coaching staff.",
+     "role": "assistant"
+    }
+   ]
+  },
+  "western-michigan": {
+   "name": "Western Michigan",
+   "sourceUrl": "https://wmubroncos.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Penny Jernigan",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Al Scharns",
+     "title": "Associate Head Coach",
+     "bio": "",
+     "role": "assistant"
+    },
+    {
+     "name": "Kevin Anderson",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "william-and-mary": {
+   "name": "William & Mary",
+   "sourceUrl": "https://tribeathletics.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Kelsey Mann",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Mike Powell",
+     "title": "Director of Gymnastics",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Kendall George",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  },
+  "yale": {
+   "name": "Yale",
+   "sourceUrl": "https://yalebulldogs.com/sports/womens-gymnastics/coaches",
+   "parser": "html",
+   "coaches": [
+    {
+     "name": "Andrew Leis",
+     "title": "Head Coach",
+     "bio": "",
+     "role": "head"
+    },
+    {
+     "name": "Isabelle Fox",
+     "title": "Assistant Coach",
+     "bio": "",
+     "role": "assistant"
+    }
+   ]
+  }
+ },
+ "coverage": {
+  "teams": 62,
+  "ok": 62,
+  "failed": [],
+  "with_head_coach": 62,
+  "teams_with_at_least_one_bio": 48,
+  "coaches": 233,
+  "bios": 181
+ }
+}

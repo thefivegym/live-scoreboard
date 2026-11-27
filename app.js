@@ -44,6 +44,10 @@
     teamLists: null,      // {upcoming, past, ...} for the open profile
     rankings: null,       // data/rankings.json
     seasonStats: null,    // data/season-stats.json
+    coachesData: null,    // data/coaches.json
+    rosters: {},          // season -> data/rosters/{season}.json
+    rosterSort: { key: 'name', dir: 1 },
+    coachesShowAll: false,
     favs: new Set(),      // team slugs, persisted in localStorage
     filter: 'all',        // all | live | favorites | top25 | SEC | Big Ten | Big 12 | ACC | Other
     polling: false,
@@ -348,7 +352,8 @@
     const all = out.length > 0 && out.every(t => EVENTS.every(e => t.rotations.some(r => r.event === e.key && r.complete)));
     const status = inferStatus(any, all, meet);
     const curRot = Math.max(0, ...out.flatMap(t => t.rotations.filter(r => r.started).map(r => r.rotation || 0)));
-    return { source: 'virtius', name: m.name, location: m.location, status, teams: rankTeams(out, status), leaderboards, rotation: curRot || null, single: out.length === 1 };
+    const date = (meet && meet.date) || (isYmd(m.meet_date) ? m.meet_date : '') || '';
+    return { source: 'virtius', name: m.name, location: m.location, date, status, teams: rankTeams(out, status), leaderboards, rotation: curRot || null, single: out.length === 1 };
   }
 
   function normalizeRtn(r, meet) {
@@ -367,7 +372,8 @@
     let status;
     if (r.live) status = 'LIVE';
     else status = inferStatus(any, any && teams.every(t => t.rotations.every(x => x.complete)), meet);
-    return { source: 'rtn', name: null, location: null, status, teams: rankTeams(teams, status), leaderboards: lb, rotation: null, updated: r.generated_at };
+    const date = (meet && meet.date) || '';
+    return { source: 'rtn', name: null, location: null, date, status, teams: rankTeams(teams, status), leaderboards: lb, rotation: null, updated: r.generated_at };
   }
 
   function inferStatus(any, allDone, meet) {
@@ -786,13 +792,16 @@
     const yr = season || defaultSeason();
     state.team = team.slug;
     state.teamSeason = yr;
+    state.rosterSort = { key: 'name', dir: 1 };
+    state.coachesShowAll = false;
     if (!state.date) state.date = todayChicago();
     clearTimeout(state.timer);
     document.title = `${team.name} — The Five That Score`;
     ++state.renderToken;
     const token = state.renderToken;
-    state.teamLists = await teamMeetLists(team.name, yr);
+    const [lists] = await Promise.all([teamMeetLists(team.name, yr), loadCoaches(), loadRoster(yr)]);
     if (token !== state.renderToken) return;
+    state.teamLists = lists;
     syncUrl();
     render();
     renderNextMeet();
@@ -842,6 +851,180 @@
     return { upcoming, past, upcomingYear, pastYear, upcomingSoon, hasThis: !!thisSched, hasLast: !!lastSched };
   }
 
+
+  function normAthleteName(s) {
+    return String(s || '').normalize('NFKD').replace(/\p{M}+/gu, '').toLowerCase().replace(/[’']/g, "'").replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  async function loadCoaches() {
+    if (state.coachesData) return state.coachesData;
+    try { state.coachesData = await getJson('data/coaches.json'); }
+    catch { state.coachesData = { teams: {} }; }
+    return state.coachesData;
+  }
+  async function loadRoster(season) {
+    if (state.rosters[season]) return state.rosters[season];
+    try { state.rosters[season] = await getJson(`data/rosters/${season}.json`); }
+    catch { state.rosters[season] = { season, teams: {} }; }
+    return state.rosters[season];
+  }
+  function liveHighsForTeam(teamName, season) {
+    const evMap = { vault: 'vt', bars: 'ub', beam: 'bb', floor: 'fx', VAULT: 'vt', BARS: 'ub', BEAM: 'bb', FLOOR: 'fx' };
+    const highs = new Map();
+    const bump = (name, ev, score) => {
+      if (!name || score == null || !Number.isFinite(score) || score < 0.1) return;
+      const key = normAthleteName(name);
+      const rec = highs.get(key) || { vt: null, ub: null, bb: null, fx: null, aa: null, events: {} };
+      rec[ev] = rec[ev] == null ? score : Math.max(rec[ev], score);
+      rec.events[ev] = rec[ev];
+      if (['vt', 'ub', 'bb', 'fx'].every(e => rec[e] != null)) {
+        rec.aa = Number((rec.vt + rec.ub + rec.bb + rec.fx).toFixed(4));
+      }
+      highs.set(key, rec);
+    };
+    for (const d of Object.values(state.details || {})) {
+      if (!d || d.error || !d.teams) continue;
+      const date = d.date || d.meet_date || '';
+      // Undated details must not leak another season's scores onto the current roster.
+      if (!date || !isYmd(date) || seasonFor(date) !== season) continue;
+      const team = d.teams.find(tm => tm.name === teamName);
+      if (!team) continue;
+      const aaParts = new Map();
+      for (const rot of team.rotations || []) {
+        const ev = evMap[rot.event];
+        if (!ev) continue;
+        for (const g of rot.gymnasts || []) {
+          if (g.exhibition) continue;
+          const name = g.name || g.full_name || '';
+          const score = num(g.score);
+          bump(name, ev, score);
+          if (name && score != null) {
+            const rec = aaParts.get(normAthleteName(name)) || {};
+            rec[ev] = rec[ev] == null ? score : Math.max(rec[ev], score);
+            aaParts.set(normAthleteName(name), rec);
+          }
+        }
+      }
+    }
+    return highs;
+  }
+  function applyLiveHighs(athletes, teamName, season) {
+    const highs = liveHighsForTeam(teamName, season);
+    if (!highs.size) return athletes;
+    return athletes.map(a => {
+      const rec = highs.get(normAthleteName(a.name));
+      if (!rec) return a;
+      const out = { ...a };
+      for (const ev of ['vt', 'ub', 'bb', 'fx', 'aa']) {
+        if (rec[ev] == null) continue;
+        if (out[ev] == null || rec[ev] > out[ev] + 1e-9) out[ev] = rec[ev];
+      }
+      return out;
+    });
+  }
+  function fmtEventScore(n) {
+    if (n == null || n === '') return '<span class="na">n/a</span>';
+    const s = Number(n).toFixed(3);
+    if (Math.abs(Number(n) - 10) < 0.00005) return `<span class="is-ten">${s}</span>`;
+    return s;
+  }
+  function coachesCardHtml(team) {
+    const rec = state.coachesData && state.coachesData.teams && state.coachesData.teams[team.slug];
+    const official = rec && rec.sourceUrl
+      ? `<a class="staff-src" href="${esc(rec.sourceUrl)}" target="_blank" rel="noopener">Official staff page</a>`
+      : '';
+    if (!rec || !(rec.coaches || []).length) {
+      return `<section class="profile-section staff-card">
+        <div class="staff-head"><h3>Coaching Staff</h3>${official}</div>
+        <p class="muted">Coaching staff details are not available yet.</p>
+      </section>`;
+    }
+    const all = rec.coaches;
+    const shown = state.coachesShowAll || all.length <= 3 ? all : all.slice(0, 3);
+    const rows = shown.map(c => {
+      const head = c.role === 'head' || /^(interim\s+)?head coach\b/i.test(c.title || '') && !/associate|assistant|volunteer|student|graduate/i.test(c.title || '');
+      return `<article class="coach${head ? ' is-head' : ''}">
+        <header class="coach-id">
+          <h4>${esc(c.name)}</h4>
+          <p class="coach-title">${esc(c.title)}</p>
+        </header>
+        ${c.bio ? `<p class="coach-bio">${esc(c.bio)}</p>` : ''}
+      </article>`;
+    }).join('');
+    const more = all.length > 3
+      ? `<button type="button" class="staff-toggle" data-coaches-more>${state.coachesShowAll ? 'Show fewer coaches' : `Show all ${all.length} coaches`}</button>`
+      : '';
+    return `<section class="profile-section staff-card">
+      <div class="staff-head"><h3>Coaching Staff</h3>${official}</div>
+      <div class="staff-list">${rows}</div>
+      ${more}
+    </section>`;
+  }
+  function rosterCardHtml(team, season) {
+    const file = state.rosters[season];
+    const rec = file && file.teams && file.teams[team.slug];
+    if (!rec || !(rec.athletes || []).length) {
+      return `<section class="profile-section roster-card">
+        <div class="staff-head"><h3>Roster &amp; Season Highs</h3></div>
+        <p class="muted">A ${esc(String(season))} roster is not available yet.</p>
+      </section>`;
+    }
+    const athletes = applyLiveHighs(rec.athletes, team.name, season);
+    const sort = state.rosterSort || { key: 'name', dir: 1 };
+    const yearRank = { 'Fr.': 1, 'So.': 2, 'Jr.': 3, 'Sr.': 4, 'Gr.': 5 };
+    const sorted = athletes.slice().sort((a, b) => {
+      const key = sort.key, dir = sort.dir;
+      let av, bv, cmp;
+      if (key === 'name') cmp = (a.name || '').localeCompare(b.name || '');
+      else if (key === 'year') cmp = (yearRank[a.year] || 99) - (yearRank[b.year] || 99) || (a.year || '').localeCompare(b.year || '');
+      else {
+        av = a[key]; bv = b[key];
+        if (av == null && bv == null) cmp = 0;
+        else if (av == null) cmp = 1;
+        else if (bv == null) cmp = -1;
+        else cmp = av - bv;
+      }
+      if (!cmp && key !== 'name') cmp = (a.name || '').localeCompare(b.name || '');
+      return cmp * dir;
+    });
+    const cols = [
+      { key: 'name', label: 'Athlete', cls: 'ath' },
+      { key: 'year', label: 'Yr', cls: 'yr' },
+      { key: 'vt', label: 'VT', cls: 'num' },
+      { key: 'ub', label: 'UB', cls: 'num' },
+      { key: 'bb', label: 'BB', cls: 'num' },
+      { key: 'fx', label: 'FX', cls: 'num' },
+      { key: 'aa', label: 'AA', cls: 'num' },
+    ];
+    const th = cols.map(c => {
+      const on = sort.key === c.key;
+      const arrow = on ? (sort.dir === 1 ? ' ▲' : ' ▼') : '';
+      return `<th class="${c.cls}"><button type="button" class="roster-sort${on ? ' is-on' : ''}" data-roster-sort="${c.key}" aria-pressed="${on ? 'true' : 'false'}">${c.label}${arrow}</button></th>`;
+    }).join('');
+    const body = sorted.map(a => `<tr>
+      <th scope="row" class="ath">${esc(a.name)}</th>
+      <td class="yr">${a.year ? esc(a.year) : '<span class="na">n/a</span>'}</td>
+      <td class="num">${fmtEventScore(a.vt)}</td>
+      <td class="num">${fmtEventScore(a.ub)}</td>
+      <td class="num">${fmtEventScore(a.bb)}</td>
+      <td class="num">${fmtEventScore(a.fx)}</td>
+      <td class="num">${fmtEventScore(a.aa)}</td>
+    </tr>`).join('');
+    const src = rec.sourceUrl ? `<a class="staff-src" href="${esc(rec.sourceUrl)}" target="_blank" rel="noopener">${/roadtonationals/i.test(rec.sourceUrl) ? 'Road to Nationals' : 'Official roster'}</a>` : '';
+    const note = season >= defaultSeason()
+      ? `<p class="roster-note muted">Season highs will fill in as official ${esc(String(season))} meet scores are posted. Events not yet competed show n/a.</p>`
+      : `<p class="roster-note muted">Season highs are each gymnast’s best official ${esc(String(season))} score on that event. n/a means she did not compete it this season.</p>`;
+    return `<section class="profile-section roster-card">
+      <div class="staff-head"><h3>Roster &amp; Season Highs <span class="muted">· ${esc(String(season))}</span></h3>${src}</div>
+      ${note}
+      <div class="roster-wrap">
+        <table class="roster-table">
+          <thead><tr>${th}</tr></thead>
+          <tbody>${body}</tbody>
+        </table>
+      </div>
+    </section>`;
+  }
+
   function renderTeamProfile() {
     if (el.filters) { el.filters.hidden = true; el.filters.innerHTML = ''; }
     const team = state.d1 && state.d1.bySlug.get(state.team);
@@ -880,6 +1063,8 @@
       </header>
       ${teamRankHtml(team, state.teamSeason)}
       ${stats}
+      ${coachesCardHtml(team)}
+      ${rosterCardHtml(team, state.teamSeason)}
       <section class="profile-section">
         <h3>Upcoming</h3>
         ${upHtml}
@@ -1875,6 +2060,17 @@
     if (pollLock) { e.preventDefault(); submitPollVote(); return; }
     const pollAll = e.target.closest('[data-poll-all]');
     if (pollAll) { e.preventDefault(); state.pollShowAll = !state.pollShowAll; paintPollModal(); return; }
+    const coachMore = e.target.closest('[data-coaches-more]');
+    if (coachMore) { e.preventDefault(); state.coachesShowAll = !state.coachesShowAll; render(); return; }
+    const rosterSort = e.target.closest('[data-roster-sort]');
+    if (rosterSort) {
+      e.preventDefault();
+      const key = rosterSort.dataset.rosterSort;
+      const cur = state.rosterSort || { key: 'name', dir: 1 };
+      state.rosterSort = { key, dir: cur.key === key ? -cur.dir : (key === 'name' || key === 'year' ? 1 : -1) };
+      render();
+      return;
+    }
     const teamEl = e.target.closest('[data-team]');
     if (teamEl) {
       e.preventDefault();
