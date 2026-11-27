@@ -20,7 +20,7 @@
   const $ = sel => document.querySelector(sel);
   const el = {
     meets: $('#meets'), date: $('#date'), dateText: $('#date-text'), prev: $('#prev'), next: $('#next'),
-    today: $('#today'), banner: $('#banner'), status: $('#status-line'), pulse: $('#season-pulse'), hero: $('#season-hero'),
+    today: $('#today'), banner: $('#banner'), status: $('#status-line'), pulse: $('#season-pulse'), hero: $('#season-hero'), filters: $('#meet-filters'),
   };
 
   const params = new URLSearchParams(location.search);
@@ -44,6 +44,9 @@
     teamLists: null,      // {upcoming, past, ...} for the open profile
     rankings: null,       // data/rankings.json
     seasonStats: null,    // data/season-stats.json
+    favs: new Set(),      // team slugs, persisted in localStorage
+    filter: 'all',        // all | live | favorites | top25 | SEC | Big Ten | Big 12 | ACC | Other
+    polling: false,
   };
 
   // ---------- utilities ----------
@@ -62,8 +65,132 @@
   const isYmd = s => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && !Number.isNaN(Date.parse(s));
   const longDate = ymd => new Date(ymd + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   const shortDate = ymd => new Date(ymd + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
-  const timeCT = iso => iso ? new Date(iso).toLocaleTimeString('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' }) + ' CT' : 'Time TBA';
+  function formatMeetTime(iso) {
+    if (!iso || iso === 'TBD' || iso === 'TBA') return 'Time TBA';
+    const ms = Date.parse(iso);
+    if (!Number.isFinite(ms)) return 'Time TBA';
+    try {
+      const parts = new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }).formatToParts(new Date(ms));
+      const get = typ => { const p = parts.find(x => x.type === typ); return p ? p.value : ''; };
+      const hour = get('hour'), minute = get('minute'), dayPeriod = get('dayPeriod'), tz = get('timeZoneName');
+      if (!hour || !minute) return 'Time TBA';
+      const time = dayPeriod ? `${hour}:${minute} ${dayPeriod}` : `${hour}:${minute}`;
+      return tz ? `${time} ${tz}` : time;
+    } catch {
+      return 'Time TBA';
+    }
+  }
+  const timeCT = formatMeetTime;
   const meetKey = m => m.virtius || `rtn-${m.id}`;
+  const FAV_KEY = 'tfts-favorites';
+  const POWER_CONF = { SEC: 'SEC', 'Big Ten': 'Big Ten', 'Big 12': 'Big 12', ACC: 'ACC' };
+  const confGroup = conf => POWER_CONF[conf] || 'Other';
+  function loadFavs() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
+      state.favs = new Set(Array.isArray(raw) ? raw.filter(s => typeof s === 'string' && s) : []);
+    } catch { state.favs = new Set(); }
+  }
+  function saveFavs() {
+    try { localStorage.setItem(FAV_KEY, JSON.stringify([...state.favs])); } catch { /* private mode */ }
+  }
+  function teamByNameOrSlug(v) {
+    return state.d1 && (state.d1.byName.get(v) || state.d1.bySlug.get(v)) || null;
+  }
+  function isFav(nameOrSlug) {
+    const t = teamByNameOrSlug(nameOrSlug);
+    return !!(t && state.favs.has(t.slug));
+  }
+  function toggleFav(slug) {
+    if (!slug) return;
+    if (state.favs.has(slug)) state.favs.delete(slug); else state.favs.add(slug);
+    if (state.filter === 'favorites' && !state.favs.size) state.filter = 'all';
+    saveFavs();
+    renderFavPicker();
+    render();
+    if (!state.team) renderFilters();
+  }
+  function meetNames(meet) {
+    const names = new Set([...(meet.d1_teams || []), ...(meet.home || []), ...(meet.away || [])]);
+    const d = state.details[meetKey(meet)];
+    if (d && d.teams) d.teams.forEach(t => t.name && names.add(t.name));
+    return [...names];
+  }
+  function meetHasFav(meet) { return meetNames(meet).some(n => isFav(n)); }
+  function meetConfGroups(meet) {
+    const groups = new Set();
+    for (const n of meetNames(meet)) {
+      const t = teamByNameOrSlug(n);
+      if (t && t.conference) groups.add(confGroup(t.conference));
+    }
+    return groups;
+  }
+  function top25Names() {
+    const season = statsSeason();
+    const block = state.rankings && state.rankings.seasons && state.rankings.seasons[season];
+    const rank = pickRankings(block, season);
+    return new Set((rank.teams || []).filter(t => (t.rank || 99) <= 25).map(t => t.name));
+  }
+  function meetHasTop25(meet) {
+    const top = top25Names();
+    return meetNames(meet).some(n => top.has(n));
+  }
+  function tvLabelFrom(text, url) {
+    const raw = String(text || '').trim();
+    const lower = raw.toLowerCase();
+    const fromUrl = u => {
+      if (!u) return '';
+      try {
+        const x = new URL(u);
+        const s = `${x.hostname}${x.pathname}`.toLowerCase();
+        if (/bigtenplus|btnplus|b1gplus/.test(s)) return 'Big Ten+';
+        if (/youtube\.com|youtu\.be/.test(s)) return 'YouTube';
+        if (/foxsports|fox\.com/.test(s)) return 'FOX';
+        if (/plus\.espn/.test(s)) return 'ESPN+';
+        if (/secnetwork/.test(s)) return 'SEC Network';
+        if (/accnetwork|accnx/.test(s)) return 'ACC Network';
+      } catch { /* ignore */ }
+      return '';
+    };
+    if (raw && !/^https?:\/\//i.test(raw) && !/virti\.?us/.test(lower)) {
+      const rules = [
+        [/espn\s*\+/, 'ESPN+'], [/espn2/, 'ESPN2'], [/espn/, 'ESPN'],
+        [/secn\+|sec\s*network\+|sec\s*plus/, 'SECN+'],
+        [/secn|sec\s*network|^sec$/, 'SEC Network'],
+        [/accnx|accn\+|acc\s*network\s*extra/, 'ACCNX'],
+        [/accn|acc\s*network/, 'ACC Network'],
+        [/b(?:ig)?\s*1?0?\s*ten\+|b1g\+|big\+|bigtenplus/, 'Big Ten+'],
+        [/\bbtn\b|big\s*ten\s*network/, 'BTN'],
+        [/^big$/, 'Big Ten+'],
+        [/^b1g$/, 'Big Ten+'],
+        [/fox/, 'FOX'],
+        [/youtube|youtu\.be/, 'YouTube'],
+      ];
+      for (const [re, label] of rules) if (re.test(lower)) return label;
+    }
+    return fromUrl(raw.startsWith('http') ? raw : url);
+  }
+  function tvInfo(meet) {
+    const label = tvLabelFrom(meet.video_desc, meet.video_link);
+    if (label) return { label, href: meet.video_link || null };
+    if (meet.video_link) return { label: 'Stream', href: meet.video_link };
+    return null;
+  }
+  function tvBadgeHtml(meet) {
+    const info = tvInfo(meet);
+    if (!info) return '';
+    const body = esc(info.label);
+    return info.href
+      ? `<a class="tv-badge" href="${esc(info.href)}" target="_blank" rel="noopener" title="${body}">${body}</a>`
+      : `<span class="tv-badge">${body}</span>`;
+  }
+  function starBtn(name, compact) {
+    const t = teamByNameOrSlug(name);
+    if (!t) return '';
+    const on = state.favs.has(t.slug);
+    const label = on ? `Unstar ${t.name}` : `Star ${t.name}`;
+    return `<span class="star-btn${on ? ' on' : ''}${compact ? ' compact' : ''}" role="button" tabindex="0" data-fav-toggle="${esc(t.slug)}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">★</span>`;
+  }
   function flashMeet(key) {
     if (!key) return;
     state.flashKey = key;
@@ -309,7 +436,7 @@
   function badge(status, rotation) {
     const map = { LIVE: 'live', FINAL: 'final', UPCOMING: 'upcoming', PAST: 'past' };
     const label = status === 'PAST' ? 'NO LIVE DATA' : status;
-    const rot = status === 'LIVE' && rotation ? `<span class="rot">R${rotation}</span>` : '';
+    const rot = status === 'LIVE' && rotation ? `<span class="rot">Rot ${rotation}</span>` : '';
     return `<span class="badge ${map[status] || ''}">${status === 'LIVE' ? '<i class="dot"></i>' : ''}${label}${rot}</span>`;
   }
 
@@ -327,10 +454,10 @@
       rows = [...meet.away.map(n => ({ name: n, home: false })), ...meet.home.map(n => ({ name: n, home: true }))];
     }
     return rows.map(r => `
-      <li class="team-row">
+      <li class="team-row${isFav(r.name) ? ' is-fav' : ''}">
         <span class="place">${r.place ? r.place : ''}</span>
         <span class="swatch" style="${r.color ? `background:${esc(r.color)}` : ''}"></span>
-        <span class="tname">${teamLink(r.name)}${r.home ? ' <em class="home">home</em>' : ''}</span>
+        <span class="tname">${starBtn(r.name, true)}${teamLink(r.name)}${r.home ? ' <em class="home">home</em>' : ''}</span>
         <span class="tscore">${r.score !== undefined && r.score !== null ? fmtScore(r.score) : ''}</span>
       </li>`).join('');
   }
@@ -428,18 +555,21 @@
     const status = statusOf(meet);
     const open = state.open.has(key);
     prec = precisionOf(d);
-    return `<article class="card ${status.toLowerCase()} ${open ? 'open' : ''}${state.flashKey === key ? ' flash' : ''}" id="meet-${esc(key)}" data-key="${esc(key)}">
+    const fav = meetHasFav(meet);
+    return `<article class="card ${status.toLowerCase()} ${open ? 'open' : ''}${fav ? ' is-fav' : ''}${state.flashKey === key ? ' flash' : ''}" id="meet-${esc(key)}" data-key="${esc(key)}">
       <button class="card-head" aria-expanded="${open}" data-toggle="${esc(key)}">
         <div class="meta">
-          <span class="time">${esc(timeCT(meet.start_utc))}</span>
+          <span class="time">${esc(formatMeetTime(meet.start_utc))}</span>
           ${badge(status, d && d.rotation)}
+          ${tvBadgeHtml(meet)}
+          ${fav ? '<span class="fav-flag" title="Favorite team in this meet">★ Favorite</span>' : ''}
         </div>
         <h2 class="mtitle">${esc(d && d.name && meet.desc ? meet.desc : meetTitle(meet))}</h2>
         <ul class="teams">${teamRows(meet, d)}</ul>
         <span class="chev" aria-hidden="true">${open ? '▴' : '▾'} ${open ? 'Hide' : 'Rotations & athletes'}</span>
       </button>
       ${open ? detailHtml(meet) : ''}
-      <button class="share" data-share="${esc(key)}" title="Copy link to this meet" aria-label="Share link to this meet">🔗</button>
+      <button type="button" class="share" data-share="${esc(key)}" title="Share this meet" aria-label="Share this meet">Share</button>
     </article>`;
   }
 
@@ -458,13 +588,85 @@
     if (el.pulse) el.pulse.hidden = false;
     if (el.hero) el.hero.hidden = false;
     renderSeasonPulse();
-    if (!state.meets.length) { el.meets.innerHTML = emptyHtml(); return; }
+    if (!state.meets.length) {
+      renderFilters();
+      el.meets.innerHTML = emptyHtml();
+      return;
+    }
+    const shown = visibleMeets();
+    if (!shown.length) {
+      renderFilters();
+      el.status.innerHTML = statusLineHtml();
+      el.meets.innerHTML = `<div class="empty"><h2>No meets match this filter</h2><p><button type="button" class="jump" data-filter="all">Show all meets</button></p></div>`;
+      return;
+    }
+    el.meets.innerHTML = shown.map(cardHtml).join('');
+    renderFilters();
+    el.status.innerHTML = statusLineHtml();
+    tickAgo();
+  }
+  function visibleMeets() {
     const order = { LIVE: 0, UPCOMING: 1, FINAL: 2, PAST: 3 };
-    const sorted = state.meets.slice().sort((a, b) => (order[statusOf(a)] - order[statusOf(b)]) || (a.start_utc || '').localeCompare(b.start_utc || ''));
-    el.meets.innerHTML = sorted.map(cardHtml).join('');
+    const f = state.filter || 'all';
+    const rows = state.meets.filter(m => {
+      if (f === 'all') return true;
+      if (f === 'live') return statusOf(m) === 'LIVE';
+      if (f === 'favorites') return meetHasFav(m);
+      if (f === 'top25') return meetHasTop25(m);
+      return meetConfGroups(m).has(f);
+    });
+    return rows.slice().sort((a, b) => {
+      const fa = meetHasFav(a) ? 0 : 1, fb = meetHasFav(b) ? 0 : 1;
+      return (fa - fb) || (order[statusOf(a)] - order[statusOf(b)]) || (a.start_utc || '').localeCompare(b.start_utc || '');
+    });
+  }
+  function agoText(then) {
+    if (!then) return '';
+    const s = Math.max(0, Math.floor((Date.now() - then.getTime()) / 1000));
+    if (s < 2) return 'Updated just now';
+    if (s < 60) return `Updated ${s}s ago`;
+    const m = Math.floor(s / 60);
+    if (m < 60) return `Updated ${m}m ago`;
+    return `Updated ${Math.floor(m / 60)}h ago`;
+  }
+  function statusLineHtml() {
     const live = state.meets.filter(m => statusOf(m) === 'LIVE').length;
-    const stamp = state.lastUpdate ? `Updated ${state.lastUpdate.toLocaleTimeString('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit', second: '2-digit' })} CT` : '';
-    el.status.innerHTML = `${state.meets.length} D1 meet${state.meets.length === 1 ? '' : 's'}${live ? ` · <strong class="livecount">${live} live</strong> · refreshing every 30s` : ''}${stamp ? ` · ${stamp}` : ''}`;
+    const n = state.meets.length;
+    const shown = (state.filter && state.filter !== 'all') ? visibleMeets().length : n;
+    const count = shown === n ? `${n} D1 meet${n === 1 ? '' : 's'}` : `${shown} of ${n} D1 meets`;
+    const liveBit = live ? ` · <strong class="livecount">${live} live</strong>` : '';
+    const pollBit = state.polling && state.lastUpdate
+      ? ` · <span class="live-ago" id="live-ago">${esc(agoText(state.lastUpdate))}</span>`
+      : (state.lastUpdate && !state.polling ? '' : '');
+    return `${count}${liveBit}${pollBit}`;
+  }
+  function tickAgo() {
+    const node = document.getElementById('live-ago');
+    if (node && state.lastUpdate) node.textContent = agoText(state.lastUpdate);
+  }
+  function renderFilters() {
+    const box = el.filters;
+    if (!box) return;
+    if (state.team || !state.meets.length) { box.hidden = true; box.innerHTML = ''; return; }
+    const live = state.meets.filter(m => statusOf(m) === 'LIVE').length;
+    const pills = [
+      { id: 'all', label: 'All' },
+      { id: 'live', label: 'Live now', count: live, show: true, live: true },
+      { id: 'favorites', label: 'Favorites', show: state.favs.size > 0 },
+      { id: 'top25', label: 'Top 25' },
+      { id: 'SEC', label: 'SEC' },
+      { id: 'Big Ten', label: 'Big Ten' },
+      { id: 'Big 12', label: 'Big 12' },
+      { id: 'ACC', label: 'ACC' },
+      { id: 'Other', label: 'Other' },
+    ];
+    const html = pills.filter(p => p.show !== false).map(p => {
+      const on = (state.filter || 'all') === p.id;
+      const count = p.id === 'live' && p.count ? `<span class="pill-count">${p.count}</span>` : '';
+      return `<button type="button" class="pill${on ? ' on' : ''}${p.live && p.count ? ' has-live' : ''}" data-filter="${esc(p.id)}" role="tab" aria-selected="${on}">${esc(p.label)}${count}</button>`;
+    }).join('');
+    box.hidden = false;
+    box.innerHTML = html;
   }
 
   function emptyHtml() {
@@ -631,6 +833,7 @@
   }
 
   function renderTeamProfile() {
+    if (el.filters) { el.filters.hidden = true; el.filters.innerHTML = ''; }
     const team = state.d1 && state.d1.bySlug.get(state.team);
     if (!team) { el.meets.innerHTML = `<div class="empty"><h2>Team not found</h2><p><a class="jump" href="${dateHref(todayChicago())}" data-date="${todayChicago()}">Back to the scoreboard</a></p></div>`; return; }
     const lists = state.teamLists || { upcoming: [], past: [], upcomingYear: state.teamSeason, pastYear: state.teamSeason, upcomingSoon: false, hasLast: false };
@@ -660,7 +863,7 @@
       <header class="profile-head">
         <div class="crest" style="background:${esc(team.color)};color:${esc(crestInk(team))}">${esc(team.abbr)}</div>
         <div class="profile-id">
-          <h2>${esc(team.name)}</h2>
+          <h2>${esc(team.name)} ${starBtn(team.name)}</h2>
           <p class="muted">${esc(team.conference)}${team.conference ? ' · ' : ''}<span class="season-tag">${esc(String(pastYear || state.teamSeason))} season</span>${upcomingYear && upcomingYear !== pastYear && upcoming.length ? ` · ${esc(String(upcomingYear))} upcoming` : ''}</p>
           ${seasonNote ? `<p class="season-switch">${seasonNote}</p>` : ''}
         </div>
@@ -774,6 +977,48 @@
     document.addEventListener('click', e => {
       if (!e.target.closest('.team-picker')) close();
     });
+  }
+
+
+  function renderFavPicker() {
+    const btn = document.getElementById('fav-picker-btn');
+    const box = document.getElementById('fav-picker');
+    const list = document.getElementById('fav-picker-list');
+    const search = document.getElementById('fav-picker-search');
+    if (!btn || !list) return;
+    const n = state.favs.size;
+    btn.classList.toggle('has-favs', n > 0);
+    btn.innerHTML = n ? `★ Favorites <span class="pill-count">${n}</span>` : '★ Favorites';
+    const q = (search && search.value || '').trim().toLowerCase();
+    const teams = ((state.d1 && state.d1.teams) || []).slice().sort((a, b) => {
+      const fa = state.favs.has(a.slug) ? 0 : 1, fb = state.favs.has(b.slug) ? 0 : 1;
+      return (fa - fb) || a.name.localeCompare(b.name);
+    }).filter(t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q));
+    list.innerHTML = teams.map(t => {
+      const on = state.favs.has(t.slug);
+      return `<li>
+        <button type="button" class="fav-pick-row${on ? ' on' : ''}" data-fav-toggle="${esc(t.slug)}">
+          <span class="star-btn${on ? ' on' : ''}" aria-hidden="true">★</span>
+          <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
+          <span class="opt-name">${esc(t.name)}</span>
+          <span class="opt-con muted">${esc(t.conference)}</span>
+        </button>
+      </li>`;
+    }).join('') || '<li class="muted" style="padding:8px 12px">No teams match.</li>';
+  }
+  function initFavPicker() {
+    const btn = document.getElementById('fav-picker-btn');
+    const box = document.getElementById('fav-picker');
+    const search = document.getElementById('fav-picker-search');
+    if (!btn || !box) return;
+    const close = () => { box.hidden = true; btn.setAttribute('aria-expanded', 'false'); };
+    const open = () => { renderFavPicker(); box.hidden = false; btn.setAttribute('aria-expanded', 'true'); search && search.focus(); };
+    btn.addEventListener('click', e => { e.stopPropagation(); box.hidden ? open() : close(); });
+    if (search) search.addEventListener('input', renderFavPicker);
+    document.addEventListener('click', e => {
+      if (!box.hidden && !e.target.closest('#fav-picker, #fav-picker-btn')) close();
+    });
+    renderFavPicker();
   }
 
 
@@ -892,6 +1137,153 @@
     if (!date) return null;
     return `${dateHref(date)}${key ? `#meet=${encodeURIComponent(key)}` : ''}`;
   }
+  function sundayOf(ymd) {
+    const d = new Date(ymd + 'T12:00:00Z');
+    const add = d.getUTCDay() === 0 ? 0 : 7 - d.getUTCDay();
+    d.setUTCDate(d.getUTCDate() + add);
+    return d.toISOString().slice(0, 10);
+  }
+  function weekendHasHighs(w) {
+    if (!w) return false;
+    if ((w.team197 || []).length) return true;
+    const eh = w.eventHighs || {};
+    return EVENTS.some(e => (eh[e.key] || []).length);
+  }
+  function liveWeekendBits(season, asOf) {
+    const today = todayChicago();
+    if (seasonFor(today) !== season) return null;
+    const team197 = [];
+    const eventHighs = { vault: [], bars: [], beam: [], floor: [] };
+    let start = null, end = null;
+    const consider = (date, meet, title, virtius, teams) => {
+      if (!date || (asOf && date > asOf)) return;
+      if (seasonFor(date) !== season) return;
+      start = start ? (date < start ? date : start) : date;
+      end = end ? (date > end ? date : end) : date;
+      for (const t of teams || []) {
+        if (t.score != null && t.score >= 197 - 1e-9) {
+          team197.push({ team: t.name, score: t.score, date, meet: title, virtius });
+        }
+        for (const r of t.rotations || []) {
+          if (!eventHighs[r.event]) continue;
+          for (const g of r.gymnasts || []) {
+            if (g.exhibition || g.score == null) continue;
+            eventHighs[r.event].push({ athlete: g.name, team: t.name, event: r.event, score: g.score, date, meet: title, virtius });
+          }
+        }
+      }
+    };
+    for (const meet of state.meets || []) {
+      const d = state.details[meetKey(meet)];
+      if (!d || !d.teams) continue;
+      consider(meet.date, meet, d.name || meetTitle(meet), meet.virtius, d.teams);
+    }
+    if (!start) return null;
+    // Keep only the current (latest) weekend's live scores.
+    const id = sundayOf(end || start);
+    const inWeek = x => x.date && sundayOf(x.date) === id;
+    const trim = list => {
+      const best = list.length ? Math.max(...list.map(x => x.score)) : null;
+      return best == null ? [] : list.filter(x => inWeek(x) && Math.abs(x.score - best) < 1e-9);
+    };
+    return {
+      id, start, end, label: '',
+      team197: team197.filter(inWeek).sort((a, b) => b.score - a.score),
+      eventHighs: Object.fromEntries(EVENTS.map(e => [e.key, trim(eventHighs[e.key])])),
+    };
+  }
+  function pickWeekend(block, asOf, season) {
+    const list = ((block && block.weekends) || []).filter(w => !asOf || (w.start && w.start <= asOf));
+    let w = list.length ? { ...list[list.length - 1] } : null;
+    const live = liveWeekendBits(season, asOf);
+    if (live && (!w || live.id === w.id || live.end >= (w.end || ''))) {
+      if (!w || live.id !== w.id) w = { id: live.id, start: live.start, end: live.end, label: '', team197: [], eventHighs: { vault: [], bars: [], beam: [], floor: [] } };
+      const byKey = (arr, x) => `${x.date}|${x.virtius || ''}|${x.team}|${x.athlete || ''}|${x.score}`;
+      const merge197 = [...(w.team197 || [])];
+      for (const t of live.team197) if (!merge197.some(x => byKey(merge197, x) === byKey(merge197, t))) merge197.push(t);
+      const eh = { ...(w.eventHighs || {}) };
+      for (const e of EVENTS) {
+        const cur = [...(eh[e.key] || [])];
+        for (const x of (live.eventHighs[e.key] || [])) if (!cur.some(y => byKey(cur, y) === byKey(cur, x))) cur.push(x);
+        const best = cur.length ? Math.max(...cur.map(x => x.score)) : null;
+        eh[e.key] = best == null ? [] : cur.filter(x => Math.abs(x.score - best) < 1e-9);
+      }
+      w = { ...w, start: !w.start || live.start < w.start ? live.start : w.start, end: !w.end || live.end > w.end ? live.end : w.end, team197: merge197.sort((a, b) => b.score - a.score), eventHighs: eh };
+    }
+    if (!w) return null;
+    if (asOf) {
+      w = {
+        ...w,
+        team197: (w.team197 || []).filter(t => !t.date || t.date <= asOf),
+        eventHighs: Object.fromEntries(EVENTS.map(e => {
+          const list = (w.eventHighs && w.eventHighs[e.key]) || [];
+          const cut = list.filter(x => !x.date || x.date <= asOf);
+          const best = cut.length ? Math.max(...cut.map(x => x.score)) : null;
+          return [e.key, best == null ? [] : cut.filter(x => Math.abs(x.score - best) < 1e-9)];
+        })),
+      };
+    }
+    return w;
+  }
+  function weekendWatchHtml(block, asOf, season) {
+    const stored = (block && block.weekends) || [];
+    const w = pickWeekend(block, asOf, season);
+    const label = (w && (w.label || weekendRangeLabel(w.start, w.end))) || '';
+    if (!stored.length && !weekendHasHighs(w)) {
+      return `<section class="weekend-watch" id="weekend-watch" aria-label="Weekend Highs and 197+ Watch">
+        <div class="ww-head"><h2>Weekend Highs &amp; 197+ Watch</h2></div>
+        <p class="ww-empty">The first 197+ team score and event highs of the season will land here.</p>
+      </section>`;
+    }
+    if (!w) {
+      return `<section class="weekend-watch" id="weekend-watch" aria-label="Weekend Highs and 197+ Watch">
+        <div class="ww-head"><h2>Weekend Highs &amp; 197+ Watch</h2></div>
+        <p class="ww-empty">The first 197+ team score and event highs of the season will land here.</p>
+      </section>`;
+    }
+    const scores = w.team197 || [];
+    const n197 = scores.length;
+    const shown = scores.slice(0, 8);
+    const rest197 = n197 - shown.length;
+    const top = shown.map(t => {
+      const href = meetJumpHref(t.date, t.virtius);
+      const body = `<span class="ww-team">${esc(t.team)}</span><span class="ww-score">${fmtScore(t.score)}</span>`;
+      return href
+        ? `<li><a class="jump ww-row" href="${esc(href)}" data-date="${esc(t.date || '')}" data-meet="${esc(t.virtius || '')}">${body}</a></li>`
+        : `<li><span class="ww-row">${body}</span></li>`;
+    }).join('');
+    const evCells = EVENTS.map(e => {
+      const tied = (w.eventHighs && w.eventHighs[e.key]) || [];
+      if (!tied.length) return `<div class="ww-ev"><span class="ww-abbr">${e.abbr}</span><span class="ww-ev-empty">—</span></div>`;
+      const first = tied[0];
+      const extra = tied.length > 1 ? `<span class="ww-tie">+${tied.length - 1} tied</span>` : '';
+      const href = meetJumpHref(first.date, first.virtius);
+      const who = `${esc(first.athlete)} · ${esc(first.team)}`;
+      const inner = `<span class="ww-abbr">${e.abbr}</span><span class="ww-ev-score">${fmtScore(first.score)}</span><span class="ww-ev-who">${who}</span>${extra}`;
+      return href
+        ? `<a class="ww-ev jump" href="${esc(href)}" data-date="${esc(first.date || '')}" data-meet="${esc(first.virtius || '')}">${inner}</a>`
+        : `<div class="ww-ev">${inner}</div>`;
+    }).join('');
+    const countLine = n197
+      ? `<p class="ww-count"><strong>${n197}</strong> team score${n197 === 1 ? '' : 's'} of 197+</p>`
+      : `<p class="ww-count muted">No 197+ team scores this weekend.</p>`;
+    return `<section class="weekend-watch" id="weekend-watch" aria-label="Weekend Highs and 197+ Watch">
+      <div class="ww-head"><h2>Weekend Highs &amp; 197+ Watch</h2>${label ? `<p class="ww-when">${esc(label)}</p>` : ''}</div>
+      ${countLine}
+      ${n197 ? `<ol class="ww-197">${top}</ol>${rest197 > 0 ? `<p class="ww-more muted">+${rest197} more</p>` : ''}` : ''}
+      <div class="ww-events">${evCells}</div>
+    </section>`;
+  }
+  function weekendRangeLabel(start, end) {
+    if (!start) return '';
+    if (!end || start === end) return shortDate(start);
+    const a = new Date(start + 'T12:00:00Z');
+    const b = new Date(end + 'T12:00:00Z');
+    const sameMonth = a.getUTCMonth() === b.getUTCMonth();
+    const left = a.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric' });
+    const right = b.toLocaleDateString('en-US', { timeZone: 'UTC', month: sameMonth ? undefined : 'short', day: 'numeric' });
+    return `${left}–${right}`;
+  }
   function liveSeasonExtras(season, asOf) {
     const tens = [];
     const aas = [];
@@ -997,7 +1389,8 @@
       ? `<p class="hero-preview muted"><a class="jump" href="?season=${season - 1}">View ${season - 1} season</a></p>`
       : '';
     if (el.hero && !el.hero.hidden) {
-      el.hero.innerHTML = `${preview}${viewLast}${seasonHeroHtml(tens, aa, season)}`;
+      state.heroTens = tens;
+      el.hero.innerHTML = `${preview}${viewLast}${seasonHeroHtml(tens, aa, season)}${weekendWatchHtml(blockS, asOf, season)}`;
     }
     const box = el.pulse;
     if (box && !box.hidden) {
@@ -1059,7 +1452,7 @@
   function seasonHeroHtml(tens, aa, season) {
     const n = tens.length;
     const hasNew = tens.some(p => p.isNew);
-    const items = p => `<li class="${p.isNew ? 'is-new' : ''}"><span class="who">${esc(p.athlete)}${p.isNew ? ' <span class="hero-new-badge">NEW</span>' : ''}</span><span class="meta"><span>${teamLink(p.team, season)} · ${esc(EVENT_LABEL[p.event] || p.event)}</span> ${personMeet(p)}</span></li>`;
+    const items = p => `<li class="${p.isNew ? 'is-new' : ''}"><span class="who">${esc(p.athlete)}${p.isNew ? ' <span class="hero-new-badge">NEW</span>' : ''}</span><span class="meta"><span>${teamLink(p.team, season)} · ${esc(EVENT_LABEL[p.event] || p.event)}</span> ${personMeet(p)}</span><button type="button" class="share-mini" data-share-ten="${esc(tenKey(p))}" aria-label="Share ${esc(p.athlete)}'s perfect 10">Share</button></li>`;
     const highlight = tens.slice(0, 3).map(items).join('');
     const rest = tens.slice(3);
     const list = n
@@ -1161,6 +1554,38 @@
       <a class="nm-go" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">${live ? 'Watch scores' : 'Go to meet'} ›</a>`;
   }
   document.addEventListener('click', e => {
+    const favEl = e.target.closest('[data-fav-toggle]');
+    if (favEl) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFav(favEl.dataset.favToggle);
+      return;
+    }
+    const filterEl = e.target.closest('[data-filter]');
+    if (filterEl) {
+      e.preventDefault();
+      state.filter = filterEl.dataset.filter || 'all';
+      render();
+      return;
+    }
+    const tenShare = e.target.closest('[data-share-ten]');
+    if (tenShare) {
+      e.preventDefault();
+      e.stopPropagation();
+      const rec = (state.heroTens || []).find(p => tenKey(p) === tenShare.dataset.shareTen);
+      if (rec) shareTen(rec);
+      return;
+    }
+    const shareClose = e.target.closest('[data-share-close], #share-modal');
+    if (e.target.id === 'share-modal' || e.target.closest('[data-share-close]')) {
+      if (e.target.id === 'share-modal' || e.target.closest('[data-share-close]')) { closeShareModal(); return; }
+    }
+    const shareDl = e.target.closest('[data-share-dl]');
+    if (shareDl) { e.preventDefault(); downloadSharePng(); return; }
+    const shareSys = e.target.closest('[data-share-sys]');
+    if (shareSys) { e.preventDefault(); systemShare(); return; }
+    const shareCopy = e.target.closest('[data-share-copy]');
+    if (shareCopy) { e.preventDefault(); copyShareLink(shareCopy); return; }
     const teamEl = e.target.closest('[data-team]');
     if (teamEl) {
       e.preventDefault();
@@ -1229,7 +1654,8 @@
     clearTimeout(state.timer);
     const hasVirtius = state.meets.some(m => m.virtius && shouldPoll(m));
     const hasRtn = state.meets.some(m => !m.virtius && shouldPoll(m));
-    if (!hasVirtius && !hasRtn) return;
+    state.polling = !!(hasVirtius || hasRtn) && !state.team;
+    if (!state.polling) return;
     state.timer = setTimeout(poll, hasVirtius ? POLL_MS : FALLBACK_POLL_MS);
   }
   let lastRtnPoll = 0;
@@ -1249,21 +1675,248 @@
   }
   document.addEventListener('visibilitychange', () => { if (!document.hidden && state.date) poll(); });
 
+  // ---------- share cards ----------
+  const SHARE_SITE = 'thefivegym.github.io/live-scoreboard';
+  let sharePayload = null;
+  function meetShareUrl(meet) {
+    const p = new URLSearchParams();
+    if (SEASON_OVERRIDE) p.set('season', String(SEASON_OVERRIDE));
+    if (meet && meet.date) p.set('date', meet.date);
+    const qs = p.toString();
+    const key = meet ? meetKey(meet) : '';
+    return `${location.origin}${location.pathname}${qs ? `?${qs}` : ''}${key ? `#meet=${encodeURIComponent(key)}` : ''}`;
+  }
+  function tenShareUrl(p) {
+    const params = new URLSearchParams();
+    const season = p.date ? seasonFor(p.date) : (SEASON_OVERRIDE || defaultSeason());
+    if (season) params.set('season', String(season));
+    if (p.date) params.set('date', p.date);
+    const qs = params.toString();
+    const hash = p.virtius ? `#meet=${encodeURIComponent(p.virtius)}` : '';
+    return `${location.origin}${location.pathname}${qs ? `?${qs}` : ''}${hash}`;
+  }
+  function roundedRect(ctx, x, y, w, h, r) {
+    const rad = Math.min(r, w / 2, h / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + rad, y);
+    ctx.arcTo(x + w, y, x + w, y + h, rad);
+    ctx.arcTo(x + w, y + h, x, y + h, rad);
+    ctx.arcTo(x, y + h, x, y, rad);
+    ctx.arcTo(x, y, x + w, y, rad);
+    ctx.closePath();
+  }
+  function wrapText(ctx, text, maxWidth) {
+    const words = String(text || '').split(/\s+/).filter(Boolean);
+    const lines = [];
+    let line = '';
+    for (const w of words) {
+      const test = line ? `${line} ${w}` : w;
+      if (ctx.measureText(test).width <= maxWidth) line = test;
+      else { if (line) lines.push(line); line = w; }
+    }
+    if (line) lines.push(line);
+    return lines.slice(0, 4);
+  }
+  function drawShareCard(kind, data) {
+    const canvas = document.getElementById('share-canvas');
+    if (!canvas) return null;
+    const W = 1080, pad = 72;
+    const gold = '#ffcf4a', ink = '#f8f4ff', muted = '#cfcaf5', bg = '#14112b';
+    const rows = kind === 'ten' ? 1 : Math.max(1, ((data.teams || []).length));
+    const H = kind === 'ten' ? 1080 : Math.max(780, 440 + rows * 88 + 200);
+    canvas.width = W;
+    canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+    const grad = ctx.createLinearGradient(0, 0, W, H);
+    grad.addColorStop(0, '#1c1735');
+    grad.addColorStop(0.6, '#14112b');
+    grad.addColorStop(1, '#2c2154');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = gold;
+    ctx.fillRect(W * 0.18, 0, W * 0.64, 10);
+    ctx.fillStyle = gold;
+    ctx.font = '700 28px system-ui, -apple-system, Segoe UI, sans-serif';
+    ctx.letterSpacing = '4px';
+    ctx.fillText('THE FIVE THAT SCORE', pad, 88);
+    ctx.letterSpacing = '0px';
+    let y = 170;
+    if (kind === 'ten') {
+      ctx.fillStyle = muted;
+      ctx.font = '800 26px system-ui, sans-serif';
+      ctx.fillText('PERFECT 10', pad, y);
+      y += 140;
+      ctx.fillStyle = gold;
+      ctx.font = '900 180px system-ui, sans-serif';
+      ctx.fillText('10.000', pad, y);
+      y += 90;
+      ctx.fillStyle = ink;
+      ctx.font = '800 56px system-ui, sans-serif';
+      for (const line of wrapText(ctx, data.athlete, W - pad * 2)) { ctx.fillText(line, pad, y); y += 66; }
+      ctx.fillStyle = muted;
+      ctx.font = '600 36px system-ui, sans-serif';
+      const ev = (EVENT_LABEL && EVENT_LABEL[data.event]) || data.event || '';
+      ctx.fillText([data.team, ev].filter(Boolean).join('  ·  '), pad, y);
+      y += 56;
+      ctx.font = '500 30px system-ui, sans-serif';
+      const when = [data.date ? shortDate(data.date) : '', data.meet].filter(Boolean).join('  ·  ');
+      for (const line of wrapText(ctx, when, W - pad * 2)) { ctx.fillText(line, pad, y); y += 40; }
+    } else {
+      ctx.fillStyle = ink;
+      ctx.font = '800 52px system-ui, sans-serif';
+      const titleLines = wrapText(ctx, data.title || 'Meet', W - pad * 2);
+      for (const line of titleLines) { ctx.fillText(line, pad, y); y += 60; }
+      y += 8;
+      ctx.fillStyle = gold;
+      ctx.font = '800 28px system-ui, sans-serif';
+      ctx.fillText((data.status || '').toUpperCase(), pad, y);
+      ctx.fillStyle = muted;
+      ctx.font = '600 28px system-ui, sans-serif';
+      const when = [data.date ? shortDate(data.date) : '', data.time].filter(Boolean).join('  ·  ');
+      ctx.fillText(when, pad + (data.status ? 160 : 0), y);
+      y += 50;
+      for (const t of (data.teams || [])) {
+        roundedRect(ctx, pad, y, W - pad * 2, 76, 16);
+        ctx.fillStyle = 'rgba(255,207,74,0.08)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,207,74,0.28)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.fillStyle = muted;
+        ctx.font = '700 28px system-ui, sans-serif';
+        if (t.place) ctx.fillText(String(t.place), pad + 22, y + 48);
+        ctx.fillStyle = ink;
+        ctx.font = '700 34px system-ui, sans-serif';
+        ctx.fillText(t.name || '', pad + 80, y + 48);
+        if (t.score != null) {
+          ctx.fillStyle = gold;
+          ctx.font = '800 36px system-ui, sans-serif';
+          ctx.textAlign = 'right';
+          ctx.fillText(fmtScore(t.score), W - pad - 22, y + 48);
+          ctx.textAlign = 'left';
+        }
+        y += 88;
+      }
+    }
+    ctx.fillStyle = gold;
+    ctx.font = '700 28px system-ui, sans-serif';
+    ctx.fillText('@thefivethatscore', pad, H - 90);
+    ctx.fillStyle = muted;
+    ctx.font = '500 24px system-ui, sans-serif';
+    ctx.fillText(SHARE_SITE, pad, H - 52);
+    return canvas;
+  }
+  function filenameForShare(kind, data) {
+    const slug = s => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    if (kind === 'ten') return `tfts-perfect10-${slug(data.athlete)}-${slug(data.event)}.png`;
+    return `tfts-${slug((data.teams || []).map(t => t.name).slice(0, 3).join('-') || data.title)}-${data.date || 'meet'}.png`;
+  }
+  async function canvasPngBlob(canvas) {
+    return await new Promise((resolve, reject) => canvas.toBlob(b => b ? resolve(b) : reject(new Error('png')), 'image/png'));
+  }
+  async function openShareModal(kind, data, url) {
+    sharePayload = { kind, data, url };
+    const modal = document.getElementById('share-modal');
+    const sys = modal && modal.querySelector('[data-share-sys]');
+    const copy = modal && modal.querySelector('[data-share-copy]');
+    if (copy) copy.textContent = 'Copy link';
+    drawShareCard(kind, data);
+    if (sys) {
+      const can = typeof navigator.share === 'function';
+      sys.hidden = !can;
+    }
+    if (modal) {
+      modal.hidden = false;
+      modal.querySelector('.share-close')?.focus();
+    }
+  }
+  function closeShareModal() {
+    const modal = document.getElementById('share-modal');
+    if (modal) modal.hidden = true;
+    sharePayload = null;
+  }
+  function shareMeet(meet) {
+    const d = state.details[meetKey(meet)];
+    const status = statusOf(meet);
+    const teams = (d && d.teams && d.teams.length)
+      ? d.teams.map(t => ({ name: t.name, place: t.place, score: t.score }))
+      : meetNames(meet).map(n => ({ name: n, place: null, score: null }));
+    openShareModal('meet', {
+      title: (d && d.name && meet.desc) ? meet.desc : meetTitle(meet),
+      status, date: meet.date, time: formatMeetTime(meet.start_utc), teams,
+    }, meetShareUrl(meet));
+  }
+  function shareTen(p) {
+    openShareModal('ten', {
+      athlete: p.athlete, team: p.team, event: p.event, date: p.date, meet: p.meet, score: 10,
+    }, tenShareUrl(p));
+  }
+  async function downloadSharePng() {
+    if (!sharePayload) return;
+    const canvas = document.getElementById('share-canvas');
+    const blob = await canvasPngBlob(canvas);
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filenameForShare(sharePayload.kind, sharePayload.data);
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+  }
+  async function systemShare() {
+    if (!sharePayload || typeof navigator.share !== 'function') return;
+    const canvas = document.getElementById('share-canvas');
+    const blob = await canvasPngBlob(canvas);
+    const file = new File([blob], filenameForShare(sharePayload.kind, sharePayload.data), { type: 'image/png' });
+    const title = sharePayload.kind === 'ten'
+      ? `${sharePayload.data.athlete} scores a Perfect 10 — The Five That Score`
+      : `${sharePayload.data.title} — The Five That Score`;
+    const payload = { title, text: title, url: sharePayload.url };
+    try {
+      if (navigator.canShare && navigator.canShare({ files: [file] })) await navigator.share({ ...payload, files: [file] });
+      else await navigator.share(payload);
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+    }
+  }
+  async function copyShareLink(btn) {
+    if (!sharePayload) return;
+    const url = sharePayload.url;
+    let ok = false;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(url);
+        ok = true;
+      }
+    } catch { /* fall through */ }
+    if (!ok) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { ok = document.execCommand('copy'); } catch { ok = false; }
+      ta.remove();
+    }
+    if (ok && btn) { btn.textContent = 'Copied!'; setTimeout(() => { if (btn.isConnected) btn.textContent = 'Copy link'; }, 1600); }
+  }
+
   // ---------- events ----------
   el.meets.addEventListener('click', async e => {
-    if (e.target.closest('[data-team]')) return; // handled on document
+    if (e.target.closest('[data-team], [data-fav-toggle], a.tv-badge')) return;
     const jump = e.target.closest('a.jump[data-date]');
     if (jump) { e.preventDefault(); setDate(jump.dataset.date); return; }
     const tab = e.target.closest('[data-tab]');
     if (tab) { state.tab[tab.dataset.meet] = tab.dataset.tab; render(); return; }
     const share = e.target.closest('[data-share]');
     if (share) {
+      e.preventDefault();
+      e.stopPropagation();
       const key = share.dataset.share;
-      const url = `${location.origin}${location.pathname}?${demo ? 'demo&' : ''}date=${state.date}#meet=${key}`;
-      try {
-        if (navigator.share && matchMedia('(pointer:coarse)').matches) await navigator.share({ title: 'Live D1 gymnastics — The Five That Score', url });
-        else { await navigator.clipboard.writeText(url); share.textContent = '✓'; setTimeout(() => { share.textContent = '🔗'; }, 1500); }
-      } catch { /* user cancelled */ }
+      const meet = state.meets.find(m => meetKey(m) === key);
+      if (meet) shareMeet(meet);
       return;
     }
     const tog = e.target.closest('[data-toggle]');
@@ -1280,6 +1933,14 @@
     setDate(todayChicago());
   });
   el.date.addEventListener('change', () => { if (isYmd(el.date.value)) setDate(el.date.value); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeShareModal();
+    const star = e.target.closest && e.target.closest('[data-fav-toggle]');
+    if (star && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      toggleFav(star.dataset.favToggle);
+    }
+  });
   window.addEventListener('hashchange', async () => {
     const k = readHashMeet();
     if (!k) return;
@@ -1312,6 +1973,12 @@
   }
 
   // ---------- boot ----------
+  loadFavs();
+  if ('serviceWorker' in navigator) {
+    const swUrl = new URL('sw.js', document.baseURI);
+    navigator.serviceWorker.register(swUrl.href, { scope: new URL('./', document.baseURI).href }).catch(() => {});
+  }
+  setInterval(tickAgo, 1000);
   if (demo) {
     el.banner.hidden = false;
     el.banner.innerHTML = `<strong>Demo mode</strong> — real 2026 data, so you can preview the scoreboard in the offseason.
@@ -1327,7 +1994,7 @@
   const start = isYmd(qDate) ? qDate : (demo ? DEMO.date : todayChicago());
   const hashMeet = readHashMeet() || (demo && !qDate && !qTeam ? DEMO.meet : null);
   if (hashMeet) state.open.add(hashMeet);
-  loadTeams().then(() => { initTeamPicker(); if (state.date && !state.team) render(); }).catch(() => initTeamPicker());
+  loadTeams().then(() => { initTeamPicker(); initFavPicker(); if (state.date && !state.team) render(); }).catch(() => { initTeamPicker(); initFavPicker(); });
   loadSeasonData().then(() => { renderSeasonPulse(); if (state.team) render(); });
   if (qTeam) {
     openTeam(qTeam, seasonArg);

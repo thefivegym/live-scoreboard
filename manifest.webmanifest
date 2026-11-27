@@ -1,0 +1,17 @@
+{
+  "name": "The Five That Score — Live Scoreboard",
+  "short_name": "FiveThatScore",
+  "description": "Live NCAA Division I women's gymnastics scores, rotation by rotation. By The Five That Score (@thefivethatscore).",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14112b",
+  "theme_color": "#14112b",
+  "lang": "en",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

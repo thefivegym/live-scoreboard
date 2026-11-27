@@ -17,6 +17,12 @@
 <meta name="twitter:image" content="https://thefivegym.github.io/live-scoreboard/og-image.png?v=2">
 <meta name="twitter:site" content="@thefivethatscore">
 <meta name="theme-color" content="#14112b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="FiveThatScore">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314112b'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23ffcf4a'%3E5%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -47,8 +53,16 @@
   <div class="wrap">
     <div class="team-picker">
       <label for="team-search" class="tp-label">Meet by team</label>
-      <input id="team-search" type="search" placeholder="Search D1 teams…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="team-list">
+      <div class="tp-row">
+        <input id="team-search" type="search" placeholder="Search D1 teams…" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="team-list">
+        <button type="button" id="fav-picker-btn" class="fav-picker-btn" aria-expanded="false" aria-controls="fav-picker" title="Favorite teams">★ Favorites</button>
+      </div>
       <ul id="team-list" class="team-list" role="listbox" hidden></ul>
+      <div id="fav-picker" class="fav-picker" hidden>
+        <p class="tp-label">Star teams to pin their meets</p>
+        <input id="fav-picker-search" type="search" placeholder="Filter teams…" autocomplete="off" spellcheck="false">
+        <ul id="fav-picker-list" class="fav-picker-list"></ul>
+      </div>
     </div>
   </div>
 </div>
@@ -59,16 +73,29 @@
   <section id="season-pulse" class="pulse" aria-label="National rankings"></section>
   <div id="banner" class="banner" hidden></div>
   <div id="status-line" class="status-line" aria-live="polite"></div>
+  <div id="meet-filters" class="filters" hidden role="tablist" aria-label="Filter meets"></div>
   <section id="meets" class="meets" aria-live="polite"></section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>Live scores courtesy of <a href="https://virti.us" target="_blank" rel="noopener">Virtius</a>. Schedule, national rankings (NQS), final championship standings and backup results courtesy of <a href="https://www.roadtonationals.com" target="_blank" rel="noopener">Road to Nationals</a>. Preseason rankings from the <a href="https://usagym.org/college/national-rankings/" target="_blank" rel="noopener">WCGA / CGA coaches poll</a>. Times shown in Central Time.</p>
+    <p>Live scores courtesy of <a href="https://virti.us" target="_blank" rel="noopener">Virtius</a>. Schedule, national rankings (NQS), final championship standings and backup results courtesy of <a href="https://www.roadtonationals.com" target="_blank" rel="noopener">Road to Nationals</a>. Preseason rankings from the <a href="https://usagym.org/college/national-rankings/" target="_blank" rel="noopener">WCGA / CGA coaches poll</a>. Start times are shown in your local timezone.</p>
     <p>Scores belong to their original sources. This is a free, ad-free fan project and is not affiliated with the NCAA, Virtius, Road to Nationals or any school. Data owners with questions or removal requests can reach us at <a href="https://x.com/thefivethatscore" target="_blank" rel="noopener">@thefivethatscore</a>.</p>
     <p>Built by <a href="https://x.com/thefivethatscore" target="_blank" rel="noopener">The Five That Score</a> · Unofficial; always confirm with official results. · <a id="demo-link" href="?demo">Demo</a></p>
   </div>
 </footer>
+<div id="share-modal" class="share-modal" hidden>
+  <div class="share-dialog" role="dialog" aria-modal="true" aria-labelledby="share-title">
+    <button type="button" class="share-close" data-share-close aria-label="Close share dialog">×</button>
+    <h2 id="share-title">Share</h2>
+    <div class="share-preview"><canvas id="share-canvas" width="1080" height="1080" aria-label="Score card preview"></canvas></div>
+    <div class="share-actions">
+      <button type="button" class="share-act" data-share-dl>Download PNG</button>
+      <button type="button" class="share-act" data-share-sys>Share</button>
+      <button type="button" class="share-act" data-share-copy>Copy link</button>
+    </div>
+  </div>
+</div>
 <script src="app.js" defer></script>
 </body>
 </html>

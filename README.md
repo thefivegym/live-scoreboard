@@ -6,9 +6,15 @@ A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 - **Perfect 10s** and **highest all-around** sit in a gold highlight at the top of the home page (just under the header; the Next meet bar and visit counter stay visible). They are computed from official-meet Virtius scores (10.0 finals only; all-around = all four events in one meet). Ties for the top AA are all listed. Today’s live meets are merged in the browser, with a brief “NEW” highlight when a 10 lands live. Empty seasons still get a celebratory card: “No perfect 10s yet this season.” Preview a past season with `?season=2026` or a mid-season date with `?now=2026-03-15`.
 - **National rankings** below that (Top 25, expandable to the full list) and on each team profile. After NCAA Championships the card shows official final standings (champion, other Four on the Floor, semifinalists, regional field, then remaining teams in final regular-season NQS order), labeled “{year} Final Standings (after NCAA Championships),” from Road to Nationals `GET /api/women/finalresults/{year}`. Until the next WCGA/CGA preseason coaches poll is released, the home page and profiles keep showing that final championship order (profiles: “No. X — 2026 final”). The poll then takes over automatically once it is stored as published; weekly RTN NQS rankings follow once the new season starts. Ranks are never invented.
 - **Team profiles** via a searchable “Meet by team” picker or `?team=slug` (for example `?team=oklahoma`). Each profile shows upcoming meets and previous results with jump links to the meet on the calendar, plus a meet record, season high and average when scores are available, and the team’s national rank. Until the next season is published it labels the last completed season and says the new schedule is coming; it switches automatically once `data/seasons/{year}.json` (or an announced-schedule file) is present, with a link to view last season. Team names on meet cards link to the profile.
-- **Next meet** at the top of the page: teams, date and time in Central Time, a jump link to that day on the calendar (`?date=YYYY-MM-DD#meet=KEY`), and “+N more that day” when several meets share the date. On a live meet day it becomes **Live now**. When Road to Nationals has not published the season yet, the calendar is filled from official school athletics schedules (no live scoring links until RTN/Virtius keys appear). The Next meet bar jumps to the first announced meet.
+- **Next meet** at the top of the page: teams, date and time in the visitor’s local timezone, a jump link to that day on the calendar (`?date=YYYY-MM-DD#meet=KEY`), and “+N more that day” when several meets share the date. On a live meet day it becomes **Live now**. When Road to Nationals has not published the season yet, the calendar is filled from official school athletics schedules (no live scoring links until RTN/Virtius keys appear). The Next meet bar jumps to the first announced meet.
+- **Favorite teams** (stars on meet cards, team profiles, and a Favorites picker) are saved in `localStorage`. Meets with a starred team float to the top and a Favorites filter appears.
+- **Meet filters** (single row, scrollable on mobile): All, Live now, Favorites, Top 25, and conferences (SEC, Big Ten, Big 12, ACC, Other — from the Road to Nationals D1 conference list in `data/d1-teams.json` / `data/team-meta.json`). Live cards show a `Rot N` badge from Virtius, and an `Updated Xs ago` indicator ticks while live polling is active.
+- **Local start times** use the visitor’s timezone (`Intl.DateTimeFormat`, with a short zone abbreviation). Missing or invalid times show “Time TBA,” never “Invalid Date.” Real TV/stream badges (`ESPN+`, `SEC Network`, `Big Ten+`, and so on) appear only when `video_desc` or a recognizable `video_link` is already in the schedule data — never invented.
+- **Share** on meet cards and Perfect 10s opens a dark/gold `@thefivethatscore` score card (PNG) with Download, system Share, and Copy link.
+- **Installable** as a Progressive Web App (`manifest.webmanifest`, icons, and a network-first `sw.js` so live scores are not served stale).
+- **Weekend Highs & 197+ Watch** sits under the Perfect 10s / AA hero: the latest weekend’s 197+ team scores and event highs (VT/UB/BB/FX), clickable to the meet. `?season=2026` previews last season; the 2027 preseason shows a clean empty state.
 - **Every D1 meet for a day** (defaults to today in America/Chicago) as a card: teams, running team
-  scores, LIVE / FINAL / UPCOMING badge, start time in CT, TV and stats links.
+  scores, LIVE / FINAL / UPCOMING badge, local start time, TV/stream badges when known, and stats links.
 - **Expand a meet** for rotation-by-rotation team event scores, each athlete's score on vault, bars,
   beam and floor (dropped scores struck through, exhibitions marked EX), and event + all-around leaderboards.
 - **Live polling:** browsers fetch Virtius directly every 30 s, only for meets that are live (or within
@@ -28,7 +34,7 @@ A static, no-build live scoreboard for NCAA Division I women's gymnastics, by
 | Schedule (dates, teams, times, Virtius keys, video links) | GitHub Actions → `data/schedule.json`, `data/seasons/{year}.json` | Road to Nationals `GET /api/women/schedule/{year}/1` |
 | D1 team list | GitHub Actions → `data/d1-teams.json` | Road to Nationals national rankings `GET /api/women/results/{year}/{week}/0/5`, rows with `div = "Div I"` |
 | National rankings | GitHub Actions → `data/rankings.json` | WCGA preseason poll (when published); in season, RTN weekly NQS `GET /api/women/results/{year}/{week}/0/5`; after championships, RTN `GET /api/women/finalresults/{year}` |
-| Perfect 10s and AA high | GitHub Actions → `data/season-stats.json` | Virtius session JSON for official season meets; the browser also detects 10s/AA in today’s live meets |
+| Perfect 10s, AA high, weekend 197+ / event highs | GitHub Actions → `data/season-stats.json` | Virtius session JSON for official season meets; the browser also detects 10s/AA and weekend highs in today’s live meets |
 | Live scores | Visitor's browser, every 30 s | Virtius `GET https://api.virti.us/session/{key}/json` (public, CORS `*`) |
 | Fallback results for meets not on Virtius | GitHub Actions every 10 min → `data/results/{meet_id}.json` | Road to Nationals `GET /api/women/meetresults/{meet_id}` |
 
@@ -62,8 +68,9 @@ data/results/{meet_id}.json        RTN fallback results for non-Virtius meets
 data/d1-teams.json                 D1 team list (from RTN rankings)
 data/d1-overrides.json             manual include/exclude corrections
 data/rankings.json                 preseason poll + weekly RTN NQS rankings
-data/season-stats.json             perfect 10s and highest all-around, per season
+data/season-stats.json             perfect 10s, highest all-around, and weekend 197+ / event highs
 data/virtius-score-cache.json      extracted Virtius scores so stats can update incrementally
+manifest.webmanifest, sw.js, icons/  PWA install + network-first service worker
 screenshots/                       preview screenshots (not needed for the site)
 ```
 

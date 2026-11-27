@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Builds data/rankings.json (WCGA preseason poll, Road to Nationals weekly
 // national rankings, and official final standings after NCAA Championships)
-// and data/season-stats.json (perfect 10s and highest all-around) from
-// official D1 season meets on Virtius.
+// and data/season-stats.json (perfect 10s, highest all-around, weekend
+// 197+ team scores and event highs) from official D1 season meets on Virtius.
 //
 // Separate from scripts/build-schedule.mjs so schedule refreshes stay untouched.
 // No npm deps; Node 18+ (global fetch).
@@ -293,7 +293,7 @@ async function loadSeasonMeets(season) {
 
 function extractSession(json, meet) {
   const m = json && json.meet;
-  if (!m) return { perfect10s: [], allArounds: [] };
+  if (!m) return { perfect10s: [], allArounds: [], teamScores: [], eventHighs: [] };
   const title = meet.desc || m.name || [ ...(meet.home || []), ...(meet.away || []) ].join(' vs ');
   const date = isYmd(meet.date) ? meet.date : (isYmd(m.meet_date) ? m.meet_date : null);
   const perfect10s = [];
@@ -338,7 +338,48 @@ function extractSession(json, meet) {
       events: Object.fromEntries(EVENTS.map(e => [e, rec.events[e]])),
     });
   }
-  return { perfect10s, allArounds };
+
+  const teamScores = [];
+  const eventBest = { vault: [], bars: [], beam: [], floor: [] };
+  for (const t of use) {
+    const teamName = decode(t.name);
+    const evTotals = {};
+    for (const ev of t.events || []) {
+      const event = EV_BY_NAME[String(ev.event_name || '').toUpperCase()];
+      if (!event) continue;
+      const official = [];
+      for (const g of ev.gymnasts || []) {
+        if ((g.order || 0) >= 7) continue;
+        const score = num(g.final_score);
+        if (score == null) continue;
+        const athlete = decode(g.full_name || `${g.first_name || ''} ${g.last_name || ''}`.trim());
+        official.push(score);
+        if (athlete) eventBest[event].push({ athlete, team: teamName, event, score, date, meet: title, meet_id: meet.id ?? null, virtius: meet.virtius || null });
+      }
+      official.sort((a, b) => b - a);
+      const top5 = official.slice(0, 5);
+      evTotals[event] = num(ev.event_score) ?? (top5.length ? top5.reduce((s, v) => s + v, 0) : null);
+    }
+    const summed = EVENTS.reduce((s, e) => s + (evTotals[e] || 0), 0);
+    const allFour = EVENTS.every(e => evTotals[e] != null);
+    const score = num(t.final_score) ?? (allFour ? summed : (summed > 0 ? summed : null));
+    if (score != null && score >= 100 && score <= 200.0001) {
+      teamScores.push({
+        team: teamName, score: Number(score.toFixed(4)),
+        date, meet: title, meet_id: meet.id ?? null, virtius: meet.virtius || null,
+      });
+    }
+  }
+  const eventHighs = [];
+  for (const event of EVENTS) {
+    const list = eventBest[event];
+    if (!list.length) continue;
+    const best = Math.max(...list.map(x => x.score));
+    const tied = list.filter(x => Math.abs(x.score - best) < 1e-9)
+      .filter((x, i, arr) => arr.findIndex(y => y.athlete === x.athlete && y.team === x.team) === i);
+    eventHighs.push(...tied);
+  }
+  return { perfect10s, allArounds, teamScores, eventHighs };
 }
 
 async function fetchVirtius(key, attempt = 1) {
@@ -411,6 +452,7 @@ function summarizeSeason(sessions) {
     perfect10s: tens.map(publicTen),
     allAroundHigh: best >= 0 ? { score: best, tied: finalTied } : { score: null, tied: [] },
     allAroundHighByDate: highByDate,
+    weekends: summarizeWeekends(sessions),
   };
 }
 function publicTen(p) {
@@ -418,6 +460,77 @@ function publicTen(p) {
 }
 function publicAA(a) {
   return { athlete: a.athlete, team: a.team, score: a.score, date: a.date, meet: a.meet, meet_id: a.meet_id ?? null, virtius: a.virtius || null };
+}
+function publicTeamScore(t) {
+  return { team: t.team, score: t.score, date: t.date, meet: t.meet, meet_id: t.meet_id ?? null, virtius: t.virtius || null };
+}
+function publicEventHigh(e) {
+  return { athlete: e.athlete, team: e.team, event: e.event, score: e.score, date: e.date, meet: e.meet, meet_id: e.meet_id ?? null, virtius: e.virtius || null };
+}
+function sundayOf(ymd) {
+  const d = new Date(ymd + 'T12:00:00Z');
+  const add = d.getUTCDay() === 0 ? 0 : 7 - d.getUTCDay();
+  d.setUTCDate(d.getUTCDate() + add);
+  return d.toISOString().slice(0, 10);
+}
+function weekendLabel(start, end) {
+  if (!start) return '';
+  if (start === end) {
+    const a = new Date(start + 'T12:00:00Z');
+    return a.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric' });
+  }
+  const a = new Date(start + 'T12:00:00Z');
+  const b = new Date(end + 'T12:00:00Z');
+  const sameMonth = a.getUTCMonth() === b.getUTCMonth();
+  const left = a.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric' });
+  const right = b.toLocaleDateString('en-US', { timeZone: 'UTC', month: sameMonth ? undefined : 'short', day: 'numeric' });
+  return `${left}–${right}`;
+}
+function summarizeWeekends(sessions) {
+  const weeks = new Map();
+  const bucket = ymd => {
+    const id = sundayOf(ymd);
+    if (!weeks.has(id)) weeks.set(id, { id, start: ymd, end: ymd, team197: [], events: { vault: [], bars: [], beam: [], floor: [] }, meetKeys: new Set() });
+    const w = weeks.get(id);
+    if (ymd < w.start) w.start = ymd;
+    if (ymd > w.end) w.end = ymd;
+    return w;
+  };
+  for (const [key, s] of Object.entries(sessions)) {
+    const date = isYmd(s.date) ? s.date : null;
+    if (!date) continue;
+    const w = bucket(date);
+    w.meetKeys.add(key);
+    for (const t of s.teamScores || []) {
+      if (t.score != null && t.score >= 197 - 1e-9) w.team197.push(publicTeamScore(t));
+    }
+    for (const e of s.eventHighs || []) {
+      if (e.event && w.events[e.event]) w.events[e.event].push(e);
+    }
+  }
+  return [...weeks.values()].sort((a, b) => a.end.localeCompare(b.end) || a.start.localeCompare(b.start)).map(w => {
+    const eventHighs = {};
+    for (const event of EVENTS) {
+      const list = w.events[event];
+      if (!list.length) { eventHighs[event] = []; continue; }
+      const best = Math.max(...list.map(x => x.score));
+      eventHighs[event] = list.filter(x => Math.abs(x.score - best) < 1e-9)
+        .filter((x, i, arr) => arr.findIndex(y => y.athlete === x.athlete && y.team === x.team && y.date === x.date && (y.virtius || '') === (x.virtius || '')) === i)
+        .sort((a, b) => (a.date || '').localeCompare(b.date || '') || a.athlete.localeCompare(b.athlete))
+        .map(publicEventHigh);
+    }
+    const seenT = new Set();
+    const team197 = w.team197.filter(t => {
+      const k = `${t.date}|${t.virtius || ''}|${t.team}|${t.score}`;
+      if (seenT.has(k)) return false;
+      seenT.add(k);
+      return true;
+    }).sort((a, b) => b.score - a.score || (a.date || '').localeCompare(b.date || '') || a.team.localeCompare(b.team));
+    return {
+      id: w.id, start: w.start, end: w.end, label: weekendLabel(w.start, w.end),
+      meets: w.meetKeys.size, team197, eventHighs,
+    };
+  });
 }
 
 async function buildSeasonStats() {
@@ -438,7 +551,8 @@ async function buildSeasonStats() {
     const withKey = meets.filter(m => m.virtius);
     log(`Season ${season}: ${meets.length} official meets${file ? ` from ${file}` : ' (no schedule file yet)'}, ${withKey.length} with Virtius keys`);
     const todayKeys = new Set(withKey.filter(m => m.date === today || m.date === addDays(today, -1)).map(m => m.virtius));
-    const todo = withKey.filter(m => force || !cache.sessions[m.virtius] || todayKeys.has(m.virtius));
+    const stale = s => !s || !Array.isArray(s.teamScores) || !Array.isArray(s.eventHighs);
+    const todo = withKey.filter(m => force || stale(cache.sessions[m.virtius]) || todayKeys.has(m.virtius));
     log(`  fetching ${todo.length} Virtius sessions (${withKey.length - todo.length} cached)`);
     let ok = 0, fail = 0;
     await pool(todo, VIRTIUS_CONCURRENCY, async (meet, idx) => {
@@ -447,7 +561,9 @@ async function buildSeasonStats() {
         const extracted = extractSession(json, meet);
         cache.sessions[meet.virtius] = {
           date: meet.date, meet_id: meet.id ?? null, name: meet.desc || meet.name || null,
-          perfect10s: extracted.perfect10s, allArounds: extracted.allArounds, fetched_at: new Date().toISOString(),
+          perfect10s: extracted.perfect10s, allArounds: extracted.allArounds,
+          teamScores: extracted.teamScores, eventHighs: extracted.eventHighs,
+          fetched_at: new Date().toISOString(),
         };
         ok++;
         if ((idx + 1) % 25 === 0 || idx === todo.length - 1) log(`  … ${idx + 1}/${todo.length} (${ok} ok, ${fail} failed)`);
@@ -464,7 +580,8 @@ async function buildSeasonStats() {
       else missing.push({ date: m.date, virtius: m.virtius, meet: m.desc || m.id });
     }
     const summary = summarizeSeason(seasonSessions);
-    log(`  perfect 10s: ${summary.perfect10s.length}; AA high: ${summary.allAroundHigh.score ?? 'none'}${summary.allAroundHigh.tied.length ? ' (' + summary.allAroundHigh.tied.map(t => t.athlete).join(', ') + ')' : ''}`);
+    const n197 = summary.weekends.reduce((n, w) => n + w.team197.length, 0);
+    log(`  perfect 10s: ${summary.perfect10s.length}; AA high: ${summary.allAroundHigh.score ?? 'none'}${summary.allAroundHigh.tied.length ? ' (' + summary.allAroundHigh.tied.map(t => t.athlete).join(', ') + ')' : ''}; weekends: ${summary.weekends.length} (${n197} scores of 197+)`);
     seasons[String(season)] = {
       meets: meets.length,
       meets_with_virtius: withKey.length,

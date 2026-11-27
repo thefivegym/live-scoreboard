@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T12:03:43.591Z",
+ "generated_at": "2026-11-27T12:58:16.595Z",
  "seasons": {
   "2026": {
    "meets": 342,
@@ -600,6 +600,2657 @@
       }
      ]
     }
+   ],
+   "weekends": [
+    {
+     "id": "2026-01-04",
+     "start": "2026-01-02",
+     "end": "2026-01-04",
+     "label": "Jan 2–4",
+     "meets": 5,
+     "team197": [],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Zoe Johnson",
+        "team": "Utah",
+        "event": "vault",
+        "score": 9.925,
+        "date": "2026-01-02",
+        "meet": "Utah / Minnesota / Iowa",
+        "meet_id": 31517,
+        "virtius": "yLmIWwKtU0"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "bars",
+        "score": 9.925,
+        "date": "2026-01-03",
+        "meet": "Washington / California / Oregon State / UCLA",
+        "meet_id": 31525,
+        "virtius": "57h4x8lXRL"
+       },
+       {
+        "athlete": "Taylor DeVries",
+        "team": "Oregon State",
+        "event": "bars",
+        "score": 9.925,
+        "date": "2026-01-03",
+        "meet": "Washington / California / Oregon State / UCLA",
+        "meet_id": 31525,
+        "virtius": "57h4x8lXRL"
+       },
+       {
+        "athlete": "Tonya Paulsson",
+        "team": "California",
+        "event": "bars",
+        "score": 9.925,
+        "date": "2026-01-03",
+        "meet": "Washington / California / Oregon State / UCLA",
+        "meet_id": 31525,
+        "virtius": "57h4x8lXRL"
+       },
+       {
+        "athlete": "Hannah Horton",
+        "team": "Missouri",
+        "event": "bars",
+        "score": 9.925,
+        "date": "2026-01-04",
+        "meet": "Missouri vs Iowa State",
+        "meet_id": 31529,
+        "virtius": "CsDcitZCLO"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-01-03",
+        "meet": "Washington / California / Oregon State / UCLA",
+        "meet_id": 31525,
+        "virtius": "57h4x8lXRL"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 9.925,
+        "date": "2026-01-03",
+        "meet": "Washington / California / Oregon State / UCLA",
+        "meet_id": 31525,
+        "virtius": "57h4x8lXRL"
+       },
+       {
+        "athlete": "Hannah Horton",
+        "team": "Missouri",
+        "event": "floor",
+        "score": 9.925,
+        "date": "2026-01-04",
+        "meet": "Missouri vs Iowa State",
+        "meet_id": 31529,
+        "virtius": "CsDcitZCLO"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-01-11",
+     "start": "2026-01-09",
+     "end": "2026-01-11",
+     "label": "Jan 9–11",
+     "meets": 21,
+     "team197": [
+      {
+       "team": "Florida",
+       "score": 197.725,
+       "date": "2026-01-09",
+       "meet": "Florida / UNC / WVU / Temple",
+       "meet_id": 31557,
+       "virtius": "AdVHymVhHj"
+      },
+      {
+       "team": "LSU",
+       "score": 197.5,
+       "date": "2026-01-10",
+       "meet": "Sprouts Farmers Market Collegiate Quad",
+       "meet_id": 32607,
+       "virtius": "9WRjkzZznl"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.5,
+       "date": "2026-01-10",
+       "meet": "Sprouts Farmers Market Collegiate Quad",
+       "meet_id": 32607,
+       "virtius": "9WRjkzZznl"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.475,
+       "date": "2026-01-09",
+       "meet": "Clemson vs Alabama",
+       "meet_id": 31563,
+       "virtius": "1UnQKbk4jn"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.275,
+       "date": "2026-01-10",
+       "meet": "Nebraska / Missouri / UW-Stout / UWL",
+       "meet_id": 31573,
+       "virtius": "p8KO-dZvmC"
+      },
+      {
+       "team": "Michigan",
+       "score": 197.225,
+       "date": "2026-01-10",
+       "meet": "Sprouts Farmers Market Collegiate Quad",
+       "meet_id": 31585,
+       "virtius": "XVk5MDQ1Kk"
+      },
+      {
+       "team": "UCLA",
+       "score": 197,
+       "date": "2026-01-10",
+       "meet": "Sprouts Farmers Market Collegiate Quad",
+       "meet_id": 32607,
+       "virtius": "9WRjkzZznl"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Avery Neff",
+        "team": "Utah",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-01-10",
+        "meet": "Sprouts Farmers Market Collegiate Quad",
+        "meet_id": 32607,
+        "virtius": "9WRjkzZznl"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Azaraya Ra-Akbar",
+        "team": "Alabama",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-01-09",
+        "meet": "Clemson vs Alabama",
+        "meet_id": 31563,
+        "virtius": "1UnQKbk4jn"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Selena Harris-Miranda",
+        "team": "Florida",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-01-09",
+        "meet": "Florida / UNC / WVU / Temple",
+        "meet_id": 31557,
+        "virtius": "AdVHymVhHj"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Cecilia Cooley",
+        "team": "Denver",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-01-11",
+        "meet": "Denver vs Stanford",
+        "meet_id": 31606,
+        "virtius": "tuj7tgbFwx"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-01-18",
+     "start": "2026-01-12",
+     "end": "2026-01-18",
+     "label": "Jan 12–18",
+     "meets": 26,
+     "team197": [
+      {
+       "team": "Florida",
+       "score": 197.425,
+       "date": "2026-01-16",
+       "meet": "Florida vs Alabama",
+       "meet_id": 31633,
+       "virtius": "BfO-LkCWGw"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.425,
+       "date": "2026-01-16",
+       "meet": "Missouri vs Oklahoma",
+       "meet_id": 32608,
+       "virtius": "Z_n4ZCP9Py"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.325,
+       "date": "2026-01-17",
+       "meet": "UCLA vs Nebraska",
+       "meet_id": 31661,
+       "virtius": "p4OyNaVP3X"
+      },
+      {
+       "team": "Utah",
+       "score": 197.3,
+       "date": "2026-01-12",
+       "meet": "Best of Utah",
+       "meet_id": 31622,
+       "virtius": "C1XuuEGIIF"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.275,
+       "date": "2026-01-16",
+       "meet": "Florida vs Alabama",
+       "meet_id": 31633,
+       "virtius": "BfO-LkCWGw"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.25,
+       "date": "2026-01-18",
+       "meet": "Arkansas vs Auburn",
+       "meet_id": 31705,
+       "virtius": "3bgpsILyO1"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.225,
+       "date": "2026-01-18",
+       "meet": "UNC vs Stanford",
+       "meet_id": 31701,
+       "virtius": "Gh9PAmwdZ4"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.2,
+       "date": "2026-01-16",
+       "meet": "Georgia vs LSU",
+       "meet_id": 31635,
+       "virtius": "XPdBl6na3C"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.15,
+       "date": "2026-01-17",
+       "meet": "Minnesota vs Michigan",
+       "meet_id": 31668,
+       "virtius": "S1WhKhcrIK"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-01-17",
+        "meet": "UCLA vs Nebraska",
+        "meet_id": 31661,
+        "virtius": "p4OyNaVP3X"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Chloe LaCoursiere",
+        "team": "Alabama",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-01-16",
+        "meet": "Florida vs Alabama",
+        "meet_id": 31633,
+        "virtius": "BfO-LkCWGw"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Ciena Alipio",
+        "team": "UCLA",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-01-17",
+        "meet": "UCLA vs Nebraska",
+        "meet_id": 31661,
+        "virtius": "p4OyNaVP3X"
+       },
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-01-17",
+        "meet": "UCLA vs Nebraska",
+        "meet_id": 31661,
+        "virtius": "p4OyNaVP3X"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Anna Roberts",
+        "team": "Stanford",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-01-18",
+        "meet": "UNC vs Stanford",
+        "meet_id": 31701,
+        "virtius": "Gh9PAmwdZ4"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-01-25",
+     "start": "2026-01-23",
+     "end": "2026-01-25",
+     "label": "Jan 23–25",
+     "meets": 24,
+     "team197": [
+      {
+       "team": "Oklahoma",
+       "score": 198.425,
+       "date": "2026-01-23",
+       "meet": "Oklahoma vs Georgia",
+       "meet_id": 32609,
+       "virtius": "7qxSZapd--"
+      },
+      {
+       "team": "LSU",
+       "score": 198.05,
+       "date": "2026-01-23",
+       "meet": "LSU vs Kentucky",
+       "meet_id": 31725,
+       "virtius": "v70RnqTKph"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.5,
+       "date": "2026-01-23",
+       "meet": "Alabama vs Missouri",
+       "meet_id": 31721,
+       "virtius": "hWlTqsQWPZ"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.475,
+       "date": "2026-01-23",
+       "meet": "Arkansas vs SEMO",
+       "meet_id": 31744,
+       "virtius": "KGfuOo4YTu"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.425,
+       "date": "2026-01-25",
+       "meet": "Michigan State vs UCLA",
+       "meet_id": 31772,
+       "virtius": "y_wp7CWqKE"
+      },
+      {
+       "team": "Penn State",
+       "score": 197.25,
+       "date": "2026-01-24",
+       "meet": "Penn State vs Maryland",
+       "meet_id": 31780,
+       "virtius": "K0LSEFxP9F"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.225,
+       "date": "2026-01-23",
+       "meet": "Alabama vs Missouri",
+       "meet_id": 31721,
+       "virtius": "hWlTqsQWPZ"
+      },
+      {
+       "team": "Florida",
+       "score": 197.1,
+       "date": "2026-01-23",
+       "meet": "Auburn vs Florida",
+       "meet_id": 31742,
+       "virtius": "2xQJ5DbATf"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.075,
+       "date": "2026-01-25",
+       "meet": "Stanford vs Clemson",
+       "meet_id": 31782,
+       "virtius": "EpOqKhlHNb"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Mackenzie Estep",
+        "team": "Oklahoma",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-01-23",
+        "meet": "Oklahoma vs Georgia",
+        "meet_id": 32609,
+        "virtius": "7qxSZapd--"
+       },
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-01-25",
+        "meet": "Michigan State vs UCLA",
+        "meet_id": 31772,
+        "virtius": "y_wp7CWqKE"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Chloe LaCoursiere",
+        "team": "Alabama",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-01-23",
+        "meet": "Alabama vs Missouri",
+        "meet_id": 31721,
+        "virtius": "hWlTqsQWPZ"
+       },
+       {
+        "athlete": "Riley McCusker",
+        "team": "Florida",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-01-23",
+        "meet": "Auburn vs Florida",
+        "meet_id": 31742,
+        "virtius": "2xQJ5DbATf"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-01-23",
+        "meet": "LSU vs Kentucky",
+        "meet_id": 31725,
+        "virtius": "v70RnqTKph"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-01-25",
+        "meet": "Michigan State vs UCLA",
+        "meet_id": 31772,
+        "virtius": "y_wp7CWqKE"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-02-01",
+     "start": "2026-01-27",
+     "end": "2026-02-01",
+     "label": "Jan 27–Feb 1",
+     "meets": 29,
+     "team197": [
+      {
+       "team": "UCLA",
+       "score": 198.15,
+       "date": "2026-01-30",
+       "meet": "UCLA vs Washington",
+       "meet_id": 31817,
+       "virtius": "xJWEgtJCQ7"
+      },
+      {
+       "team": "Florida",
+       "score": 198.05,
+       "date": "2026-01-30",
+       "meet": "Florida vs Arkansas",
+       "meet_id": 31805,
+       "virtius": "aKSPfgg0NK"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.675,
+       "date": "2026-01-30",
+       "meet": "Georgia / CMU / Temple / Fisk",
+       "meet_id": 31809,
+       "virtius": "L_aMxS0wGe"
+      },
+      {
+       "team": "LSU",
+       "score": 197.675,
+       "date": "2026-01-30",
+       "meet": "Missouri vs LSU",
+       "meet_id": 31797,
+       "virtius": "5j0yATMveQ"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.55,
+       "date": "2026-01-30",
+       "meet": "Kentucky vs Oklahoma",
+       "meet_id": 32610,
+       "virtius": "rIKiGhEwTu"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.55,
+       "date": "2026-02-01",
+       "meet": "Georgia vs Auburn",
+       "meet_id": 31873,
+       "virtius": "0FuvyN3zLm"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.525,
+       "date": "2026-02-01",
+       "meet": "Michigan vs Michigan State",
+       "meet_id": 31869,
+       "virtius": "tApoJPWyqp"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.5,
+       "date": "2026-01-30",
+       "meet": "Missouri vs LSU",
+       "meet_id": 31797,
+       "virtius": "5j0yATMveQ"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.45,
+       "date": "2026-01-30",
+       "meet": "Alabama vs Oregon State",
+       "meet_id": 31795,
+       "virtius": "zIQ5fk6ubH"
+      },
+      {
+       "team": "Michigan",
+       "score": 197.425,
+       "date": "2026-02-01",
+       "meet": "Michigan vs Michigan State",
+       "meet_id": 31869,
+       "virtius": "tApoJPWyqp"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.05,
+       "date": "2026-01-31",
+       "meet": "Minnesota vs Iowa",
+       "meet_id": 31830,
+       "virtius": "WUjGeC1SXo"
+      },
+      {
+       "team": "Clemson",
+       "score": 197.025,
+       "date": "2026-01-30",
+       "meet": "Clemson vs UNC",
+       "meet_id": 31824,
+       "virtius": "5VNRLbX-bg"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Sage Kellerman",
+        "team": "Michigan State",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-02-01",
+        "meet": "Michigan vs Michigan State",
+        "meet_id": 31869,
+        "virtius": "tApoJPWyqp"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-01-30",
+        "meet": "UCLA vs Washington",
+        "meet_id": 31817,
+        "virtius": "xJWEgtJCQ7"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-01-30",
+        "meet": "Missouri vs LSU",
+        "meet_id": 31797,
+        "virtius": "5j0yATMveQ"
+       },
+       {
+        "athlete": "Lily Smith",
+        "team": "Georgia",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-01-30",
+        "meet": "Georgia / CMU / Temple / Fisk",
+        "meet_id": 31809,
+        "virtius": "L_aMxS0wGe"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-01-30",
+        "meet": "UCLA vs Washington",
+        "meet_id": 31817,
+        "virtius": "xJWEgtJCQ7"
+       },
+       {
+        "athlete": "Lily Smith",
+        "team": "Georgia",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-01-30",
+        "meet": "Georgia / CMU / Temple / Fisk",
+        "meet_id": 31809,
+        "virtius": "L_aMxS0wGe"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-02-08",
+     "start": "2026-02-06",
+     "end": "2026-02-08",
+     "label": "Feb 6–8",
+     "meets": 25,
+     "team197": [
+      {
+       "team": "Oklahoma",
+       "score": 198.2,
+       "date": "2026-02-06",
+       "meet": "Oklahoma vs Alabama",
+       "meet_id": 32611,
+       "virtius": "md84HmnPMK"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.55,
+       "date": "2026-02-07",
+       "meet": "Minnesota vs UCLA",
+       "meet_id": 31927,
+       "virtius": "UK43F2OoT_"
+      },
+      {
+       "team": "LSU",
+       "score": 197.525,
+       "date": "2026-02-06",
+       "meet": "LSU vs Penn State",
+       "meet_id": 31908,
+       "virtius": "JSvdEUjQq7"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.475,
+       "date": "2026-02-06",
+       "meet": "Oklahoma vs Alabama",
+       "meet_id": 32611,
+       "virtius": "md84HmnPMK"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.45,
+       "date": "2026-02-06",
+       "meet": "Arkansas vs Georgia",
+       "meet_id": 31879,
+       "virtius": "gNCA823eMJ"
+      },
+      {
+       "team": "Kentucky",
+       "score": 197.325,
+       "date": "2026-02-06",
+       "meet": "Auburn vs Kentucky",
+       "meet_id": 31896,
+       "virtius": "NdjYLdC_XZ"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.275,
+       "date": "2026-02-07",
+       "meet": "Minnesota vs UCLA",
+       "meet_id": 31927,
+       "virtius": "UK43F2OoT_"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.2,
+       "date": "2026-02-06",
+       "meet": "Missouri vs Florida",
+       "meet_id": 31912,
+       "virtius": "9KIhuVEgbI"
+      },
+      {
+       "team": "Utah",
+       "score": 197.125,
+       "date": "2026-02-06",
+       "meet": "Arizona vs Utah",
+       "meet_id": 31877,
+       "virtius": "k5uUooufZn"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.125,
+       "date": "2026-02-08",
+       "meet": "Penn State vs Michigan State",
+       "meet_id": 31955,
+       "virtius": "sLrDaLzAks"
+      },
+      {
+       "team": "NC State",
+       "score": 197.125,
+       "date": "2026-02-08",
+       "meet": "NC State vs UNC",
+       "meet_id": 31961,
+       "virtius": "m7Xxpp0zAs"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.1,
+       "date": "2026-02-06",
+       "meet": "Stanford vs Pitt",
+       "meet_id": 31906,
+       "virtius": "hJS0s5bH62"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.05,
+       "date": "2026-02-06",
+       "meet": "Arkansas vs Georgia",
+       "meet_id": 31879,
+       "virtius": "gNCA823eMJ"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Addison Fatta",
+        "team": "Oklahoma",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-02-06",
+        "meet": "Oklahoma vs Alabama",
+        "meet_id": 32611,
+        "virtius": "md84HmnPMK"
+       },
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-02-06",
+        "meet": "LSU vs Penn State",
+        "meet_id": 31908,
+        "virtius": "JSvdEUjQq7"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Maggie Slife",
+        "team": "Air Force",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-02-06",
+        "meet": "Air Force / Utah State / Alaska",
+        "meet_id": 31925,
+        "virtius": "78FDHQKJ8B"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Faith Torrez",
+        "team": "Oklahoma",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-02-06",
+        "meet": "Oklahoma vs Alabama",
+        "meet_id": 32611,
+        "virtius": "md84HmnPMK"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-02-07",
+        "meet": "Minnesota vs UCLA",
+        "meet_id": 31927,
+        "virtius": "UK43F2OoT_"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-02-15",
+     "start": "2026-02-13",
+     "end": "2026-02-15",
+     "label": "Feb 13–15",
+     "meets": 25,
+     "team197": [
+      {
+       "team": "LSU",
+       "score": 198.325,
+       "date": "2026-02-13",
+       "meet": "LSU vs Auburn",
+       "meet_id": 31994,
+       "virtius": "J7gHSsh5x-"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 198.075,
+       "date": "2026-02-13",
+       "meet": "Florida vs Oklahoma",
+       "meet_id": 31983,
+       "virtius": "gLf7AdegRW"
+      },
+      {
+       "team": "Utah",
+       "score": 198.025,
+       "date": "2026-02-13",
+       "meet": "Utah vs BYU",
+       "meet_id": 31989,
+       "virtius": "ih5XFSatoU"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.95,
+       "date": "2026-02-13",
+       "meet": "Alabama vs Arkansas",
+       "meet_id": 31979,
+       "virtius": "haxR1eyXOS"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.725,
+       "date": "2026-02-14",
+       "meet": "UCLA vs Michigan",
+       "meet_id": 32012,
+       "virtius": "sRODbpKVC0"
+      },
+      {
+       "team": "Florida",
+       "score": 197.575,
+       "date": "2026-02-13",
+       "meet": "Florida vs Oklahoma",
+       "meet_id": 31983,
+       "virtius": "gLf7AdegRW"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.25,
+       "date": "2026-02-15",
+       "meet": "Michigan State / Maryland / Western Michigan",
+       "meet_id": 32657,
+       "virtius": "FJgu6Y-fvj"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.075,
+       "date": "2026-02-14",
+       "meet": "Penn State vs Minnesota",
+       "meet_id": 32006,
+       "virtius": "01P3byhc6h"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Addison Fatta",
+        "team": "Oklahoma",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-02-13",
+        "meet": "Florida vs Oklahoma",
+        "meet_id": 31983,
+        "virtius": "gLf7AdegRW"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Avery Neff",
+        "team": "Utah",
+        "event": "bars",
+        "score": 10,
+        "date": "2026-02-13",
+        "meet": "Utah vs BYU",
+        "meet_id": 31989,
+        "virtius": "ih5XFSatoU"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Ella Murphy",
+        "team": "Oklahoma",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-02-13",
+        "meet": "Florida vs Oklahoma",
+        "meet_id": 31983,
+        "virtius": "gLf7AdegRW"
+       },
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "beam",
+        "score": 9.975,
+        "date": "2026-02-13",
+        "meet": "LSU vs Auburn",
+        "meet_id": 31994,
+        "virtius": "J7gHSsh5x-"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-02-13",
+        "meet": "LSU vs Auburn",
+        "meet_id": 31994,
+        "virtius": "J7gHSsh5x-"
+       },
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-02-14",
+        "meet": "UCLA vs Michigan",
+        "meet_id": 32012,
+        "virtius": "sRODbpKVC0"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-02-22",
+     "start": "2026-02-20",
+     "end": "2026-02-22",
+     "label": "Feb 20–22",
+     "meets": 23,
+     "team197": [
+      {
+       "team": "Oklahoma",
+       "score": 198.125,
+       "date": "2026-02-20",
+       "meet": "Oklahoma vs LSU",
+       "meet_id": 32103,
+       "virtius": "wgRDf2c3-1"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.95,
+       "date": "2026-02-20",
+       "meet": "Auburn vs Alabama",
+       "meet_id": 32082,
+       "virtius": "Uq0-Su50HQ"
+      },
+      {
+       "team": "LSU",
+       "score": 197.925,
+       "date": "2026-02-20",
+       "meet": "Oklahoma vs LSU",
+       "meet_id": 32103,
+       "virtius": "wgRDf2c3-1"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.725,
+       "date": "2026-02-21",
+       "meet": "NC State vs Stanford",
+       "meet_id": 32115,
+       "virtius": "-6n24N7GB9"
+      },
+      {
+       "team": "Florida",
+       "score": 197.575,
+       "date": "2026-02-20",
+       "meet": "Georgia vs Florida",
+       "meet_id": 32086,
+       "virtius": "OpBSXtdEKu"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.55,
+       "date": "2026-02-20",
+       "meet": "Missouri / Illinois / Ball State / Air Force",
+       "meet_id": 32063,
+       "virtius": "bzV6T1KGXo"
+      },
+      {
+       "team": "Utah",
+       "score": 197.425,
+       "date": "2026-02-20",
+       "meet": "Utah vs Southern Utah",
+       "meet_id": 32095,
+       "virtius": "ndi_E3zXZf"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.325,
+       "date": "2026-02-20",
+       "meet": "Georgia vs Florida",
+       "meet_id": 32086,
+       "virtius": "OpBSXtdEKu"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.3,
+       "date": "2026-02-21",
+       "meet": "Michigan State vs Ohio State",
+       "meet_id": 32119,
+       "virtius": "WztAzd5uB8"
+      },
+      {
+       "team": "Auburn",
+       "score": 197.25,
+       "date": "2026-02-20",
+       "meet": "Auburn vs Alabama",
+       "meet_id": 32082,
+       "virtius": "Uq0-Su50HQ"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.125,
+       "date": "2026-02-20",
+       "meet": "Arkansas vs Kentucky",
+       "meet_id": 32099,
+       "virtius": "ei1d-Sqdki"
+      },
+      {
+       "team": "Kentucky",
+       "score": 197.125,
+       "date": "2026-02-20",
+       "meet": "Arkansas vs Kentucky",
+       "meet_id": 32099,
+       "virtius": "ei1d-Sqdki"
+      },
+      {
+       "team": "Michigan",
+       "score": 197.1,
+       "date": "2026-02-21",
+       "meet": "Michigan vs Rutgers",
+       "meet_id": 32113,
+       "virtius": "MzpQK4MOR-"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Avery Neff",
+        "team": "Utah",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-02-20",
+        "meet": "Utah vs Southern Utah",
+        "meet_id": 32095,
+        "virtius": "ndi_E3zXZf"
+       },
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-02-20",
+        "meet": "Oklahoma vs LSU",
+        "meet_id": 32103,
+        "virtius": "wgRDf2c3-1"
+       },
+       {
+        "athlete": "Morgan Price",
+        "team": "Arkansas",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-02-20",
+        "meet": "Arkansas vs Kentucky",
+        "meet_id": 32099,
+        "virtius": "ei1d-Sqdki"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Addison Fatta",
+        "team": "Oklahoma",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Oklahoma vs LSU",
+        "meet_id": 32103,
+        "virtius": "wgRDf2c3-1"
+       },
+       {
+        "athlete": "Ana Padurariu",
+        "team": "Utah",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Utah vs Southern Utah",
+        "meet_id": 32095,
+        "virtius": "ndi_E3zXZf"
+       },
+       {
+        "athlete": "Avery Neff",
+        "team": "Utah",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Utah vs Southern Utah",
+        "meet_id": 32095,
+        "virtius": "ndi_E3zXZf"
+       },
+       {
+        "athlete": "Azaraya Ra-Akbar",
+        "team": "Alabama",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Auburn vs Alabama",
+        "meet_id": 32082,
+        "virtius": "Uq0-Su50HQ"
+       },
+       {
+        "athlete": "Chloe LaCoursiere",
+        "team": "Alabama",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Auburn vs Alabama",
+        "meet_id": 32082,
+        "virtius": "Uq0-Su50HQ"
+       },
+       {
+        "athlete": "Kayla DiCello",
+        "team": "Florida",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Georgia vs Florida",
+        "meet_id": 32086,
+        "virtius": "OpBSXtdEKu"
+       },
+       {
+        "athlete": "Lily Pederson",
+        "team": "Oklahoma",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-20",
+        "meet": "Oklahoma vs LSU",
+        "meet_id": 32103,
+        "virtius": "wgRDf2c3-1"
+       },
+       {
+        "athlete": "Elle Hadrick",
+        "team": "NC State",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-21",
+        "meet": "NC State vs Stanford",
+        "meet_id": 32115,
+        "virtius": "-6n24N7GB9"
+       },
+       {
+        "athlete": "Isabella Minervini",
+        "team": "Towson",
+        "event": "bars",
+        "score": 9.95,
+        "date": "2026-02-22",
+        "meet": "GW / Towson / Eastern Michigan / Fisk",
+        "meet_id": 32123,
+        "virtius": "rZ5k_ecJZU"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-02-20",
+        "meet": "Oklahoma vs LSU",
+        "meet_id": 32103,
+        "virtius": "wgRDf2c3-1"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Brie Clark",
+        "team": "Clemson",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-02-20",
+        "meet": "Clemson vs Pitt",
+        "meet_id": 32097,
+        "virtius": "NxvQtdFPfX"
+       },
+       {
+        "athlete": "Nikki Smith",
+        "team": "Michigan State",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-02-21",
+        "meet": "Michigan State vs Ohio State",
+        "meet_id": 32119,
+        "virtius": "WztAzd5uB8"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-03-01",
+     "start": "2026-02-23",
+     "end": "2026-03-01",
+     "label": "Feb 23–Mar 1",
+     "meets": 21,
+     "team197": [
+      {
+       "team": "Stanford",
+       "score": 198.15,
+       "date": "2026-02-27",
+       "meet": "Oregon State vs Stanford",
+       "meet_id": 32187,
+       "virtius": "jfCXCKej2P"
+      },
+      {
+       "team": "LSU",
+       "score": 197.975,
+       "date": "2026-02-27",
+       "meet": "LSU vs Alabama",
+       "meet_id": 32203,
+       "virtius": "AVnfA4eZ9s"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.975,
+       "date": "2026-02-27",
+       "meet": "Oklahoma vs Auburn",
+       "meet_id": 32170,
+       "virtius": "5g6bBeMjBv"
+      },
+      {
+       "team": "Florida",
+       "score": 197.7,
+       "date": "2026-02-27",
+       "meet": "TWU / Florida / Arizona State / Fisk",
+       "meet_id": 32195,
+       "virtius": "81i9ZkWi9w"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.7,
+       "date": "2026-03-01",
+       "meet": "Big 4 Meet @ Minnesota",
+       "meet_id": 32240,
+       "virtius": "UgaSXGCcMl"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.6,
+       "date": "2026-02-27",
+       "meet": "LSU vs Alabama",
+       "meet_id": 32203,
+       "virtius": "AVnfA4eZ9s"
+      },
+      {
+       "team": "Michigan",
+       "score": 197.475,
+       "date": "2026-02-28",
+       "meet": "B1G 4 Meet @ Penn State",
+       "meet_id": 32215,
+       "virtius": "waBQt55a3S"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.425,
+       "date": "2026-03-01",
+       "meet": "Missouri vs Arkansas",
+       "meet_id": 32228,
+       "virtius": "EWgMgesmq2"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.275,
+       "date": "2026-02-27",
+       "meet": "Kentucky vs Georgia",
+       "meet_id": 32181,
+       "virtius": "gULq4geJ6h"
+      },
+      {
+       "team": "Oregon State",
+       "score": 197.25,
+       "date": "2026-02-27",
+       "meet": "Oregon State vs Stanford",
+       "meet_id": 32187,
+       "virtius": "jfCXCKej2P"
+      },
+      {
+       "team": "Penn State",
+       "score": 197.225,
+       "date": "2026-02-28",
+       "meet": "B1G 4 Meet @ Penn State",
+       "meet_id": 32215,
+       "virtius": "waBQt55a3S"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.225,
+       "date": "2026-03-01",
+       "meet": "Missouri vs Arkansas",
+       "meet_id": 32228,
+       "virtius": "EWgMgesmq2"
+      },
+      {
+       "team": "Utah",
+       "score": 197.2,
+       "date": "2026-03-01",
+       "meet": "Denver vs Utah",
+       "meet_id": 32226,
+       "virtius": "A3-0L0BRC6"
+      },
+      {
+       "team": "Kentucky",
+       "score": 197.025,
+       "date": "2026-02-27",
+       "meet": "Kentucky vs Georgia",
+       "meet_id": 32181,
+       "virtius": "gULq4geJ6h"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Anna Roberts",
+        "team": "Stanford",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-02-27",
+        "meet": "Oregon State vs Stanford",
+        "meet_id": 32187,
+        "virtius": "jfCXCKej2P"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Anna Roberts",
+        "team": "Stanford",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-02-27",
+        "meet": "Oregon State vs Stanford",
+        "meet_id": 32187,
+        "virtius": "jfCXCKej2P"
+       },
+       {
+        "athlete": "Skye Blakely",
+        "team": "Florida",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-02-27",
+        "meet": "TWU / Florida / Arizona State / Fisk",
+        "meet_id": 32195,
+        "virtius": "81i9ZkWi9w"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-02-27",
+        "meet": "LSU vs Alabama",
+        "meet_id": 32203,
+        "virtius": "AVnfA4eZ9s"
+       },
+       {
+        "athlete": "Skye Blakely",
+        "team": "Florida",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-02-27",
+        "meet": "TWU / Florida / Arizona State / Fisk",
+        "meet_id": 32195,
+        "virtius": "81i9ZkWi9w"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-02-27",
+        "meet": "LSU vs Alabama",
+        "meet_id": 32203,
+        "virtius": "AVnfA4eZ9s"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-03-08",
+     "start": "2026-03-02",
+     "end": "2026-03-08",
+     "label": "Mar 2–8",
+     "meets": 24,
+     "team197": [
+      {
+       "team": "Florida",
+       "score": 198.45,
+       "date": "2026-03-08",
+       "meet": "Florida vs LSU",
+       "meet_id": 32342,
+       "virtius": "uk1Y2G_Tkw"
+      },
+      {
+       "team": "LSU",
+       "score": 198.325,
+       "date": "2026-03-08",
+       "meet": "Florida vs LSU",
+       "meet_id": 32342,
+       "virtius": "uk1Y2G_Tkw"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 198.175,
+       "date": "2026-03-08",
+       "meet": "Oklahoma vs TWU",
+       "meet_id": 32322,
+       "virtius": "YjNMXsjWT7"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.925,
+       "date": "2026-03-06",
+       "meet": "Arkansas vs Oklahoma",
+       "meet_id": 32285,
+       "virtius": "Ebwpf5zOez"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.775,
+       "date": "2026-03-07",
+       "meet": "Stanford vs UCLA",
+       "meet_id": 32303,
+       "virtius": "N9DghGCiZu"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.7,
+       "date": "2026-03-06",
+       "meet": "Auburn vs Michigan State",
+       "meet_id": 32273,
+       "virtius": "OrGxmQQAz7"
+      },
+      {
+       "team": "Utah",
+       "score": 197.65,
+       "date": "2026-03-07",
+       "meet": "Utah / WVU / BYU",
+       "meet_id": 32658,
+       "virtius": "witaXQooTN"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.6,
+       "date": "2026-03-06",
+       "meet": "Georgia vs Missouri",
+       "meet_id": 32277,
+       "virtius": "kqfoXXSKUB"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.5,
+       "date": "2026-03-06",
+       "meet": "Arkansas vs Oklahoma",
+       "meet_id": 32285,
+       "virtius": "Ebwpf5zOez"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.425,
+       "date": "2026-03-07",
+       "meet": "Stanford vs UCLA",
+       "meet_id": 32303,
+       "virtius": "N9DghGCiZu"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.3,
+       "date": "2026-03-06",
+       "meet": "Georgia vs Missouri",
+       "meet_id": 32277,
+       "virtius": "kqfoXXSKUB"
+      },
+      {
+       "team": "Michigan",
+       "score": 197.225,
+       "date": "2026-03-06",
+       "meet": "Michigan vs Clemson",
+       "meet_id": 32279,
+       "virtius": "v3-h7s_0V6"
+      },
+      {
+       "team": "California",
+       "score": 197.225,
+       "date": "2026-03-07",
+       "meet": "California vs Boise State",
+       "meet_id": 32307,
+       "virtius": "u-hE9z3HCD"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.2,
+       "date": "2026-03-06",
+       "meet": "Alabama vs Kentucky",
+       "meet_id": 32262,
+       "virtius": "jyCHbLEwbI"
+      },
+      {
+       "team": "UNC",
+       "score": 197.2,
+       "date": "2026-03-06",
+       "meet": "UNC vs Minnesota",
+       "meet_id": 32268,
+       "virtius": "a3qMFqrJXc"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Azaraya Ra-Akbar",
+        "team": "Alabama",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-06",
+        "meet": "Alabama vs Kentucky",
+        "meet_id": 32262,
+        "virtius": "jyCHbLEwbI"
+       },
+       {
+        "athlete": "Olivia Zsarmani",
+        "team": "Michigan State",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-06",
+        "meet": "Auburn vs Michigan State",
+        "meet_id": 32273,
+        "virtius": "OrGxmQQAz7"
+       },
+       {
+        "athlete": "Sage Kellerman",
+        "team": "Michigan State",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-06",
+        "meet": "Auburn vs Michigan State",
+        "meet_id": 32273,
+        "virtius": "OrGxmQQAz7"
+       },
+       {
+        "athlete": "Amari Drayton",
+        "team": "LSU",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       },
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       },
+       {
+        "athlete": "Kaliya Lincoln",
+        "team": "LSU",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "bars",
+        "score": 10,
+        "date": "2026-03-07",
+        "meet": "Stanford vs UCLA",
+        "meet_id": 32303,
+        "virtius": "N9DghGCiZu"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Selena Harris-Miranda",
+        "team": "Florida",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "CaMarah Williams",
+        "team": "Georgia",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-06",
+        "meet": "Georgia vs Missouri",
+        "meet_id": 32277,
+        "virtius": "kqfoXXSKUB"
+       },
+       {
+        "athlete": "Joscelyn Roberson",
+        "team": "Arkansas",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-06",
+        "meet": "Arkansas vs Oklahoma",
+        "meet_id": 32285,
+        "virtius": "Ebwpf5zOez"
+       },
+       {
+        "athlete": "Niya Randolph",
+        "team": "Southern Utah",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-06",
+        "meet": "Southern Utah vs Washington",
+        "meet_id": 32264,
+        "virtius": "mcT0dptxdx"
+       },
+       {
+        "athlete": "Makenna Smith",
+        "team": "Utah",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-07",
+        "meet": "Utah / WVU / BYU",
+        "meet_id": 32658,
+        "virtius": "witaXQooTN"
+       },
+       {
+        "athlete": "eMjae Frazier",
+        "team": "Florida",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       },
+       {
+        "athlete": "Kaliya Lincoln",
+        "team": "LSU",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       },
+       {
+        "athlete": "Skye Blakely",
+        "team": "Florida",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-08",
+        "meet": "Florida vs LSU",
+        "meet_id": 32342,
+        "virtius": "uk1Y2G_Tkw"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-03-15",
+     "start": "2026-03-09",
+     "end": "2026-03-15",
+     "label": "Mar 9–15",
+     "meets": 31,
+     "team197": [
+      {
+       "team": "Florida",
+       "score": 198.575,
+       "date": "2026-03-13",
+       "meet": "Kentucky vs Florida",
+       "meet_id": 32375,
+       "virtius": "lAKDlXEzgu"
+      },
+      {
+       "team": "LSU",
+       "score": 198.075,
+       "date": "2026-03-13",
+       "meet": "LSU vs Arkansas",
+       "meet_id": 32386,
+       "virtius": "tUaf8gfgTb"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.925,
+       "date": "2026-03-13",
+       "meet": "Michigan / Oklahoma / Eastern Michigan",
+       "meet_id": 32377,
+       "virtius": "TD07p3iTBt"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.85,
+       "date": "2026-03-14",
+       "meet": "UCLA vs Utah",
+       "meet_id": 32396,
+       "virtius": "RrkpEFzuvQ"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.825,
+       "date": "2026-03-15",
+       "meet": "Minnesota / Illinois / Iowa / NIU",
+       "meet_id": 32663,
+       "virtius": "ooimYI6H54"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.775,
+       "date": "2026-03-15",
+       "meet": "Stanford vs Boise State",
+       "meet_id": 32425,
+       "virtius": "x1e_Alp7AQ"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.625,
+       "date": "2026-03-13",
+       "meet": "California / Stanford / San Jose State",
+       "meet_id": 32384,
+       "virtius": "b3rm9Pem6F"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.525,
+       "date": "2026-03-13",
+       "meet": "Alabama vs Georgia",
+       "meet_id": 32362,
+       "virtius": "IUUm0fIyfS"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.5,
+       "date": "2026-03-15",
+       "meet": "Michigan State vs Brown",
+       "meet_id": 32416,
+       "virtius": "Fju_qn_8ov"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.425,
+       "date": "2026-03-13",
+       "meet": "Alabama vs Georgia",
+       "meet_id": 32362,
+       "virtius": "IUUm0fIyfS"
+      },
+      {
+       "team": "Utah",
+       "score": 197.4,
+       "date": "2026-03-14",
+       "meet": "UCLA vs Utah",
+       "meet_id": 32396,
+       "virtius": "RrkpEFzuvQ"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.325,
+       "date": "2026-03-13",
+       "meet": "Auburn vs Missouri",
+       "meet_id": 32371,
+       "virtius": "aNICtKEKgL"
+      },
+      {
+       "team": "BYU",
+       "score": 197.225,
+       "date": "2026-03-13",
+       "meet": "Clemson vs BYU",
+       "meet_id": 32360,
+       "virtius": "Xh8RMWKfYU"
+      },
+      {
+       "team": "Kentucky",
+       "score": 197.225,
+       "date": "2026-03-13",
+       "meet": "Kentucky vs Florida",
+       "meet_id": 32375,
+       "virtius": "lAKDlXEzgu"
+      },
+      {
+       "team": "Clemson",
+       "score": 197.175,
+       "date": "2026-03-13",
+       "meet": "Clemson vs BYU",
+       "meet_id": 32360,
+       "virtius": "Xh8RMWKfYU"
+      },
+      {
+       "team": "California",
+       "score": 197.175,
+       "date": "2026-03-15",
+       "meet": "California / Washington / UC Davis / Penn",
+       "meet_id": 32414,
+       "virtius": "Pw0KO5RecM"
+      },
+      {
+       "team": "Air Force",
+       "score": 197.15,
+       "date": "2026-03-14",
+       "meet": "Air Force vs Fisk",
+       "meet_id": 32394,
+       "virtius": "k8DU4lJgqf"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.1,
+       "date": "2026-03-13",
+       "meet": "LSU vs Arkansas",
+       "meet_id": 32386,
+       "virtius": "tUaf8gfgTb"
+      },
+      {
+       "team": "Michigan",
+       "score": 197.1,
+       "date": "2026-03-13",
+       "meet": "Michigan / Oklahoma / Eastern Michigan",
+       "meet_id": 32377,
+       "virtius": "TD07p3iTBt"
+      },
+      {
+       "team": "Denver",
+       "score": 197.075,
+       "date": "2026-03-09",
+       "meet": "Denver vs Air Force",
+       "meet_id": 32344,
+       "virtius": "4f57LlizDy"
+      },
+      {
+       "team": "California",
+       "score": 197.075,
+       "date": "2026-03-13",
+       "meet": "California / Stanford / San Jose State",
+       "meet_id": 32384,
+       "virtius": "b3rm9Pem6F"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-03-13",
+        "meet": "LSU vs Arkansas",
+        "meet_id": 32386,
+        "virtius": "tUaf8gfgTb"
+       },
+       {
+        "athlete": "Anna Roberts",
+        "team": "Stanford",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-03-15",
+        "meet": "Stanford vs Boise State",
+        "meet_id": 32425,
+        "virtius": "x1e_Alp7AQ"
+       },
+       {
+        "athlete": "Arianna Ostrum",
+        "team": "Minnesota",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-03-15",
+        "meet": "Minnesota / Illinois / Iowa / NIU",
+        "meet_id": 32663,
+        "virtius": "ooimYI6H54"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Elle Hadrick",
+        "team": "NC State",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-03-13",
+        "meet": "NC State vs WVU",
+        "meet_id": 32354,
+        "virtius": "eqlxEmoKCZ"
+       },
+       {
+        "athlete": "Tonya Paulsson",
+        "team": "California",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-03-13",
+        "meet": "California / Stanford / San Jose State",
+        "meet_id": 32384,
+        "virtius": "b3rm9Pem6F"
+       },
+       {
+        "athlete": "Avery Neff",
+        "team": "Utah",
+        "event": "bars",
+        "score": 9.975,
+        "date": "2026-03-14",
+        "meet": "UCLA vs Utah",
+        "meet_id": 32396,
+        "virtius": "RrkpEFzuvQ"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-03-13",
+        "meet": "LSU vs Arkansas",
+        "meet_id": 32386,
+        "virtius": "tUaf8gfgTb"
+       },
+       {
+        "athlete": "Selena Harris-Miranda",
+        "team": "Florida",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-03-13",
+        "meet": "Kentucky vs Florida",
+        "meet_id": 32375,
+        "virtius": "lAKDlXEzgu"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-03-13",
+        "meet": "LSU vs Arkansas",
+        "meet_id": 32386,
+        "virtius": "tUaf8gfgTb"
+       },
+       {
+        "athlete": "Anna Roberts",
+        "team": "Stanford",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-03-15",
+        "meet": "Stanford vs Boise State",
+        "meet_id": 32425,
+        "virtius": "x1e_Alp7AQ"
+       },
+       {
+        "athlete": "Nikki Smith",
+        "team": "Michigan State",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-03-15",
+        "meet": "Michigan State vs Brown",
+        "meet_id": 32416,
+        "virtius": "Fju_qn_8ov"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-03-22",
+     "start": "2026-03-20",
+     "end": "2026-03-21",
+     "label": "Mar 20–21",
+     "meets": 12,
+     "team197": [
+      {
+       "team": "Florida",
+       "score": 198.175,
+       "date": "2026-03-21",
+       "meet": "SEC Conference",
+       "meet_id": 32710,
+       "virtius": "ehuT37YgcP"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 198.15,
+       "date": "2026-03-21",
+       "meet": "SEC Conference",
+       "meet_id": 32710,
+       "virtius": "ehuT37YgcP"
+      },
+      {
+       "team": "LSU",
+       "score": 197.95,
+       "date": "2026-03-21",
+       "meet": "SEC Conference",
+       "meet_id": 32710,
+       "virtius": "ehuT37YgcP"
+      },
+      {
+       "team": "Utah",
+       "score": 197.675,
+       "date": "2026-03-21",
+       "meet": "Big 12 Conference",
+       "meet_id": 32695,
+       "virtius": "0L_12Cw45Q"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.475,
+       "date": "2026-03-21",
+       "meet": "SEC Conference",
+       "meet_id": 32710,
+       "virtius": "ehuT37YgcP"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.45,
+       "date": "2026-03-21",
+       "meet": "SEC Conference",
+       "meet_id": 32706,
+       "virtius": "I6uRyuMJx3"
+      },
+      {
+       "team": "Clemson",
+       "score": 197.1,
+       "date": "2026-03-21",
+       "meet": "ACC Conference",
+       "meet_id": 32701,
+       "virtius": "BVN2I6PA8r"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.075,
+       "date": "2026-03-21",
+       "meet": "SEC Conference",
+       "meet_id": 32706,
+       "virtius": "I6uRyuMJx3"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.075,
+       "date": "2026-03-21",
+       "meet": "ACC Conference",
+       "meet_id": 32701,
+       "virtius": "BVN2I6PA8r"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 9.975,
+        "date": "2026-03-21",
+        "meet": "SEC Conference",
+        "meet_id": 32710,
+        "virtius": "ehuT37YgcP"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Selena Harris-Miranda",
+        "team": "Florida",
+        "event": "bars",
+        "score": 10,
+        "date": "2026-03-21",
+        "meet": "SEC Conference",
+        "meet_id": 32710,
+        "virtius": "ehuT37YgcP"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Faith Torrez",
+        "team": "Oklahoma",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-03-21",
+        "meet": "SEC Conference",
+        "meet_id": 32710,
+        "virtius": "ehuT37YgcP"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Avery Neff",
+        "team": "Utah",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-03-21",
+        "meet": "Big 12 Conference",
+        "meet_id": 32695,
+        "virtius": "0L_12Cw45Q"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-03-29",
+     "start": "2026-03-27",
+     "end": "2026-03-29",
+     "label": "Mar 27–29",
+     "meets": 3,
+     "team197": [],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Taylor Ingle",
+        "team": "VT - A",
+        "event": "vault",
+        "score": 9.8625,
+        "date": "2026-03-29",
+        "meet": "WCGNIC Individual Event Finals",
+        "meet_id": 32601,
+        "virtius": "PRKNZshVOj"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Bailey Bourgeois",
+        "team": "TWU",
+        "event": "bars",
+        "score": 9.85,
+        "date": "2026-03-28",
+        "meet": "WCGNIC Team Finals",
+        "meet_id": 32590,
+        "virtius": "JUU5il2HP2"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Amara Nelson",
+        "team": "Individual Qualifiers",
+        "event": "beam",
+        "score": 9.875,
+        "date": "2026-03-27",
+        "meet": "WCGNIC Prelim #1",
+        "meet_id": 32581,
+        "virtius": "odc8x_O3gz"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Kylie Minard",
+        "team": "FX - B",
+        "event": "floor",
+        "score": 9.95,
+        "date": "2026-03-29",
+        "meet": "WCGNIC Individual Event Finals",
+        "meet_id": 32601,
+        "virtius": "PRKNZshVOj"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-04-05",
+     "start": "2026-04-01",
+     "end": "2026-04-05",
+     "label": "Apr 1–5",
+     "meets": 15,
+     "team197": [
+      {
+       "team": "LSU",
+       "score": 198.375,
+       "date": "2026-04-02",
+       "meet": "Tempe Regional - Round 2, Session II",
+       "meet_id": 32810,
+       "virtius": "zb45zMSdyR"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 198.35,
+       "date": "2026-04-05",
+       "meet": "Lexington Regional - Final",
+       "meet_id": 32793,
+       "virtius": "tBd8CrXBoV"
+      },
+      {
+       "team": "Florida",
+       "score": 198.05,
+       "date": "2026-04-04",
+       "meet": "Tempe Regional - Final",
+       "meet_id": 32772,
+       "virtius": "Hv9bKIh1xf"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 197.875,
+       "date": "2026-04-03",
+       "meet": "Lexington Regional - Round 2, Session II",
+       "meet_id": 32813,
+       "virtius": "NeFY2MLCKQ"
+      },
+      {
+       "team": "LSU",
+       "score": 197.825,
+       "date": "2026-04-04",
+       "meet": "Baton Rouge Regional - Final",
+       "meet_id": 32784,
+       "virtius": "LJevA_TmY6"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.75,
+       "date": "2026-04-04",
+       "meet": "Tempe Regional - Final",
+       "meet_id": 32772,
+       "virtius": "Hv9bKIh1xf"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.725,
+       "date": "2026-04-05",
+       "meet": "Corvallis Regional - Final",
+       "meet_id": 32802,
+       "virtius": "5x98j5g2VO"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.625,
+       "date": "2026-04-05",
+       "meet": "Corvallis Regional - Final",
+       "meet_id": 32802,
+       "virtius": "5x98j5g2VO"
+      },
+      {
+       "team": "Utah",
+       "score": 197.5,
+       "date": "2026-04-03",
+       "meet": "Corvallis Regional - Round 2, Session I",
+       "meet_id": 32755,
+       "virtius": "BCCtPHU0sK"
+      },
+      {
+       "team": "Utah",
+       "score": 197.5,
+       "date": "2026-04-05",
+       "meet": "Corvallis Regional - Final",
+       "meet_id": 32802,
+       "virtius": "5x98j5g2VO"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.45,
+       "date": "2026-04-03",
+       "meet": "Corvallis Regional - Round 2, Session II",
+       "meet_id": 32807,
+       "virtius": "kAxFuxrCrO"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.45,
+       "date": "2026-04-05",
+       "meet": "Lexington Regional - Final",
+       "meet_id": 32793,
+       "virtius": "tBd8CrXBoV"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197.35,
+       "date": "2026-04-02",
+       "meet": "Tempe Regional - Round 2, Session I",
+       "meet_id": 32720,
+       "virtius": "uRGgiTHKkw"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.225,
+       "date": "2026-04-03",
+       "meet": "Corvallis Regional - Round 2, Session I",
+       "meet_id": 32755,
+       "virtius": "BCCtPHU0sK"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.225,
+       "date": "2026-04-04",
+       "meet": "Baton Rouge Regional - Final",
+       "meet_id": 32784,
+       "virtius": "LJevA_TmY6"
+      },
+      {
+       "team": "Missouri",
+       "score": 197.225,
+       "date": "2026-04-05",
+       "meet": "Lexington Regional - Final",
+       "meet_id": 32793,
+       "virtius": "tBd8CrXBoV"
+      },
+      {
+       "team": "Stanford",
+       "score": 197.175,
+       "date": "2026-04-02",
+       "meet": "Baton Rouge Regional - Round 2, Session I",
+       "meet_id": 32809,
+       "virtius": "nXzWc7FAB_"
+      },
+      {
+       "team": "Arkansas",
+       "score": 197.175,
+       "date": "2026-04-03",
+       "meet": "Lexington Regional - Round 2, Session I",
+       "meet_id": 32812,
+       "virtius": "-yOiSzDV0T"
+      },
+      {
+       "team": "Alabama",
+       "score": 197.175,
+       "date": "2026-04-05",
+       "meet": "Corvallis Regional - Final",
+       "meet_id": 32802,
+       "virtius": "5x98j5g2VO"
+      },
+      {
+       "team": "Clemson",
+       "score": 197.15,
+       "date": "2026-04-04",
+       "meet": "Baton Rouge Regional - Final",
+       "meet_id": 32784,
+       "virtius": "LJevA_TmY6"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.125,
+       "date": "2026-04-02",
+       "meet": "Tempe Regional - Round 2, Session I",
+       "meet_id": 32720,
+       "virtius": "uRGgiTHKkw"
+      },
+      {
+       "team": "Michigan State",
+       "score": 197,
+       "date": "2026-04-04",
+       "meet": "Tempe Regional - Final",
+       "meet_id": 32772,
+       "virtius": "Hv9bKIh1xf"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-04-02",
+        "meet": "Tempe Regional - Round 2, Session II",
+        "meet_id": 32810,
+        "virtius": "zb45zMSdyR"
+       },
+       {
+        "athlete": "Nikki Smith",
+        "team": "Michigan State",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-04-02",
+        "meet": "Tempe Regional - Round 2, Session I",
+        "meet_id": 32720,
+        "virtius": "uRGgiTHKkw"
+       },
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-04-04",
+        "meet": "Baton Rouge Regional - Final",
+        "meet_id": 32784,
+        "virtius": "LJevA_TmY6"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Aurélie Tran",
+        "team": "Iowa",
+        "event": "bars",
+        "score": 10,
+        "date": "2026-04-03",
+        "meet": "Corvallis Regional - Round 2, Session II",
+        "meet_id": 32807,
+        "virtius": "kAxFuxrCrO"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Faith Torrez",
+        "team": "Oklahoma",
+        "event": "beam",
+        "score": 10,
+        "date": "2026-04-05",
+        "meet": "Lexington Regional - Final",
+        "meet_id": 32793,
+        "virtius": "tBd8CrXBoV"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-04-02",
+        "meet": "Tempe Regional - Round 2, Session II",
+        "meet_id": 32810,
+        "virtius": "zb45zMSdyR"
+       },
+       {
+        "athlete": "Kaliya Lincoln",
+        "team": "LSU",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-04-04",
+        "meet": "Baton Rouge Regional - Final",
+        "meet_id": 32784,
+        "virtius": "LJevA_TmY6"
+       },
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 10,
+        "date": "2026-04-05",
+        "meet": "Corvallis Regional - Final",
+        "meet_id": 32802,
+        "virtius": "5x98j5g2VO"
+       }
+      ]
+     }
+    },
+    {
+     "id": "2026-04-19",
+     "start": "2026-04-16",
+     "end": "2026-04-18",
+     "label": "Apr 16–18",
+     "meets": 3,
+     "team197": [
+      {
+       "team": "Oklahoma",
+       "score": 198.3,
+       "date": "2026-04-16",
+       "meet": "NCAA Championships Semifinal II",
+       "meet_id": 32841,
+       "virtius": "DdUgp5b9ce"
+      },
+      {
+       "team": "Oklahoma",
+       "score": 198.1625,
+       "date": "2026-04-18",
+       "meet": "NCAA Championships Finals",
+       "meet_id": 32829,
+       "virtius": "MFrZ9epozB"
+      },
+      {
+       "team": "LSU",
+       "score": 198.075,
+       "date": "2026-04-18",
+       "meet": "NCAA Championships Finals",
+       "meet_id": 32829,
+       "virtius": "MFrZ9epozB"
+      },
+      {
+       "team": "Florida",
+       "score": 197.7875,
+       "date": "2026-04-16",
+       "meet": "NCAA Championships Semifinal I",
+       "meet_id": 32834,
+       "virtius": "wWUOt3bvBX"
+      },
+      {
+       "team": "Florida",
+       "score": 197.6875,
+       "date": "2026-04-18",
+       "meet": "NCAA Championships Finals",
+       "meet_id": 32829,
+       "virtius": "MFrZ9epozB"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.4625,
+       "date": "2026-04-16",
+       "meet": "NCAA Championships Semifinal II",
+       "meet_id": 32841,
+       "virtius": "DdUgp5b9ce"
+      },
+      {
+       "team": "LSU",
+       "score": 197.4375,
+       "date": "2026-04-16",
+       "meet": "NCAA Championships Semifinal I",
+       "meet_id": 32834,
+       "virtius": "wWUOt3bvBX"
+      },
+      {
+       "team": "Minnesota",
+       "score": 197.375,
+       "date": "2026-04-18",
+       "meet": "NCAA Championships Finals",
+       "meet_id": 32829,
+       "virtius": "MFrZ9epozB"
+      },
+      {
+       "team": "UCLA",
+       "score": 197.275,
+       "date": "2026-04-16",
+       "meet": "NCAA Championships Semifinal II",
+       "meet_id": 32841,
+       "virtius": "DdUgp5b9ce"
+      },
+      {
+       "team": "Georgia",
+       "score": 197.2625,
+       "date": "2026-04-16",
+       "meet": "NCAA Championships Semifinal I",
+       "meet_id": 32834,
+       "virtius": "wWUOt3bvBX"
+      }
+     ],
+     "eventHighs": {
+      "vault": [
+       {
+        "athlete": "Kailin Chio",
+        "team": "LSU",
+        "event": "vault",
+        "score": 10,
+        "date": "2026-04-18",
+        "meet": "NCAA Championships Finals",
+        "meet_id": 32829,
+        "virtius": "MFrZ9epozB"
+       }
+      ],
+      "bars": [
+       {
+        "athlete": "Riley McCusker",
+        "team": "Florida",
+        "event": "bars",
+        "score": 9.9875,
+        "date": "2026-04-16",
+        "meet": "NCAA Championships Semifinal I",
+        "meet_id": 32834,
+        "virtius": "wWUOt3bvBX"
+       }
+      ],
+      "beam": [
+       {
+        "athlete": "Brooklyn Rowray",
+        "team": "Minnesota",
+        "event": "beam",
+        "score": 9.9625,
+        "date": "2026-04-16",
+        "meet": "NCAA Championships Semifinal II",
+        "meet_id": 32841,
+        "virtius": "DdUgp5b9ce"
+       }
+      ],
+      "floor": [
+       {
+        "athlete": "Jordan Chiles",
+        "team": "UCLA",
+        "event": "floor",
+        "score": 9.975,
+        "date": "2026-04-16",
+        "meet": "NCAA Championships Semifinal II",
+        "meet_id": 32841,
+        "virtius": "DdUgp5b9ce"
+       }
+      ]
+     }
+    }
    ]
   },
   "2027": {
@@ -613,7 +3264,8 @@
     "score": null,
     "tied": []
    },
-   "allAroundHighByDate": []
+   "allAroundHighByDate": [],
+   "weekends": []
   }
  }
 }
