@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T16:52:00.569Z",
+ "generated_at": "2026-11-27T17:00:29.994Z",
  "season": 2027,
  "teams": {
   "air-force": {
@@ -569,7 +569,7 @@
      "aa": null
     }
    ],
-   "schoolSourceUrl": "https://rolltide.com/sports/womens-gymnastics/roster/"
+   "schoolSourceUrl": "https://rolltide.com/sports/womens-gymnastics/roster"
   },
   "alaska": {
    "name": "Alaska",
@@ -1078,7 +1078,7 @@
      "aa": null
     }
    ],
-   "schoolSourceUrl": "https://arizonawildcats.com/sports/womens-gymnastics/roster/"
+   "schoolSourceUrl": "https://arizonawildcats.com/sports/womens-gymnastics/roster"
   },
   "arizona-state": {
    "name": "Arizona State",
@@ -2968,7 +2968,7 @@
     {
      "id": 32807,
      "name": "Kauri Hansen",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Gilbert, AZ",
      "vt": null,
@@ -3191,7 +3191,7 @@
     {
      "id": 32938,
      "name": "Jillian Silvers",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Culver City, CA",
      "vt": null,
@@ -3617,7 +3617,7 @@
     {
      "id": 33491,
      "name": "Emma Malewski",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Hamburg, Germany",
      "vt": null,
@@ -3629,7 +3629,7 @@
     {
      "id": 32729,
      "name": "Grace LaCrosse",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Lake Zurich, IL",
      "vt": null,
@@ -3641,7 +3641,7 @@
     {
      "id": 32984,
      "name": "Hannah Clark",
-     "year": "Fr.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Huntington Beach, CA",
      "vt": null,
@@ -3677,7 +3677,7 @@
     {
      "id": 32731,
      "name": "Kate Bryant",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Littleton, CO",
      "vt": null,
@@ -3689,7 +3689,7 @@
     {
      "id": 32734,
      "name": "Lilly Lippeatt",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Mason, OH",
      "vt": null,
@@ -3701,7 +3701,7 @@
     {
      "id": 32737,
      "name": "Maggie Holman",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Raleigh, NC",
      "vt": null,
@@ -3737,7 +3737,7 @@
     {
      "id": 32575,
      "name": "Paige Anastasi",
-     "year": "Jr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Andover, MA",
      "vt": null,
@@ -3749,7 +3749,7 @@
     {
      "id": 32739,
      "name": "Quinn Kuhl",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Holly Springs, NC",
      "vt": null,
@@ -3761,7 +3761,7 @@
     {
      "id": 32741,
      "name": "Sierra Church",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Lincolnton, NC",
      "vt": null,
@@ -3773,7 +3773,7 @@
     {
      "id": 33492,
      "name": "Sophie Stuart",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "South Jordan, UT",
      "vt": null,
@@ -3796,7 +3796,7 @@
     {
      "id": 32742,
      "name": "Takoda Berry",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Newport Beach, CA",
      "vt": null,
@@ -3808,7 +3808,7 @@
     {
      "id": 32799,
      "name": "Trinity Webb",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Smithville, MO",
      "vt": null,
@@ -7030,7 +7030,7 @@
     {
      "id": 32453,
      "name": "Amari Drayton",
-     "year": "Jr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Spring, TX",
      "vt": null,
@@ -7078,7 +7078,7 @@
     {
      "id": 33574,
      "name": "Elyse Wenner",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Breinisville, PA",
      "vt": null,
@@ -7090,7 +7090,7 @@
     {
      "id": 33572,
      "name": "Haley Mustari",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Edmond OK",
      "vt": null,
@@ -7114,7 +7114,7 @@
     {
      "id": 33047,
      "name": "Kailin Chio",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Henderson, NV",
      "vt": null,
@@ -7126,7 +7126,7 @@
     {
      "id": 33048,
      "name": "Kaliya Lincoln",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Frisco, TX",
      "vt": null,
@@ -7138,7 +7138,7 @@
     {
      "id": 32454,
      "name": "Konnor McClain",
-     "year": "Jr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Las Vegas, NV",
      "vt": null,
@@ -7150,7 +7150,7 @@
     {
      "id": 32452,
      "name": "Kylie Coen",
-     "year": "Jr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Bedford, TX",
      "vt": null,
@@ -7162,7 +7162,7 @@
     {
      "id": 33051,
      "name": "Lexi Zeiss",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Omaha, NE",
      "vt": null,
@@ -7174,7 +7174,7 @@
     {
      "id": 32361,
      "name": "Madison Ulrich",
-     "year": "Jr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Fort Mill, SC",
      "vt": null,
@@ -7198,7 +7198,7 @@
     {
      "id": 33569,
      "name": "Nina Ballou",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Boca Raton, FL",
      "vt": null,
@@ -7222,7 +7222,7 @@
     {
      "id": 33050,
      "name": "Victoria Roberts",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Belle Chasse, LA",
      "vt": null,
@@ -8357,7 +8357,7 @@
     {
      "id": 32128,
      "name": "Jennifer McMillan",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Charlotte, NC",
      "vt": null,
@@ -11008,7 +11008,7 @@
     {
      "id": 33136,
      "name": "Darbi Simcox",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Lock Haven, PH",
      "vt": null,
@@ -13529,7 +13529,7 @@
     {
      "id": 33693,
      "name": "Ashlee Sullivan",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Richardson, TX",
      "vt": null,
@@ -13541,7 +13541,7 @@
     {
      "id": 33688,
      "name": "Ava Callahan",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Cary, NC",
      "vt": null,
@@ -13553,7 +13553,7 @@
     {
      "id": 33289,
      "name": "Bronwyn Hoffman",
-     "year": "Fr.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Los Angeles, CA",
      "vt": null,
@@ -13612,7 +13612,7 @@
     {
      "id": 33689,
      "name": "Jordis Eichman",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Colorado Springs, CI",
      "vt": null,
@@ -13624,7 +13624,7 @@
     {
      "id": 33691,
      "name": "Kai Mattei",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "New York, NY",
      "vt": null,
@@ -13636,7 +13636,7 @@
     {
      "id": 32578,
      "name": "Katelyn Rosen",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Boerne, TX",
      "vt": null,
@@ -13648,7 +13648,7 @@
     {
      "id": 33291,
      "name": "Macy McGowan",
-     "year": "Fr.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Seattle, WA",
      "vt": null,
@@ -13672,7 +13672,7 @@
     {
      "id": 33292,
      "name": "Mika Webster-Longin",
-     "year": "So.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Richmond, CA",
      "vt": null,
@@ -13684,7 +13684,7 @@
     {
      "id": 33692,
      "name": "Nola Matthews",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Gilroy, CA",
      "vt": null,
@@ -13696,7 +13696,7 @@
     {
      "id": 33290,
      "name": "Riley Jenkins",
-     "year": "Fr.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "Burbank, CA",
      "vt": null,
@@ -13708,7 +13708,7 @@
     {
      "id": 33288,
      "name": "Sasha Fujisaka",
-     "year": "Fr.",
+     "year": "Jr.",
      "yearRaw": 3,
      "hometown": "San Jose, CA",
      "vt": null,
@@ -13720,7 +13720,7 @@
     {
      "id": 32835,
      "name": "Sydney Barros",
-     "year": "Fr.",
+     "year": "Sr.",
      "yearRaw": 4,
      "hometown": "Lewisville, TX",
      "vt": null,
@@ -13744,7 +13744,7 @@
     {
      "id": 33694,
      "name": "Tiana Sumanasekera",
-     "year": "Fr.",
+     "year": "So.",
      "yearRaw": 2,
      "hometown": "Pleasanton, CA",
      "vt": null,

@@ -437,7 +437,15 @@ function mergeSchoolInto(rtnTeam, school, { preferSchoolYear = true } = {}) {
     const k = normName(cleaned);
     let a = byName.get(k) || findFuzzy(cleaned);
     if (a) {
-      if (preferSchoolYear && s.year) a.year = s.year;
+      // Official school pages sometimes still show last season's class year.
+      // Never replace a known RTN year with a lower one; only fill a missing
+      // year or accept an equal/higher official classification.
+      if (s.year) {
+        const rank = { 'Fr.': 1, 'So.': 2, 'Jr.': 3, 'Sr.': 4, 'Gr.': 5 };
+        const incoming = rank[s.year] || 0;
+        const have = rank[a.year] || 0;
+        if (!a.year || (preferSchoolYear && incoming >= have)) a.year = s.year;
+      }
       if (!a.hometown && s.hometown) a.hometown = s.hometown;
       // Prefer the official school-page spelling when it is clearly the same person.
       if (cleaned) a.name = preferName(cleaned, a.name) === cleaned || k === normName(a.name) ? cleaned : a.name;
