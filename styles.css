@@ -750,3 +750,51 @@ body.poll-open { overflow: hidden; }
   .roster-table { min-width: 500px; }
   .roster-table th, .roster-table td { padding: 6px 6px; font-size: .82rem; }
 }
+
+/* Favorite athletes: roster stars, row highlight, search/menu rows */
+.roster-table tbody th.ath {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-left: 2px;
+  padding-right: 8px;
+}
+.roster-table .ath-star {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  font-size: 1.15rem;
+  margin: -6px 0;
+}
+.roster-table .ath-name { min-width: 0; font-weight: 650; }
+.roster-table tbody tr.is-focus-athlete th,
+.roster-table tbody tr.is-focus-athlete td {
+  background: color-mix(in srgb, var(--accent) 42%, var(--card));
+}
+.roster-table tbody tr.is-focus-athlete th.ath {
+  background: color-mix(in srgb, var(--accent) 42%, var(--card));
+  box-shadow: 8px 0 8px -8px color-mix(in srgb, var(--accent) 55%, rgba(20,17,43,.18));
+}
+.roster-table tbody tr[data-athlete] { scroll-margin-top: 72px; }
+.roster-table tbody tr.is-focus-athlete {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.roster-table tbody tr.is-focus-athlete td.num,
+.roster-table tbody tr.is-focus-athlete td.yr {
+  font-weight: 750;
+}
+.team-list .search-group-label {
+  cursor: default;
+  padding: 10px 12px 4px;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.team-list .search-group-label:hover,
+.team-list li.search-group-label[aria-disabled="true"] { background: transparent; cursor: default; }
+.team-list li.athlete-opt .opt-name { flex: 0 1 auto; }
+.team-list li.athlete-opt .opt-con { margin-left: auto; }
+.fav-pick-item .opt-name { min-width: 0; }
+.fav-pick-item.is-athlete .opt-con { margin-left: 0; }

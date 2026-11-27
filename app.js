@@ -49,6 +49,9 @@
     rosterSort: { key: 'name', dir: 1 },
     coachesShowAll: false,
     favs: new Set(),      // team slugs, persisted in localStorage
+    favAthletes: [],      // { teamSlug, athleteId, slug, name, teamName }, persisted
+    athlete: null,        // athlete slug highlighted on a team profile
+    athletePendingScroll: false,
     filter: 'all',        // all | live | favorites | top25 | SEC | Big Ten | Big 12 | ACC | Other
     polling: false,
   };
@@ -87,6 +90,7 @@
   const timeCT = formatMeetTime;
   const meetKey = m => m.virtius || `rtn-${m.id}`;
   const FAV_KEY = 'tfts-favorites';
+  const ATH_FAV_KEY = 'tf_fav_athletes_v1';
   const POWER_CONF = { SEC: 'SEC', 'Big Ten': 'Big Ten', 'Big 12': 'Big 12', ACC: 'ACC' };
   const confGroup = conf => POWER_CONF[conf] || 'Other';
   function loadFavs() {
@@ -97,6 +101,156 @@
   }
   function saveFavs() {
     try { localStorage.setItem(FAV_KEY, JSON.stringify([...state.favs])); } catch { /* private mode */ }
+  }
+  const athleteSlug = name => String(name || '').normalize('NFKD').replace(/\p{M}+/gu, '').toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  function athleteFavKey(teamSlug, slug) { return `${teamSlug || ''}::${slug || ''}`; }
+  function loadFavAthletes() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(ATH_FAV_KEY) || '[]');
+      const list = Array.isArray(raw) ? raw : [];
+      const seen = new Set();
+      state.favAthletes = [];
+      for (const row of list) {
+        if (!row || typeof row !== 'object') continue;
+        const teamSlug = String(row.teamSlug || '').trim();
+        const name = String(row.name || '').trim();
+        const slug = String(row.slug || row.athleteSlug || athleteSlug(name)).trim();
+        if (!teamSlug || !slug || !name) continue;
+        const k = athleteFavKey(teamSlug, slug);
+        if (seen.has(k)) continue;
+        seen.add(k);
+        state.favAthletes.push({
+          teamSlug,
+          athleteId: row.athleteId ?? row.id ?? null,
+          slug,
+          name,
+          teamName: String(row.teamName || '').trim(),
+        });
+      }
+    } catch { state.favAthletes = []; }
+  }
+  function saveFavAthletes() {
+    try { localStorage.setItem(ATH_FAV_KEY, JSON.stringify(state.favAthletes)); } catch { /* private mode */ }
+  }
+  function isFavAthlete(teamSlug, slug) {
+    return state.favAthletes.some(a => a.teamSlug === teamSlug && a.slug === slug);
+  }
+  function favAthleteRecord(teamSlug, slug, extras = {}) {
+    const team = state.d1 && state.d1.bySlug.get(teamSlug);
+    return {
+      teamSlug,
+      athleteId: extras.athleteId ?? extras.id ?? null,
+      slug,
+      name: extras.name || slug,
+      teamName: extras.teamName || (team && team.name) || teamSlug,
+    };
+  }
+  function toggleFavAthlete(teamSlug, slug, extras = {}) {
+    if (!teamSlug || !slug) return;
+    const i = state.favAthletes.findIndex(a => a.teamSlug === teamSlug && a.slug === slug);
+    if (i >= 0) state.favAthletes.splice(i, 1);
+    else state.favAthletes.push(favAthleteRecord(teamSlug, slug, extras));
+    saveFavAthletes();
+    renderFavPicker();
+    refreshAthleteStars();
+  }
+  function refreshAthleteStars() {
+    document.querySelectorAll('[data-fav-athlete]').forEach(btn => {
+      const slug = btn.dataset.favAthlete;
+      const team = btn.dataset.favTeam;
+      const on = isFavAthlete(team, slug);
+      const name = btn.dataset.favName || 'athlete';
+      btn.classList.toggle('on', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      const label = on ? `Unstar ${name}` : `Star ${name}`;
+      btn.setAttribute('aria-label', label);
+      btn.title = label;
+      btn.textContent = on ? '★' : '☆';
+      const row = btn.closest('.fav-pick-item, .team-opt, tr');
+      if (row && (row.classList.contains('fav-pick-item') || row.classList.contains('team-opt'))) {
+        row.classList.toggle('is-fav', on);
+      }
+    });
+  }
+  function athleteStarBtn(teamSlug, slug, name, extras = {}) {
+    if (!teamSlug || !slug) return '';
+    const on = isFavAthlete(teamSlug, slug);
+    const label = on ? `Unstar ${name}` : `Star ${name}`;
+    const cls = extras.cls ? ` ${extras.cls}` : '';
+    return `<button type="button" class="star-btn${on ? ' on' : ''}${cls}" data-fav-athlete="${esc(slug)}" data-fav-team="${esc(teamSlug)}" data-fav-name="${esc(name)}"${extras.athleteId != null ? ` data-fav-id="${esc(String(extras.athleteId))}"` : ''} aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">${on ? '★' : '☆'}</button>`;
+  }
+  function searchSeason() {
+    if (state.team && state.teamSeason) return state.teamSeason;
+    if (SEASON_OVERRIDE) return SEASON_OVERRIDE;
+    return defaultSeason();
+  }
+  function athleteSeasonCandidates(preferred) {
+    const natural = defaultSeason();
+    const y = preferred || natural;
+    const years = [y];
+    if (y !== natural) years.push(natural);
+    if (!years.includes(y - 1)) years.push(y - 1);
+    if (y + 1 !== natural && y + 1 > natural) { /* don't look into a future unpublished year */ }
+    else if (!years.includes(y + 1) && y + 1 <= natural) years.push(y + 1);
+    return years;
+  }
+  function findAthleteInRoster(teamSlug, slug, season) {
+    const file = state.rosters[season];
+    const rec = file && file.teams && file.teams[teamSlug];
+    if (!rec) return null;
+    const want = String(slug || '').toLowerCase();
+    return (rec.athletes || []).find(a => athleteSlug(a.name) === want || (a.id != null && String(a.id) === want)) || null;
+  }
+  async function resolveAthleteSeason(teamSlug, slug, preferred) {
+    const years = athleteSeasonCandidates(preferred);
+    for (const y of years) {
+      await loadRoster(y);
+      if (findAthleteInRoster(teamSlug, slug, y)) return y;
+    }
+    return preferred || defaultSeason();
+  }
+  function collectSearchAthletes() {
+    const out = [];
+    const seen = new Set();
+    const preferred = searchSeason();
+    const seasons = [preferred, ...Object.keys(state.rosters).map(Number).filter(y => y !== preferred)].filter(y => state.rosters[y] && state.rosters[y].teams);
+    const teams = (state.d1 && state.d1.teams) || [];
+    for (const y of seasons) {
+      const file = state.rosters[y];
+      for (const team of teams) {
+        const rec = file.teams[team.slug];
+        if (!rec) continue;
+        for (const a of rec.athletes || []) {
+          const slug = athleteSlug(a.name);
+          if (!slug) continue;
+          const k = athleteFavKey(team.slug, slug);
+          if (seen.has(k)) continue;
+          seen.add(k);
+          out.push({ name: a.name, slug, athleteId: a.id ?? null, teamSlug: team.slug, teamName: team.name, season: y, color: team.color, color2: team.color2, abbr: team.abbr });
+        }
+      }
+    }
+    return out;
+  }
+  async function ensureRostersForSearch() {
+    const y = searchSeason();
+    const jobs = [loadRoster(y)];
+    const other = y === defaultSeason() ? y - 1 : defaultSeason();
+    if (other && other !== y) jobs.push(loadRoster(other));
+    await Promise.all(jobs);
+  }
+  function focusAthleteRow(slug, { instant } = {}) {
+    if (!slug) return false;
+    const row = document.getElementById(`athlete-${slug}`) || document.querySelector(`tr[data-athlete="${CSS.escape(slug)}"]`);
+    if (!row) return false;
+    row.scrollIntoView({ behavior: instant ? 'auto' : 'smooth', block: 'center' });
+    return true;
+  }
+  function scheduleAthleteScroll() {
+    if (!state.athletePendingScroll || !state.athlete) return;
+    const slug = state.athlete;
+    const go = (instant) => { if (state.athletePendingScroll && state.athlete === slug) focusAthleteRow(slug, { instant }); };
+    requestAnimationFrame(() => requestAnimationFrame(() => go(false)));
   }
   function teamByNameOrSlug(v) {
     return state.d1 && (state.d1.byName.get(v) || state.d1.bySlug.get(v)) || null;
@@ -242,6 +396,7 @@
     if (state.team) {
       p.set('team', state.team);
       if (state.teamSeason && state.teamSeason !== defaultSeason()) p.set('season', String(state.teamSeason));
+      if (state.athlete) p.set('athlete', state.athlete);
       const qs = p.toString().replace(/^demo=&?/, 'demo&').replace(/demo=$/, 'demo');
       history.replaceState(null, '', `${location.pathname}?${qs}`);
       return;
@@ -590,7 +745,9 @@
     if (state.team) {
       if (el.pulse) el.pulse.hidden = true;
       if (el.hero) el.hero.hidden = true;
-      renderTeamProfile(); return;
+      renderTeamProfile();
+      scheduleAthleteScroll();
+      return;
     }
     if (el.pulse) el.pulse.hidden = false;
     if (el.hero) el.hero.hidden = false;
@@ -732,13 +889,14 @@
     };
     return state.d1;
   }
-  function teamHref(slug, season) {
+  function teamHref(slug, season, athlete) {
     const p = [];
     if (demo) p.push('demo');
     if (NOW_OVERRIDE) p.push(`now=${NOW_OVERRIDE}`);
     p.push(`team=${encodeURIComponent(slug)}`);
     if (season && season !== defaultSeason()) p.push(`season=${season}`);
     else if (SEASON_OVERRIDE && SEASON_OVERRIDE !== defaultSeason()) p.push(`season=${SEASON_OVERRIDE}`);
+    if (athlete) p.push(`athlete=${encodeURIComponent(athlete)}`);
     return `?${p.join('&')}`;
   }
   function teamLink(name, season) {
@@ -773,7 +931,7 @@
     return { score: mine.score, place: mine.place, field: placed, win, others, location: d.location, status: d.status };
   }
 
-  async function openTeam(slug, season) {
+  async function openTeam(slug, season, athlete) {
     closePollModal();
     closeFavPicker();
     const teamSearch = document.getElementById('team-search');
@@ -789,14 +947,20 @@
       el.status.textContent = 'That team was not found.';
       return;
     }
-    const yr = season || defaultSeason();
+    const wantAthlete = athlete ? String(athlete).toLowerCase() : null;
+    let yr = season || defaultSeason();
+    if (wantAthlete) yr = await resolveAthleteSeason(team.slug, wantAthlete, yr);
     state.team = team.slug;
     state.teamSeason = yr;
+    state.athlete = wantAthlete;
+    state.athletePendingScroll = !!wantAthlete;
     state.rosterSort = { key: 'name', dir: 1 };
     state.coachesShowAll = false;
     if (!state.date) state.date = todayChicago();
     clearTimeout(state.timer);
-    document.title = `${team.name} — The Five That Score`;
+    document.title = wantAthlete
+      ? `${(findAthleteInRoster(team.slug, wantAthlete, yr) || {}).name || wantAthlete} · ${team.name} — The Five That Score`
+      : `${team.name} — The Five That Score`;
     ++state.renderToken;
     const token = state.renderToken;
     const [lists] = await Promise.all([teamMeetLists(team.name, yr), loadCoaches(), loadRoster(yr)]);
@@ -805,14 +969,19 @@
     syncUrl();
     render();
     renderNextMeet();
+    scheduleAthleteScroll();
     const { upcoming, past } = state.teamLists;
     await pool([...past, ...upcoming.slice(0, 6)], 4, loadDetail);
     if (token !== state.renderToken || state.team !== team.slug) return;
     render();
+    scheduleAthleteScroll();
+    setTimeout(() => { if (token === state.renderToken) state.athletePendingScroll = false; }, 500);
   }
   function closeTeam() {
     state.team = null;
     state.teamSeason = null;
+    state.athlete = null;
+    state.athletePendingScroll = false;
     document.title = 'The Five That Score — Live D1 Scoreboard';
   }
 
@@ -1000,15 +1169,19 @@
       const arrow = on ? (sort.dir === 1 ? ' ▲' : ' ▼') : '';
       return `<th class="${c.cls}"><button type="button" class="roster-sort${on ? ' is-on' : ''}" data-roster-sort="${c.key}" aria-pressed="${on ? 'true' : 'false'}">${c.label}${arrow}</button></th>`;
     }).join('');
-    const body = sorted.map(a => `<tr>
-      <th scope="row" class="ath">${esc(a.name)}</th>
+    const body = sorted.map(a => {
+      const slug = athleteSlug(a.name);
+      const focus = state.athlete && slug === state.athlete;
+      return `<tr id="athlete-${esc(slug)}" data-athlete="${esc(slug)}" class="${focus ? 'is-focus-athlete' : ''}">
+      <th scope="row" class="ath">${athleteStarBtn(team.slug, slug, a.name, { cls: 'ath-star fav-star', athleteId: a.id }) }<span class="ath-name">${esc(a.name)}</span></th>
       <td class="yr">${a.year ? esc(a.year) : '<span class="na">n/a</span>'}</td>
       <td class="num">${fmtEventScore(a.vt)}</td>
       <td class="num">${fmtEventScore(a.ub)}</td>
       <td class="num">${fmtEventScore(a.bb)}</td>
       <td class="num">${fmtEventScore(a.fx)}</td>
       <td class="num">${fmtEventScore(a.aa)}</td>
-    </tr>`).join('');
+    </tr>`;
+    }).join('');
     const src = rec.sourceUrl ? `<a class="staff-src" href="${esc(rec.sourceUrl)}" target="_blank" rel="noopener">${/roadtonationals/i.test(rec.sourceUrl) ? 'Road to Nationals' : 'Official roster'}</a>` : '';
     const note = season >= defaultSeason()
       ? `<p class="roster-note muted">Season highs will fill in as official ${esc(String(season))} meet scores are posted. Events not yet competed show n/a.</p>`
@@ -1134,23 +1307,52 @@
     const list = document.getElementById('team-list');
     if (!input || !list) return;
     let active = -1;
+    let paintToken = 0;
     const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); active = -1; };
     const open = () => { list.hidden = false; input.setAttribute('aria-expanded', 'true'); };
     const items = () => [...list.querySelectorAll('[role="option"]')];
-    const paint = () => {
-      const q = input.value.trim().toLowerCase();
-      const teams = (state.d1 && state.d1.teams) || [];
-      const filtered = teams.filter(t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q));
-      list.innerHTML = filtered.length ? filtered.map(t => `<li role="option" data-team="${esc(t.slug)}" id="opt-${esc(t.slug)}" class="team-opt">
+    const teamRow = t => `<li role="option" data-team="${esc(t.slug)}" id="opt-${esc(t.slug)}" class="team-opt">
         <span class="team-opt-main">
           <span class="crest tiny" style="background:${esc(t.color)};color:${esc(crestInk(t))}">${esc(t.abbr)}</span>
           <span class="opt-name">${esc(t.name)}</span>
           <span class="opt-con muted">${esc(t.conference)}</span>
         </span>
         ${starBtn(t.name)}
-      </li>`).join('') : `<li class="muted" aria-disabled="true">No teams match “${esc(input.value)}”</li>`;
+      </li>`;
+    const athleteRow = a => `<li role="option" data-team="${esc(a.teamSlug)}" data-athlete="${esc(a.slug)}" data-team-season="${a.season}" id="opt-ath-${esc(a.teamSlug)}-${esc(a.slug)}" class="team-opt athlete-opt${isFavAthlete(a.teamSlug, a.slug) ? ' is-fav' : ''}">
+        <span class="team-opt-main">
+          <span class="opt-name">${esc(a.name)}</span>
+          <span class="opt-con muted">${esc(a.teamName)}</span>
+        </span>
+        ${athleteStarBtn(a.teamSlug, a.slug, a.name, { athleteId: a.athleteId })}
+      </li>`;
+    const paint = async () => {
+      const token = ++paintToken;
+      const q = input.value.trim().toLowerCase();
+      const teams = (state.d1 && state.d1.teams) || [];
+      const filtered = teams.filter(t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q));
+      let athletes = [];
+      if (q.length >= 2) {
+        await ensureRostersForSearch();
+        if (token !== paintToken) return;
+        const nq = q.replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+        athletes = collectSearchAthletes().filter(a =>
+          a.name.toLowerCase().includes(q) ||
+          a.slug.includes(q.replace(/\s+/g, '-')) ||
+          a.teamName.toLowerCase().includes(q) ||
+          (nq && normAthleteName(a.name).includes(nq))
+        ).slice(0, 12);
+      }
+      const shownTeams = filtered;
+      let html = '';
+      if (shownTeams.length) html += shownTeams.map(teamRow).join('');
+      if (athletes.length) {
+        html += `<li class="search-group-label fav-group-label" aria-disabled="true">Athletes</li>` + athletes.map(athleteRow).join('');
+      }
+      if (!html) html = `<li class="muted" aria-disabled="true">No teams or athletes match “${esc(input.value)}”</li>`;
+      list.innerHTML = html;
       open();
-      active = filtered.length ? 0 : -1;
+      active = items().length ? 0 : -1;
       highlight();
     };
     const highlight = () => {
@@ -1158,20 +1360,32 @@
       const cur = items()[active];
       if (cur) { input.setAttribute('aria-activedescendant', cur.id); cur.scrollIntoView({ block: 'nearest' }); }
     };
-    const choose = slug => { close(); input.value = ''; input.blur(); if (slug) openTeam(slug); };
+    const choose = (slug, athlete, season) => {
+      close();
+      input.value = '';
+      input.blur();
+      if (slug) openTeam(slug, season || undefined, athlete || undefined);
+    };
     input.addEventListener('focus', () => { if (state.d1) paint(); });
     input.addEventListener('input', paint);
     input.addEventListener('keydown', e => {
-      const opts = items().filter(it => it.dataset.team);
+      const opts = items();
       if (e.key === 'ArrowDown') { e.preventDefault(); if (list.hidden) paint(); active = Math.min(opts.length - 1, active + 1); highlight(); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); active = Math.max(0, active - 1); highlight(); }
-      else if (e.key === 'Enter') { e.preventDefault(); if (opts[active]) choose(opts[active].dataset.team); }
+      else if (e.key === 'Enter') {
+        e.preventDefault();
+        const it = opts[active];
+        if (it) choose(it.dataset.team, it.dataset.athlete, it.dataset.teamSeason ? Number(it.dataset.teamSeason) : undefined);
+      }
       else if (e.key === 'Escape') { close(); }
     });
     list.addEventListener('mousedown', e => {
-      if (e.target.closest('[data-fav-toggle]')) { e.preventDefault(); e.stopPropagation(); return; }
+      if (e.target.closest('[data-fav-toggle], [data-fav-athlete]')) { e.preventDefault(); e.stopPropagation(); return; }
       const it = e.target.closest('[data-team]');
-      if (it) { e.preventDefault(); choose(it.dataset.team); }
+      if (it) {
+        e.preventDefault();
+        choose(it.dataset.team, it.dataset.athlete, it.dataset.teamSeason ? Number(it.dataset.teamSeason) : undefined);
+      }
     });
     document.addEventListener('click', e => {
       if (!e.target.closest('.team-picker')) close();
@@ -1191,26 +1405,44 @@
       </a>
     </li>`;
   }
+  function favAthleteRow(a) {
+    const on = isFavAthlete(a.teamSlug, a.slug);
+    const season = a.season || undefined;
+    return `<li class="fav-pick-item is-athlete${on ? ' is-fav' : ''}">
+      ${athleteStarBtn(a.teamSlug, a.slug, a.name, { cls: 'fav-star', athleteId: a.athleteId })}
+      <a class="fav-pick-main" href="${esc(teamHref(a.teamSlug, season, a.slug))}" data-team="${esc(a.teamSlug)}" data-athlete="${esc(a.slug)}"${season ? ` data-team-season="${season}"` : ''}>
+        <span class="opt-name">${esc(a.name)}</span>
+        <span class="opt-con muted">${esc(a.teamName)}</span>
+      </a>
+    </li>`;
+  }
   function renderFavPicker() {
     const btn = document.getElementById('fav-picker-btn');
     const list = document.getElementById('fav-picker-list');
     const search = document.getElementById('fav-picker-search');
     if (!btn || !list) return;
-    const n = state.favs.size;
+    const n = state.favs.size + state.favAthletes.length;
     btn.classList.toggle('has-favs', n > 0);
     btn.innerHTML = n ? `★ Favorites <span class="pill-count">${n}</span>` : '★ Favorites';
     const q = (search && search.value || '').trim().toLowerCase();
-    const match = t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q);
-    const all = ((state.d1 && state.d1.teams) || []).filter(match);
-    const favs = all.filter(t => state.favs.has(t.slug)).sort((a, b) => a.name.localeCompare(b.name));
-    const rest = all.filter(t => !state.favs.has(t.slug)).sort((a, b) => a.name.localeCompare(b.name));
-    let html = '';
-    if (favs.length) {
-      html += `<li class="fav-group-label">Your favorites</li>` + favs.map(favRow).join('');
-      if (rest.length) html += `<li class="fav-group-label">All teams</li>`;
+    const qSlug = q.replace(/\s+/g, '-');
+    const matchTeam = t => !q || t.name.toLowerCase().includes(q) || t.abbr.toLowerCase().includes(q) || t.slug.includes(q) || (t.conference || '').toLowerCase().includes(q);
+    const matchAth = a => !q || a.name.toLowerCase().includes(q) || a.slug.includes(qSlug) || (a.teamName || '').toLowerCase().includes(q);
+    const allTeams = ((state.d1 && state.d1.teams) || []).filter(matchTeam);
+    const favTeams = allTeams.filter(t => state.favs.has(t.slug)).sort((a, b) => a.name.localeCompare(b.name));
+    const restTeams = allTeams.filter(t => !state.favs.has(t.slug)).sort((a, b) => a.name.localeCompare(b.name));
+    const favAths = state.favAthletes.filter(matchAth).slice().sort((a, b) => a.name.localeCompare(b.name) || a.teamName.localeCompare(b.teamName));
+    let extraAths = [];
+    if (q.length >= 2) {
+      extraAths = collectSearchAthletes().filter(a => matchAth(a) && !isFavAthlete(a.teamSlug, a.slug)).slice(0, 10);
     }
-    html += rest.map(favRow).join('');
-    if (!html) html = `<li class="muted fav-empty">No teams match.</li>`;
+    let html = '';
+    if (favAths.length) html += `<li class="fav-group-label">Favorite Athletes</li>` + favAths.map(favAthleteRow).join('');
+    else if (!q && !state.favAthletes.length) { /* leave room for the teams lists */ }
+    if (favTeams.length) html += `<li class="fav-group-label">Favorite Teams</li>` + favTeams.map(favRow).join('');
+    if (extraAths.length) html += `<li class="fav-group-label">Athletes</li>` + extraAths.map(favAthleteRow).join('');
+    if (restTeams.length) html += `<li class="fav-group-label">${favTeams.length || favAths.length ? 'All teams' : 'Teams'}</li>` + restTeams.map(favRow).join('');
+    if (!html) html = `<li class="muted fav-empty">No teams or athletes match.</li>`;
     list.innerHTML = html;
   }
   function closeFavPicker() {
@@ -1224,14 +1456,23 @@
     const box = document.getElementById('fav-picker');
     const search = document.getElementById('fav-picker-search');
     if (!btn || !box) return;
-    const open = () => { renderFavPicker(); box.hidden = false; btn.setAttribute('aria-expanded', 'true'); search && search.focus(); };
+    const open = () => {
+      renderFavPicker();
+      box.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      search && search.focus();
+      ensureRostersForSearch().then(() => { if (!box.hidden) renderFavPicker(); });
+    };
     btn.addEventListener('click', e => { e.stopPropagation(); box.hidden ? open() : closeFavPicker(); });
-    if (search) search.addEventListener('input', renderFavPicker);
+    if (search) search.addEventListener('input', () => {
+      renderFavPicker();
+      if ((search.value || '').trim().length >= 2) ensureRostersForSearch().then(() => { if (!box.hidden) renderFavPicker(); });
+    });
     document.addEventListener('click', e => {
       if (box.hidden) return;
       // Re-rendering the list during a star click detaches the target, so also
       // ignore detached star clicks and anything still inside the picker.
-      if (e.target.closest('#fav-picker, #fav-picker-btn, [data-fav-toggle]')) return;
+      if (e.target.closest('#fav-picker, #fav-picker-btn, [data-fav-toggle], [data-fav-athlete]')) return;
       closeFavPicker();
     });
     renderFavPicker();
@@ -2008,6 +2249,17 @@
       <a class="nm-go" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">${live ? 'Watch scores' : 'Go to meet'} ›</a>`;
   }
   document.addEventListener('click', e => {
+    const favAthEl = e.target.closest('[data-fav-athlete]');
+    if (favAthEl) {
+      e.preventDefault();
+      e.stopPropagation();
+      if (typeof e.stopImmediatePropagation === 'function') e.stopImmediatePropagation();
+      toggleFavAthlete(favAthEl.dataset.favTeam, favAthEl.dataset.favAthlete, {
+        name: favAthEl.dataset.favName,
+        athleteId: favAthEl.dataset.favId || null,
+      });
+      return;
+    }
     const favEl = e.target.closest('[data-fav-toggle]');
     if (favEl) {
       e.preventDefault();
@@ -2076,7 +2328,8 @@
       e.preventDefault();
       e.stopPropagation();
       const yr = teamEl.dataset.teamSeason ? Number(teamEl.dataset.teamSeason) : null;
-      openTeam(teamEl.dataset.team, yr || undefined);
+      const ath = teamEl.dataset.athlete || (teamEl.dataset.team === state.team ? state.athlete : null);
+      openTeam(teamEl.dataset.team, yr || undefined, ath || undefined);
       return;
     }
     const pulseJump = e.target.closest('#season-pulse a.jump[data-date], #season-hero a.jump[data-date]');
@@ -2390,7 +2643,7 @@
 
   // ---------- events ----------
   el.meets.addEventListener('click', async e => {
-    if (e.target.closest('[data-team], [data-fav-toggle], a.tv-badge')) return;
+    if (e.target.closest('[data-team], [data-fav-toggle], [data-fav-athlete], a.tv-badge')) return;
     const jump = e.target.closest('a.jump[data-date]');
     if (jump) { e.preventDefault(); setDate(jump.dataset.date); return; }
     const tab = e.target.closest('[data-tab]');
@@ -2420,6 +2673,15 @@
   el.date.addEventListener('change', () => { if (isYmd(el.date.value)) setDate(el.date.value); });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeShareModal();
+    const athStar = e.target.closest && e.target.closest('[data-fav-athlete]');
+    if (athStar && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      toggleFavAthlete(athStar.dataset.favTeam, athStar.dataset.favAthlete, {
+        name: athStar.dataset.favName,
+        athleteId: athStar.dataset.favId || null,
+      });
+      return;
+    }
     const star = e.target.closest && e.target.closest('[data-fav-toggle]');
     if (star && (e.key === 'Enter' || e.key === ' ')) {
       e.preventDefault();
@@ -2523,13 +2785,14 @@
     state.flashKey = null;
     const qDate = p.get('date');
     const qTeam = (p.get('team') || '').toLowerCase();
+    const qAthlete = (p.get('athlete') || '').toLowerCase();
     const qSeason = p.get('season');
     const seasonArg = qSeason && /^\d{4}$/.test(qSeason) ? Number(qSeason) : null;
     const start = isYmd(qDate) ? qDate : (demo ? DEMO.date : todayChicago());
     const hashMeet = readHashMeet() || (demo && !qDate && !qTeam ? DEMO.meet : null);
     if (hashMeet) state.open.add(hashMeet);
     if (qTeam) {
-      await openTeam(qTeam, seasonArg);
+      await openTeam(qTeam, seasonArg, qAthlete || undefined);
     } else {
       closeTeam();
       await setDate(start, { keepOpen: !!hashMeet });
@@ -2559,6 +2822,7 @@
 
   // ---------- boot ----------
   loadFavs();
+  loadFavAthletes();
   if ('serviceWorker' in navigator) {
     const swUrl = new URL('sw.js', document.baseURI);
     navigator.serviceWorker.register(swUrl.href, { scope: new URL('./', document.baseURI).href }).catch(() => {});
@@ -2574,6 +2838,7 @@
   }
   const qDate = params.get('date');
   const qTeam = (params.get('team') || '').toLowerCase();
+  const qAthlete = (params.get('athlete') || '').toLowerCase();
   const qSeason = params.get('season');
   const seasonArg = qSeason && /^\d{4}$/.test(qSeason) ? Number(qSeason) : null;
   const start = isYmd(qDate) ? qDate : (demo ? DEMO.date : todayChicago());
@@ -2582,7 +2847,7 @@
   loadTeams().then(() => { initTeamPicker(); initFavPicker(); if (state.date && !state.team) render(); }).catch(() => { initTeamPicker(); initFavPicker(); });
   loadSeasonData().then(() => { renderSeasonPulse(); if (state.team) render(); });
   if (qTeam) {
-    openTeam(qTeam, seasonArg);
+    openTeam(qTeam, seasonArg, qAthlete || undefined);
   } else {
     setDate(start, { keepOpen: true }).then(async () => {
       if (!hashMeet) return;
