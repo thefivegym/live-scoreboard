@@ -1255,6 +1255,28 @@
     }
     return w;
   }
+  const FAN_POLLS = [
+    {
+      title: 'NCAA Champions Poll',
+      blurb: '2027 preseason — who takes the national title?',
+      href: 'https://rocket-forge-comet-vivid.grok.me/',
+    },
+    {
+      title: 'AA Champion Poll',
+      blurb: '2027 all-around — one vote, national tally.',
+      href: 'https://forge-fleet-tundra-zinc.grok.me/',
+    },
+  ];
+  function fanPollsHtml() {
+    const rows = FAN_POLLS.map(p => `<a class="fp-row" href="${esc(p.href)}" target="_blank" rel="noopener noreferrer">
+        <span class="fp-copy"><span class="fp-title">${esc(p.title)}</span><span class="fp-blurb">${esc(p.blurb)}</span></span>
+        <span class="fp-vote">Vote</span>
+      </a>`).join('');
+    return `<section class="fan-polls" id="fan-polls" aria-label="Fan Polls">
+      <div class="fp-head"><h2>Fan Polls</h2><p class="fp-lead">Make your pick for the 2027 season.</p></div>
+      <div class="fp-list">${rows}</div>
+    </section>`;
+  }
   function weekendWatchHtml(block, asOf, season) {
     const stored = (block && block.weekends) || [];
     const w = pickWeekend(block, asOf, season);
@@ -1420,7 +1442,7 @@
       : '';
     if (el.hero && !el.hero.hidden) {
       state.heroTens = tens;
-      el.hero.innerHTML = `${preview}${viewLast}${seasonHeroHtml(tens, aa, season)}${weekendWatchHtml(blockS, asOf, season)}`;
+      el.hero.innerHTML = `${preview}${viewLast}${seasonHeroHtml(tens, aa, season)}${weekendWatchHtml(blockS, asOf, season)}${fanPollsHtml()}`;
     }
     const box = el.pulse;
     if (box && !box.hidden) {
