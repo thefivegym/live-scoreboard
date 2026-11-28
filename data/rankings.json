@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T12:07:41.451Z",
+ "generated_at": "2026-11-28T11:59:04.228Z",
  "source": "WCGA preseason coaches poll (when published); in season, Road to Nationals weekly NQS; after championships, RTN final standings (GET /api/women/finalresults/{year}, Div I)",
  "seasons": {
   "2026": {
@@ -10408,7 +10408,7 @@
     "source_url": "https://usagym.org/college/national-rankings/",
     "date": null,
     "message": "Preseason poll coming soon",
-    "note": "The WCGA/CGA 2027 preseason coaches poll is typically released in mid-December. It had not been published as of 2026-11-27.",
+    "note": "The WCGA/CGA 2027 preseason coaches poll is typically released in mid-December. It had not been published as of 2026-11-28.",
     "teams": []
    },
    "current": null,
