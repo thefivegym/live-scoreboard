@@ -1,7 +1,7 @@
 /* The Five That Score — minimal service worker.
    Network-first for same-origin HTML/JSON/API so live scores stay fresh.
    Cross-origin requests (Virtius, Count API) are left to the browser. */
-const CACHE = 'tfts-scoreboard-v1';
+const CACHE = 'tfts-scoreboard-v2';
 
 self.addEventListener('install', event => {
   self.skipWaiting();

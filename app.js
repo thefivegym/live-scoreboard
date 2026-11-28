@@ -20,7 +20,7 @@
   const $ = sel => document.querySelector(sel);
   const el = {
     meets: $('#meets'), date: $('#date'), dateText: $('#date-text'), prev: $('#prev'), next: $('#next'),
-    today: $('#today'), banner: $('#banner'), status: $('#status-line'), pulse: $('#season-pulse'), hero: $('#season-hero'), filters: $('#meet-filters'),
+    today: $('#today'), banner: $('#banner'), status: $('#status-line'), pulse: $('#season-pulse'), hero: $('#season-hero'), filters: $('#meet-filters'), scoring: $('#scoring-guide'),
   };
 
   const params = new URLSearchParams(location.search);
@@ -53,6 +53,7 @@
     athlete: null,        // athlete slug highlighted on a team profile
     athletePendingScroll: false,
     filter: 'all',        // all | live | favorites | top25 | SEC | Big Ten | Big 12 | ACC | Other
+    view: null,           // null | 'scoring'
     polling: false,
   };
 
@@ -390,6 +391,12 @@
   const isVirtiusKey = k => VIRTIUS_KEY.test(k || '') && !/^(rtn|iq|adhoc)-/.test(k);
   function syncUrl() {
     const p = new URLSearchParams();
+    if (state.view === 'scoring') {
+      p.set('view', 'scoring');
+      const qs = p.toString();
+      history.replaceState(null, '', `${location.pathname}?${qs}`);
+      return;
+    }
     if (demo) p.set('demo', '');
     if (NOW_OVERRIDE) p.set('now', NOW_OVERRIDE);
     if (SEASON_OVERRIDE && !(state.team && state.teamSeason && state.teamSeason !== defaultSeason())) p.set('season', String(SEASON_OVERRIDE));
@@ -735,7 +742,213 @@
     </article>`;
   }
 
+
+  function isScoringUrl() {
+    const p = new URLSearchParams(location.search);
+    const view = (p.get('view') || '').toLowerCase();
+    if (view === 'scoring' || view === 'how-scoring') return true;
+    const h = (location.hash || '').replace(/^#/, '').split('&')[0].toLowerCase();
+    return h === 'scoring' || h === 'how-scoring' || h === 'how-scoring-works';
+  }
+  function scoringPath() {
+    return `${homePath()}?view=scoring`;
+  }
+  function applyViewChrome() {
+    const scoring = state.view === 'scoring';
+    document.body.classList.toggle('view-scoring', scoring);
+    if (el.scoring) el.scoring.hidden = !scoring;
+    if (el.meets) el.meets.hidden = scoring;
+    const entry = document.getElementById('scoring-entry');
+    if (entry) entry.hidden = scoring || !!state.team;
+    document.querySelectorAll('a[data-view="scoring"]').forEach(a => {
+      a.setAttribute('aria-current', scoring ? 'page' : 'false');
+    });
+  }
+  function openScoring({ push = false } = {}) {
+    closeChrome();
+    closeTeam();
+    state.view = 'scoring';
+    state.open.clear();
+    document.title = 'How Scoring Works — The Five That Score';
+    if (push && !isScoringUrl()) history.pushState(null, '', scoringPath());
+    else if (!isScoringUrl() || (location.hash && !location.search.includes('view=scoring'))) {
+      history.replaceState(null, '', scoringPath());
+    } else {
+      syncUrl();
+    }
+    window.scrollTo(0, 0);
+    render();
+  }
+  function closeScoring() {
+    if (state.view !== 'scoring') return;
+    state.view = null;
+    if (el.scoring) { el.scoring.hidden = true; }
+    document.body.classList.remove('view-scoring');
+  }
+  function scoringGuideHtml() {
+    return `
+      <article class="sg-intro">
+        <p class="sg-kicker">Fan guide</p>
+        <h2>How scoring works</h2>
+        <p class="sg-lead">A compact guide to NCAA Division I women’s gymnastics: the 10.0 scale, 6-up-5-count team totals, NQS rankings, and how college scoring differs from elite. Written for new fans, using current NCAA, USA Gymnastics, and FIG rules.</p>
+      </article>
+
+      <aside class="sg-example" aria-label="Worked example of a 6-up, 5-count event">
+        <h3>Worked example: 6 up, 5 count</h3>
+        <p>A team puts up six vaults. The lowest score is dropped; the other five are added for the event total (max 50.000).</p>
+        <div class="sg-scores">
+          <span class="sg-score">9.900</span>
+          <span class="sg-score">9.850</span>
+          <span class="sg-score">9.875</span>
+          <span class="sg-score">9.800</span>
+          <span class="sg-score">9.925</span>
+          <span class="sg-score is-drop" title="Dropped — lowest score">9.775</span>
+        </div>
+        <p class="sg-math">9.900 + 9.850 + 9.875 + 9.800 + 9.925 = <strong>49.350</strong> on vault. The 9.775 is the drop score and does not count. These numbers are a made-up example to show the math, not a real lineup.</p>
+      </aside>
+
+      <details class="sg-section" open>
+        <summary>The college 10.0 scale</summary>
+        <p>Each routine is scored out of a maximum <strong>10.000</strong>. Judges start from a <strong>Start Value</strong> and subtract execution deductions (form, amplitude, landings, rhythm, and artistry).</p>
+        <ul>
+          <li><strong>Bars, beam, and floor:</strong> The Start Value begins at <strong>9.2</strong>. A gymnast can add up to <strong>+0.6 bonus</strong> for difficulty (DV) and connection value (CV) — with at least 0.1 of each — plus <strong>+0.2 composition credit</strong>, for a maximum Start Value of <strong>10.0</strong>.</li>
+          <li><strong>Vault:</strong> Each vault has its own published Start Value on the NCAA Vault Value Chart. A Yurchenko full (round-off, entry, layout with a full twist) starts from <strong>9.95</strong>. A Yurchenko 1½ starts from <strong>10.0</strong>. A 9.950 can be a clean routine on a 9.95 vault, not a deducted 10.0 vault.</li>
+          <li><strong>Deductions:</strong> NCAA uses USA Gymnastics Development Program Level 10 execution deductions, with the NCAA modifications taking precedence. A fall is a <strong>0.50</strong> deduction under those Level 10 rules.</li>
+          <li><strong>Judging panels:</strong> Two judges — average both scores. Four judges — drop the high and low, average the middle two. Six judges — drop the high and low, average the other four. Regular-season dual and most multi-team meets typically use two judges per routine (even when four judges are at the meet, they usually split across two events happening at once). Championship sessions may use four- or six-judge panels.</li>
+          <li><strong>There is no stick bonus</strong> in women’s NCAA gymnastics. A stuck landing simply avoids the usual landing deductions (steps, hops, and the like). Men’s NCAA gymnastics is different and does award a stick bonus — don’t mix the two up.</li>
+        </ul>
+      </details>
+
+      <details class="sg-section">
+        <summary>Team format, 197+, and “Rot N”</summary>
+        <p>Teams compete on four events: <strong>vault (VT)</strong>, <strong>uneven bars (UB)</strong>, <strong>balance beam (BB)</strong>, and <strong>floor exercise (FX)</strong>.</p>
+        <ul>
+          <li>On each event a team may put up to <strong>six gymnasts</strong> (“6 up”). The <strong>five highest scores count</strong>; the lowest is dropped.</li>
+          <li>An event total maxes at <strong>50.000</strong> (five 10.0s). The team score is the sum of the four event totals, so the theoretical maximum is <strong>200.000</strong>.</li>
+          <li><strong>What 197+ and 198+ mean:</strong> Everyday team totals live in the mid-to-high 190s. A <strong>196</strong> is a strong meet. <strong>197 and above</strong> is typically championship-caliber — the kind of night that stands out on a “197+” weekend list. <strong>198+</strong> is rare and among the very best team scores of a season. Postseason bids are based on NQS, not a single meet, so a 197 does not automatically “make nationals.”</li>
+          <li><strong>Olympic order</strong> is vault, then bars, then beam, then floor. In a typical four-team (or “double dual”) meet, two events often run at the same time — vault paired with beam, bars with floor — and teams rotate through the four events. In a two-judge dual with one event at a time, Olympic order is required and gymnasts from the two teams usually alternate.</li>
+          <li><strong>“Rot N”</strong> on this scoreboard is the current <strong>rotation number</strong>, not a score. In a four-team meet there are usually four rotations; “Rot 2” means the meet is in its second rotation, and each team is on a different event.</li>
+        </ul>
+      </details>
+
+      <details class="sg-section">
+        <summary>All-around and event titles</summary>
+        <ul>
+          <li>The <strong>all-around (AA)</strong> is one gymnast competing on all four events. Her AA score is the sum of those four scores, with a maximum of <strong>40.000</strong>.</li>
+          <li><strong>Event titles</strong> go to the highest individual score on vault, bars, beam, or floor.</li>
+          <li>At the NCAA championships, all-around and event national titles are awarded from the <strong>semifinal</strong> scores (both sessions are considered). The Four on the Floor final is a <strong>team</strong> competition only: the team with the highest score in that final meet is the national champion.</li>
+        </ul>
+      </details>
+
+      <details class="sg-section">
+        <summary>Rankings (NQS) and the road to nationals</summary>
+        <p>Teams and individuals are ranked by a <strong>National Qualifying Score (NQS)</strong>. The current <strong>team</strong> formula (adopted for the 2026 championship season) works like this:</p>
+        <ul>
+          <li>A team needs a <strong>minimum of nine meets</strong>, including at least <strong>five away</strong> meets.</li>
+          <li>A <strong>maximum of five home</strong> scores count. If a team has more than five home meets, the <strong>highest</strong> home scores beyond five are dropped first (so a sixth home 198 does not automatically help).</li>
+          <li>All away scores are included at that stage. For NQS, only <strong>one neutral-site meet within 30 miles</strong> of campus may count as an away score; conference championships are excluded from that limit.</li>
+          <li>Then the remaining set is ordered, the <strong>highest and lowest</strong> scores are dropped, and the rest are averaged to three decimals. That average is the team NQS.</li>
+          <li>On the ranking boards, <strong>weeks 1–6</strong> use a straight average (still a maximum of five home scores, no high/low drop). <strong>Week 7 onward</strong> drops the high and low. After conference championships, this NQS is used for postseason selection.</li>
+        </ul>
+        <p><strong>Individual NQS</strong> did not change with the 2026 team-formula update: take the three highest away scores and the three highest other scores, drop the highest of those six, and average the remaining five.</p>
+        <p>You may still hear <strong>RQS</strong> (Regional Qualifying Score). That was the older name and team formula: the best six scores, including at least three away, drop the highest, average the other five. Today’s team ranking uses the NQS rules above, which count more meets and drop both the high and the low.</p>
+        <p><strong>Postseason (current format):</strong> The <strong>top 36 teams</strong> by NQS, plus <strong>12 all-arounders</strong> and <strong>16 specialists per event</strong> who are not on a qualifying team, are assigned to <strong>four regionals of nine teams</strong>. At each regional: a two-team first round (winner advances), an eight-team second round in two sessions of four (top two from each session advance), then a four-team regional final (top two go to nationals). The national championship is <strong>eight teams</strong>, plus four all-arounders and 16 event specialists, in two four-team semifinals. The top two teams from each semifinal advance to the four-team <strong>Four on the Floor</strong> final — a fresh meet, highest team score wins.</p>
+      </details>
+
+      <details class="sg-section">
+        <summary>College vs. elite</summary>
+        <p>College (NCAA) and elite (FIG / Olympics and world championships) share the same four events and a lot of the same skills, but they are scored on different systems.</p>
+        <div class="sg-cmp">
+          <div class="sg-cmp-row">
+            <p class="sg-cmp-label">Score cap</p>
+            <div class="sg-cmp-pair">
+              <div><h4>College</h4><p>Capped at a perfect <strong>10.000</strong>.</p></div>
+              <div><h4>Elite / FIG</h4><p><strong>Open-ended</strong>. Final score = Difficulty (D) + Execution (E), minus any penalties.</p></div>
+            </div>
+          </div>
+          <div class="sg-cmp-row">
+            <p class="sg-cmp-label">Why elite scores look like 13–15</p>
+            <div class="sg-cmp-pair">
+              <div><h4>College</h4><p>A hit routine is usually in the 9.7–9.95 range; 10.0 is rare.</p></div>
+              <div><h4>Elite / FIG</h4><p>E starts from 10.0 and is reduced for errors. D is built from counted skills, composition requirements, and connections, with no 10.0 cap. A strong routine often lands around <strong>13–15</strong> because a D-score of ~5 to 6 is added to a high E-score.</p></div>
+            </div>
+          </div>
+          <div class="sg-cmp-row">
+            <p class="sg-cmp-label">What the code emphasizes</p>
+            <div class="sg-cmp-pair">
+              <div><h4>College</h4><p>Execution is decisive. Once the Start Value is 10.0, the only way to separate routines is deductions. Clean landings and form matter enormously.</p></div>
+              <div><h4>Elite / FIG</h4><p>Difficulty and execution both move the score. Harder skills and connections raise D; execution and artistry still come off a 10.0 E-score.</p></div>
+            </div>
+          </div>
+          <div class="sg-cmp-row">
+            <p class="sg-cmp-label">Judging</p>
+            <div class="sg-cmp-pair">
+              <div><h4>College</h4><p>Usually two judges whose scores are averaged (larger championship panels drop high and low). One official score out of 10.0, using Level 10 execution with NCAA modifications.</p></div>
+              <div><h4>Elite / FIG</h4><p>Separate D- and E-juries. Several E-judges; the final E-score averages the middle marks. Neutral deductions can also come off the total.</p></div>
+            </div>
+          </div>
+          <div class="sg-cmp-row">
+            <p class="sg-cmp-label">Vault</p>
+            <div class="sg-cmp-pair">
+              <div><h4>College</h4><p>Each vault has a published <strong>Start Value</strong> (for example, a Yurchenko full is 9.95 and a Yurchenko 1½ is 10.0 on the 2026–27 NCAA chart). Execution comes off that start.</p></div>
+              <div><h4>Elite / FIG</h4><p>Each vault has a <strong>D value</strong> from the FIG table. The score is D + E, so a well-executed high-D vault is typically in the mid-14s, not a 10.</p></div>
+            </div>
+          </div>
+          <div class="sg-cmp-row">
+            <p class="sg-cmp-label">Team vs. individual</p>
+            <div class="sg-cmp-pair">
+              <div><h4>College</h4><p>The sport is built around the <strong>team</strong> score (6 up, 5 count). Individual AA and event titles are also awarded, including at nationals (from semifinals).</p></div>
+              <div><h4>Elite / FIG</h4><p>Majors emphasize qualification, a team final, an all-around final, and apparatus finals — more of an individual-and-team split than a single 200-point team meet.</p></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="sg-section">
+        <summary>Glossary</summary>
+        <dl class="sg-dl">
+          <div><dt>Stick</dt><dd>A landing with no steps or hops. In women’s NCAA it does not add bonus points; it just avoids landing deductions.</dd></div>
+          <div><dt>Hit</dt><dd>A clean, essentially error-free routine — no fall, no major break. Fans will say a team “hit six-for-six.”</dd></div>
+          <div><dt>Count / drop score</dt><dd>On each event the five highest scores <em>count</em> toward the team total. The lowest of the six is the <em>drop</em> score.</dd></div>
+          <div><dt>Lineup</dt><dd>The six gymnasts entered on an event, and the order they compete.</dd></div>
+          <div><dt>Leadoff / anchor</dt><dd>The first gymnast in the lineup is the leadoff; the last is the anchor, often one of the team’s most consistent or highest-scoring athletes.</dd></div>
+          <div><dt>Start Value (SV)</dt><dd>The score a routine starts from before execution deductions. Maximum 10.0. On bars, beam, and floor it is 9.2 plus bonus and composition credit; on vault it comes from the vault chart.</dd></div>
+          <div><dt>NQS</dt><dd>National Qualifying Score — the ranking average used for national team and individual standings and for postseason selection. See the rankings section for the current formula.</dd></div>
+          <div><dt>10.0 / “Perfect 10”</dt><dd>A routine with a 10.0 Start Value and no execution deductions, scored 10.000. Rare, and celebrated — this scoreboard highlights them.</dd></div>
+        </dl>
+      </details>
+
+      <footer class="sg-sources">
+        <h3>Sources</h3>
+        <p>Facts on this page are taken from official 2026–27 / current championship documents, not invented or carried over from older explainers (college bars/beam/floor Start Value is 9.2, not the older 9.4).</p>
+        <ul>
+          <li><a href="https://nawgj.org/wp-content/uploads/2026/08/2026-27_WomensGym-Rules-Mod-FINAL.pdf" target="_blank" rel="noopener">2026–27 NCAA Women’s Gymnastics Rules Modifications</a> (September 2026) — Start Value, bonus, composition credit, vault chart, judging panels, 6-up/5-count</li>
+          <li><a href="https://usagym.org/women/rules/" target="_blank" rel="noopener">USA Gymnastics Women’s Development Program rules</a> — NCAA championships use Level 10 rules as of November 1, 2026, with NCAA modifications taking precedence</li>
+          <li><a href="https://ncaaorg.s3.amazonaws.com/championships/sports/gymnastics/nc/women/2025-26NCWGY_UpdatedNQSDetailandExamples.pdf" target="_blank" rel="noopener">NCAA National Qualifying Score (NQS) detail and examples</a> — current team and individual formulas, effective for the 2026 championship season</li>
+          <li><a href="https://ncaaorg.s3.amazonaws.com/championships/sports/gymnastics/nc/women/2025-26NCWGY_PrechampsManual.pdf" target="_blank" rel="noopener">NCAA Women’s Gymnastics Prechampionships Manual (2025–26)</a> — regionals and nationals format, NQS away/neutral-site rule</li>
+          <li><a href="https://ncaaorg.s3.amazonaws.com/championships/marketing/bids/2026-28BidSpec/2026-28NCWGY_REGIONALS_BID_SPECS.pdf" target="_blank" rel="noopener">NCAA 2027 &amp; 2028 regionals bid specifications</a> — confirms the same 36-team / four-regional championship structure</li>
+          <li><a href="https://www.gymnastics.sport/publicdir/rules/files/en_1.1%20-%20WAG%20COP%202025-2028.pdf" target="_blank" rel="noopener">FIG Women’s Artistic Gymnastics Code of Points 2025–2028</a> — elite D-score + E-score (E from 10.0)</li>
+        </ul>
+      </footer>
+    `;
+  }
+  function renderScoringGuide() {
+    applyViewChrome();
+    if (el.status) el.status.textContent = '';
+    if (el.filters) { el.filters.hidden = true; }
+    if (el.scoring && !el.scoring.dataset.ready) {
+      el.scoring.innerHTML = scoringGuideHtml();
+      el.scoring.dataset.ready = '1';
+    }
+    if (el.scoring) el.scoring.hidden = false;
+  }
+
   function render() {
+    if (state.view === 'scoring') {
+      renderScoringGuide();
+      return;
+    }
+    applyViewChrome();
     if (state.date) {
       el.dateText.textContent = matchMedia('(max-width: 430px)').matches ? shortDate(state.date) + ', ' + state.date.slice(0, 4) : longDate(state.date);
       el.date.value = state.date;
@@ -2208,6 +2421,7 @@
   async function renderNextMeet() {
     const box = document.getElementById('next-meet');
     if (!box) return;
+    if (state.view === 'scoring') { box.hidden = true; return; }
     const today = todayChicago();
     const season = seasonFor(today);
     const [main, cur] = await Promise.all([loadMain(), scheduleFor(season)]);
@@ -2249,6 +2463,12 @@
       <a class="nm-go" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">${live ? 'Watch scores' : 'Go to meet'} ›</a>`;
   }
   document.addEventListener('click', e => {
+    const scoringLink = e.target.closest('[data-view="scoring"]');
+    if (scoringLink) {
+      e.preventDefault();
+      openScoring({ push: true });
+      return;
+    }
     const favAthEl = e.target.closest('[data-fav-athlete]');
     if (favAthEl) {
       e.preventDefault();
@@ -2689,6 +2909,7 @@
     }
   });
   window.addEventListener('hashchange', async () => {
+    if (isScoringUrl()) { openScoring({ push: false }); return; }
     const k = readHashMeet();
     if (!k) return;
     if (state.meets.some(m => meetKey(m) === k)) {
@@ -2742,7 +2963,7 @@
   }
   async function goHome(ev) {
     if (ev) ev.preventDefault();
-    const already = isCleanHomeUrl() && !demo && !NOW_OVERRIDE && !SEASON_OVERRIDE && !state.team && (state.filter || 'all') === 'all' && !state.open.size && state.date === todayChicago();
+    const already = isCleanHomeUrl() && !demo && !NOW_OVERRIDE && !SEASON_OVERRIDE && !state.team && !state.view && (state.filter || 'all') === 'all' && !state.open.size && state.date === todayChicago();
     if (!already) history.pushState(null, '', homePath());
     await resetToDefaultHome();
   }
@@ -2756,6 +2977,7 @@
     state.open.clear();
     state.tab = {};
     state.flashKey = null;
+    closeScoring();
     closeTeam();
     document.title = 'The Five That Score — Live D1 Scoreboard';
     window.scrollTo(0, 0);
@@ -2783,6 +3005,11 @@
     state.filter = 'all';
     state.open.clear();
     state.flashKey = null;
+    if (isScoringUrl()) {
+      openScoring({ push: false });
+      return;
+    }
+    closeScoring();
     const qDate = p.get('date');
     const qTeam = (p.get('team') || '').toLowerCase();
     const qAthlete = (p.get('athlete') || '').toLowerCase();
@@ -2842,11 +3069,14 @@
   const qSeason = params.get('season');
   const seasonArg = qSeason && /^\d{4}$/.test(qSeason) ? Number(qSeason) : null;
   const start = isYmd(qDate) ? qDate : (demo ? DEMO.date : todayChicago());
-  const hashMeet = readHashMeet() || (demo && !qDate && !qTeam ? DEMO.meet : null);
+  const hashMeet = readHashMeet() || (demo && !qDate && !qTeam && !isScoringUrl() ? DEMO.meet : null);
   if (hashMeet) state.open.add(hashMeet);
-  loadTeams().then(() => { initTeamPicker(); initFavPicker(); if (state.date && !state.team) render(); }).catch(() => { initTeamPicker(); initFavPicker(); });
-  loadSeasonData().then(() => { renderSeasonPulse(); if (state.team) render(); });
-  if (qTeam) {
+  loadTeams().then(() => { initTeamPicker(); initFavPicker(); if (state.date && !state.team && state.view !== 'scoring') render(); }).catch(() => { initTeamPicker(); initFavPicker(); });
+  loadSeasonData().then(() => { if (state.view !== 'scoring') renderSeasonPulse(); if (state.team && state.view !== 'scoring') render(); });
+  if (isScoringUrl()) {
+    openScoring({ push: false });
+    setDate(todayChicago());
+  } else if (qTeam) {
     openTeam(qTeam, seasonArg, qAthlete || undefined);
   } else {
     setDate(start, { keepOpen: true }).then(async () => {
