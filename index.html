@@ -25,6 +25,9 @@
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314112b'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23ffcf4a'%3E5%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
+<script>
+try { if (localStorage.getItem('tfts-scoring-banner-v1') === '1') document.documentElement.classList.add('scoring-banner-off'); } catch (e) {}
+</script>
 </head>
 <body>
 <header class="site-header">
@@ -85,15 +88,19 @@
 </div>
 
 <main class="wrap">
+  <div id="scoring-entry" class="scoring-entry">
+    <a href="?view=scoring" data-view="scoring" class="scoring-banner">
+      <span class="scoring-banner-icon" aria-hidden="true">ⓘ</span>
+      <span class="scoring-banner-text">New to college gymnastics? <strong>Learn how scoring works</strong> <span class="scoring-banner-arrow" aria-hidden="true">→</span></span>
+    </a>
+    <button type="button" class="scoring-banner-dismiss" data-scoring-dismiss aria-label="Dismiss scoring guide banner">×</button>
+  </div>
   <section id="season-hero" class="hero" aria-label="Perfect 10s and highest all-around"></section>
   <div id="next-meet" class="next-meet" aria-live="polite"></div>
   <section id="season-pulse" class="pulse" aria-label="National rankings"></section>
   <div id="banner" class="banner" hidden></div>
   <div id="status-line" class="status-line" aria-live="polite"></div>
   <div id="meet-filters" class="filters" hidden role="tablist" aria-label="Filter meets"></div>
-  <p id="scoring-entry" class="scoring-entry">
-    <a href="?view=scoring" data-view="scoring">ⓘ How scoring works</a>
-  </p>
   <section id="scoring-guide" class="scoring-guide" hidden></section>
   <section id="meets" class="meets" aria-live="polite"></section>
 </main>

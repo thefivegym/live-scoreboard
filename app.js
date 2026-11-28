@@ -753,13 +753,23 @@
   function scoringPath() {
     return `${homePath()}?view=scoring`;
   }
+  const SCORING_BANNER_KEY = 'tfts-scoring-banner-v1';
+  function scoringBannerDismissed() {
+    try { return localStorage.getItem(SCORING_BANNER_KEY) === '1'; } catch { return false; }
+  }
+  function dismissScoringBanner() {
+    try { localStorage.setItem(SCORING_BANNER_KEY, '1'); } catch { /* private mode */ }
+    document.documentElement.classList.add('scoring-banner-off');
+    const entry = document.getElementById('scoring-entry');
+    if (entry) entry.hidden = true;
+  }
   function applyViewChrome() {
     const scoring = state.view === 'scoring';
     document.body.classList.toggle('view-scoring', scoring);
     if (el.scoring) el.scoring.hidden = !scoring;
     if (el.meets) el.meets.hidden = scoring;
     const entry = document.getElementById('scoring-entry');
-    if (entry) entry.hidden = scoring || !!state.team;
+    if (entry) entry.hidden = scoring || !!state.team || scoringBannerDismissed();
     document.querySelectorAll('a[data-view="scoring"]').forEach(a => {
       a.setAttribute('aria-current', scoring ? 'page' : 'false');
     });
@@ -2463,6 +2473,13 @@
       <a class="nm-go" href="${esc(href)}" data-nm-date="${day}" data-nm-key="${esc(meetKey(first))}">${live ? 'Watch scores' : 'Go to meet'} ›</a>`;
   }
   document.addEventListener('click', e => {
+    const scoringDismiss = e.target.closest('[data-scoring-dismiss]');
+    if (scoringDismiss) {
+      e.preventDefault();
+      e.stopPropagation();
+      dismissScoringBanner();
+      return;
+    }
     const scoringLink = e.target.closest('[data-view="scoring"]');
     if (scoringLink) {
       e.preventDefault();
